@@ -1,0 +1,27 @@
+<aside id="rightPanel" class="right-panel" xmlns="http://www.w3.org/1999/html">
+    <div class="right-panel__inner">
+        <div class="right-panel__top">
+            <div class="dropdown-list-wrapper">
+                <button class="btn btn--dark btn--small-text dropdown-link"><i class="external-link"></i>Category
+                    preview<i
+                            class="expand-arrow expand-arrow--small"></i></button>
+                {{> dropdown-list-sample}}
+            </div>
+
+            <button class="right-panel-toggle-btn btn btn--secondary btn--small-text"><i class="logout"></i>Hide
+            </button>
+        </div>
+        <div class="right-panel__body">
+            {{> right-panel__publication}}
+            {{> right-panel__category-properties}}
+            {{> right-panel__text-sets}}
+            {{> right-panel__tags}}
+            {{> right-panel__tasks}}
+            {{> right-panel__logs}}
+            {{> right-panel__pagination}}
+        </div>
+        <div class="right-panel__bottom">
+            <button class="btn btn--delete btn--w-icon"><i class="trash-can"></i>DELETE CATEGORY</button>
+        </div>
+    </div>
+</aside>

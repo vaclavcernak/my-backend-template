@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+
+<div class="login-screen lazy" data-bg="assets/images/samples/lock-screen-bg.jpg">
+    <div id="languageSwitcher" class="language-switcher">
+        <div id="languageSwitcherActive" class="language-switcher__active"><span class="span">CS<i class="expand-arrow"></i></span>
+            <ul id="languageSwitcherList" class="language-switcher__list">
+                <li class="language-switcher__list__item"><a href="">EN</a></li>
+                <li class="language-switcher__list__item"><a href="">SK</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="warnings">
+            <div class="warning warning--error"><i class="error warning__ok"></i>You have entered wrong password.<i
+                    class="multiply-2 warning__close"></i></div>
+        </div>
+
+        <div class="login-box login-box--lock">
+            <div class="login-box__logo">
+                <img src="assets/images/samples/logo-pouzdra.png" alt="">
+            </div>
+            <div class="login-box__text">Locked by Jakub Jirsa</div>
+        
+            <div class="login-box__inputs">
+                <div class="login-box__input-w-label">
+                    <label class="label" for="pin">PIN:</label>
+                    <input name="pin" id="pin" type="password" class="form-control form-control--rounded">
+                </div>
+        
+                <div class="login-box__bottom">
+                    <div class="login-box__bottom__link">
+                        <a href="" class="switch-user"><i class="change-user"></i>This isn't you? Switch user.</a>
+                    </div>
+                    <input type="submit" value="LOGIN" class="form-control form-control--rounded form-control--action">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

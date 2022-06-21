@@ -1,0 +1,29 @@
+<div class="grid-wrapper">
+    <div class="grid-top mb-3">
+        <div class="grid-top__search">
+            <div class="search-input-alone">
+                <button id="" class="search-input-alone__btn"><i class="search"></i></button>
+                <input class="search-input-alone__input" type="search" placeholder="Search">
+            </div>
+        </div>
+        <div class="grid-top__actions">
+            <button class="btn btn--primary btn--small-text"><span class="btn-front"><span class="btn-front-text"><i
+                    class="save"></i>Save</span></span></button>
+            <button class="btn btn--tertiary btn--small-text"><i class="no-edit"></i>Disable edit</button>
+            <button class="btn btn--secondary btn--small-text"><i class="edit"></i>Edit mode</button>
+            <button class="btn btn--secondary btn--small-text"><i class="table-properties"></i>Columns</button>
+            <button class="btn btn--primary"><span class="btn-front"><span
+                    class="btn-front-text">NEW PRODUCT</span></span></button>
+        </div>
+
+    </div>
+
+    {{> grid__cols-filter}}
+
+    <div class="grid">
+        <div class="table-responsive">
+            {{> grid__table}}
+        </div>
+        {{> grid__bottom}}
+    </div>
+</div>

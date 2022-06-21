@@ -1,0 +1,19 @@
+// Most Used Functions.
+
+/// Convert px to rem
+/// @access public
+/// @param {Number} $px - Value of type in pixels
+/// @returns {Number} In rem
+/// @example rem(48px);
+
+@function rem($px) {
+  @if unit($px) != 'px' {
+    @warn "Expected argument $px to be of type `px`, instead received: `#{unit($px)}`";
+  }
+
+  @return ($px / $rem) * 1rem;
+}
+
+@function color($color-name) {
+  @return var(--color-#{$color-name});
+}

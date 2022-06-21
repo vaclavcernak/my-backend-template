@@ -1,0 +1,37 @@
+.rp-pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  &__item {
+    display: inline-flex;
+  }
+
+  &__link {
+    align-items: center;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: $fw-medium;
+    border-radius: 5px;
+    width: 120px;
+    text-align: center;
+    margin: 0 5px;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #c7d9e4;
+    }
+
+    &--prev {
+      i {
+        margin-right: 5px;
+      }
+    }
+
+    &--next {
+      i {
+        margin-left: 5px;
+      }
+    }
+  }
+}

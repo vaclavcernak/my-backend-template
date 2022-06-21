@@ -1,0 +1,54 @@
+.google-preview {
+  font-size: 14px;
+
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  &__body {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    font-size: 14px;
+    margin-bottom: 10px;
+    max-width: 545px;
+
+    .heading {
+      color: #1a0dab;
+      font-size: 17px;
+      display: block;
+      font-weight: $fw-medium;
+    }
+
+    .url {
+      color: #68a47b;
+      font-size: 15px;
+      display: block;
+      font-weight: bold;
+    }
+
+    .rating {
+      display: flex;
+
+      &__stars {
+        //margin-right: 5px;
+      }
+
+      &__text {
+        color: #b5b5b5;
+      }
+    }
+
+    .desc {
+      color: #4d5156;
+      margin: 0;
+    }
+  }
+
+  .infotext {
+    color: #5d7483;
+  }
+}

@@ -1,0 +1,44 @@
+.breadcrumb {
+  margin: 0;
+  color: #2c4364;
+  font-size: 14px;
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 10px;
+
+      &:after {
+        @include one-icon();
+        content: "\f10a";
+        font-size: 10px;
+        color: #2c4364;
+        font-weight: bold;
+        margin-left: 10px;
+        position: relative;
+        top: -1px;
+      }
+    }
+
+    &.inactive {
+      color: #93a4bc;
+    }
+  }
+
+  &__link {
+    padding: 4px 0;
+    color: #2c4364;
+
+    &.active {
+      padding-right: 10px;
+      padding-left: 10px;
+      border-radius: 5px;
+      border: 1px solid #bcdbfa;
+      background-color: #d8e4ec;
+    }
+
+    &.inactive {
+      color: #93a4bc;
+    }
+  }
+}

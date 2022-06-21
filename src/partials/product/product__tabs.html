@@ -1,0 +1,99 @@
+<ul id="navTabs" class="nav nav-tabs">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#details" aria-selected="true">Product
+            details
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#classification" aria-selected="false"><span
+                class="unread"></span>Classification<span
+                class="notify">1</span>
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#media" aria-selected="false">Media<span
+                class="notify">88</span>
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pricing" aria-selected="false">Pricing
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#inventory" aria-selected="false">Inventory
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#material" aria-selected="false">Material
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#options" aria-selected="false">Options
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#parameters" aria-selected="false">Parameters
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#related" aria-selected="false">Related products
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#xml" aria-selected="false">XML</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews" aria-selected="false">Reviews</button>
+    </li>
+
+    <div id="navTabsNext" class="nav-tabs__next">
+        <button id="navTabsNextBtn" class="ham-btn"><i class="hamburger-menu"></i></button>
+        <ul id="navTabsNextNav" class="nav-tabs__next__nav"></ul>
+    </div>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="details">
+        {{> product__tabs__detail}}
+    </div>
+
+    <div class="tab-pane fade" id="classification">
+        {{> product__tabs__classification}}
+    </div>
+
+    <div class="tab-pane fade" id="media">
+        media
+    </div>
+
+    <div class="tab-pane fade" id="pricing">
+        pricing
+    </div>
+
+    <div class="tab-pane fade" id="inventory">
+        inventory
+    </div>
+
+    <div class="tab-pane fade" id="material">
+        material
+    </div>
+
+    <div class="tab-pane fade" id="options">
+        options
+    </div>
+
+    <div class="tab-pane fade" id="parameters">
+        parameters
+    </div>
+
+    <div class="tab-pane fade" id="related">
+        related
+    </div>
+
+    <div class="tab-pane fade" id="xml">
+        xml
+    </div>
+
+    <div class="tab-pane fade" id="reviews">
+        reviews
+    </div>
+</div>

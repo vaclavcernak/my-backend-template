@@ -1,0 +1,114 @@
+// Most used mixins.
+
+/// Preventing Overflow with Ellipsis
+/// @example @include ellipsis;
+
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/// Animate css properties
+/// @example @include animate(color);
+/// or @include animate(color width);
+/// or @include animate(color width, 1s, linear);
+/// or @include animate(color width, 1s, ease-in, 0.5s); - defining delay ALL params should be passed!
+
+$animation-speed: 0.3s !default;
+
+@mixin animate($properties, $duration: $animation-speed, $easing: ease-in-out, $delay: false) {
+  @if ($properties and $duration and $easing and $delay) {
+    $list: ();
+    @each $prop in $properties {
+      $str: #{$prop} #{$duration} #{$easing} #{$delay};
+      $list: append($list, $str, comma);
+    }
+    transition: $list;
+  } @else {
+    $list: ();
+    @each $prop in $properties {
+      $str: #{$prop} #{$duration} #{$easing};
+      $list: append($list, $str, comma);
+    }
+    transition: $list;
+  }
+}
+
+
+/// Mixin for styling form-placeholders
+/// @example @include placeholder { color: red; }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &.placeholder {
+    @content;
+  }
+}
+
+/**************/
+
+@mixin box-shadow {
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, .2);
+}
+
+@mixin box-shadow-thin {
+  box-shadow: 0 0 30px -10px rgba(0, 0, 0, .2);
+}
+
+//- Mixin: Fluid Type
+///
+/// Magic calc + vh to allow text to be fluid between minimum
+/// and maximum breakpoints.
+///
+/// @group typography
+/// @param {variable} $min-font-size [12px] - Minimum font size
+/// @param {variable} $max-font-size [24px] - Maximum font size
+/// @param {variable} $lower-range [420px] - Stop scaling font smaller at this screen resolution
+/// @param {variable} $upper-range [900px] - Stop scaling font larger at this screen resolution
+/// @example
+///   h1 {
+///     @include responsive-type(20px, 48px);
+///   }
+/// @site https://madebymike.com.au/writing/precise-control-responsive-typography/
+
+@mixin fluid-type($min-font-size: 12px, $max-font-size: 21px, $lower-range: 767px, $upper-range: 1200px) {
+
+  font-size: calc(#{$min-font-size} + #{(($max-font-size / ($max-font-size * 0 + 1)) - ($min-font-size / ($min-font-size * 0 + 1)))} * ((100vw - #{$lower-range}) / #{(($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))}));
+
+  @media screen and (max-width: $lower-range) {
+    font-size: $min-font-size;
+  }
+  @media screen and (min-width: $upper-range) {
+    font-size: $max-font-size;
+  }
+}
+
+/***/
+
+@mixin one-icon() {
+  display: inline-block;
+  font-family: "jz-one_admin";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}

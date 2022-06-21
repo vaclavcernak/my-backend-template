@@ -1,0 +1,14 @@
+.rp-logs {
+  &__top {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+
+    &:not(:last-child) {
+      padding-bottom: 9px;
+      border-bottom: 1px dashed #b4c3cd;
+    }
+  }
+}

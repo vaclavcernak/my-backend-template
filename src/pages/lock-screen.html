@@ -1,0 +1,15 @@
+---
+layout: login-screen
+---
+
+<div class="login-screen lazy" data-bg="assets/images/samples/lock-screen-bg.jpg">
+    {{> language-switcher}}
+
+    <div class="container">
+        <div class="warnings">
+            {{> warning--error--wrong-password}}
+        </div>
+
+        {{> login__lock-box}}
+    </div>
+</div>

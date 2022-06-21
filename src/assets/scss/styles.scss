@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import 'src/assets/fonts/One/scss/styles';
+@import 'abstracts/main';
+@import 'vendors/main';
+@import 'base/main';
+@import 'layout/main';
+@import 'components/main';
+@import 'pages/main';
+
+
+:root {
+  --c-text: #242c38;
+  --c-action: #258aef;
+  --c-succes: #55ac36;
+  --c-danger: #c82424;
+
+  --right-panel-width: 280px;
+  --top-bar-height: 52px;
+  --main-nav-width: 260px;
+  --main-nav-minim-width: 70px;
+}

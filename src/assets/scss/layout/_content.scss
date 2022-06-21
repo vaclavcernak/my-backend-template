@@ -1,0 +1,58 @@
+.main-wrapper {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-content-wrapper {
+  width: 100%;
+  background-color: #f7fafc;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  @include media-breakpoint-between(md, xl) {
+    position: absolute;
+    right: 0;
+    width: calc(100% - var(--main-nav-minim-width));
+  }
+  @include media-breakpoint-down(md) {
+    height: auto;
+  }
+}
+
+.main-content {
+  padding: 15px 20px;
+  margin-top: var(--top-bar-height);
+  @include media-breakpoint-up(md) {
+    height: 100vh;
+    overflow: auto;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  &--full-width {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.main-w-aside {
+  display: flex;
+  width: 100%;
+  margin-top: var(--top-bar-height);
+  overflow-y: auto;
+
+  .main {
+    margin-top: 15px;
+    width: 100%;
+    @include media-breakpoint-up(xl) {
+      max-width: calc(100% - var(--right-panel-width));
+    }
+  }
+}

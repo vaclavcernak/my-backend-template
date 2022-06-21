@@ -1,0 +1,35 @@
+---
+layout: login-screen
+---
+
+<div class="login-screen lazy" data-bg="assets/images/samples/lock-screen-bg.jpg">
+    {{> language-switcher}}
+
+    <div class="login-screen__left">
+        <div class="login-screen__news">
+            <div class="login-screen__news__content">
+                <h3 class="title">Proč psát lepší popisky produktů</h3>
+                <p>Možná jste někdy na e-shopu četli popisek produktu, který vás okamžitě tak nadchl, že jste jej chtěli
+                    ihned koupit. Co dává některým popiskům takovou moc? Co mají společného?</p>
+            </div>
+            <a href="" class="more-link"><i class="right-arrow"></i>Přečíst</a>
+        </div>
+    </div>
+
+    <div class="login-screen__right">
+
+        <div class="login-box-wrapper">
+            <div class="warnings warnings--absolute">
+                {{> warning--success--new-password}}
+            </div>
+
+            {{> login__login-box}}
+        </div>
+
+        <div class="login-screen__footer">
+            <a href=""><img src="assets/images/jz-one.svg" alt="" class="logo"></a>
+            <p>Copyright Jirsa & Záruba s.r.o. © All Rights Reserved.</p>
+        </div>
+
+    </div>
+</div>

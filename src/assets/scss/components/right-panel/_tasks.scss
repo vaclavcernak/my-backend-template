@@ -1,0 +1,41 @@
+.rp-tasks {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 15px;
+
+    &--unchecked {
+      .switch-text,
+      .description {
+        text-decoration: line-through;
+      }
+    }
+
+    &__left {
+
+    }
+
+    .form-switch {
+      margin-left: 5px;
+    }
+
+    .close {
+      position: relative;
+      top: 2px;
+      font-size: 16px;
+
+      &:hover {
+        i {
+          color: #ff5454;
+        }
+
+      }
+    }
+
+    .description {
+      margin-top: 5px;
+      line-height: 1.2;
+    }
+  }
+}

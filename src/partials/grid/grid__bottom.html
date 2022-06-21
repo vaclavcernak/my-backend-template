@@ -1,0 +1,46 @@
+<div class="grid__bottom row">
+    <div class="grid__bottom__left col-xl-4 col-lg-6 col-md-6">
+        <div class="selected-items active"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
+            <div class="row">
+                <div class="col">
+                    <label for="selected_items" class="form-label">Selected items</label>
+                    <div>
+                        <select class="form-select2 form-select2--small" id="selected_items">
+                            <option selected="">--</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="selected_items2" class="form-label">&nbsp;</label>
+                    <div>
+                        <select class="form-select2 form-select2--small" id="selected_items2">
+                            <option selected="">--</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <label class="form-label">&nbsp;</label>
+                    <div>
+                        <button class="btn btn--primary" disabled><span class="btn-front"><span class="btn-front-text">PROCEED</span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid__bottom__center col-xl-4 col-lg-12 col-md-12">
+        {{> pagination}}
+    </div>
+
+    <div class="grid__bottom__right col-xl-4 col-lg-6 col-md-6">
+        {{> paging}}
+    </div>
+
+</div>

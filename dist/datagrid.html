@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+
+<div class="main-wrapper">
+    <aside id="mainNav" class="main-nav">
+        <header class="main-nav__header">
+            <img src="assets/images/jz-one_blue-white.svg" alt="" class="logo">
+            <button class="main-nav__header__button"><i class="cash-register"></i></button>
+            <button class="main-nav__header__button"><i class="barcode-reader"></i></button>
+            <button id="hamMenuBtnMax" class="main-nav__header__button button--hamburger on-maximized"><i
+                    class="hamburger-menu hamburger-open"></i><i class="multiply hamburger-close"></i></button>
+            <button id="hamMenuBtnMin" class="main-nav__header__button button--hamburger on-minimized"><i
+                    class="hamburger-menu hamburger-open"></i><i class="multiply hamburger-close"></i></button>
+        </header>
+        <nav id="mainNav__nav" class="main-nav__nav scrollbared">
+            <div class="main-nav__nav__inner">
+                <ul>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="dashboard-layout"></i></a><a
+                            href=""><i class="dashboard-layout"></i><span class="name">Dashboard</span></a></li>
+                    <li class="main-nav__nav__item has-submenu"><a href="#" class="on-minimized"><i
+                            class="basket"></i></a><a href="#"><i class="basket"></i><span
+                            class="name">Sales</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item active"><a href=""><span class="name">Products</span></a><span
+                                    class="notify">155 265</span></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Categories</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item has-submenu"><a href="#" class="on-minimized"><i
+                            class="extra-features"></i></a><a href="#"><i class="extra-features"></i><span
+                            class="name">Catalogue</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item"><a href=""><span class="name">Products</span></a><span
+                                    class="notify">155 265</span></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Categories</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="price"></i></a><a href=""><i
+                            class="price"></i><span class="name">Pricing</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="package"></i></a><a
+                            href=""><i class="package"></i><span class="name">Stock</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="commercial"></i></a><a
+                            href=""><i class="commercial"></i><span
+                            class="name">Marketing</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="repository"></i></a><a
+                            href=""><i class="repository"></i><span
+                            class="name">Directory</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="marketing"></i></a><a
+                            href=""><i class="marketing"></i><span
+                            class="name">Reports</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="bot"></i></a><a href=""><i
+                            class="bot"></i><span class="name">Automation</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="plugin"></i></a><a href=""><i
+                            class="plugin"></i><span class="name">Plug-ins</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="online-store"></i></a><a
+                            href=""><i class="online-store"></i><span class="name">Sales channels</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="file"></i></a><a href=""><i
+                            class="file"></i><span
+                            class="name">File Manager</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i
+                            class="system-administrator-male"></i></a><a href=""><i
+                            class="system-administrator-male"></i><span class="name">Client account</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="settings"></i></a><a
+                            href="#"><i class="settings"></i><span
+                            class="name">Settings</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="lifebuoy"></i></a><a
+                            href="#"><i class="lifebuoy"></i><span class="name">Help</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <div class="main-content-wrapper">
+        <header id="topBar" class="top-bar">
+        
+            <div class="hamburger-menu-mobile">
+                <button id="mobileButtonHamburger" class="button--hamburger">
+                    <i class="hamburger-menu hamburger-open"></i>
+                </button>
+            </div>
+        
+            <div class="top-bar__left">
+                <div class="show-frontend show-frontend--has-list">
+                    <span class="show-frontend__button"><i class="external-link icon-left"></i><span class="text">Show frontend</span><i
+                            class="expand-arrow icon-right"></i></span>
+                    <ul class="show-frontend__list">
+                        <li class="show-frontend__list__item"><a href="">www.superpouzdra.cz</a></li>
+                        <li class="show-frontend__list__item"><a href="" target="_blank">www.drackovy-hracky.cz<i
+                                class="external-link"></i></a></li>
+                    </ul>
+                </div>
+                <!-- // Code for 1 link only -->
+                <!--<div class="show-frontend">
+                    <a class="show-frontend__button" href="" target="_blank"><i class="external-link icon-left"></i><span class="text">Show frontend</span></a>
+                </div>-->
+            </div>
+        
+            <div class="top-bar__right">
+                <div class="top-bar__button-wrapper">
+                    <button class="top-bar__button add-actions" title="Add">
+                        <span class="main-icon"><i class="add"></i></span>
+                    </button>
+                    <div class="top-bar__button__window add-actions-window">
+                        <div class="add-actions-window__row row sortable">
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="add-basket"></i></span>
+                                    <span class="add-actions-window__item__name">Income Order</span>
+                                </a>
+                            </div>
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="add-tag"></i></span>
+                                    <span class="add-actions-window__item__name">Product</span>
+                                </a>
+                            </div>
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="box-move-right"></i></span>
+                                    <span class="add-actions-window__item__name">Goods Receipt</span>
+                                </a>
+                            </div>
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="add-user-male"></i></span>
+                                    <span class="add-actions-window__item__name">Contact</span>
+                                </a>
+                            </div>
+                
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="task"></i></span>
+                                    <span class="add-actions-window__item__name">Task</span>
+                                </a>
+                            </div>
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="headline"></i></span>
+                                    <span class="add-actions-window__item__name">Article</span>
+                                </a>
+                            </div>
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="file-invoice-dollar"></i></span>
+                                    <span class="add-actions-window__item__name">Invoice</span>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="show-more"><i class="expand-arrow"></i>More</a>
+                    </div>
+                </div>
+                <div class="top-bar__button-wrapper">
+                    <div class="top-bar__search search-input-wrapper">
+                        <button id="topBarSearchInputBtnMobile" class="search-input-btn-mobile"><i class="left-arrow"></i></button>
+                        <input id="topBarSearchInput" class="search-input" type="text" placeholder="Search">
+                        <button id="topBarSearchInputBtn" class="search-input-btn"><i class="search"></i></button>
+                    </div>
+                    <div id="topBarSearchWindow" class="top-bar__button__window search-window">
+                        <div class="search-window__content">
+                            <div class="search-window__content__section">
+                                <h3 class="title"><i class="workspace"></i>Administration</h3>
+                                <ul class="list">
+                                    <li class="item"><a href="#">Nastavení dopravy a platby</a></li>
+                                    <li class="item"><a href="#" target="_blank">Prodejní kanály<i class="external-link"></i></a></li>
+                                    <li class="item"><a href="#">Adresář uživatelů</a></li>
+                                </ul>
+                            </div>
+                            <div class="search-window__content__section">
+                                <h3 class="title"><i class="lifebuoy"></i>Help</h3>
+                                <ul class="list">
+                                    <li class="item"><a href="#">Jak vytvořit novou platbu</a></li>
+                                    <li class="item"><a href="#">Přidání nového prodejního kanálu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="top-bar__button-wrapper">
+                    <button class="top-bar__button notifications" title="Notifications">
+                        <span class="main-icon">
+                            <i class="notification"></i>
+                            <span class="main-icon__notification">2</span>
+                        </span>
+                        <i class="expand-arrow"></i>
+                    </button>
+                    <div class="top-bar__button__window notifications-window">
+                        <div class="notifications-window__frontside">
+                            <div class="notifications-window__frontside__heading">
+                                <span class="mark-as-read"><a href="#"><i class="received"></i>Mark as read</a></span>
+                                <span class="settings-link"><a class="notification-settings-link" href="#"><i class="settings"></i>Settings</a></span>
+                            </div>
+                            <div class="notifications-window__frontside__content scrollbared scrollbared--light">
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button"><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-success"><i class="add-basket"></i>New order received</div>
+                                            <div class="date">10 min. ago</div>
+                                        </div>
+                                        <div class="item__text"><a href="#">011100004 for <span class="fw-bold">1250 CZK</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button"><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-danger"><i class="mail-error"></i>Incorrect email</div>
+                                            <div class="date">10 min. ago</div>
+                                        </div>
+                                        <div class="item__text"><a href="#">Email bounced from <span
+                                                class="fw-bold">blabla@yahoo.com</span></a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button"><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-danger"><i class="error"></i>Payment error</div>
+                                            <div class="date">29.3.2022 | 16:29</div>
+                                        </div>
+                                        <div class="item__text">
+                                            <a href="#">Nepodařilo se označit objednávku č. 2011902 ST 4.6 v MALL Pay jako
+                                                odeslanou.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button check-button--disabled" disabled><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-disabled"><i class="mail"></i>Email received</div>
+                                            <div class="date">29.3.2022 | 16:29</div>
+                                        </div>
+                                        <div class="item__text">
+                                            <a href="#">New message from <span class="fw-bold">blabla@yahoo.com</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button"><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-success"><i class="add-basket"></i>New order received</div>
+                                            <div class="date">10 min. ago</div>
+                                        </div>
+                                        <div class="item__text"><a href="#">011100004 for <span class="fw-bold">1250 CZK</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button"><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-danger"><i class="mail-error"></i>Incorrect email</div>
+                                            <div class="date">10 min. ago</div>
+                                        </div>
+                                        <div class="item__text"><a href="#">Email bounced from <span
+                                                class="fw-bold">blabla@yahoo.com</span></a></div>
+                                    </div>
+                                </div>
+                
+                                <a href="#" class="show-more"><i class="expand-arrow"></i>More</a>
+                            </div>
+                        </div>
+                
+                        <div class="notifications-window__backside">
+                            <div class="notifications-window__backside__heading">
+                                <a class="notification-settings-link" href="#"><i class="less-than"></i>Settings</a>
+                            </div>
+                            <div class="notifications-window__backside__content">
+                                <a class="btn btn--action" href="#"><i class="alarm"></i>Enable desktop notificitions</a>
+                                <ul class="notification-list">
+                                    <li class="notification-list__item">
+                                        <span class="name">New order received</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail active"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring active"></a>
+                                        </span>
+                                    </li>
+                                    <li class="notification-list__item">
+                                        <span class="name">Customer registration</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail active"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring"></a>
+                                        </span>
+                                    </li>
+                                    <li class="notification-list__item">
+                                        <span class="name">Payment received</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail active"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring active"></a>
+                                        </span>
+                                    </li>
+                                    <li class="notification-list__item">
+                                        <span class="name">Product review</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail active"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring active"></a>
+                                        </span>
+                                    </li>
+                                    <li class="notification-list__item">
+                                        <span class="name">Automated imports</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring active"></a>
+                                        </span>
+                                    </li>
+                                    <li class="notification-list__item">
+                                        <span class="name">Stock warnings</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring active"></a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                
+                <div class="top-bar__button-wrapper top-bar__button-wrapper--user-account">
+                    <button class="top-bar__button user-account" title="User account">
+                        <span class="initials">J. J.</span>
+                        <span class="name">Jakub J.</span>
+                        <i class="expand-arrow"></i>
+                    </button>
+                    <div class="top-bar__button__window user-account-window">
+                        <div class="user-account-window__heading">
+                            <span class="name">Jakub Jirsa</span>
+                            <span class="email">jakub@jirsa-zaruba.cz</span>
+                        </div>
+                        <div class="user-account-window__content">
+                            <ul class="list">
+                                <li class="item"><a href=""><i class="user"></i>My account</a></li>
+                                <li class="item"><a href=""><i class="logout"></i>Log Out</a></li>
+                                <li class="item"><a href=""><i class="lock"></i>Lock</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-bar__button-wrapper top-bar__button-wrapper--full-screen">
+                    <button class="top-bar__button top-bar__button--full-screen toggle-fullscreen" title="Toggle Fullscreen">
+                        <span class="main-icon"><i class="expand fullscreen-expand"></i><i
+                                class="collapse fullscreen-collapse"></i></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <h1>Products</h1>
+        </main>
+        <footer class="footer">
+            <div class="footer__version"><a href="#">www.jz-one.cz</a> | v1.0</div>
+            <div class="footer__copyright">Copyright Jirsa & Záruba s.r.o. © All Rights Reserved.</div>
+        </footer>
+    </div>
+
+</div>
+
+
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

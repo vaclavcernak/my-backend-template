@@ -1,0 +1,25 @@
+.c-success {
+  color: var(--c-succes);
+}
+
+.c-danger {
+  color: var(--c-danger);
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.u-link {
+  color: #258aef;
+  text-decoration: underline;
+
+  &:hover {
+    color: #258aef;
+    text-decoration: none;
+  }
+}

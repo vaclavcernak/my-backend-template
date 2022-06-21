@@ -1,0 +1,33 @@
+.rp-publication-section {
+  .published {
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+    margin-bottom: 10px;
+
+    i {
+      font-size: 30px;
+      margin-right: 15px;
+    }
+
+    .text {
+      font-size: 12px;
+    }
+  }
+
+  .status {
+    display: flex;
+    justify-content: space-between;
+
+    .schedule-btn {
+      font-size: 21px;
+      margin-left: 7.5px;
+      padding: 6px;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #d7e3ec;
+      }
+    }
+  }
+}

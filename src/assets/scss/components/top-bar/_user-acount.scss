@@ -1,0 +1,50 @@
+.user-account-window {
+  min-width: 200px;
+  right: 0;
+  @include media-breakpoint-only(xs) {
+    right: 10px;
+  }
+
+  &__heading {
+    padding: 11px 25px 8px;
+    border-radius: 10px 10px 0 0;
+    font-size: 14px;
+    background-color: #f7fafc;
+    border-bottom: 1px solid #d8e4ec;
+
+    .name {
+      display: block;
+      font-weight: bold;
+    }
+
+    .email {
+      display: block;
+      white-space: nowrap;
+    }
+  }
+
+  &__content {
+    padding: 10px 25px;
+    font-size: 14px;
+
+    .list {
+      margin: 0;
+      padding: 0;
+
+      .item {
+        &:not(:last-child) {
+          margin-bottom: 6px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #d8e4ec;
+        }
+
+        i {
+          margin-right: 8px;
+          font-size: 16px;
+          position: relative;
+          top: 1px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,313 @@
+<table class="grid__table">
+    <thead class="grid__head">
+    <tr class="tr">
+        <th class="th--checkbox cell--checkbox">
+            <label class="name"></label>
+            <div class="input-wrapper">
+                <div class="form-check-input-all">
+                    <input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">
+                </div>
+            </div>
+        </th>
+        <th class="th--image cell--image">
+            <label class="name" for="image"><a href="">Image</a></label>
+            <div class="input-wrapper">
+                <select class="form-select2 form-select2--small" id="image">
+                    <option selected="">--</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </th>
+        <th class="th--id cell--id">
+            <label class="name sort sort--down" for="id"><a href="" class="selected">ID</a></label>
+            <div class="input-wrapper">
+                <input type="text" class="form-control" id="id">
+            </div>
+        </th>
+        <th class="th--sku cell--sku">
+            <label class="name sort sort--up" for="sku"><a href="">SKU</a></label>
+            <div class="input-wrapper">
+                <input type="text" class="form-control" id="sku">
+            </div>
+        </th>
+        <th class="th--title cell--title">
+            <label class="name" for="title"><a href="">Title</a></label>
+            <div class="input-wrapper">
+                <input type="text" class="form-control" id="title">
+            </div>
+        </th>
+        <th class="th--brand cell--brand">
+            <label class="name" for="brand"><a href="">Brand</a></label>
+            <div class="input-wrapper">
+                <select class="form-select2 form-select2--small" id="brand">
+                    <option selected="">--</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </th>
+        <th class="th--status cell--status">
+            <label class="name" for="status"><a href="">Status</a></label>
+            <div class="input-wrapper">
+                <select class="form-select2 form-select2--small" id="status">
+                    <option selected="">--</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </th>
+        <th class="th--updated cell--updated">
+            <label class="name" for="updated"><a href="">Updated</a></label>
+            <div class="input-wrapper">
+                <div class="input-icon input-icon--date">
+                    <input type="text" class="form-control datepicker-input" id="updated">
+                </div>
+            </div>
+        </th>
+        <th class="th--text-set cell--text-set">
+            <label class="name" for="text_set"><a href="">Text&nbsp;set</a></label>
+            <div class="input-wrapper">
+                <select class="form-select2 form-select2--small" id="text_set">
+                    <option selected="">--</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </th>
+        <th class="th--actions cell--actions">
+            <label class="name"></label>
+            <div class="filters">
+                <button class="filters__btn filters__btn--filter"><i class="funnel"></i><span class="text">Filter</span>
+                </button>
+                <button class="filters__btn filters__btn--delete"><i class="multiply"></i></button>
+                <!-- pokud se buttonům přidá class .active, změní styl -->
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody class="grid__body">
+    <tr class="tr">
+        <td class="td--checkbox cell--checkbox">
+            <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+        </td>
+        <td class="td--image cell--image">
+            <img src="assets/images/samples/grid-image.png" alt="">
+        </td>
+        <td class="td--id cell--id">
+            2550
+        </td>
+        <td class="td--sku cell--sku">
+            A1-26114
+        </td>
+        <td class="td--title cell--title">
+            <a href="">Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero Apple
+                iPad 9.7 2018 / 9.7 2017 šedé</a>
+        </td>
+        <td class="td--brand cell--brand">
+            <a href="">DUX DUCIS</a>
+        </td>
+        <td class="td--status cell--status">
+            <img src="assets/images/icon-user.png" alt="">
+        </td>
+        <td class="td--updated cell--updated">
+            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+        </td>
+        <td class="td--text-set cell--text-set">
+            <img src="assets/images/flag-en.png" alt="">
+            <img src="assets/images/flag-cs.png" alt="">
+        </td>
+        <td class="td--actions cell--actions">
+            <div class="action-btns">
+                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                <button href="" class="action-btn action-btn--delete"><i class="multiply"></i></button>
+            </div>
+        </td>
+    </tr>
+
+    <tr class="tr deactivated">
+        <td class="td--checkbox cell--checkbox">
+            <input class="form-check-input product-checkbox" type="checkbox" id="option2" value="option2">
+        </td>
+        <td class="td--image cell--image">
+            <img src="assets/images/samples/grid-image.png" alt="">
+        </td>
+        <td class="td--id cell--id">
+            48620
+        </td>
+        <td class="td--sku cell--sku">
+            A1-26114
+        </td>
+        <td class="td--title cell--title">
+            Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero Apple
+            iPad 9.7 2018 / 9.7 2017 šedé
+        </td>
+        <td class="td--brand cell--brand">
+            DUX DUCIS
+        </td>
+        <td class="td--status cell--status">
+            <img src="assets/images/icon-briefcase.png" alt="">
+        </td>
+        <td class="td--updated cell--updated">
+            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+        </td>
+        <td class="td--text-set cell--text-set">
+            <img src="assets/images/flag-cs.png" alt="">
+        </td>
+        <td class="td--actions cell--actions">
+            <div class="action-btns">
+                <button class="action-btn action-btn--edit" disabled><i class="edit"></i></button>
+                <button class="action-btn action-btn--delete" disabled><i class="multiply"></i></button>
+            </div>
+        </td>
+    </tr>
+
+    <tr class="tr">
+        <td class="td--checkbox cell--checkbox">
+            <input class="form-check-input product-checkbox" type="checkbox" id="option3" value="option3">
+        </td>
+        <td class="td--image cell--image">
+            <img src="assets/images/samples/grid-image-2.png" alt="">
+        </td>
+        <td class="td--id cell--id">
+            665200
+        </td>
+        <td class="td--sku cell--sku">
+            A1-26114
+        </td>
+        <td class="td--title cell--title">
+            <a href="">Držák na telefon ring s podstavcem ve tvaru prstýnku černý</a>
+        </td>
+        <td class="td--brand cell--brand">
+            <a href="">APOLIS</a>
+        </td>
+        <td class="td--status cell--status">
+            <img src="assets/images/icon-green-flag.png" alt="">
+        </td>
+        <td class="td--updated cell--updated">
+            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+        </td>
+        <td class="td--text-set cell--text-set">
+            <img src="assets/images/flag-en.png" alt="">
+        </td>
+        <td class="td--actions cell--actions">
+            <div class="action-btns">
+                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+            </div>
+        </td>
+    </tr>
+
+    <tr class="tr">
+        <td class="td--checkbox cell--checkbox">
+            <input class="form-check-input product-checkbox" type="checkbox" id="option3" value="option3">
+        </td>
+        <td class="td--image cell--image">
+            <img src="assets/images/samples/grid-image-2.png" alt="">
+        </td>
+        <td class="td--id cell--id">
+            665200
+        </td>
+        <td class="td--sku cell--sku">
+            A1-26114
+        </td>
+        <td class="td--title cell--title">
+            <a href="">Držák na telefon ring s podstavcem ve tvaru prstýnku černý</a>
+        </td>
+        <td class="td--brand cell--brand">
+            <a href="">APOLIS</a>
+        </td>
+        <td class="td--status cell--status">
+            <img src="assets/images/icon-green-flag.png" alt="">
+        </td>
+        <td class="td--updated cell--updated">
+            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+        </td>
+        <td class="td--text-set cell--text-set">
+            <img src="assets/images/flag-en.png" alt="">
+        </td>
+        <td class="td--actions cell--actions">
+            <div class="action-btns">
+                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+            </div>
+        </td>
+    </tr>
+
+    <tr class="tr selected">
+        <td class="td--checkbox cell--checkbox">
+            <input class="form-check-input product-checkbox" type="checkbox" id="option4" value="option4" checked>
+        </td>
+        <td class="td--image cell--image">
+            <img src="assets/images/samples/grid-image-2.png" alt="">
+        </td>
+        <td class="td--id cell--id">
+            665200
+        </td>
+        <td class="td--sku cell--sku">
+            A1-26114
+        </td>
+        <td class="td--title cell--title">
+            <a href="">Držák na telefon ring s podstavcem ve tvaru prstýnku černý</a>
+        </td>
+        <td class="td--brand cell--brand">
+            <a href="">APOLIS</a>
+        </td>
+        <td class="td--status cell--status">
+            <img src="assets/images/icon-green-flag.png" alt="">
+        </td>
+        <td class="td--updated cell--updated">
+            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+        </td>
+        <td class="td--text-set cell--text-set">
+            <img src="assets/images/flag-en.png" alt="">
+        </td>
+        <td class="td--actions cell--actions">
+            <div class="action-btns">
+                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+            </div>
+        </td>
+    </tr>
+
+    <tr class="tr">
+        <td class="td--checkbox cell--checkbox">
+            <input class="form-check-input product-checkbox" type="checkbox" id="option5" value="option5">
+        </td>
+        <td class="td--image cell--image">
+            <img src="assets/images/samples/grid-image-2.png" alt="">
+        </td>
+        <td class="td--id cell--id">
+            665200
+        </td>
+        <td class="td--sku cell--sku">
+            A1-26114
+        </td>
+        <td class="td--title cell--title">
+            <a href="">Držák na telefon ring s podstavcem ve tvaru prstýnku černý</a>
+        </td>
+        <td class="td--brand cell--brand">
+            <a href="">APOLIS</a>
+        </td>
+        <td class="td--status cell--status">
+            <img src="assets/images/icon-green-flag.png" alt="">
+        </td>
+        <td class="td--updated cell--updated">
+            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+        </td>
+        <td class="td--text-set cell--text-set">
+            <img src="assets/images/flag-en.png" alt="">
+        </td>
+        <td class="td--actions cell--actions">
+            <div class="action-btns">
+                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,796 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+
+<div class="main-wrapper">
+    <aside id="mainNav" class="main-nav">
+        <header class="main-nav__header">
+            <img src="assets/images/jz-one_blue-white.svg" alt="" class="logo">
+            <button class="main-nav__header__button"><i class="cash-register"></i></button>
+            <button class="main-nav__header__button"><i class="barcode-reader"></i></button>
+            <button id="hamMenuBtnMax" class="main-nav__header__button button--hamburger on-maximized"><i
+                    class="hamburger-menu hamburger-open"></i><i class="multiply hamburger-close"></i></button>
+            <button id="hamMenuBtnMin" class="main-nav__header__button button--hamburger on-minimized"><i
+                    class="hamburger-menu hamburger-open"></i><i class="multiply hamburger-close"></i></button>
+        </header>
+        <nav id="mainNav__nav" class="main-nav__nav scrollbared">
+            <div class="main-nav__nav__inner">
+                <ul>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="dashboard-layout"></i></a><a
+                            href=""><i class="dashboard-layout"></i><span class="name">Dashboard</span></a></li>
+                    <li class="main-nav__nav__item has-submenu"><a href="#" class="on-minimized"><i
+                            class="basket"></i></a><a href="#"><i class="basket"></i><span
+                            class="name">Sales</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item active"><a href=""><span class="name">Products</span></a><span
+                                    class="notify">155 265</span></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Categories</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item has-submenu"><a href="#" class="on-minimized"><i
+                            class="extra-features"></i></a><a href="#"><i class="extra-features"></i><span
+                            class="name">Catalogue</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item"><a href=""><span class="name">Products</span></a><span
+                                    class="notify">155 265</span></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Categories</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href=""><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="price"></i></a><a href=""><i
+                            class="price"></i><span class="name">Pricing</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="package"></i></a><a
+                            href=""><i class="package"></i><span class="name">Stock</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="commercial"></i></a><a
+                            href=""><i class="commercial"></i><span
+                            class="name">Marketing</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="repository"></i></a><a
+                            href=""><i class="repository"></i><span
+                            class="name">Directory</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="marketing"></i></a><a
+                            href=""><i class="marketing"></i><span
+                            class="name">Reports</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="bot"></i></a><a href=""><i
+                            class="bot"></i><span class="name">Automation</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="plugin"></i></a><a href=""><i
+                            class="plugin"></i><span class="name">Plug-ins</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="online-store"></i></a><a
+                            href=""><i class="online-store"></i><span class="name">Sales channels</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="file"></i></a><a href=""><i
+                            class="file"></i><span
+                            class="name">File Manager</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i
+                            class="system-administrator-male"></i></a><a href=""><i
+                            class="system-administrator-male"></i><span class="name">Client account</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="settings"></i></a><a
+                            href="#"><i class="settings"></i><span
+                            class="name">Settings</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="lifebuoy"></i></a><a
+                            href="#"><i class="lifebuoy"></i><span class="name">Help</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <div class="main-content-wrapper">
+        <header id="topBar" class="top-bar top-bar--product">
+        
+            <div class="hamburger-menu-mobile">
+                <button id="mobileButtonHamburger" class="button--hamburger">
+                    <i class="hamburger-menu hamburger-open"></i>
+                </button>
+            </div>
+        
+            <div class="top-bar__left">
+                <img class="topbar-img" src="assets/images/samples/topbar-img.png" alt="">
+                <h1 id="topBarTitle" class="title">Držák na telefon ring s podstavcem ve tvaru prstýnku černý s ještě delším
+                    názvem</h1>
+                <span class="product-tag product-tag--draft">Draft</span>
+                <div class="top-bar__status">
+                    <span class="status-active"><span class="img-wrapper"><img src="assets/images/icon-green-flag.png"
+                                                                               alt=""></span><span class="status-text">Default</span><i
+                            class="expand-arrow"></i></span>
+                    <ul class="status-dropdown">
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-translation.png"
+                                                                                   alt=""></span>To translate</a></li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-briefcase.png" alt=""></span>Translated</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-spinner.png" alt=""></span>For
+                            review</a></li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-user.png" alt=""></span>Tomáš</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-user.png" alt=""></span>Pavel</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-green-flag.png"
+                                                                                   alt=""></span>Default</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="top-bar__right">
+                <button id="topBarActionsBtn" class="actions-button">&hellip;</button>
+                <ul class="mobile-actions">
+                    <li class="item"><a href="" class="item-link">Save</a></li>
+                    <li class="item"><a href="" class="item-link">Save & close</a></li>
+                    <li class="item"><a href="" class="item-link">Cancel</a></li>
+                </ul>
+                <div class="actions">
+                    <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">SAVE</span></span>
+                    </button>
+                    <button class="btn btn--secondary"><i class="save"></i>SAVE & CLOSE</button>
+                    <button class="btn btn--secondary"><i class="multiply-2"></i>CANCEL</button>
+                </div>
+        
+                <div class="top-bar__button-wrapper top-bar__button-wrapper--full-screen">
+                    <button class="top-bar__button top-bar__button--full-screen toggle-fullscreen" title="Toggle Fullscreen">
+                        <span class="main-icon"><i class="expand fullscreen-expand"></i><i
+                                class="collapse fullscreen-collapse"></i></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="main-w-aside">
+            <main class="main">
+                <button id="rightPanelToggle" class="right-panel-toggle right-panel-toggle-btn"><i class="dashboard-layout"></i>
+                </button>
+                <ul id="navTabs" class="nav nav-tabs">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#details" aria-selected="true">Product
+                            details
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#classification" aria-selected="false"><span
+                                class="unread"></span>Classification<span
+                                class="notify">1</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#media" aria-selected="false">Media<span
+                                class="notify">88</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#pricing" aria-selected="false">Pricing
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#inventory" aria-selected="false">Inventory
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#material" aria-selected="false">Material
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#options" aria-selected="false">Options
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#parameters" aria-selected="false">Parameters
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#related" aria-selected="false">Related products
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#xml" aria-selected="false">XML</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews" aria-selected="false">Reviews</button>
+                    </li>
+                
+                    <div id="navTabsNext" class="nav-tabs__next">
+                        <button id="navTabsNextBtn" class="ham-btn"><i class="hamburger-menu"></i></button>
+                        <ul id="navTabsNextNav" class="nav-tabs__next__nav"></ul>
+                    </div>
+                </ul>
+                
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="details">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        <span class="accordion-button__text">Title and product description</span>
+                                    </button>
+                                    <div class="accordion-header__right">
+                                        <div class="item item--translate">
+                                            <a href="" class="item__button"><i class="language"></i>Translate</a>
+                                        </div>
+                                        <div class="item item--variant">EN-ALZA</div>
+                                        <div class="item item--flag">
+                                            <img src="assets/images/flag-en.png" alt="">
+                                        </div>
+                                        <div class="accordion-more dropdown-list-wrapper">
+                                            <button class="accordion-more__btn dropdown-link">…</button>
+                                            <ul class="accordion-more__list dropdown-list">
+                                                <li class="dropdown-list__item"><img class="flag" src="assets/images/flag-en.png" alt=""><span
+                                                        class="flag-text">EN-ALZA</span></li>
+                                                <li class="dropdown-list__item"><a href="" class="dropdown-list__link"><i class="language"></i>Translate</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                        
+                                        <div class="mb-2 row input-row">
+                                            <label for="Title" class="col-form-label">Title</label>
+                                            <div class="col-input">
+                                                <input type="text" class="form-control" id="Title" value="Sensation xl runnymede ibeats">
+                                            </div>
+                                        </div>
+                        
+                                        <div class="mb-2 row input-row">
+                                            <label for="Attribute" class="col-form-label">Attribute</label>
+                                            <div class="col-input">
+                                                <input type="text" class="form-control" id="Attribute" value="s pouzdrem zdarma">
+                                            </div>
+                                        </div>
+                        
+                                        <div class="mb-2 row input-row input-row--no-center">
+                                            <label for="Annotation" class="col-form-label">Annotation</label>
+                                            <div class="col-input col-input--full-width">
+                                                <textarea class="form-control" id="Annotation" rows="3">Sample text</textarea>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="mb-2 row input-row">
+                                            <div class="col-form-label">Description</div>
+                                            <div class="col-input col-input--full-width">
+                                                wysiwyg wysiwyg wysiwyg wysiwyg
+                                            </div>
+                                        </div>
+                        
+                                        <div class="mb-2 row input-row input-row--center">
+                                            <div class="col-form-label"></div>
+                                            <div class="col-input">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="bottom-description">
+                                                    <span class="switch-text fs-14 fw-bold">Bottom description</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo">
+                                        <span class="accordion-button__text">Collapsed section</span>
+                                        <span class="accordion-button__notification"></span>
+                                    </button>
+                        
+                                    <div class="accordion-header__right">
+                                        <div class="item item--translate">
+                                            <a href="" class="item__button"><i class="language"></i>Translate</a>
+                                        </div>
+                                        <div class="item item--variant">CZ-ESHOP</div>
+                                        <div class="item item--flag">
+                                            <img src="assets/images/flag-cs.png" alt="">
+                                        </div>
+                                        <div class="accordion-more dropdown-list-wrapper">
+                                            <button class="accordion-more__btn dropdown-link">…</button>
+                                            <ul class="accordion-more__list dropdown-list">
+                                                <li class="dropdown-list__item"><img class="flag" src="assets/images/flag-cs.png" alt=""><span
+                                                        class="flag-text">CZ-ESHOP</span></li>
+                                                <li class="dropdown-list__item"><a href="" class="dropdown-list__link"><i class="language"></i>Translate</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                        
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        tady nic není
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        <span class="accordion-button__text">Search engine listing preview (SEO)</span>
+                                    </button>
+                                    <div class="accordion-header__right">
+                                        <div class="item item--variant">EN-ALZA</div>
+                                        <div class="item item--flag">
+                                            <img src="assets/images/flag-en.png" alt="">
+                                        </div>
+                                        <div class="accordion-more dropdown-list-wrapper">
+                                            <button class="accordion-more__btn dropdown-link">…</button>
+                                            <ul class="accordion-more__list dropdown-list">
+                                                <li class="dropdown-list__item"><img class="flag" src="assets/images/flag-en.png" alt=""><span
+                                                        class="flag-text">EN-ALZA</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                        
+                                        <div class="row">
+                                            <div class="col-xxl mb-3">
+                                                <div class="mb-2 row input-row input-row--no-center">
+                                                    <label for="Title2" class="col-form-label">Title</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" id="Title2"
+                                                               value="Mobilní telefon Wave Y S 5380 sand silver">
+                                                        <div class="input-info"><i class="info"></i> Max 70 characters. <span class="fw-bold">70 characters left.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="mb-2 row input-row input-row--no-center">
+                                                    <label for="Popis" class="col-form-label">Page description</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" id="Popis" value="Popis stránky">
+                                                        <div class="input-info"><i class="info"></i> Max 250 characters. <span class="fw-bold">250 characters left.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="mb-2 row input-row">
+                                                    <label for="URL" class="col-form-label">URL</label>
+                                                    <div class="col-input">
+                                                        <div class="form-check form-check-inline form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="URL" checked="">
+                                                            <span class="switch-text fs-14 fw-bold">Automatic</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="mb-2 row input-row">
+                                                    <div class="col-form-label"></div>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="pouzdro-na-mobil-c01" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl d-flex justify-content-center justify-content-xxl-start">
+                                                <div class="google-preview">
+                                                    <span class="title">Page preview in Google search listing</span>
+                                                    <div class="google-preview__body">
+                                                        <span class="heading">Hugo Boss Kožený opasek černý | Název e-shopu</span>
+                                                        <span class="url">www.demi,cz/hugo-boss-kozeny-opasek-cerny</span>
+                                                        <div class="rating">
+                                                            <div class="rating__stars"></div>
+                                                            <div class="rating__text">Hodnocení 5 z 5. Autor recenze: Petra V. - 18.5.2018 - 740 Kč</div>
+                                                        </div>
+                                                        <p class="desc">Hnědý pásek kožený opasek o šířce 35 mm má zajímaovou sponu s povrchovou úpravou stíraný zinek.
+                                                            Tato spona neobsahuje nikl ani hliník...</p>
+                                                    </div>
+                                                    <p class="infotext">You can show more informations in search listing. <a href="#" class="u-link">Learn more about
+                                                        SEO settings.</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                    <div class="tab-pane fade" id="classification">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Classification">
+                                        <span class="accordion-button__text">Classification to categories</span>
+                                    </button>
+                                </h2>
+                                <div id="Classification" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                        
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Default">
+                                        <span class="accordion-button__text">Default product category</span>
+                                    </button>
+                                </h2>
+                                <div id="Default" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                        
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                    <div class="tab-pane fade" id="media">
+                        media
+                    </div>
+                
+                    <div class="tab-pane fade" id="pricing">
+                        pricing
+                    </div>
+                
+                    <div class="tab-pane fade" id="inventory">
+                        inventory
+                    </div>
+                
+                    <div class="tab-pane fade" id="material">
+                        material
+                    </div>
+                
+                    <div class="tab-pane fade" id="options">
+                        options
+                    </div>
+                
+                    <div class="tab-pane fade" id="parameters">
+                        parameters
+                    </div>
+                
+                    <div class="tab-pane fade" id="related">
+                        related
+                    </div>
+                
+                    <div class="tab-pane fade" id="xml">
+                        xml
+                    </div>
+                
+                    <div class="tab-pane fade" id="reviews">
+                        reviews
+                    </div>
+                </div>
+            </main>
+            <aside id="rightPanel" class="right-panel" xmlns="http://www.w3.org/1999/html">
+                <div class="right-panel__inner">
+                    <div class="right-panel__top">
+                        <div class="dropdown-list-wrapper">
+                            <button class="btn btn--dark btn--small-text dropdown-link"><i class="external-link"></i>Product
+                                preview<i
+                                        class="expand-arrow expand-arrow--small"></i></button>
+                            <ul class="dropdown-list">
+                                <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Jedna položka</a></li>
+                                <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Druhá položka</a></li>
+                                <li class="dropdown-list__item"><a href="" class="dropdown-list__link">Třetí</a></li>
+                            </ul>
+                        </div>
+            
+                        <button class="right-panel-toggle-btn btn btn--secondary btn--small-text"><i class="logout"></i>Hide
+                        </button>
+                    </div>
+                    <div class="right-panel__body">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#publicationBody">
+                                        <span class="accordion-button__text">Publication</span>
+                                    </button>
+                                </h2>
+                                <div id="publicationBody" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="rp-publication-section">
+                                            <div class="published">
+                                                <i class="hide"></i>
+                                                <span class="text">Product is not published on any sales channel.</span>
+                                            </div>
+                                            <div class="status">
+                                                <select class="form-select2">
+                                                    <option selected>DRAFT</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <button class="schedule-btn"><i class="schedule"></i></button>
+                                            </div>
+                                            <div class="my-2 fs-12">
+                                                Scheduled for March 10, 2022, 3:00
+                                            </div>
+                                            <div class="switches-group">
+                                                <span class="fw-bold d-inline-block mb-1">Sales channels visibility</span>
+                                                <div class="ms-2">
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" id="point" checked="">
+                                                        <span class="switch-text">Point of sale</span>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" id="alza" checked="">
+                                                        <span class="switch-text">Alza.cz</span>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" id="domena" checked="">
+                                                        <span class="switch-text">Domena.cz</span>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" id="domenaCom" checked="">
+                                                        <span class="switch-text">Domena.com <i class="error" data-bs-toggle="tooltip"
+                                                                                                title="Něco je asi špatně"></i></span>
+                                                    </div>
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#propertiesBody">
+                                        <span class="accordion-button__text">Product properties</span>
+                                    </button>
+                                </h2>
+                                <div id="propertiesBody" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="rp-properties-section">
+                                            <div class="mb-3">
+                                                <label for="product_id" class="form-label">Product ID</label>
+                                                <input type="text" class="form-control" id="product_id" value="2019515346" disabled>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="Manufacturer" class="form-label">Manufacturer</label>
+                                                <select class="form-select2" id="Manufacturer">
+                                                    <option selected>SAMSUNG</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="Type" class="form-label">Product type</label>
+                                                <select class="form-select2" id="Type">
+                                                    <option>Basic product</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                        
+                                            <div class="form-check form-switch ms-2 mb-3">
+                                                <input class="form-check-input" type="checkbox" id="age" checked="">
+                                                <span class="switch-text">Age-restricted category</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#textSetBody">
+                                        <span class="accordion-button__text">Text sets</span>
+                                    </button>
+                                </h2>
+                                <div id="textSetBody" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <div class="rp-text-sets">
+                                            <div class="switches-group">
+                                                <span class="fw-bold d-inline-block mb-1">Available product text sets</span>
+                                                <div class="ms-2">
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" id="point" checked="">
+                                                        <span class="switch-text"><img src="assets/images/flag-cs.png" alt=""> CZ-Web</span>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" id="alza" checked="">
+                                                        <span class="switch-text"><img src="assets/images/flag-cs.png" alt=""> CZ-Alza.cz</span>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" id="domena" checked="">
+                                                        <span class="switch-text"><img src="assets/images/flag-en.png" alt=""> EN-COM</span>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input" type="checkbox" id="domenaCom" checked="">
+                                                        <span class="switch-text"><img src="assets/images/flag-en.png" alt=""> EN-B2B</span>
+                                                    </div>
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tagsBody">
+                                        <span class="accordion-button__text">Tags</span>
+                                    </button>
+                                </h2>
+                                <div id="tagsBody" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <div class="rp-tags-section">
+                                            <div class="search-input mb-2 pb-1">
+                                                <select class="form-select2 form-select2--search" name="tags[]">
+                                                    <option value="akce">Search or create tag</option>
+                                                    <option value="sleva">Sleva</option>
+                                                    <option value="dalsi">Další možnost</option>
+                                                    <option value="jeste">Ještě jedna</option>
+                                                </select>
+                                            </div>
+                                            <div class="rp-tags">
+                                                <div class="tag-wrapper">
+                                                    <div class="tag">Doporučujeme
+                                                        <button class="close"><i class="multiply-2"></i></button>
+                                                    </div>
+                                                    <button class="tag-icon tag-icon--schedule"><i class="schedule"></i></button>
+                                                </div>
+                                                <div class="tag-wrapper">
+                                                    <div class="tag">Akce
+                                                        <button class="close"><i class="multiply-2"></i></button>
+                                                    </div>
+                                                    <button class="tag-icon tag-icon--edit-calendar"><i class="edit-calendar"></i></button>
+                                                </div>
+                                                <div class="scheduled-text"><span>Scheduled form March 10, 2022, 3:00</span></div>
+                                                <div class="tag-wrapper">
+                                                    <div class="tag">Dárek zdarma
+                                                        <button class="close"><i class="multiply-2"></i></button>
+                                                    </div>
+                                                    <button class="tag-icon tag-icon--schedule"><i class="schedule"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tasksBody">
+                                        <span class="accordion-button__text">Tasks</span>
+                                    </button>
+                                </h2>
+                                <div id="tasksBody" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <div class="rp-tasks-section">
+                                            <div class="rp-tasks">
+                                                <div class="rp-tasks__item">
+                                                    <div class="rp-tasks__item__left">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="task1" checked="">
+                                                            <span class="switch-text">25.4.2019 | <strong>Jenda</strong></span>
+                                                        </div>
+                                                        <div class="description">Přepsat popis a nastavit cenu dle nákupní ceny z ceníku.</div>
+                                                    </div>
+                                                    <button class="close"><i class="multiply-2"></i></button>
+                                                </div>
+                        
+                                                <div class="rp-tasks__item rp-tasks__item--unchecked">
+                                                    <div class="rp-tasks__item__left">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="task2">
+                                                            <span class="switch-text">25.4.2019 | <strong>Jenda</strong></span>
+                                                        </div>
+                                                        <div class="description">Přepsat popis a nastavit cenu dle nákupní ceny z ceníku.</div>
+                                                    </div>
+                                                    <button class="close"><i class="multiply-2"></i></button>
+                                                </div>
+                        
+                                                <div class="add-input-wrapper">
+                                                    <input type="text" class="form-control" id="add_task" placeholder="Add new task">
+                                                    <a href="#" class="btn btn--add">+</a>
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#logsBody">
+                                        <span class="accordion-button__text">Logs</span>
+                                    </button>
+                                </h2>
+                                <div id="logsBody" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <div class="rp-logs-section">
+                                            <div class="rp-logs">
+                                                <div class="rp-logs__top">
+                                                    <div class="author">Author: <strong>Jenda Levejhák</strong></div>
+                                                    <div class="created">Created: <strong>25.4.2019</strong> | 20:30:19</div>
+                                                </div>
+                        
+                                                <div class="rp-logs__item">
+                                                    <div class="heading">25.4.2019 20:30:19 | <strong>Jenda</strong></div>
+                                                    <div class="description">Product modification</div>
+                                                </div>
+                                                <div class="rp-logs__item">
+                                                    <div class="heading">25.4.2019 20:30:19 | <strong>System</strong></div>
+                                                    <div class="description">Update inventory</div>
+                                                </div>
+                                                <div class="rp-logs__item">
+                                                    <div class="heading">25.4.2019 20:30:19 | <strong>Tonda</strong></div>
+                                                    <div class="description">Product creation</div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="d-flex justify-content-end">
+                                                <a href="" class="btn btn--secondary">DETAILED LOGS</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rp-pagination-section mt-3">
+                            <div class="rp-pagination">
+                                <div class="rp-pagination__item">
+                                    <a href="" class="rp-pagination__link rp-pagination__link--prev"><i class="less-than"></i>Previous</a>
+                                </div>
+                                <div class="rp-pagination__item">
+                                    <a href="" class="rp-pagination__link rp-pagination__link--next">Next<i class="forward"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="right-panel__bottom">
+                        <button class="btn btn--delete btn--w-icon"><i class="trash-can"></i>DELETE PRODUCT</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <footer class="footer">
+            <div class="footer__version"><a href="#">www.jz-one.cz</a> | v1.0</div>
+            <div class="footer__copyright">Copyright Jirsa & Záruba s.r.o. © All Rights Reserved.</div>
+        </footer>
+    </div>
+
+</div>
+
+
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

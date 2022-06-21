@@ -1,0 +1,64 @@
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#propertiesBody">
+                <span class="accordion-button__text">Category properties</span>
+            </button>
+        </h2>
+        <div id="propertiesBody" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <div class="rp-properties-section">
+                    <div class="mb-3">
+                        <label for="cat_id" class="form-label">Category ID</label>
+                        <input type="text" class="form-control" id="cat_id" value="2019515346" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Template" class="form-label">Template</label>
+                        <select class="form-select2" id="Template">
+                            <option selected>Default</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Parent" class="form-label">Parent category</label>
+                        <select class="form-select2" id="Parent">
+                            <option>- not selected -</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="form-check form-switch ms-2 mb-3">
+                        <input class="form-check-input" type="checkbox" id="age" checked="">
+                        <span class="switch-text">Age-restricted category</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="cat_img" class="form-label">Category image</label>
+                        <input class="form-control" type="file" id="cat_img">
+
+                        <div class="uploaded-files mt-3">
+                            <div class="uploaded-files__item-wrapper">
+                                <div class="uploaded-files__item">
+                                    <img src="assets/images/samples/triko.png" alt="triko">
+                                </div>
+                                <a href="" class="uploaded-files__btn uploaded-files__item__delete-btn"><i
+                                        class="trash-can"></i> Delete picture</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <label for="cat_icon" class="form-label">Category icon</label>
+                        <input class="form-control" type="file" id="cat_icon">
+
+                        <span class="d-block mt-3 text-center">No image available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

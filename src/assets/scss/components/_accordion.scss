@@ -1,0 +1,265 @@
+.accordion-collapse.collapse {
+  &:before {
+    display: none;
+  }
+}
+
+.accordion {
+  margin-bottom: 10px;
+}
+
+.accordion-item {
+  //border: 1px solid #c2d8e7;
+  border: 0;
+  background-color: transparent;
+
+  &:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    .accordion-button {
+      &.collapsed {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+
+  &:last-of-type {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    .accordion-button {
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+      &.collapsed {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+    }
+  }
+}
+
+.accordion-header {
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__right {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: $fw-medium;
+
+    .item {
+      margin-left: 10px;
+
+      &--variant {
+        position: relative;
+        top: 2px;
+      }
+
+      &--translate,
+      &--variant {
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+
+      &__button {
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 11px;
+        background-color: #ffffff;
+        padding: 7px 15px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+
+        i {
+          margin-right: 5px;
+          font-size: 16px;
+          position: relative;
+          top: 1px
+        }
+
+        &:hover {
+          background-color: #fafafa;
+        }
+      }
+    }
+
+    .accordion-more {
+      display: none;
+      margin-left: 10px;
+
+      @include media-breakpoint-down(md) {
+        display: block;
+      }
+
+      &__list {
+        right: -10px;
+        top: 25px;
+        font-size: 12px;
+        text-transform: initial;
+        padding: 0;
+
+        .dropdown-list {
+
+          &__item {
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.accordion-button {
+  padding: 13px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2c4364;
+  box-shadow: none;
+  background: #e5eef4;
+  border: 1px solid transparent;
+
+  .right-panel & {
+    padding: 11px 15px 11px 22px;
+    background: #d6e2ea;
+  }
+
+  &:hover {
+    z-index: 0;
+  }
+
+  &:focus {
+    z-index: 0;
+    border-color: transparent;
+  }
+
+  &:after {
+    position: absolute;
+    color: #2c4364;
+    background: none;
+    @include one-icon;
+    content: "\f10a";
+    transform: rotate(0);
+    font-weight: bold;
+    left: 0;
+    width: 45px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: .3s;
+
+    @include media-breakpoint-down(md) {
+      width: 35px;
+      font-size: 12px;
+    }
+
+    .right-panel & {
+      width: 34px;
+    }
+  }
+
+  &.collapsed {
+    border-color: #c2d8e7;
+
+    &:hover {
+      &:after {
+        background-color: #cddee9;
+        @include media-breakpoint-down(md) {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  &:not(.collapsed) {
+    box-shadow: none;
+    background-color: transparent;
+    color: #2c4364;
+    border-bottom: 1px solid #d8e4ec;
+
+    &:not(:hover) {
+      border-radius: 0 !important;
+    }
+
+    &:after {
+      color: #2c4364;
+      background: none;
+      content: "\f106";
+      transform: rotate(0);
+    }
+
+    &:hover {
+      background: transparent;
+
+      &:after {
+        background: #e3eef4;
+        @include media-breakpoint-down(md) {
+          background-color: transparent !important;
+        }
+
+        .right-panel & {
+          background: #cbdae4;
+        }
+      }
+    }
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &__text {
+    display: block;
+    padding-left: 35px;
+    font-size: 17px;
+    @include ellipsis;
+
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      padding-left: 15px;
+      position: relative;
+      top: 1px;
+    }
+
+    .right-panel & {
+      padding-left: 20px;
+      font-size: 14px;
+      position: relative;
+      top: 1px;
+      white-space: normal;
+      @include media-breakpoint-down(md) {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &__notification {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff5454;
+    margin-left: 12px;
+  }
+}
+
+.accordion-body {
+  padding: 1rem 5px .75rem;
+
+  .right-panel & {
+    padding-top: 10px;
+  }
+}

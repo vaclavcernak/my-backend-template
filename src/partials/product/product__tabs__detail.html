@@ -1,0 +1,144 @@
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                <span class="accordion-button__text">Title and product description</span>
+            </button>
+            <div class="accordion-header__right">
+                <div class="item item--translate">
+                    <a href="" class="item__button"><i class="language"></i>Translate</a>
+                </div>
+                <div class="item item--variant">EN-ALZA</div>
+                <div class="item item--flag">
+                    <img src="assets/images/flag-en.png" alt="">
+                </div>
+                <div class="accordion-more dropdown-list-wrapper">
+                    <button class="accordion-more__btn dropdown-link">…</button>
+                    <ul class="accordion-more__list dropdown-list">
+                        <li class="dropdown-list__item"><img class="flag" src="assets/images/flag-en.png" alt=""><span
+                                class="flag-text">EN-ALZA</span></li>
+                        <li class="dropdown-list__item"><a href="" class="dropdown-list__link"><i class="language"></i>Translate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+
+                <div class="mb-2 row input-row">
+                    <label for="Title" class="col-form-label">Title</label>
+                    <div class="col-input">
+                        <input type="text" class="form-control" id="Title" value="Sensation xl runnymede ibeats">
+                    </div>
+                </div>
+
+                <div class="mb-2 row input-row">
+                    <label for="Attribute" class="col-form-label">Attribute</label>
+                    <div class="col-input">
+                        <input type="text" class="form-control" id="Attribute" value="s pouzdrem zdarma">
+                    </div>
+                </div>
+
+                <div class="mb-2 row input-row input-row--no-center">
+                    <label for="Annotation" class="col-form-label">Annotation</label>
+                    <div class="col-input col-input--full-width">
+                        <textarea class="form-control" id="Annotation" rows="3">Sample text</textarea>
+                    </div>
+                </div>
+
+                <div class="mb-2 row input-row">
+                    <div class="col-form-label">Description</div>
+                    <div class="col-input col-input--full-width">
+                        wysiwyg wysiwyg wysiwyg wysiwyg
+                    </div>
+                </div>
+
+                <div class="mb-2 row input-row input-row--center">
+                    <div class="col-form-label"></div>
+                    <div class="col-input">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="bottom-description">
+                            <span class="switch-text fs-14 fw-bold">Bottom description</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> form-elements__accordion-2}}
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                <span class="accordion-button__text">Search engine listing preview (SEO)</span>
+            </button>
+            <div class="accordion-header__right">
+                <div class="item item--variant">EN-ALZA</div>
+                <div class="item item--flag">
+                    <img src="assets/images/flag-en.png" alt="">
+                </div>
+                <div class="accordion-more dropdown-list-wrapper">
+                    <button class="accordion-more__btn dropdown-link">…</button>
+                    <ul class="accordion-more__list dropdown-list">
+                        <li class="dropdown-list__item"><img class="flag" src="assets/images/flag-en.png" alt=""><span
+                                class="flag-text">EN-ALZA</span></li>
+                    </ul>
+                </div>
+            </div>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+
+                <div class="row">
+                    <div class="col-xxl mb-3">
+                        <div class="mb-2 row input-row input-row--no-center">
+                            <label for="Title2" class="col-form-label">Title</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" id="Title2"
+                                       value="Mobilní telefon Wave Y S 5380 sand silver">
+                                <div class="input-info"><i class="info"></i> Max 70 characters. <span class="fw-bold">70 characters left.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-2 row input-row input-row--no-center">
+                            <label for="Popis" class="col-form-label">Page description</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" id="Popis" value="Popis stránky">
+                                <div class="input-info"><i class="info"></i> Max 250 characters. <span class="fw-bold">250 characters left.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-2 row input-row">
+                            <label for="URL" class="col-form-label">URL</label>
+                            <div class="col-input">
+                                <div class="form-check form-check-inline form-switch">
+                                    <input class="form-check-input" type="checkbox" id="URL" checked="">
+                                    <span class="switch-text fs-14 fw-bold">Automatic</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-2 row input-row">
+                            <div class="col-form-label"></div>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="pouzdro-na-mobil-c01" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl d-flex justify-content-center justify-content-xxl-start">
+                        {{> google-preview}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,23 @@
+.paging {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+
+  &__items {
+    padding-right: 7px;
+
+    .total {
+      font-weight: bold;
+    }
+  }
+
+  &__onpage {
+    margin-left: 7px;
+
+    .text {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}

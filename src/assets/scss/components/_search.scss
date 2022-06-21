@@ -1,0 +1,138 @@
+.search-input-wrapper {
+  display: flex;
+  border: 0;
+  border-radius: 20px;
+  height: 35px;
+  padding: 0 0 0 20px;
+  background-color: #ffffff;
+  font-size: 14px;
+  width: 270px;
+  justify-content: space-between;
+  @include media-breakpoint-only(lg) {
+    width: 170px;
+  }
+  @include media-breakpoint-only(md) {
+    width: 190px;
+  }
+  @include media-breakpoint-only(sm) {
+    width: 200px;
+  }
+  @include media-breakpoint-only(xs) {
+    width: auto;
+    background: transparent;
+    padding: 0;
+    height: 42px;
+    margin-right: 0;
+  }
+}
+
+.search-input {
+  border: 0;
+  background: transparent;
+  width: 100%;
+  margin-right: 5px;
+  line-height: 35px;
+
+  @include placeholder {
+    font-style: italic;
+  }
+
+  @include media-breakpoint-only(xs) {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background: #fff;
+    height: var(--top-bar-height);
+    padding: 0 20px 0 60px;
+    border-bottom: 1px solid #d8e4ec;
+  }
+}
+
+.search-input-btn {
+  background: transparent;
+  border: 0;
+  height: 100%;
+  padding: 0 15px 0 10px;
+  border-radius: 0 20px 20px 0;
+
+  &:hover {
+    background-color: #c2d8e7;
+  }
+
+  @include media-breakpoint-only(xs) {
+    padding: 0 10px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  i {
+    font-size: 20px;
+    color: #2c4364;
+    //position: relative;
+    //top: 1px;
+    @include media-breakpoint-only(xs) {
+      font-size: 22px;
+    }
+  }
+}
+
+.search-input-btn-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 6;
+  background: none;
+  border: 0;
+  line-height: var(--top-bar-height);
+  padding: 0;
+
+  i {
+    font-size: 25px;
+  }
+}
+
+
+.search-input-alone {
+  display: inline-flex;
+  border: 1px solid $c-input-border;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 35px;
+  background: #ffffff;
+
+
+  &__btn {
+    background: #ffffff;
+    border: 0;
+    border-radius: 20px 0 0 20px;
+    padding: 7px 5px 7px 15px;
+
+    &:hover {
+      background-color: #c2d8e7;
+    }
+
+    i {
+      font-size: 18px;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  &__input {
+    border: 0;
+    padding: 7px 10px 7px 5px;
+    border-radius: 20px;
+
+    @include placeholder {
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.pagination {
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+
+  &__btn {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    color: #2c4364;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #edf3f7;
+    }
+
+    i {
+      font-size: 18px;
+    }
+  }
+
+  &__label {
+    margin: 0 8px;
+  }
+
+  &__input {
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+
+  &__from {
+    margin-right: 5px;
+  }
+}

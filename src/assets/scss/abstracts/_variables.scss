@@ -1,0 +1,26 @@
+@import 'functions';
+
+// Magnific Popup variables
+$mfp-overlay-opacity: 0.5;
+
+// Grid breakpoints
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+) !default;
+
+// 'rem' base value
+$rem: 16px;
+
+// font-weight variables
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+// colours
+$c-input-border: #d9e1ea;

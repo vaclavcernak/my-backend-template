@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  *:not(.tooltip):not(.tooltip-arrow):not(.scrollbared):not(.select2-container):not(.select2-dropdown) {
+    transition: .3s;
+  }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+address {
+  font-style: normal;
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+    color: inherit;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  position: relative;
+}
+
