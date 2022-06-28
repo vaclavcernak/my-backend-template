@@ -1,0 +1,96 @@
+<div class="grid">
+    <div class="table-responsive">
+        <table class="grid__table">
+            <thead class="grid__head">
+            <tr class="tr">
+                <th class="th--checkbox cell--checkbox">
+                    <div class="input-wrapper">
+                        <div class="form-check-input-all">
+                            <input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">
+                        </div>
+                    </div>
+                </th>
+                <th class="th--id cell--id">
+                    <label class="name sort sort--down"><a href="" class="selected">ID</a></label>
+                </th>
+                <th class="th--url cell--url">
+                    <label class="name"><a href="">File name</a></label>
+                </th>
+                <th class="th--desc cell--desc">
+                    <label class="name"><a href="">File description</a></label>
+                </th>
+                <th class="th--updated cell--updated">
+                    <label class="name"><a href="">Updated</a></label>
+                </th>
+                <th class="th--text-set cell--text-set">
+                    <label class="name"><a href="">Text&nbsp;set</a></label>
+                </th>
+                <th class="th--actions cell--actions">
+                    <label class="name">Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody class="grid__body">
+            <tr class="tr">
+                <td class="td--checkbox cell--checkbox">
+                    <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                </td>
+                <td class="td--id cell--id">
+                    2550
+                </td>
+                <td class="td--url cell--url">
+                    File
+                </td>
+                <td class="td--source cell--source">
+                    Popis souboru zobrazený jako help
+                </td>
+                <td class="td--updated cell--updated">
+                    <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+                </td>
+                <td class="td--text-set cell--text-set">
+                    <img src="assets/images/flag-en.png" alt="">
+                    <img src="assets/images/flag-cs.png" alt="">
+                </td>
+                <td class="td--actions cell--actions">
+                    <div class="action-btns">
+                        <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                        <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="grid__bottom row">
+    <div class="grid__bottom__left col-xl-4 col-lg-6 col-md-6">
+        <div class="selected-items"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
+            <div class="row">
+                <div class="col">
+                    <label for="selected_items2" class="form-label">Selected items</label>
+                    <div>
+                        <select class="form-select2 form-select2--small" id="selected_items2">
+                            <option selected="">--</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <label class="form-label">&nbsp;</label>
+                    <div>
+                        <button class="btn btn--primary" disabled><span class="btn-front"><span class="btn-front-text">PROCEED</span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid__bottom__right col-xl-8 col-lg-6 col-md-6 mb-3 text-end">
+        <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD FILE</span></span></button>
+    </div>
+
+</div>

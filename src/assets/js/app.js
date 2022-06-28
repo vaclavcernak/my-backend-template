@@ -270,9 +270,6 @@ $(document).ready(function () {
     });
 });
 
-$(document).on('select2:open', () => {
-    setTimeout(() => document.querySelector('.select2-search__field').focus(), 200);
-});
 
 // Select2 select
 $(document).ready(function () {
@@ -453,3 +450,16 @@ function hideElIfClickOutside(button, target) {
         }
     });
 }
+
+// product photos
+$(function () {
+    $('.btn-edit-open').click(function (e) {
+        e.preventDefault();
+        $(this).parents('.product-photo__item').addClass('editable');
+    });
+
+    $('.btn-edit-close').click(function (e) {
+        e.preventDefault();
+        $(this).parents('.product-photo__item').removeClass('editable');
+    });
+});

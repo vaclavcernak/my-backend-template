@@ -23,3 +23,12 @@
     text-decoration: none;
   }
 }
+
+.xs-full-width {
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    &.autowidth + .select2-container {
+      width: 100% !important;
+    }
+  }
+}

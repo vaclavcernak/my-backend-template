@@ -120,6 +120,12 @@
       background-color: #f7fafc;
       color: #abb4c0;
     }
+
+    &--dark-hover {
+      &:hover {
+        background-color: #ddd;
+      }
+    }
   }
 
   &--tertiary {
@@ -183,8 +189,8 @@
     background-color: #cedde7;
     border-radius: 20px;
     padding: 0;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: $fw-medium;
     color: #2c4364;
     height: 36px;
 
@@ -200,7 +206,7 @@
     }
 
     .btn-front {
-      padding: 8px 20px;
+      padding: 8px 15px;
       background: #ffffff;
 
       &:active {
@@ -281,6 +287,58 @@
       color: #ffffff;
       background-color: darken(#4caf50, 10%);
       text-decoration: none;
+    }
+  }
+
+  &--white {
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: $fw-bold;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 7px 12px;
+    &:hover {
+      background-color: #e2e9ee;
+    }
+  }
+
+  &--close {
+    color: #c82424;
+    padding: 7px;
+    font-size: 20px;
+    &:hover {
+      background-color: #e2e9ee;
+      color: #c82424;
+    }
+
+    &.btn--icon {
+      i {
+        font-size: 20px;
+        position: relative;
+        top: 1px;
+      }
+    }
+  }
+
+  &--icon {
+    i {
+      margin: 0;
+    }
+  }
+
+  &--circle {
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: #e2e9ee;
+    }
+
+    i {
+      font-size: 22px;
     }
   }
 

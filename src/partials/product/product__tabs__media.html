@@ -1,0 +1,223 @@
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Productphoto">
+                <span class="accordion-button__text">Product photo</span>
+            </button>
+        </h2>
+        <div id="Productphoto" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+
+                <div class="product-photo">
+                    <div class="product-photo__top mb-3 d-md-flex justify-content-md-between">
+                        <div class="product-photo__top__left flex-shrink-0 mb-3 mb-md-0">
+                            <label class="d-inline-block me-3 mb-2">Apply resizing to uploaded images</label>
+                            <select class="form-select2 form-select2--small autowidth xs-full-width">
+                                <option selected>Crop image</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="product-photo__top__right text-end">
+                            <a href="" class="btn btn--light mb-2"><span class="btn-front"><span
+                                    class="btn-front-text"><i class="note"></i>Upload image</span></span></a>
+                            <a href="" class="btn btn--light mb-2 ms-2"><span class="btn-front"><span
+                                    class="btn-front-text"><i class="link"></i>Upload from URL</span></span></a>
+                        </div>
+                    </div>
+
+                    <div class="product-photo__items mb-5">
+
+                        <div class="product-photo__item"> <!-- pokud se p5id8 třída editable, překryje se položkami k editaci -->
+                            <div class="check-icon"><i class="done"></i></div>
+                            <div class="image">
+                                <img src="assets/images/samples/triko.png" alt="">
+                                <div class="image__hover">
+                                    <div class="image__hover__top">
+                                        <button class="btn btn--white btn--xs-small">SET AS DEFAULT</button>
+                                        <button class="btn btn--close btn--icon btn--xs-small"><i class="multiply"></i></button>
+                                    </div>
+                                    <div class="image__hover__content">
+                                        <button class="btn btn--circle btn--icon btn-edit-open"><i class="edit"></i></button>
+                                        <button class="btn btn--circle btn--icon"><i class="search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="bottom__row">
+                                    <span class="title">Show in options</span>
+                                    <span class="text">Blue</span>
+                                </div>
+                                <div class="bottom__row">
+                                    <span class="title">Image resizing</span>
+                                    <span class="text">Fit to width</span>
+                                </div>
+                            </div>
+                            <div class="product-photo__item__edit">
+                                <div class="top">
+                                    <span class="title d-block text-center py-2 fw-bold">Edit picture</span>
+                                    <div class="mb-1">
+                                        <label class="form-label">Show in options</label>
+                                        <div class="multiple-select multiple-select--small">
+                                            <select class="multiple-select-input" name="actions[]" multiple="multiple">
+                                                <option value="red">Red</option>
+                                                <option value="blue">Blue</option>
+                                                <option value="white">White</option>
+                                                <option value="jeste">Ještě jedna</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input class="form-check-input form-check-input--small me-1" type="checkbox" id="def-option">
+                                        <label for="def-option" class="fw-normal">Default option</label>
+                                    </div>
+
+                                    <div>
+                                        <label class="form-label">Image resizing</label>
+                                        <select class="form-select2 form-select2--small">
+                                            <option selected>Crop image</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="buttons">
+                                    <a href="" class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">SAVE</span></span></a>
+                                    <a href="" class="btn btn--secondary btn--secondary--dark-hover btn-edit-close">CANCEL</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-photo__item"> <!-- pokud se p5id8 třída editable, překryje se položkami k editaci -->
+                            <div class="image">
+                                <img src="assets/images/samples/triko.png" alt="">
+                                <div class="image__hover">
+                                    <div class="image__hover__top">
+                                        <button class="btn btn--white btn--xs-small">SET AS DEFAULT</button>
+                                        <button class="btn btn--close btn--icon btn--xs-small"><i class="multiply"></i></button>
+                                    </div>
+                                    <div class="image__hover__content">
+                                        <button class="btn btn--circle btn--icon btn-edit-open"><i class="edit"></i></button>
+                                        <button class="btn btn--circle btn--icon"><i class="search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="bottom__row">
+                                    <span class="title">Show in options</span>
+                                    <span class="text">Red (default), Red and White</span>
+                                </div>
+                                <div class="bottom__row">
+                                    <span class="title">Image resizing</span>
+                                    <span class="text">Fit to height</span>
+                                </div>
+                            </div>
+                            <div class="product-photo__item__edit">
+                                <div class="top">
+                                    <span class="title d-block text-center py-2 fw-bold">Edit picture</span>
+                                    <div class="mb-1">
+                                        <label class="form-label">Show in options</label>
+                                        <div class="multiple-select multiple-select--small">
+                                            <select class="multiple-select-input" name="actions[]" multiple="multiple">
+                                                <option value="red">Red</option>
+                                                <option value="blue">Blue</option>
+                                                <option value="white">White</option>
+                                                <option value="jeste">Ještě jedna</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input class="form-check-input form-check-input--small me-1" type="checkbox" id="def-option2">
+                                        <label for="def-option2" class="fw-normal">Default option</label>
+                                    </div>
+
+                                    <div>
+                                        <label class="form-label">Image resizing</label>
+                                        <select class="form-select2 form-select2--small">
+                                            <option selected>Crop image</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="buttons">
+                                    <a href="" class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">SAVE</span></span></a>
+                                    <a href="" class="btn btn--secondary btn--secondary--dark-hover btn-edit-close">CANCEL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="d-flex justify-content-center mb-4">
+                    {{> dropzone}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Video">
+                <span class="accordion-button__text">Video</span>
+            </button>
+        </h2>
+        <div id="Video" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                {{> grid-video}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Files">
+                <span class="accordion-button__text">Files</span>
+            </button>
+        </h2>
+        <div id="Files" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                {{> grid-files}}
+
+                <div class="d-flex justify-content-center mb-4">
+                    {{> dropzone--files}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#FilesEmpty">
+                <span class="accordion-button__text">Files (empty)</span>
+            </button>
+        </h2>
+        <div id="FilesEmpty" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+
+                {{> dropzone-no-files}}
+
+                <div class="d-flex justify-content-center mb-4">
+                    {{> dropzone--files}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

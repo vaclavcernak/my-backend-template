@@ -70,5 +70,16 @@
       right: 10px;
     }
   }
+}
 
+.note-alert {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    flex-shrink: 0;
+    margin-right: 15px;
+    font-size: 30px;
+  }
 }

@@ -202,6 +202,12 @@
     }
   }
 
+  .th {
+    &--checkbox {
+      width: 70px;
+    }
+  }
+
   td {
     a:not(.action-btn) {
       &:hover {

@@ -1,0 +1,145 @@
+.product-photo {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media screen and (max-width: 500px) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 220px;
+    //height: 330px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid $c-input-border;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+      .image {
+        background-color: #f3f7f9;
+
+        img {
+          opacity: 0.7;
+        }
+
+        &__hover {
+          opacity: 1;
+          display: block;
+        }
+      }
+    }
+
+    &.editable {
+      .product-photo__item__edit {
+        right: 0;
+      }
+    }
+
+    .check-icon {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      color: #3f6519;
+      background-color: #d0edb2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #bfe499;
+      font-size: 12px;
+      i {
+        &:before {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .image {
+      padding: 30px 30px;
+      height: 100%;
+      position: relative;
+      border-radius: 10px 10px 0 0;
+      text-align: center;
+
+      &__hover {
+        opacity: 0;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+        padding: 10px 15px;
+
+        &__top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        &__content {
+          display: flex;
+          justify-content: center;
+          margin: 40px 0;
+
+          .btn {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      padding: 10px 15px 15px;
+      font-size: 12px;
+      background-color: #f3f7f9;
+      border-radius: 0 0 10px 10px;
+
+      &__row {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        .title {
+          display: block;
+          font-weight: $fw-bold;
+        }
+
+        .text {
+          display: block;
+        }
+      }
+    }
+
+    &__edit {
+      position: absolute;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 15px;
+      background-color: #e5eef4;
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

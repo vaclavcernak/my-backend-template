@@ -1,0 +1,36 @@
+.general-table {
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid $c-input-border;
+  width: 100%;
+  border-collapse: separate;
+
+  th {
+    font-size: 12px;
+    font-weight: $fw-bold;
+    border-bottom: 1px solid #edf2f6;
+    padding: 10px 10px;
+    color: #5d7483;
+  }
+
+  td {
+    padding: 4px 10px;
+
+    input {
+      margin-top: 0;
+    }
+  }
+
+  tr {
+    &:first-child {
+      td {
+        padding-top: 10px;
+      }
+    }
+    &:last-child {
+      td {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
