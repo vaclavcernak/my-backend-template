@@ -1,0 +1,165 @@
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#pricingSetup">
+                <span class="accordion-button__text">Pricing setup</span>
+            </button>
+        </h2>
+        <div id="pricingSetup" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Product price group</label>
+                            <div class="col-input">
+                                <select class="form-select2">
+                                    <option selected>Název skupiny produktů</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Sales VAT rate</label>
+                            <div class="col-input">
+                                <select class="form-select2">
+                                    <option selected>Standard rate</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Purchase price</label>
+                            <div class="col-input">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="9,00">
+                                    <span class="input-group-text">Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Average purchase price</label>
+                            <div class="col-input">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="8,99" disabled>
+                                    <span class="input-group-text">Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Minimal sale price</label>
+                            <div class="col-input">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="289,00">
+                                    <span class="input-group-text">Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Recommended retail price</label>
+                            <div class="col-input">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="289,00">
+                                    <span class="input-group-text">Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#pricelist">
+                <span class="accordion-button__text">Price list</span>
+            </button>
+        </h2>
+        <div id="pricelist" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                {{> price-table}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#discounts">
+                <span class="accordion-button__text">Discounts</span>
+            </button>
+        </h2>
+        <div id="discounts" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+
+                <div class="table-responsive mb-3">
+                    <table class="price-table">
+                        <tbody>
+                        <tr>
+                            <td class="text-end fw-bold minw-150">
+                                Loyality program
+                            </td>
+                            <td class="text-center minw-100">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" checked="">
+                                </div>
+                            </td>
+                            <td class="text-center minw-200">
+                                <div class="input-w-inline-label">
+                                    <span class="input-w-inline-label__label">Points</span>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="256">
+                                        <span class="input-group-text">Pts</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-end fw-bold minw-150">
+                                Quantity discount
+                            </td>
+                            <td class="text-center minw-100">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                {{> grid-discounts}}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

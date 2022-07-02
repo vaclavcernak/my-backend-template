@@ -34,3 +34,64 @@
     }
   }
 }
+
+
+.price-table {
+  font-size: 14px;
+
+  th {
+    padding: 5px 10px;
+  }
+
+  td {
+    padding: 5px 10px;
+    &.text-center {
+      .form-check {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .td {
+    &--price {
+
+      &__price {
+        font-size: 16px;
+        font-weight: $fw-bold;
+        line-height: 1;
+      }
+
+      &__under-price {
+        font-size: 12px;
+        color: #93a4bc;
+      }
+    }
+  }
+
+  .input-group {
+    max-width: 230px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &--percent {
+      @include media-breakpoint-up(lg) {
+        max-width: 130px;
+      }
+    }
+  }
+}
+
+//
+
+.td-w-button {
+  + td {
+    padding-left: 30px;
+  }
+}
+
+.table-responsive {
+  > table {
+    margin-bottom: 10px;
+  }
+}

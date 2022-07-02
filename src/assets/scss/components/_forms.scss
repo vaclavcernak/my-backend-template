@@ -151,6 +151,22 @@
   @include media-breakpoint-down(sm) {
     width: auto;
   }
+
+  .main-w-aside .two-col-row & {
+    @media screen and (min-width: 1400px) and (max-width: 1700px) {
+      width: 150px;
+    }
+
+    @include media-breakpoint-only(lg) {
+      width: 150px;
+    }
+  }
+
+  :not(.main-w-aside) .two-col-row & {
+    @include media-breakpoint-between(lg, xxl) {
+      width: 150px;
+    }
+  }
 }
 
 .col-input {
@@ -170,6 +186,23 @@
 
   .right-panel & {
     width: 100%;
+  }
+
+
+  .main-w-aside .two-col-row & {
+    @media screen and (min-width: 1400px) and (max-width: 1700px) {
+      width: 270px;
+    }
+
+    @include media-breakpoint-only(lg) {
+      width: 270px;
+    }
+  }
+
+  :not(.main-w-aside) .two-col-row & {
+    @include media-breakpoint-between(lg, xxl) {
+      width: 270px;
+    }
   }
 }
 
@@ -603,5 +636,37 @@ label,
     z-index: 2;
     left: 10px;
     position: absolute;
+  }
+}
+
+.two-col-row {
+  .main-w-aside & {
+    > [class^="col-"] {
+      @include media-breakpoint-only(xl) {
+        width: 100%;
+      }
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
+    }
+  }
+
+  :not(.main-w-aside) & {
+    > [class^="col-"] {
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.input-w-inline-label {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    margin-right: 10px;
+    font-weight: $fw-bold;
   }
 }
