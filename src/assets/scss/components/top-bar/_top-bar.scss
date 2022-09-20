@@ -26,6 +26,13 @@
   @include media-breakpoint-down(sm) {
     padding-right: 0;
   }
+  @include media-breakpoint-between(md, xl) {
+    width: calc(100% - var(--main-nav-minim-width));
+
+    #mainNav.locked  + .main-content-wrapper & {
+      width: calc(100% - var(--main-nav-width));
+    }
+  }
 
   #mainNav.minimized:not(.maximized) + .main-content-wrapper & {
     @include media-breakpoint-up(md) {
@@ -513,12 +520,16 @@
     }
 
     &__right {
-      white-space: nowrap;
-      position: relative;
-      @include media-breakpoint-down(lg) {
-        white-space: normal;
-      }
+
     }
+  }
+}
+
+.top-bar-buttons {
+  white-space: nowrap;
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    white-space: normal;
   }
 
   .actions-button {

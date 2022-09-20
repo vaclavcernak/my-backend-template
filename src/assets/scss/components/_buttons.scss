@@ -105,7 +105,8 @@
       text-decoration: none;
       color: #263c5d;
 
-      .right-panel & {
+      .right-panel &,
+      .modal-header & {
         background-color: #d6e2ea;
       }
     }
@@ -295,8 +296,9 @@
     font-size: 12px;
     font-weight: $fw-bold;
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     padding: 7px 12px;
+
     &:hover {
       background-color: #e2e9ee;
     }
@@ -306,6 +308,7 @@
     color: #c82424;
     padding: 7px;
     font-size: 20px;
+
     &:hover {
       background-color: #e2e9ee;
       color: #c82424;
@@ -328,7 +331,7 @@
 
   &--circle {
     background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0,0,0,.15);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15);
     width: 45px;
     height: 45px;
     border-radius: 50%;

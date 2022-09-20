@@ -72,6 +72,23 @@
         }
       }
 
+      &--refresh {
+        button {
+          padding: 5px;
+          border-radius: 5px;
+
+          &:hover {
+            background-color: #edf3f7;
+          }
+        }
+        i {
+          font-size: 22px;
+          @include media-breakpoint-down(md) {
+            font-size: 18px;
+          }
+        }
+      }
+
       &__button {
         border-radius: 20px;
         font-weight: bold;

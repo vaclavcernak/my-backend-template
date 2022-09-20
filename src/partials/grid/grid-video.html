@@ -4,11 +4,7 @@
             <thead class="grid__head">
             <tr class="tr">
                 <th class="th--checkbox cell--checkbox">
-                    <div class="input-wrapper">
-                        <div class="form-check-input-all">
-                            <input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">
-                        </div>
-                    </div>
+                    {{> grid__check-all-input}}
                 </th>
                 <th class="text-center">
                     <label class="name sort sort--down"><a href="" class="selected">ID</a></label>
@@ -83,7 +79,8 @@
     </div>
 
     <div class="grid__bottom__right col-xl-8 col-lg-6 col-md-6 mb-3 text-end">
-        <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD VIDEO</span></span></button>
+        <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD VIDEO</span></span>
+        </button>
     </div>
 
 </div>

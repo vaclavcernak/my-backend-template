@@ -135,8 +135,8 @@
                 </div>
             </div>
         
-            <div class="top-bar__right">
-                <button id="topBarActionsBtn" class="actions-button">&hellip;</button>
+            <div class="top-bar__right top-bar-buttons">
+                <button class="actions-button">&hellip;</button>
                 <ul class="mobile-actions">
                     <li class="item"><a href="" class="item-link">Save</a></li>
                     <li class="item"><a href="" class="item-link">Save & close</a></li>
@@ -184,6 +184,10 @@
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" data-bs-toggle="tab" data-bs-target="#inventory" aria-selected="false">Inventory
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#inventory2" aria-selected="false">Inventory 2
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -458,39 +462,48 @@
                                                             <label for="cat-lvl-2">Kategorie level 2</label>
                                                             <ul class="tree__list">
                                                                 <li class="tree__item">
-                                                                    <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-3a">
+                                                                    <input class="form-check-input form-check-input--small" type="checkbox"
+                                                                           id="cat-lvl-3a">
                                                                     <label for="cat-lvl-3a">Kategorie level 3</label>
                                                                 </li>
                                                                 <li class="tree__item">
-                                                                    <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-3b">
+                                                                    <input class="form-check-input form-check-input--small" type="checkbox"
+                                                                           id="cat-lvl-3b">
                                                                     <label for="cat-lvl-3b">Kategorie level 3</label>
                                                                 </li>
                                                                 <li class="tree__item">
-                                                                    <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-3c">
+                                                                    <input class="form-check-input form-check-input--small" type="checkbox"
+                                                                           id="cat-lvl-3c">
                                                                     <label for="cat-lvl-3c">Kategorie level 3</label>
                                                                     <ul class="tree__list">
                                                                         <li class="tree__item">
-                                                                            <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-4a">
+                                                                            <input class="form-check-input form-check-input--small"
+                                                                                   type="checkbox" id="cat-lvl-4a">
                                                                             <label for="cat-lvl-4a">Kategorie level 4</label>
                                                                         </li>
                                                                         <li class="tree__item">
-                                                                            <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-4b">
+                                                                            <input class="form-check-input form-check-input--small"
+                                                                                   type="checkbox" id="cat-lvl-4b">
                                                                             <label for="cat-lvl-4b">Kategorie level 4</label>
                                                                         </li>
                                                                         <li class="tree__item">
-                                                                            <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-4c">
+                                                                            <input class="form-check-input form-check-input--small"
+                                                                                   type="checkbox" id="cat-lvl-4c">
                                                                             <label for="cat-lvl-4c">Kategorie level 4</label>
                                                                             <ul class="tree__list">
                                                                                 <li class="tree__item">
-                                                                                    <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-5a">
+                                                                                    <input class="form-check-input form-check-input--small"
+                                                                                           type="checkbox" id="cat-lvl-5a">
                                                                                     <label for="cat-lvl-5a">Kategorie level 5</label>
                                                                                 </li>
                                                                                 <li class="tree__item">
-                                                                                    <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-5b">
+                                                                                    <input class="form-check-input form-check-input--small"
+                                                                                           type="checkbox" id="cat-lvl-5b">
                                                                                     <label for="cat-lvl-5b">Kategorie level 5</label>
                                                                                 </li>
                                                                                 <li class="tree__item">
-                                                                                    <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-5c">
+                                                                                    <input class="form-check-input form-check-input--small"
+                                                                                           type="checkbox" id="cat-lvl-5c">
                                                                                     <label for="cat-lvl-5c">Kategorie level 5</label>
                                                                                 </li>
                                                                             </ul>
@@ -502,19 +515,22 @@
                                                     </div>
                                                     <div class="col-lg-3 col-md-4 col-sm-6">
                                                         <div class="category-level__inner">
-                                                            <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-22a">
+                                                            <input class="form-check-input form-check-input--small" type="checkbox"
+                                                                   id="cat-lvl-22a">
                                                             <label for="cat-lvl-22a">Kategorie level 2</label>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3 col-md-4 col-sm-6">
                                                         <div class="category-level__inner">
-                                                            <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-22b">
+                                                            <input class="form-check-input form-check-input--small" type="checkbox"
+                                                                   id="cat-lvl-22b">
                                                             <label for="cat-lvl-22b">Kategorie level 2</label>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3 col-md-4 col-sm-6">
                                                         <div class="category-level__inner">
-                                                            <input class="form-check-input form-check-input--small" type="checkbox" id="cat-lvl-22c">
+                                                            <input class="form-check-input form-check-input--small" type="checkbox"
+                                                                   id="cat-lvl-22c">
                                                             <label for="cat-lvl-22c">Kategorie level 2</label>
                                                         </div>
                                                     </div>
@@ -585,79 +601,85 @@
                                         <div class="table-responsive">
                                             <table class="general-table">
                                                 <thead>
-                                                    <tr>
-                                                        <th class="text-center">Default</th>
-                                                        <th class="text-center">Sale channel</th>
-                                                        <th class="text-center">domena.com</th>
-                                                        <th class="text-center">alza.cz</th>
-                                                        <th>Product categories</th>
-                                                    </tr>
+                                                <tr>
+                                                    <th class="text-center">Default</th>
+                                                    <th class="text-center">Sale channel</th>
+                                                    <th class="text-center">domena.com</th>
+                                                    <th class="text-center">alza.cz</th>
+                                                    <th>Product categories</th>
+                                                </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="default" checked>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="sale">
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="domena.com">
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="alza.cz">
-                                                        </td>
-                                                        <td class="text-nowrap">
-                                                            <nav class="breadcrumb">
-                                                            <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Kategorie level 1</a></li>
-                                                            </nav>
-                                                        </td>
-                                                    </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="default" checked>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="sale">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="domena.com">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="alza.cz">
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <nav class="breadcrumb">
+                                                            <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Kategorie level
+                                                                1</a></li>
+                                                        </nav>
+                                                    </td>
+                                                </tr>
                         
-                                                    <tr>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="default">
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="sale">
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="domena.com">
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="alza.cz" checked>
-                                                        </td>
-                                                        <td class="text-nowrap">
-                                                            <nav class="breadcrumb">
-                                                                <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Kategorie level 1</a></li>
-                                                                <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Kategorie level 2</a></li>
-                                                                <li class="breadcrumb__item"><a class="breadcrumb__link active" href="">Kategorie level 3</a></li>
-                                                                <li class="breadcrumb__item inactive">Kategorie level 4</li>
-                                                            </nav>
-                                                        </td>
-                                                    </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="default">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="sale">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="domena.com">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="alza.cz" checked>
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <nav class="breadcrumb">
+                                                            <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Kategorie level
+                                                                1</a></li>
+                                                            <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Kategorie level
+                                                                2</a></li>
+                                                            <li class="breadcrumb__item"><a class="breadcrumb__link active" href="">Kategorie
+                                                                level 3</a></li>
+                                                            <li class="breadcrumb__item inactive">Kategorie level 4</li>
+                                                        </nav>
+                                                    </td>
+                                                </tr>
                         
-                                                    <tr>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="default">
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="sale" checked>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="domena.com" checked>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <input class="form-check-input" type="radio" name="alza.cz">
-                                                        </td>
-                                                        <td class="text-nowrap">
-                                                            <nav class="breadcrumb">
-                                                                <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Kategorie level 1</a></li>
-                                                                <li class="breadcrumb__item"><a href="" class="breadcrumb__link active">Kategorie level 2</a></li>
-                                                                <li class="breadcrumb__item inactive">Kategorie level 3</li>
-                                                            </nav>
-                                                        </td>
-                                                    </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="default">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="sale" checked>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="domena.com" checked>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="form-check-input" type="radio" name="alza.cz">
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <nav class="breadcrumb">
+                                                            <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Kategorie level
+                                                                1</a></li>
+                                                            <li class="breadcrumb__item"><a href="" class="breadcrumb__link active">Kategorie
+                                                                level 2</a></li>
+                                                            <li class="breadcrumb__item inactive">Kategorie level 3</li>
+                                                        </nav>
+                                                    </td>
+                                                </tr>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -702,17 +724,20 @@
                         
                                             <div class="product-photo__items mb-5">
                         
-                                                <div class="product-photo__item"> <!-- pokud se p5id8 třída editable, překryje se položkami k editaci -->
+                                                <div class="product-photo__item">
+                                                    <!-- pokud se p5id8 třída editable, překryje se položkami k editaci -->
                                                     <div class="check-icon"><i class="done"></i></div>
                                                     <div class="image">
                                                         <img src="assets/images/samples/triko.png" alt="">
                                                         <div class="image__hover">
                                                             <div class="image__hover__top">
                                                                 <button class="btn btn--white btn--xs-small">SET AS DEFAULT</button>
-                                                                <button class="btn btn--close btn--icon btn--xs-small"><i class="multiply"></i></button>
+                                                                <button class="btn btn--close btn--icon btn--xs-small"><i class="multiply"></i>
+                                                                </button>
                                                             </div>
                                                             <div class="image__hover__content">
-                                                                <button class="btn btn--circle btn--icon btn-edit-open"><i class="edit"></i></button>
+                                                                <button class="btn btn--circle btn--icon btn-edit-open"><i class="edit"></i>
+                                                                </button>
                                                                 <button class="btn btn--circle btn--icon"><i class="search"></i></button>
                                                             </div>
                                                         </div>
@@ -742,7 +767,8 @@
                                                                 </div>
                                                             </div>
                                                             <div class="mb-3">
-                                                                <input class="form-check-input form-check-input--small me-1" type="checkbox" id="def-option">
+                                                                <input class="form-check-input form-check-input--small me-1" type="checkbox"
+                                                                       id="def-option">
                                                                 <label for="def-option" class="fw-normal">Default option</label>
                                                             </div>
                         
@@ -758,22 +784,26 @@
                                                         </div>
                         
                                                         <div class="buttons">
-                                                            <a href="" class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">SAVE</span></span></a>
+                                                            <a href="" class="btn btn--primary"><span class="btn-front"><span
+                                                                    class="btn-front-text">SAVE</span></span></a>
                                                             <a href="" class="btn btn--secondary btn--secondary--dark-hover btn-edit-close">CANCEL</a>
                                                         </div>
                                                     </div>
                                                 </div>
                         
-                                                <div class="product-photo__item"> <!-- pokud se p5id8 třída editable, překryje se položkami k editaci -->
+                                                <div class="product-photo__item">
+                                                    <!-- pokud se p5id8 třída editable, překryje se položkami k editaci -->
                                                     <div class="image">
                                                         <img src="assets/images/samples/triko.png" alt="">
                                                         <div class="image__hover">
                                                             <div class="image__hover__top">
                                                                 <button class="btn btn--white btn--xs-small">SET AS DEFAULT</button>
-                                                                <button class="btn btn--close btn--icon btn--xs-small"><i class="multiply"></i></button>
+                                                                <button class="btn btn--close btn--icon btn--xs-small"><i class="multiply"></i>
+                                                                </button>
                                                             </div>
                                                             <div class="image__hover__content">
-                                                                <button class="btn btn--circle btn--icon btn-edit-open"><i class="edit"></i></button>
+                                                                <button class="btn btn--circle btn--icon btn-edit-open"><i class="edit"></i>
+                                                                </button>
                                                                 <button class="btn btn--circle btn--icon"><i class="search"></i></button>
                                                             </div>
                                                         </div>
@@ -803,7 +833,8 @@
                                                                 </div>
                                                             </div>
                                                             <div class="mb-3">
-                                                                <input class="form-check-input form-check-input--small me-1" type="checkbox" id="def-option2">
+                                                                <input class="form-check-input form-check-input--small me-1" type="checkbox"
+                                                                       id="def-option2">
                                                                 <label for="def-option2" class="fw-normal">Default option</label>
                                                             </div>
                         
@@ -819,7 +850,8 @@
                                                         </div>
                         
                                                         <div class="buttons">
-                                                            <a href="" class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">SAVE</span></span></a>
+                                                            <a href="" class="btn btn--primary"><span class="btn-front"><span
+                                                                    class="btn-front-text">SAVE</span></span></a>
                                                             <a href="" class="btn btn--secondary btn--secondary--dark-hover btn-edit-close">CANCEL</a>
                                                         </div>
                                                     </div>
@@ -839,7 +871,8 @@
                                                     </div>
                                                     <div class="text-w-button">
                                                         <span class="d-inline-block me-sm-3 mb-3 mb-sm-0">or upload images from computer</span>
-                                                        <button class="btn btn--light"><span class="btn-front"><span class="btn-front-text">SELECT IMAGES</span></span></button>
+                                                        <button class="btn btn--light"><span class="btn-front"><span
+                                                                class="btn-front-text">SELECT IMAGES</span></span></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -869,9 +902,16 @@
                                                             <div class="input-wrapper">
                                                                 <div class="form-check-input-all">
                                                                     <input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">
+                                                                    <div class="checkbox-options">
+                                                                        <span class="checkbox-options__btn"></span>
+                                                                        <ul class="checkbox-options__options">
+                                                                            <li class="item"><a href="#">Možnost</a></li>
+                                                                            <li class="item"><a href="#">Další položka</a></li>
+                                                                            <li class="item"><a href="#">Ještě</a></li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                        </th>
+                                                            </div>                </th>
                                                         <th class="text-center">
                                                             <label class="name sort sort--down"><a href="" class="selected">ID</a></label>
                                                         </th>
@@ -945,7 +985,8 @@
                                             </div>
                                         
                                             <div class="grid__bottom__right col-xl-8 col-lg-6 col-md-6 mb-3 text-end">
-                                                <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD VIDEO</span></span></button>
+                                                <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD VIDEO</span></span>
+                                                </button>
                                             </div>
                                         
                                         </div>
@@ -972,9 +1013,16 @@
                                                             <div class="input-wrapper">
                                                                 <div class="form-check-input-all">
                                                                     <input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">
+                                                                    <div class="checkbox-options">
+                                                                        <span class="checkbox-options__btn"></span>
+                                                                        <ul class="checkbox-options__options">
+                                                                            <li class="item"><a href="#">Možnost</a></li>
+                                                                            <li class="item"><a href="#">Další položka</a></li>
+                                                                            <li class="item"><a href="#">Ještě</a></li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                        </th>
+                                                            </div>                </th>
                                                         <th class="text-center">
                                                             <label class="name sort sort--down"><a href="" class="selected">ID</a></label>
                                                         </th>
@@ -1055,7 +1103,8 @@
                                             </div>
                                         
                                             <div class="grid__bottom__right col-xl-8 col-lg-6 col-md-6 mb-3 text-end">
-                                                <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD FILE</span></span></button>
+                                                <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD FILE</span></span>
+                                                </button>
                                             </div>
                                         
                                         </div>
@@ -1071,7 +1120,8 @@
                                                     </div>
                                                     <div class="text-w-button">
                                                         <span class="d-inline-block me-sm-3 mb-3 mb-sm-0">or upload files from computer</span>
-                                                        <button class="btn btn--light"><span class="btn-front"><span class="btn-front-text">SELECT FILES</span></span></button>
+                                                        <button class="btn btn--light"><span class="btn-front"><span
+                                                                class="btn-front-text">SELECT FILES</span></span></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1109,7 +1159,8 @@
                                                     </div>
                                                     <div class="text-w-button">
                                                         <span class="d-inline-block me-sm-3 mb-3 mb-sm-0">or upload files from computer</span>
-                                                        <button class="btn btn--light"><span class="btn-front"><span class="btn-front-text">SELECT FILES</span></span></button>
+                                                        <button class="btn btn--light"><span class="btn-front"><span
+                                                                class="btn-front-text">SELECT FILES</span></span></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1229,148 +1280,148 @@
                                         <div class="table-responsive">
                                             <table class="price-table" width="100%">
                                                 <thead>
-                                                    <tr>
-                                                        <th></th>
-                                                        <th class="text-center">Fixed price</th>
-                                                        <th class="text-center">Sale price</th>
-                                                        <th class="text-center">Markup</th>
-                                                        <th class="text-center">Discount</th>
-                                                        <th class="text-end">Final sale price</th>
-                                                    </tr>
+                                                <tr>
+                                                    <th></th>
+                                                    <th class="text-center">Fixed price</th>
+                                                    <th class="text-center">Sale price</th>
+                                                    <th class="text-center">Markup</th>
+                                                    <th class="text-center">Discount</th>
+                                                    <th class="text-end">Final sale price</th>
+                                                </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td class="text-end fw-bold minw-150">
-                                                            E-shop price list
-                                                        </td>
-                                                        <td class="text-center minw-100">
-                                                            <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox" checked="">
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200">
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control" value="299,00">
-                                                                <span class="input-group-text">Kč inc. VAT</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200">
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control" value="+299,000">
-                                                                <span class="input-group-text">%</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200 td-w-button">
-                                                            <div class="input-group input-group--percent">
-                                                                <input type="text" class="form-control" value="10,00" disabled>
-                                                                <span class="input-group-text">%</span>
-                                                                <button class="btn btn--in-input-group"><i class="headline"></i></button>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-end td--price ws-nowrap">
-                                                            <div class="td--price__price">289,00 Kč</div>
-                                                            <div class="td--price__under-price">(+299 Kč)</div>
-                                                        </td>
-                                                    </tr>
+                                                <tr>
+                                                    <td class="text-end fw-bold minw-150">
+                                                        E-shop price list
+                                                    </td>
+                                                    <td class="text-center minw-100">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" checked="">
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="299,00">
+                                                            <span class="input-group-text">Kč inc. VAT</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="+299,000">
+                                                            <span class="input-group-text">%</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200 td-w-button">
+                                                        <div class="input-group input-group--percent">
+                                                            <input type="text" class="form-control" value="10,00" disabled>
+                                                            <span class="input-group-text">%</span>
+                                                            <button class="btn btn--in-input-group"><i class="headline"></i></button>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-end td--price ws-nowrap">
+                                                        <div class="td--price__price">289,00 Kč</div>
+                                                        <div class="td--price__under-price">(+299 Kč)</div>
+                                                    </td>
+                                                </tr>
                                         
-                                                    <tr>
-                                                        <td class="text-end fw-bold minw-150">
-                                                            Alza price list
-                                                        </td>
-                                                        <td class="text-center minw-100">
-                                                            <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox">
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200">
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control" value="10,99" disabled>
-                                                                <span class="input-group-text">€ exc. VAT</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200">
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control" value="-5,535" disabled>
-                                                                <span class="input-group-text">%</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200">
-                                                            <div class="input-group input-group--percent">
-                                                                <input type="text" class="form-control" value="0,00">
-                                                                <span class="input-group-text">%</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-end td--price ws-nowrap">
-                                                            <div class="td--price__price">10,99 €</div>
-                                                            <div class="td--price__under-price">(+299 Kč)</div>
-                                                        </td>
-                                                    </tr>
+                                                <tr>
+                                                    <td class="text-end fw-bold minw-150">
+                                                        Alza price list
+                                                    </td>
+                                                    <td class="text-center minw-100">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox">
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="10,99" disabled>
+                                                            <span class="input-group-text">€ exc. VAT</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="-5,535" disabled>
+                                                            <span class="input-group-text">%</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200">
+                                                        <div class="input-group input-group--percent">
+                                                            <input type="text" class="form-control" value="0,00">
+                                                            <span class="input-group-text">%</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-end td--price ws-nowrap">
+                                                        <div class="td--price__price">10,99 €</div>
+                                                        <div class="td--price__under-price">(+299 Kč)</div>
+                                                    </td>
+                                                </tr>
                                         
-                                                    <tr>
-                                                        <td class="text-end fw-bold minw-150">
-                                                            E-shop price list
-                                                        </td>
-                                                        <td class="text-center minw-100">
-                                                            <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox" checked="">
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200">
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control" value="299,00">
-                                                                <span class="input-group-text">Kč inc. VAT</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200">
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control" value="+299,000">
-                                                                <span class="input-group-text">%</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200">
-                                                            <div class="input-group input-group--percent">
-                                                                <input type="text" class="form-control" value="10,00" disabled>
-                                                                <span class="input-group-text">%</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-end td--price ws-nowrap">
-                                                            <div class="td--price__price">289,00 Kč</div>
-                                                            <div class="td--price__under-price">(+299 Kč)</div>
-                                                        </td>
-                                                    </tr>
+                                                <tr>
+                                                    <td class="text-end fw-bold minw-150">
+                                                        E-shop price list
+                                                    </td>
+                                                    <td class="text-center minw-100">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" checked="">
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="299,00">
+                                                            <span class="input-group-text">Kč inc. VAT</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="+299,000">
+                                                            <span class="input-group-text">%</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200">
+                                                        <div class="input-group input-group--percent">
+                                                            <input type="text" class="form-control" value="10,00" disabled>
+                                                            <span class="input-group-text">%</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-end td--price ws-nowrap">
+                                                        <div class="td--price__price">289,00 Kč</div>
+                                                        <div class="td--price__under-price">(+299 Kč)</div>
+                                                    </td>
+                                                </tr>
                                         
-                                                    <tr>
-                                                        <td class="text-end fw-bold minw-150">
-                                                            Alza price list
-                                                        </td>
-                                                        <td class="text-center minw-100">
-                                                            <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox">
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200">
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control" value="10,99" disabled>
-                                                                <span class="input-group-text">€ exc. VAT</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200">
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control" value="-5,535" disabled>
-                                                                <span class="input-group-text">%</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center minw-200">
-                                                            <div class="input-group input-group--percent">
-                                                                <input type="text" class="form-control" value="0,00">
-                                                                <span class="input-group-text">%</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-end td--price ws-nowrap">
-                                                            <div class="td--price__price">10,99 €</div>
-                                                            <div class="td--price__under-price">(+299 Kč)</div>
-                                                        </td>
-                                                    </tr>
+                                                <tr>
+                                                    <td class="text-end fw-bold minw-150">
+                                                        Alza price list
+                                                    </td>
+                                                    <td class="text-center minw-100">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox">
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="10,99" disabled>
+                                                            <span class="input-group-text">€ exc. VAT</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="-5,535" disabled>
+                                                            <span class="input-group-text">%</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center minw-200">
+                                                        <div class="input-group input-group--percent">
+                                                            <input type="text" class="form-control" value="0,00">
+                                                            <span class="input-group-text">%</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-end td--price ws-nowrap">
+                                                        <div class="td--price__price">10,99 €</div>
+                                                        <div class="td--price__under-price">(+299 Kč)</div>
+                                                    </td>
+                                                </tr>
                                         
                                                 </tbody>
                                             </table>
@@ -1437,9 +1488,16 @@
                                                             <div class="input-wrapper">
                                                                 <div class="form-check-input-all">
                                                                     <input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">
+                                                                    <div class="checkbox-options">
+                                                                        <span class="checkbox-options__btn"></span>
+                                                                        <ul class="checkbox-options__options">
+                                                                            <li class="item"><a href="#">Možnost</a></li>
+                                                                            <li class="item"><a href="#">Další položka</a></li>
+                                                                            <li class="item"><a href="#">Ještě</a></li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                        </th>
+                                                            </div>                </th>
                                                         <th class="text-center" style="width: 100px">
                                                             <label class="name sort sort--down"><a href="" class="selected">Quantity from</a></label>
                                                         </th>
@@ -1518,7 +1576,8 @@
                                             </div>
                                         
                                             <div class="grid__bottom__right col-xl-8 col-lg-6 col-md-6 mb-3 text-end">
-                                                <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD DISCOUNT</span></span></button>
+                                                <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD DISCOUNT</span></span>
+                                                </button>
                                             </div>
                                         
                                         </div>
@@ -1532,7 +1591,1487 @@
                     </div>
                 
                     <div class="tab-pane fade" id="inventory">
-                        inventory
+                        <button type="button" class="btn btn--dark" data-bs-toggle="modal" data-bs-target="#modalEditStockItem">
+                            Launch modal edit stock item
+                        </button>
+                        
+                        <button type="button" class="btn btn--dark" data-bs-toggle="modal" data-bs-target="#modalEditProductPackaging">
+                            Launch modal edit product packaging
+                        </button>
+                        
+                        <div class="ms-1 ms-md-3 my-3 fw-bold">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" checked>
+                                <span class="switch-text fs-14">Inventory tracking management</span>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#stockInventory">
+                                        <span class="accordion-button__text">Stock inventory</span>
+                                    </button>
+                                    <div class="accordion-header__right">
+                                        <div class="item item--refresh"><button id="refresh"><i class="reset"></i></button></div>
+                                    </div>
+                                </h2>
+                                <div id="stockInventory" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                        
+                                        <div class="row two-col-row">
+                                            <div class="col-md-6">
+                        
+                                                <div class="stock-list mb-4 ms-md-5">
+                                                    <table class="stock-list-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="text-end">Total in stock</th>
+                                                                <th class="ps-4"><input type="text" id="totalstock" class="form-control form-control--green fw-bold text-end" value="248" disabled=""></th>
+                                                                <th class="p-0 c-green">ks</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-end">In stock</td>
+                                                                <td class="text-end fw-medium pe-4">250</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-end">At suppliers</td>
+                                                                <td class="text-end fw-medium pe-4">50</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-end">Reserved</td>
+                                                                <td class="text-end fw-medium pe-4">20</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-end">Ordered</td>
+                                                                <td class="text-end fw-medium pe-4">2</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-end">Claims</td>
+                                                                <td class="text-end fw-medium pe-4">0</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                        
+                        
+                                                <div class="mb-2 row input-row">
+                                                    <label class="col-form-label">Availability when out of stock</label>
+                                                    <div class="col-input">
+                                                        <select class="form-select2">
+                                                            <option selected>Not available</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row input-row">
+                                                    <label class="col-form-label"></label>
+                                                    <div class="col-input">
+                                                        <div class="form-check form-check-inline form-switch">
+                                                            <input class="form-check-input" type="checkbox" checked="">
+                                                            <span class="switch-text fs-14 fw-bold">Negative stocks allowed</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2 row input-row">
+                                                    <label class="col-form-label">Warranty</label>
+                                                    <div class="col-input">
+                                                        <select class="form-select2">
+                                                            <option selected>2 years</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="col-md-6">
+                                                <div class="mb-2 row input-row">
+                                                    <label class="col-form-label">Inventory history</label>
+                                                    <div class="col-input">
+                                                        <select class="form-select2">
+                                                            <option selected>Last 30 days</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="stock-graph text-center my-4">
+                                                    <img src="https://dummyimage.com/450x200/444/fff" alt="">
+                                                </div>
+                        
+                                                <div class="stock-graph-under mb-4 text-center">
+                                                    <span class="fs-12 d-sm-inline-block d-block me-3 mb-2 mb-sm-0">Your recomended minimum level is <strong>20 ks</strong></span>
+                                                    <a href="" class="btn btn--light"><span class="btn-front"><span class="btn-front-text"><i class="reset"></i>Inventory overview</span></span></a>
+                                                </div>
+                        
+                        
+                                                <div class="mb-2 row input-row">
+                                                    <label class="col-form-label">Minimum level</label>
+                                                    <div class="col-input">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="9,00">
+                                                            <span class="input-group-text">Ks</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="mb-2 row input-row">
+                                                    <label class="col-form-label">Optimum level</label>
+                                                    <div class="col-input">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="289,00">
+                                                            <span class="input-group-text">Ks</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#stockStatus">
+                                        <span class="accordion-button__text">Stock status</span>
+                                    </button>
+                                </h2>
+                                <div id="stockStatus" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="row two-col-row">
+                                            <div class="col-md-6 mb-2">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">Material flow method</label>
+                                                    <div class="col-input">
+                                                        <select class="form-select2">
+                                                            <option selected>FIFO</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="row input-row input-row--no-center">
+                                                    <label class="col-form-label">Stock tracking</label>
+                                                    <div class="col-input">
+                                                        <div class="ms-2 fs-14">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="serialNumbers" checked="">
+                                                                <span class="switch-text">Serial numbers</span>
+                                                            </div>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="productBatch" checked="">
+                                                                <span class="switch-text">Product batch</span>
+                                                            </div>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="expirationDate" checked="">
+                                                                <span class="switch-text">Expiration date</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="grid">
+                                            <div class="table-responsive">
+                                                <table class="grid__table">
+                                                    <thead class="grid__head">
+                                                    <tr class="tr">
+                                                        <th style="width: 50px">
+                                                        </th>
+                                                        <th class="text-center" style="width: 100px">
+                                                            <label class="name sort sort--down"><a href="" class="selected">Quantity</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">Location</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">Warehouse type</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">Warehouse title</a></label>
+                                                        </th>
+                                                        <th class="th--actions cell--actions">
+                                                            <label class="name">Actions</label>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="grid__body">
+                                                    <tr class="tr">
+                                                        <td>
+                                                            <button class="toggle-subtable"><i class="add toggle-icon toggle-icon--show"></i><i class="multiply-2 toggle-icon toggle-icon--hide"></i></button>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            10
+                                                        </td>
+                                                        <td class="text-center">
+                                                           <strong>A250-2-11</strong>
+                                                            <img src="assets/images/bar-code.png" alt="" class="ms-2">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Physical
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Centrální sklad
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr">
+                                                        <td>
+                                                            <button class="toggle-subtable"><i class="add toggle-icon toggle-icon--show"></i><i class="multiply-2 toggle-icon toggle-icon--hide"></i></button>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            50
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="fs-12">multi located product</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Virtual
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Sklad na prodejně
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="toggle-subtable-row"> <!-- this class show/hide inner sub table-->
+                                                        <td colspan="6" class="p-0">
+                                                            <table class="subtable-table">
+                                                                <thead class="grid__head">
+                                                                    <tr class="tr">
+                                                                        <th class="text-center" style="width: 100px">
+                                                                            <label class="name sort sort--down"><a href="" class="selected">Quantity</a></label>
+                                                                        </th>
+                                                                        <th class="text-center">
+                                                                            <label class="name"><a href="">Location</a></label>
+                                                                        </th>
+                                                                        <th class="text-center">
+                                                                            <label class="name"><a href="">Serial number</a></label>
+                                                                        </th>
+                                                                        <th class="text-center">
+                                                                            <label class="name"><a href="">Product Batch</a></label>
+                                                                        </th>
+                                                                        <th class="text-center" colspan="2">
+                                                                            <label class="name"><a href="">Expiration date</a></label>
+                                                                        </th>
+                                                                        <th class="th--actions cell--actions">
+                                                                            <label class="name">Actions</label>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="grid__body">
+                                                                    <tr class="tr">
+                                                                        <td class="text-center">
+                                                                            1
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <strong>A250-2-11</strong>
+                                                                            <img src="assets/images/bar-code.png" alt="" class="ms-2">
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            252 015 AS8222
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            252 015 AS8222
+                                                                        </td>
+                                                                        <td class="text-center td--date">
+                                                                            22.5.2022
+                                                                        </td>
+                                                                        <td class="td--days">
+                                                                            +22 days
+                                                                        </td>
+                                                                        <td class="td--actions cell--actions">
+                                                                            <div class="action-btns">
+                                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="tr">
+                                                                        <td class="text-center">
+                                                                            1
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <strong>A250-2-11</strong>
+                                                                            <img src="assets/images/bar-code.png" alt="" class="ms-2">
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            252 015 AS8222
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            252 015 AS8222
+                                                                        </td>
+                                                                        <td class="text-center td--date">
+                                                                            13.4.2022
+                                                                        </td>
+                                                                        <td class="td--days">
+                                                                            -15 days
+                                                                        </td>
+                                                                        <td class="td--actions cell--actions">
+                                                                            <div class="action-btns">
+                                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="tr">
+                                                                        <td class="text-center">
+                                                                            1
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <strong>A250-2-11</strong>
+                                                                            <img src="assets/images/bar-code.png" alt="" class="ms-2">
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            252 015 AS8222
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            252 015 AS8222
+                                                                        </td>
+                                                                        <td class="text-center td--date">
+                                                                            22.5.2028
+                                                                        </td>
+                                                                        <td class="td--days">
+                                                                            +1825 days
+                                                                        </td>
+                                                                        <td class="td--actions cell--actions">
+                                                                            <div class="action-btns">
+                                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <div class="grid__bottom row">
+                                                                <div class="grid__bottom__left col-xxl-4">
+                                                                </div>
+                                        
+                                                                <div class="grid__bottom__center col-xxl-4">
+                                                                    <div class="pagination">
+                                                                        <a href="" class="pagination__btn pagination__btn--double-prev"><i class="double-left"></i></a>
+                                                                        <a href="" class="pagination__btn pagination__btn--prev"><i class="less-than"></i></a>
+                                                                        <label for="paginationInput" class="pagination__label">Page</label>
+                                                                        <input type="text" class="form-control pagination__input" value="2776" id="paginationInput">
+                                                                        <span class="pagination__from">/ 3488</span>
+                                                                        <a href="" class="pagination__btn pagination__btn--next"><i class="forward"></i></a>
+                                                                        <a href="" class="pagination__btn pagination__btn--double-next"><i class="double-right"></i></a>
+                                                                    </div>
+                                                                </div>
+                                        
+                                                                <div class="grid__bottom__right col-xxl-4">
+                                                                    <div class="paging">
+                                                                        <div class="paging__items">Items 26 - 50 of <span class="total">65 875</span></div>
+                                                                        <span class="separator-line">|</span>
+                                                                        <div class="paging__onpage">
+                                                                            <span class="text">On page</span>
+                                                                            <select class="form-select2 form-select2--small autowidth" id="paging">
+                                                                                <option selected="">50</option>
+                                                                                <option value="1">100</option>
+                                                                                <option value="2">150</option>
+                                                                                <option value="3">200</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                        
+                                                            </div>
+                                        
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr">
+                                                        <td></td>
+                                                        <td class="text-center">
+                                                            20
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="fs-12 c-inactive">Location is not available</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Suplier
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Dodavatel XY
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="text-sm-end text-center mt-3">
+                                            <span class="fs-14 fw-bold d-inline-block me-sm-3 mb-2 mb-sm-0">Warehouse management</span>
+                                            <a href="" class="btn btn--light"><span class="btn-front"><span class="btn-front-text"><i class="reset"></i>Product location history</span></span></a>
+                                        </div>
+                        
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#unitsAndPackaging">
+                                        <span class="accordion-button__text">Units and Packaging</span>
+                                    </button>
+                                </h2>
+                                <div id="unitsAndPackaging" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="row two-col-row">
+                                            <div class="col-md-6 mb-2">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">Sales unit</label>
+                                                    <div class="col-input">
+                                                        <select class="form-select2">
+                                                            <option selected>ks</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                        
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="row input-row input-row--no-center">
+                                                    <label class="col-form-label">
+                                                        <span class="tooltip-w-hint" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip"><span class="tooltip-link">Number per unit</span><span class="hint-icon">?</span></span>
+                                                    </label>
+                                                    <div class="col-input">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="9,00">
+                                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">Kilograms
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                                <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="row two-col-row">
+                                            <div class="col-md-6 mb-2">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">Minimum purchase</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="1,00">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">Maximum purchase</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="100,00">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="grid">
+                                            <div class="table-responsive">
+                                                <table class="grid__table">
+                                                    <thead class="grid__head">
+                                                    <tr class="tr">
+                                                        <th class="th--checkbox cell--checkbox">
+                                                            <div class="input-wrapper">
+                                                                <div class="form-check-input-all">
+                                                                    <input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">
+                                                                    <div class="checkbox-options">
+                                                                        <span class="checkbox-options__btn"></span>
+                                                                        <ul class="checkbox-options__options">
+                                                                            <li class="item"><a href="#">Možnost</a></li>
+                                                                            <li class="item"><a href="#">Další položka</a></li>
+                                                                            <li class="item"><a href="#">Ještě</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="" class="selected">Default</a></label>
+                                                        </th>
+                                                        <th class="text-center" style="width: 100px">
+                                                            <label class="name sort sort--down"><a href="" class="selected">Quantity</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">EAN</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">Weight</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">Dimensions [m]</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">Volume [m3]</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">Distributability</a></label>
+                                                        </th>
+                                                        <th class="th--actions cell--actions">
+                                                            <label class="name">Actions</label>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="grid__body">
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <input class="form-check-input" type="radio" name="default">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>6 kg</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>123548975</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>12,5 g</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.150 x 0.210 x 0.015</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.00025</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            6
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option2" value="option2">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <input class="form-check-input" type="radio" name="default">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>50 pcs</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>123548975</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>12,5 g</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.150 x 0.210 x 0.015</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.00025</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            12
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option3" value="option3">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <input class="form-check-input" type="radio" name="default">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>1 pc</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>123548975</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>1,0 g</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.150 x 0.210 x 0.015</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.00025</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="grid__bottom row">
+                                            <div class="grid__bottom__left col-xl-4 col-lg-6 col-md-6">
+                                                <div class="selected-items"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <label for="selected_items" class="form-label">Selected items</label>
+                                                            <div>
+                                                                <select class="form-select2 form-select2--small" id="selected_items">
+                                                                    <option selected="">--</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <label class="form-label">&nbsp;</label>
+                                                            <div>
+                                                                <button class="btn btn--primary" disabled><span class="btn-front"><span class="btn-front-text">PROCEED</span></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="grid__bottom__right col-xl-8 col-lg-6 col-md-6 mb-3 text-end">
+                                                <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">NEW PACKAGING</span></span>
+                                                </button>
+                                            </div>
+                                        
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#productCodes">
+                                        <span class="accordion-button__text">Product codes</span>
+                                    </button>
+                                </h2>
+                                <div id="productCodes" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                        
+                                        <div class="row two-col-row">
+                                            <div class="col-md-6 mb-2">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">SKU (Stock Keeping Unit)</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="AS 553 55">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">EAN</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="AS 553 55">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="row two-col-row">
+                                            <div class="col-md-6 mb-2">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">Product code</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="AS 553 55">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">ISBN</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="AS 553 55">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="row input-row">
+                                            <label class="col-form-label">Manufacturer P/N</label>
+                                            <div class="col-input">
+                                                <input type="text" class="form-control" value="AS 553 55">
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#documents">
+                                        <span class="accordion-button__text">Documents</span>
+                                    </button>
+                                </h2>
+                                <div id="documents" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal fade" id="modalEditStockItem" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog  modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Edit a stock item</h5>
+                                        <div class="top-bar__right top-bar-buttons">
+                                            <button class="actions-button">…</button>
+                                            <ul class="mobile-actions">
+                                                <li class="item"><a href="" class="item-link">Save</a></li>
+                                                <li class="item"><a href="" class="item-link">Save &amp; close</a></li>
+                                                <li class="item"><button class="item-link" data-bs-dismiss="modal">Cancel</button></li>
+                                            </ul>
+                                            <div class="actions">
+                                                <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">SAVE</span></span>
+                                                </button>
+                                                <button class="btn btn--secondary"><i class="save"></i>SAVE &amp; CLOSE</button>
+                                                <button class="btn btn--secondary" data-bs-dismiss="modal"><i class="multiply-2"></i>CANCEL</button>
+                                            </div>
+                                        
+                                            <div class="top-bar__button-wrapper top-bar__button-wrapper--full-screen">
+                                                <button class="top-bar__button top-bar__button--full-screen toggle-fullscreen toggle-fullscreen--modal" title="Toggle Fullscreen">
+                                                    <span class="main-icon"><i class="expand fullscreen-expand"></i><i class="collapse fullscreen-collapse"></i></span>
+                                                </button>
+                                            </div>
+                                        </div>            </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body__section">
+                                            <div class="row input-row mb-2">
+                                                <label class="col-form-label">Warehouse</label>
+                                                <div class="col-input">
+                                                    <select class="form-select2">
+                                                        <option selected>Centrální sklad</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="row two-col-row">
+                                                <div class="col-md-6">
+                                                    <div class="row input-row mb-2">
+                                                        <label class="col-form-label">Quantity</label>
+                                                        <div class="col-input">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" value="9,00">
+                                                                <span class="input-group-text">Ks</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row input-row mb-2">
+                                                        <label class="col-form-label">EAN</label>
+                                                        <div class="col-input">
+                                                            <input type="text" class="form-control" value="128526545">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <h3 class="modal-body__heading">Location</h3>
+                        
+                                        <div class="modal-body__section">
+                                            <div class="row input-row mb-2">
+                                                <label class="col-form-label">Room</label>
+                                                <div class="col-input">
+                                                    <input type="text" class="form-control" value="9,00">
+                                                </div>
+                                            </div>
+                        
+                                            <div class="row input-row mb-2">
+                                                <label class="col-form-label">Aisle</label>
+                                                <div class="col-input">
+                                                    <input type="text" class="form-control" value="9,00">
+                                                </div>
+                                            </div>
+                        
+                                            <div class="row input-row mb-2">
+                                                <label class="col-form-label">Shelf</label>
+                                                <div class="col-input">
+                                                    <input type="text" class="form-control" value="9,00">
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <h3 class="modal-body__heading">Item properties</h3>
+                        
+                                        <div class="modal-body__section">
+                                            <div class="row two-col-row">
+                                                <div class="col-md-6">
+                                                    <div class="row input-row mb-2">
+                                                        <label class="col-form-label">Serial number</label>
+                                                        <div class="col-input">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" value="9,00">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row input-row mb-2">
+                                                        <label class="col-form-label">Product batch</label>
+                                                        <div class="col-input">
+                                                            <input type="text" class="form-control" value="9,00">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="row input-row mb-2">
+                                                <label class="col-form-label">Expiration date</label>
+                                                <div class="col-input">
+                                                    <input type="text" class="form-control" value="9,00">
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modalEditProductPackaging" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog  modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Edit product packaging</h5>
+                                        <div class="top-bar__right top-bar-buttons">
+                                            <button class="actions-button">…</button>
+                                            <ul class="mobile-actions">
+                                                <li class="item"><a href="" class="item-link">Save</a></li>
+                                                <li class="item"><a href="" class="item-link">Save &amp; close</a></li>
+                                                <li class="item"><button class="item-link" data-bs-dismiss="modal">Cancel</button></li>
+                                            </ul>
+                                            <div class="actions">
+                                                <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">SAVE</span></span>
+                                                </button>
+                                                <button class="btn btn--secondary"><i class="save"></i>SAVE &amp; CLOSE</button>
+                                                <button class="btn btn--secondary" data-bs-dismiss="modal"><i class="multiply-2"></i>CANCEL</button>
+                                            </div>
+                                        
+                                            <div class="top-bar__button-wrapper top-bar__button-wrapper--full-screen">
+                                                <button class="top-bar__button top-bar__button--full-screen toggle-fullscreen toggle-fullscreen--modal" title="Toggle Fullscreen">
+                                                    <span class="main-icon"><i class="expand fullscreen-expand"></i><i class="collapse fullscreen-collapse"></i></span>
+                                                </button>
+                                            </div>
+                                        </div>            </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body__section">
+                                            <div class="row input-row mb-2">
+                                                <label for="def" class="col-form-label">Set as default</label>
+                                                <div class="col-input">
+                                                    <div class="form-check form-check-inline form-switch">
+                                                        <input class="form-check-input" type="checkbox" id="def">
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="row two-col-row">
+                                                <div class="col-md-6">
+                                                    <div class="row input-row mb-2">
+                                                        <label class="col-form-label">Quantity</label>
+                                                        <div class="col-input">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" value="9,00">
+                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">Kilograms
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-md-6">
+                                                    <div class="row input-row mb-2">
+                                                        <label class="col-form-label">Distributability</label>
+                                                        <div class="col-input">
+                                                            <input type="text" class="form-control" value="12">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="row input-row mb-2">
+                                                <label class="col-form-label">EAN</label>
+                                                <div class="col-input">
+                                                    <input type="text" class="form-control" value="128526545">
+                                                </div>
+                                            </div>
+                        
+                                        </div>
+                        
+                                        <h3 class="modal-body__heading">Dimensions</h3>
+                        
+                                        <div class="modal-body__section">
+                                            <div class="row two-col-row">
+                                                <div class="col-md-6">
+                                                    <div class="row input-row mb-2">
+                                                        <label class="col-form-label">Width</label>
+                                                        <div class="col-input">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" value="9,00">
+                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">Meters
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-md-6">
+                                                    <div class="row input-row mb-2">
+                                                        <label class="col-form-label">Volume</label>
+                                                        <div class="col-input">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" value="9,00">
+                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">Meters<sup>3</sup>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="row two-col-row">
+                                                <div class="col-md-6">
+                                                    <div class="row input-row mb-2">
+                                                        <label class="col-form-label">Height</label>
+                                                        <div class="col-input">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" value="9,00">
+                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">Meters
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-md-6">
+                                                    <div class="row input-row mb-2">
+                                                        <label class="col-form-label">Weight</label>
+                                                        <div class="col-input">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" value="9,00">
+                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">Kilograms
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="row input-row mb-2">
+                                                <label class="col-form-label">Depth</label>
+                                                <div class="col-input">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" value="9,00">
+                                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">Meters
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                            <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <h3 class="modal-body__heading">Picture</h3>
+                        
+                                        <div class="modal-body__section">
+                        
+                                            <div class="mb-2 row input-row">
+                                                <label for="" class="col-form-label">Upload image</label>
+                                                <div class="col-input">
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                            </div>
+                        
+                                            <div class="mb-2 row input-row">
+                                                <div class="col-form-label"></div>
+                                                <div class="col-input">
+                                                    <div class="uploaded-files">
+                                                        <div class="uploaded-files__item-wrapper">
+                                                            <div class="uploaded-files__item">
+                                                                <img src="assets/images/samples/triko.png" alt="triko">
+                                                            </div>
+                                                            <a href="" class="uploaded-files__btn uploaded-files__item__delete-btn"><i
+                                                                    class="trash-can"></i> Delete picture</a>
+                                                        </div>
+                                                    </div>
+                        
+                                                </div>
+                                            </div>
+                        
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    </div>
+                
+                    <div class="tab-pane fade" id="inventory2">
+                        <div class="ms-1 ms-md-3 my-3 fw-bold">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox">
+                                <span class="switch-text fs-14">Inventory tracking management</span>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#stockInventory">
+                                        <span class="accordion-button__text">Stock inventory</span>
+                                    </button>
+                                    <div class="accordion-header__right">
+                                        <div class="item item--refresh">
+                                            <button id="refresh"><i class="reset"></i></button>
+                                        </div>
+                                    </div>
+                                </h2>
+                                <div id="stockInventory" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                        
+                                        <div class="row two-col-row">
+                                            <div class="col-md-6">
+                                                <div class="mb-2 row input-row">
+                                                    <label class="col-form-label">Availability</label>
+                                                    <div class="col-input">
+                                                        <select class="form-select2">
+                                                            <option selected>Not available</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2 row input-row">
+                                                    <label class="col-form-label">Warranty</label>
+                                                    <div class="col-input">
+                                                        <select class="form-select2">
+                                                            <option selected>2 years</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#unitsAndPackaging">
+                                        <span class="accordion-button__text">Units and Packaging</span>
+                                    </button>
+                                </h2>
+                                <div id="unitsAndPackaging" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="row two-col-row">
+                                            <div class="col-md-6 mb-2">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">Sales unit</label>
+                                                    <div class="col-input">
+                                                        <select class="form-select2">
+                                                            <option selected>ks</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                        
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="row input-row input-row--no-center">
+                                                    <label class="col-form-label">
+                                                        <span class="tooltip-w-hint" data-bs-toggle="tooltip" title=""
+                                                              data-bs-original-title="tooltip"><span class="tooltip-link">Number per unit</span><span
+                                                                class="hint-icon">?</span></span>
+                                                    </label>
+                                                    <div class="col-input">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" value="9,00">
+                                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">Kilograms
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="row two-col-row">
+                                            <div class="col-md-6 mb-2">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">Minimum purchase</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="1,00">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">Maximum purchase</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="100,00">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="grid">
+                                            <div class="table-responsive">
+                                                <table class="grid__table">
+                                                    <thead class="grid__head">
+                                                    <tr class="tr">
+                                                        <th class="th--checkbox cell--checkbox">
+                                                            <div class="input-wrapper">
+                                                                <div class="form-check-input-all">
+                                                                    <input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">
+                                                                    <div class="checkbox-options">
+                                                                        <span class="checkbox-options__btn"></span>
+                                                                        <ul class="checkbox-options__options">
+                                                                            <li class="item"><a href="#">Možnost</a></li>
+                                                                            <li class="item"><a href="#">Další položka</a></li>
+                                                                            <li class="item"><a href="#">Ještě</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="" class="selected">Default</a></label>
+                                                        </th>
+                                                        <th class="text-center" style="width: 100px">
+                                                            <label class="name sort sort--down"><a href="" class="selected">Quantity</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">EAN</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">Weight</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">Dimensions [m]</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">Volume [m3]</a></label>
+                                                        </th>
+                                                        <th class="text-center">
+                                                            <label class="name"><a href="">Distributability</a></label>
+                                                        </th>
+                                                        <th class="th--actions cell--actions">
+                                                            <label class="name">Actions</label>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="grid__body">
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <input class="form-check-input" type="radio" name="default">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>6 kg</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>123548975</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>12,5 g</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.150 x 0.210 x 0.015</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.00025</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            6
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option2" value="option2">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <input class="form-check-input" type="radio" name="default">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>50 pcs</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>123548975</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>12,5 g</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.150 x 0.210 x 0.015</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.00025</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            12
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option3" value="option3">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <input class="form-check-input" type="radio" name="default">
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>1 pc</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>123548975</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>1,0 g</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.150 x 0.210 x 0.015</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <strong>0.00025</strong>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="grid__bottom row">
+                                            <div class="grid__bottom__left col-xl-4 col-lg-6 col-md-6">
+                                                <div class="selected-items"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <label for="selected_items" class="form-label">Selected items</label>
+                                                            <div>
+                                                                <select class="form-select2 form-select2--small" id="selected_items">
+                                                                    <option selected="">--</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <label class="form-label">&nbsp;</label>
+                                                            <div>
+                                                                <button class="btn btn--primary" disabled><span class="btn-front"><span class="btn-front-text">PROCEED</span></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="grid__bottom__right col-xl-8 col-lg-6 col-md-6 mb-3 text-end">
+                                                <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">NEW PACKAGING</span></span>
+                                                </button>
+                                            </div>
+                                        
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#productCodes">
+                                        <span class="accordion-button__text">Product codes</span>
+                                    </button>
+                                </h2>
+                                <div id="productCodes" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                        
+                                        <div class="row two-col-row">
+                                            <div class="col-md-6 mb-2">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">SKU (Stock Keeping Unit)</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="AS 553 55">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">EAN</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="AS 553 55">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="row two-col-row">
+                                            <div class="col-md-6 mb-2">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">Product code</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="AS 553 55">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="row input-row">
+                                                    <label class="col-form-label">ISBN</label>
+                                                    <div class="col-input">
+                                                        <input type="text" class="form-control" value="AS 553 55">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="row input-row">
+                                            <label class="col-form-label">Manufacturer P/N</label>
+                                            <div class="col-input">
+                                                <input type="text" class="form-control" value="AS 553 55">
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#documents">
+                                        <span class="accordion-button__text">Documents</span>
+                                    </button>
+                                </h2>
+                                <div id="documents" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 
                     <div class="tab-pane fade" id="material">

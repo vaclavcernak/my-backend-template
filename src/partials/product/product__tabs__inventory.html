@@ -1,0 +1,361 @@
+<button type="button" class="btn btn--dark" data-bs-toggle="modal" data-bs-target="#modalEditStockItem">
+    Launch modal edit stock item
+</button>
+
+<button type="button" class="btn btn--dark" data-bs-toggle="modal" data-bs-target="#modalEditProductPackaging">
+    Launch modal edit product packaging
+</button>
+
+<div class="ms-1 ms-md-3 my-3 fw-bold">
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" checked>
+        <span class="switch-text fs-14">Inventory tracking management</span>
+    </div>
+</div>
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#stockInventory">
+                <span class="accordion-button__text">Stock inventory</span>
+            </button>
+            <div class="accordion-header__right">
+                <div class="item item--refresh"><button id="refresh"><i class="reset"></i></button></div>
+            </div>
+        </h2>
+        <div id="stockInventory" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+
+                <div class="row two-col-row">
+                    <div class="col-md-6">
+
+                        <div class="stock-list mb-4 ms-md-5">
+                            <table class="stock-list-table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-end">Total in stock</th>
+                                        <th class="ps-4"><input type="text" id="totalstock" class="form-control form-control--green fw-bold text-end" value="248" disabled=""></th>
+                                        <th class="p-0 c-green">ks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-end">In stock</td>
+                                        <td class="text-end fw-medium pe-4">250</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-end">At suppliers</td>
+                                        <td class="text-end fw-medium pe-4">50</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-end">Reserved</td>
+                                        <td class="text-end fw-medium pe-4">20</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-end">Ordered</td>
+                                        <td class="text-end fw-medium pe-4">2</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-end">Claims</td>
+                                        <td class="text-end fw-medium pe-4">0</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="mb-2 row input-row">
+                            <label class="col-form-label">Availability when out of stock</label>
+                            <div class="col-input">
+                                <select class="form-select2">
+                                    <option selected>Not available</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row input-row">
+                            <label class="col-form-label"></label>
+                            <div class="col-input">
+                                <div class="form-check form-check-inline form-switch">
+                                    <input class="form-check-input" type="checkbox" checked="">
+                                    <span class="switch-text fs-14 fw-bold">Negative stocks allowed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-2 row input-row">
+                            <label class="col-form-label">Warranty</label>
+                            <div class="col-input">
+                                <select class="form-select2">
+                                    <option selected>2 years</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-2 row input-row">
+                            <label class="col-form-label">Inventory history</label>
+                            <div class="col-input">
+                                <select class="form-select2">
+                                    <option selected>Last 30 days</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="stock-graph text-center my-4">
+                            <img src="https://dummyimage.com/450x200/444/fff" alt="">
+                        </div>
+
+                        <div class="stock-graph-under mb-4 text-center">
+                            <span class="fs-12 d-sm-inline-block d-block me-3 mb-2 mb-sm-0">Your recomended minimum level is <strong>20 ks</strong></span>
+                            <a href="" class="btn btn--light"><span class="btn-front"><span class="btn-front-text"><i class="reset"></i>Inventory overview</span></span></a>
+                        </div>
+
+
+                        <div class="mb-2 row input-row">
+                            <label class="col-form-label">Minimum level</label>
+                            <div class="col-input">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="9,00">
+                                    <span class="input-group-text">Ks</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-2 row input-row">
+                            <label class="col-form-label">Optimum level</label>
+                            <div class="col-input">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="289,00">
+                                    <span class="input-group-text">Ks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#stockStatus">
+                <span class="accordion-button__text">Stock status</span>
+            </button>
+        </h2>
+        <div id="stockStatus" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Material flow method</label>
+                            <div class="col-input">
+                                <select class="form-select2">
+                                    <option selected>FIFO</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="row input-row input-row--no-center">
+                            <label class="col-form-label">Stock tracking</label>
+                            <div class="col-input">
+                                <div class="ms-2 fs-14">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="serialNumbers" checked="">
+                                        <span class="switch-text">Serial numbers</span>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="productBatch" checked="">
+                                        <span class="switch-text">Product batch</span>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="expirationDate" checked="">
+                                        <span class="switch-text">Expiration date</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{> grid-stock-status}}
+
+                <div class="text-sm-end text-center mt-3">
+                    <span class="fs-14 fw-bold d-inline-block me-sm-3 mb-2 mb-sm-0">Warehouse management</span>
+                    <a href="" class="btn btn--light"><span class="btn-front"><span class="btn-front-text"><i class="reset"></i>Product location history</span></span></a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#unitsAndPackaging">
+                <span class="accordion-button__text">Units and Packaging</span>
+            </button>
+        </h2>
+        <div id="unitsAndPackaging" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Sales unit</label>
+                            <div class="col-input">
+                                <select class="form-select2">
+                                    <option selected>ks</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="row input-row input-row--no-center">
+                            <label class="col-form-label">
+                                <span class="tooltip-w-hint" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip"><span class="tooltip-link">Number per unit</span><span class="hint-icon">?</span></span>
+                            </label>
+                            <div class="col-input">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="9,00">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Kilograms
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Grams</a></li>
+                                        <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Minimum purchase</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="1,00">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="row input-row">
+                            <label class="col-form-label">Maximum purchase</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="100,00">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{> grid-units-packaging}}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#productCodes">
+                <span class="accordion-button__text">Product codes</span>
+            </button>
+        </h2>
+        <div id="productCodes" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">SKU (Stock Keeping Unit)</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="AS 553 55">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="row input-row">
+                            <label class="col-form-label">EAN</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="AS 553 55">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Product code</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="AS 553 55">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="row input-row">
+                            <label class="col-form-label">ISBN</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="AS 553 55">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row input-row">
+                    <label class="col-form-label">Manufacturer P/N</label>
+                    <div class="col-input">
+                        <input type="text" class="form-control" value="AS 553 55">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#documents">
+                <span class="accordion-button__text">Documents</span>
+            </button>
+        </h2>
+        <div id="documents" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> modal__edit-stock-item}}
+
+{{> modal__edit-product-packaging}}

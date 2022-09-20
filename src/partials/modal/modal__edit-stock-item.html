@@ -1,0 +1,105 @@
+<div class="modal fade" id="modalEditStockItem" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog  modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit a stock item</h5>
+                {{> modal__top-bar-buttons}}
+            </div>
+            <div class="modal-body">
+                <div class="modal-body__section">
+                    <div class="row input-row mb-2">
+                        <label class="col-form-label">Warehouse</label>
+                        <div class="col-input">
+                            <select class="form-select2">
+                                <option selected>Centrální sklad</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row two-col-row">
+                        <div class="col-md-6">
+                            <div class="row input-row mb-2">
+                                <label class="col-form-label">Quantity</label>
+                                <div class="col-input">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="9,00">
+                                        <span class="input-group-text">Ks</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row input-row mb-2">
+                                <label class="col-form-label">EAN</label>
+                                <div class="col-input">
+                                    <input type="text" class="form-control" value="128526545">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="modal-body__heading">Location</h3>
+
+                <div class="modal-body__section">
+                    <div class="row input-row mb-2">
+                        <label class="col-form-label">Room</label>
+                        <div class="col-input">
+                            <input type="text" class="form-control" value="9,00">
+                        </div>
+                    </div>
+
+                    <div class="row input-row mb-2">
+                        <label class="col-form-label">Aisle</label>
+                        <div class="col-input">
+                            <input type="text" class="form-control" value="9,00">
+                        </div>
+                    </div>
+
+                    <div class="row input-row mb-2">
+                        <label class="col-form-label">Shelf</label>
+                        <div class="col-input">
+                            <input type="text" class="form-control" value="9,00">
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="modal-body__heading">Item properties</h3>
+
+                <div class="modal-body__section">
+                    <div class="row two-col-row">
+                        <div class="col-md-6">
+                            <div class="row input-row mb-2">
+                                <label class="col-form-label">Serial number</label>
+                                <div class="col-input">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="9,00">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row input-row mb-2">
+                                <label class="col-form-label">Product batch</label>
+                                <div class="col-input">
+                                    <input type="text" class="form-control" value="9,00">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row input-row mb-2">
+                        <label class="col-form-label">Expiration date</label>
+                        <div class="col-input">
+                            <input type="text" class="form-control" value="9,00">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

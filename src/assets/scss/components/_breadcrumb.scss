@@ -3,11 +3,6 @@
   color: #2c4364;
   font-size: 14px;
 
-  .general-table & {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
   &__item {
 
     &:not(:last-child) {

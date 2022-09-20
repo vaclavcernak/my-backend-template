@@ -1,0 +1,199 @@
+<div class="ms-1 ms-md-3 my-3 fw-bold">
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox">
+        <span class="switch-text fs-14">Inventory tracking management</span>
+    </div>
+</div>
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#stockInventory">
+                <span class="accordion-button__text">Stock inventory</span>
+            </button>
+            <div class="accordion-header__right">
+                <div class="item item--refresh">
+                    <button id="refresh"><i class="reset"></i></button>
+                </div>
+            </div>
+        </h2>
+        <div id="stockInventory" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+
+                <div class="row two-col-row">
+                    <div class="col-md-6">
+                        <div class="mb-2 row input-row">
+                            <label class="col-form-label">Availability</label>
+                            <div class="col-input">
+                                <select class="form-select2">
+                                    <option selected>Not available</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-2 row input-row">
+                            <label class="col-form-label">Warranty</label>
+                            <div class="col-input">
+                                <select class="form-select2">
+                                    <option selected>2 years</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#unitsAndPackaging">
+                <span class="accordion-button__text">Units and Packaging</span>
+            </button>
+        </h2>
+        <div id="unitsAndPackaging" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Sales unit</label>
+                            <div class="col-input">
+                                <select class="form-select2">
+                                    <option selected>ks</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="row input-row input-row--no-center">
+                            <label class="col-form-label">
+                                <span class="tooltip-w-hint" data-bs-toggle="tooltip" title=""
+                                      data-bs-original-title="tooltip"><span class="tooltip-link">Number per unit</span><span
+                                        class="hint-icon">?</span></span>
+                            </label>
+                            <div class="col-input">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" value="9,00">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Kilograms
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Minimum purchase</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="1,00">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="row input-row">
+                            <label class="col-form-label">Maximum purchase</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="100,00">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{> grid-units-packaging}}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#productCodes">
+                <span class="accordion-button__text">Product codes</span>
+            </button>
+        </h2>
+        <div id="productCodes" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">SKU (Stock Keeping Unit)</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="AS 553 55">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="row input-row">
+                            <label class="col-form-label">EAN</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="AS 553 55">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="row input-row">
+                            <label class="col-form-label">Product code</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="AS 553 55">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="row input-row">
+                            <label class="col-form-label">ISBN</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="AS 553 55">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row input-row">
+                    <label class="col-form-label">Manufacturer P/N</label>
+                    <div class="col-input">
+                        <input type="text" class="form-control" value="AS 553 55">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#documents">
+                <span class="accordion-button__text">Documents</span>
+            </button>
+        </h2>
+        <div id="documents" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+            </div>
+        </div>
+    </div>
+</div>

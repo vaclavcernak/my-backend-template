@@ -21,7 +21,7 @@
     overflow: hidden;
 
     &:hover {
-      box-shadow: 0 0 10px rgba(0,0,0,.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 
       .image {
         background-color: #f3f7f9;
@@ -57,6 +57,7 @@
       align-items: center;
       border: 1px solid #bfe499;
       font-size: 12px;
+
       i {
         &:before {
           font-weight: bold;

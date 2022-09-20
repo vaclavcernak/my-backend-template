@@ -1,0 +1,191 @@
+<div class="modal fade" id="modalEditProductPackaging" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog  modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit product packaging</h5>
+                {{> modal__top-bar-buttons}}
+            </div>
+            <div class="modal-body">
+                <div class="modal-body__section">
+                    <div class="row input-row mb-2">
+                        <label for="def" class="col-form-label">Set as default</label>
+                        <div class="col-input">
+                            <div class="form-check form-check-inline form-switch">
+                                <input class="form-check-input" type="checkbox" id="def">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row two-col-row">
+                        <div class="col-md-6">
+                            <div class="row input-row mb-2">
+                                <label class="col-form-label">Quantity</label>
+                                <div class="col-input">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="9,00">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">Kilograms
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Grams</a></li>
+                                            <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="row input-row mb-2">
+                                <label class="col-form-label">Distributability</label>
+                                <div class="col-input">
+                                    <input type="text" class="form-control" value="12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row input-row mb-2">
+                        <label class="col-form-label">EAN</label>
+                        <div class="col-input">
+                            <input type="text" class="form-control" value="128526545">
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="modal-body__heading">Dimensions</h3>
+
+                <div class="modal-body__section">
+                    <div class="row two-col-row">
+                        <div class="col-md-6">
+                            <div class="row input-row mb-2">
+                                <label class="col-form-label">Width</label>
+                                <div class="col-input">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="9,00">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">Meters
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Grams</a></li>
+                                            <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="row input-row mb-2">
+                                <label class="col-form-label">Volume</label>
+                                <div class="col-input">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="9,00">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">Meters<sup>3</sup>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Grams</a></li>
+                                            <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row two-col-row">
+                        <div class="col-md-6">
+                            <div class="row input-row mb-2">
+                                <label class="col-form-label">Height</label>
+                                <div class="col-input">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="9,00">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">Meters
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Grams</a></li>
+                                            <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="row input-row mb-2">
+                                <label class="col-form-label">Weight</label>
+                                <div class="col-input">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" value="9,00">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">Kilograms
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Grams</a></li>
+                                            <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row input-row mb-2">
+                        <label class="col-form-label">Depth</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="9,00">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Meters
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="modal-body__heading">Picture</h3>
+
+                <div class="modal-body__section">
+
+                    <div class="mb-2 row input-row">
+                        <label for="" class="col-form-label">Upload image</label>
+                        <div class="col-input">
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+
+                    <div class="mb-2 row input-row">
+                        <div class="col-form-label"></div>
+                        <div class="col-input">
+                            <div class="uploaded-files">
+                                <div class="uploaded-files__item-wrapper">
+                                    <div class="uploaded-files__item">
+                                        <img src="assets/images/samples/triko.png" alt="triko">
+                                    </div>
+                                    <a href="" class="uploaded-files__btn uploaded-files__item__delete-btn"><i
+                                            class="trash-can"></i> Delete picture</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

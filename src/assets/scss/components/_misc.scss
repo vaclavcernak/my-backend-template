@@ -32,3 +32,10 @@
     }
   }
 }
+
+.stock-list {
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -5,12 +5,17 @@ import 'jquery-ui/ui/widgets/sortable';
 import 'select2';
 import 'jquery-datetimepicker'; // https://www.jqueryscript.net/time-clock/Clean-jQuery-Date-Time-Picker-Plugin-datetimepicker.html
 
+
 $(document).ready(function () {
     ScrollbarCheck();
 
     $('.toggle-fullscreen').click(function () {
-        $(this).toggleClass('toggled')
+        $(this).toggleClass('toggled');
         toggleFullScreen();
+        if ( $(this).parents('.modal-dialog').length > 0) {
+            console.log($(this).parents('.modal-dialog'));
+            $(this).parents('.modal-dialog').toggleClass('full-screen');
+        }
     });
 
     $(".sortable").sortable({
@@ -54,11 +59,34 @@ $(function () {
 
         if ($(window).width() < 1200 && $(window).width() > 767.5) {
 
+            let isMouseHover = false,
+                mainNavEl = document.getElementById("mainNav"),
+                timeout = 500;
+
+            mainNavEl.addEventListener("mouseleave", function (event) {
+                isMouseHover = false
+                setTimeout(function () {
+                    if (!isMouseHover && !hamMenuBtnMax.hasClass("active")) {
+                        mainNav.removeClass("maximized");
+                    }
+                }, timeout)
+            }, false);
+
+            mainNavEl.addEventListener("mouseover", function (event) {
+                isMouseHover = true
+                setTimeout(function () {
+                    if (isMouseHover) {
+                        mainNav.addClass("maximized");
+                    }
+                }, timeout)
+            }, false);
+
+
             mainNav.addClass("minimized");
 
             hamMenuBtnMax.click(function () {
                 $(this).toggleClass("active");
-                mainNav.toggleClass("maximized");
+                mainNav.toggleClass("locked");
                 topBarTitleCrop();
                 accordionTitleCrop();
             });
@@ -410,7 +438,7 @@ function accordionTitleCrop() {
 
 }
 
-$('#topBarActionsBtn').click(function () {
+$('.top-bar-buttons .actions-button').click(function () {
     let button = $(this),
         target = button.next('.mobile-actions');
 
@@ -461,5 +489,29 @@ $(function () {
     $('.btn-edit-close').click(function (e) {
         e.preventDefault();
         $(this).parents('.product-photo__item').removeClass('editable');
+    });
+});
+
+// subtable toggle
+$(function () {
+    $('.toggle-subtable').click(function () {
+        let button = $(this),
+            buttonIcon = button.find('.toggle-icon'),
+            target = button.parents('tr').next('.toggle-subtable-row');
+
+        buttonIcon.toggle();
+        target.toggle();
+    });
+});
+
+// dropdown next to all checkbox option in grid
+$(function () {
+    $('.checkbox-options__btn').click(function () {
+        let button = $(this),
+            target = button.next('.checkbox-options__options');
+
+        target.toggle();
+
+        hideElIfClickOutside(button, target);
     });
 });
