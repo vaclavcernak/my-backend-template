@@ -12,6 +12,7 @@
   //border: 1px solid #c2d8e7;
   border: 0;
   background-color: transparent;
+  color: inherit;
 
   &:first-of-type {
     border-top-left-radius: 10px;
@@ -42,6 +43,12 @@
       }
     }
   }
+
+  &--v2 {
+    .accordion-button.collapsed {
+      //min-height: 46px;
+    }
+  }
 }
 
 .accordion-header {
@@ -56,6 +63,10 @@
     display: flex;
     align-items: center;
     font-weight: $fw-medium;
+
+    .right-panel & {
+      right: 5px;
+    }
 
     .item {
       margin-left: 10px;
@@ -92,10 +103,11 @@
       &__button {
         border-radius: 20px;
         font-weight: bold;
-        font-size: 11px;
+        font-size: 10px;
         background-color: #ffffff;
         padding: 7px 15px;
         box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+        transition: .3s;
 
         i {
           margin-right: 5px;
@@ -105,17 +117,30 @@
         }
 
         &:hover {
-          background-color: #fafafa;
+          background-color: #edf3f7;
+          text-decoration: none;
         }
       }
     }
 
     .accordion-more {
       display: none;
-      margin-left: 10px;
+      margin-left: 5px;
 
       @include media-breakpoint-down(md) {
         display: block;
+      }
+
+      &__btn {
+        &:hover {
+          background-color: #edf3f7;
+        }
+        i {
+          font-weight: bold;
+          font-size: 20px;
+          position: relative;
+          top: 2px;
+        }
       }
 
       &__list {
@@ -139,16 +164,21 @@
 
 .accordion-button {
   padding: 13px 20px;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-weight: bold;
-  color: #2c4364;
+  color: var(--c-headings);
   box-shadow: none;
   background: #e5eef4;
   border: 1px solid transparent;
 
-  .right-panel & {
+  .right-panel &,
+  .modal & {
     padding: 11px 15px 11px 22px;
     background: #d6e2ea;
+  }
+
+  .accordion-item--v2 & {
+    padding-left: 0;
   }
 
   &:hover {
@@ -162,34 +192,70 @@
 
   &:after {
     position: absolute;
-    color: #2c4364;
+    color: var(--c-headings);
     background: none;
     @include one-icon;
-    content: "\f10a";
+    content: $icons8-var-forward;
     transform: rotate(0);
     font-weight: bold;
     left: 0;
-    width: 45px;
+    width: 46px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     transition: .3s;
+
+    .accordion-item--v2 & {
+      left: initial;
+      right: 0;
+      border-radius: 0 8px 8px 0;
+      //transform: rotate(90deg);
+      transition: none !important;
+    }
 
     @include media-breakpoint-down(md) {
       width: 35px;
       font-size: 12px;
     }
 
-    .right-panel & {
+    .right-panel &,
+    .modal-body:not(.not-modal-like) & {
       width: 34px;
+    }
+  }
+
+  > i {
+    font-size: 24px;
+    line-height: 0;
+    position: absolute;
+    left: 10px;
+
+    .accordion-item--v2 & {
+      position: static;
+      padding-left: 10px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
     }
   }
 
   &.collapsed {
     border-color: #c2d8e7;
+
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    /*.accordion-button__text {
+      font-size: 15px;
+
+      @include media-breakpoint-down(md) {
+       font-size: 14px;
+      }
+    }*/
 
     &:hover {
       &:after {
@@ -204,22 +270,36 @@
   &:not(.collapsed) {
     box-shadow: none;
     background-color: transparent;
-    color: #2c4364;
+    color: var(--c-headings);
     border-bottom: 1px solid #d8e4ec;
+
+    .right-panel & {
+      border-bottom-color: #C2D6E3;
+    }
 
     &:not(:hover) {
       border-radius: 0 !important;
     }
 
     &:after {
-      color: #2c4364;
+      color: var(--c-headings);
       background: none;
       content: "\f106";
       transform: rotate(0);
+
+      .accordion-item--v2 & {
+        border-radius: 0 10px 10px 0;
+      }
     }
 
     &:hover {
       background: transparent;
+      border-bottom-right-radius: 0;
+
+      .accordion-item--v2 & {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0;
+      }
 
       &:after {
         background: #e3eef4;
@@ -227,7 +307,8 @@
           background-color: transparent !important;
         }
 
-        .right-panel & {
+        .right-panel &,
+        .modal & {
           background: #cbdae4;
         }
       }
@@ -242,6 +323,11 @@
     display: block;
     padding-left: 35px;
     font-size: 17px;
+    //transition: none !important;
+    top: 1px;
+    position: relative;
+    transition: none !important;
+
     @include ellipsis;
 
     @include media-breakpoint-down(md) {
@@ -251,7 +337,8 @@
       top: 1px;
     }
 
-    .right-panel & {
+    .right-panel &,
+    .modal-body:not(.not-modal-like) & {
       padding-left: 20px;
       font-size: 14px;
       position: relative;
@@ -261,22 +348,83 @@
         padding-left: 10px;
       }
     }
+
+    .accordion-item--v2 & {
+      padding-left: 10px;
+      @include media-breakpoint-down(md) {
+        padding-left: 8px;
+      }
+    }
+
+    .counter {
+      color: #5d7483;
+      font-weight: normal;
+    }
   }
 
   &__notification {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
+    display: inline-flex;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background-color: #ff5454;
     margin-left: 12px;
+    font-size: 9px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__notification-number {
+    display: inline-flex;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #ec8224;
+    margin-left: 12px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 0;
+    @include media-breakpoint-down(md) {
+      width: 18px;
+      height: 18px;
+      font-size: 10px;
+    }
   }
 }
 
 .accordion-body {
   padding: 1rem 5px .75rem;
 
-  .right-panel & {
+  .right-panel &,
+  .modal & {
     padding-top: 10px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.accordion-icons {
+  display: flex;
+  gap: 1px;
+
+  .accordion-icon {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #edf3f7;
+
+      .right-panel & {
+        background-color: #d7e3ec;
+      }
+    }
+
+    &--unpinned {
+      color: #667890;
+    }
   }
 }

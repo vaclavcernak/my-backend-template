@@ -42,22 +42,22 @@
       position: relative;
       top: 2px;
     }
+  }
+  &__link {
+    margin: 0;
+    padding: 0;
+    text-transform: initial;
+    border: 0;
+    display: block;
 
-    &__link {
-      margin: 0;
-      padding: 0;
-      text-transform: initial;
+    &.active {
+      background: transparent;
+    }
+
+    &:hover {
+      background-color: transparent;
+      text-decoration: underline;
       border: 0;
-
-      &.active {
-        background: transparent;
-      }
-
-      &:hover {
-        background-color: transparent;
-        text-decoration: underline;
-        border: 0;
-      }
     }
   }
 }

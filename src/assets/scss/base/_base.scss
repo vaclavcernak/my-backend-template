@@ -7,12 +7,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  *:not(.tooltip):not(.tooltip-arrow):not(.scrollbared):not(.select2-container):not(.select2-dropdown) {
-    transition: .3s;
-  }
-}
-
 hr {
   border: 0;
   height: 1px;
@@ -37,7 +31,7 @@ a {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  //-webkit-appearance: none;
   margin: 0;
 }
 
@@ -50,3 +44,12 @@ input[type=number] {
   position: relative;
 }
 
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

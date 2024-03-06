@@ -4,7 +4,7 @@
   align-items: center;
   border-radius: 10px;
   border: 1px dashed $c-input-border;
-  color: #2c4364;
+  color: var(--c-headings);
 
   @include media-breakpoint-down(sm) {
     padding: 15px 25px;

@@ -4,21 +4,26 @@
   font-size: 12px;
 
   &__btn {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 0;
-    color: #2c4364;
+    color: var(--c-headings);
     border-radius: 5px;
+    margin: 0 2px;
+
+    @include media-breakpoint-down(md) {
+      margin: 0 4px;
+    }
 
     &:hover {
       background-color: #edf3f7;
     }
 
     i {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
 
@@ -37,5 +42,6 @@
 
   &__from {
     margin-right: 5px;
+    white-space: nowrap;
   }
 }

@@ -20,81 +20,88 @@
 <div class="main-wrapper">
     <aside id="mainNav" class="main-nav">
         <header class="main-nav__header">
-            <img src="assets/images/jz-one_blue-white.svg" alt="" class="logo">
-            <button class="main-nav__header__button"><i class="cash-register"></i></button>
-            <button class="main-nav__header__button"><i class="barcode-reader"></i></button>
+            <a href="/"><img src="assets/images/jzone-blue-white.svg" alt="jz one logo" class="logo" style="height: 26px;"></a>
+            <!--<button class="main-nav__header__button"><i class="cash-register"></i></button>
+            <button class="main-nav__header__button"><i class="barcode-reader"></i></button>-->
             <button id="hamMenuBtnMax" class="main-nav__header__button button--hamburger on-maximized"><i
-                    class="hamburger-menu hamburger-open"></i><i class="multiply hamburger-close"></i></button>
-            <button id="hamMenuBtnMin" class="main-nav__header__button button--hamburger on-minimized"><i
-                    class="hamburger-menu hamburger-open"></i><i class="multiply hamburger-close"></i></button>
+                    class="unpin hamburger-open"></i><i class="pin hamburger-close"></i><i class="multiply hamburger-close d-block d-md-none"></i></button>
+            <button id="hamMenuBtnMin" class="main-nav__header__button button--hamburger on-minimized">
+                <a href="#"><img src="assets/images/jz.svg" alt="malé logo"></a>
+                <!--<i class="hamburger-menu hamburger-open"></i><i class="multiply hamburger-close"></i>-->
+            </button>
         </header>
         <nav id="mainNav__nav" class="main-nav__nav scrollbared">
             <div class="main-nav__nav__inner">
                 <ul>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="dashboard-layout"></i></a><a
-                            href=""><i class="dashboard-layout"></i><span class="name">Dashboard</span></a></li>
-                    <li class="main-nav__nav__item has-submenu"><a href="#" class="on-minimized"><i
-                            class="basket"></i></a><a href="#"><i class="basket"></i><span
+                    <li class="main-nav__nav__item"><a
+                            href="#"><span class="notify">1</span><i class="dashboard-layout"></i><span class="name">Dashboard</span></a></li>
+                    <li class="main-nav__nav__item has-submenu"><span class="notify">95</span><a href="#"><i class="basket"></i><span
                             class="name">Sales</span></a>
                         <ul class="sub-menu">
-                            <li class="sub-menu__item active"><a href=""><span class="name">Products</span></a><span
-                                    class="notify">155 265</span></li>
-                            <li class="sub-menu__item"><a href=""><span class="name">Categories</span></a></li>
-                            <li class="sub-menu__item"><a href=""><span class="name">Parameters</span></a></li>
-                            <li class="sub-menu__item"><a href=""><span class="name">Options</span></a></li>
-                            <li class="sub-menu__item"><a href=""><span class="name">Review</span></a></li>
-                            <li class="sub-menu__item"><a href=""><span class="name">Tags</span></a></li>
+                            <li class="sub-menu__item has-submenu active">
+                                <a href="#"><span class="menu-error-icon">!</span><span
+                                    class="name">2. Aktivní</span><span class="notify">155 265</span></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                </ul></li>
+                            <li class="sub-menu__item has-submenu"><a href="#"><span class="name">Categories</span></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item active"><a href="#"><span class="menu-error-icon">!</span><span class="name">Třetí aktivní</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Tags</span></a></li>
                         </ul>
                     </li>
-                    <li class="main-nav__nav__item has-submenu"><a href="#" class="on-minimized"><i
-                            class="extra-features"></i></a><a href="#"><i class="extra-features"></i><span
+                    <li class="main-nav__nav__item has-submenu"><a href="#"><i class="extra-features"></i><span
                             class="name">Catalogue</span></a>
                         <ul class="sub-menu">
-                            <li class="sub-menu__item"><a href=""><span class="name">Products</span></a><span
-                                    class="notify">155 265</span></li>
-                            <li class="sub-menu__item"><a href=""><span class="name">Categories</span></a></li>
-                            <li class="sub-menu__item"><a href=""><span class="name">Parameters</span></a></li>
-                            <li class="sub-menu__item"><a href=""><span class="name">Options</span></a></li>
-                            <li class="sub-menu__item"><a href=""><span class="name">Review</span></a></li>
-                            <li class="sub-menu__item"><a href=""><span class="name">Tags</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="menu-error-icon">!</span><span class="name">Products</span><span
+                                    class="notify">155 265</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Categories</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Tags</span></a></li>
                         </ul>
                     </li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="price"></i></a><a href=""><i
+                    <li class="main-nav__nav__item"><a href="#"><i
                             class="price"></i><span class="name">Pricing</span></a>
                     </li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="package"></i></a><a
-                            href=""><i class="package"></i><span class="name">Stock</span></a>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="package"></i><span class="name">Stock</span></a>
                     </li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="commercial"></i></a><a
-                            href=""><i class="commercial"></i><span
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="commercial"></i><span
                             class="name">Marketing</span></a></li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="repository"></i></a><a
-                            href=""><i class="repository"></i><span
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="repository"></i><span
                             class="name">Directory</span></a></li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="marketing"></i></a><a
-                            href=""><i class="marketing"></i><span
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="marketing"></i><span
                             class="name">Reports</span></a></li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="bot"></i></a><a href=""><i
+                    <li class="main-nav__nav__item"><a href="#"><i
                             class="bot"></i><span class="name">Automation</span></a>
                     </li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="plugin"></i></a><a href=""><i
+                    <li class="main-nav__nav__item"><a href="#"><i
                             class="plugin"></i><span class="name">Plug-ins</span></a>
                     </li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="online-store"></i></a><a
-                            href=""><i class="online-store"></i><span class="name">Sales channels</span></a>
+                    <li class="main-nav__nav__item"></a><a
+                            href="#"><i class="online-store"></i><span class="name">Sales channels</span></a>
                     </li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="file"></i></a><a href=""><i
+                    <li class="main-nav__nav__item"><a href="#"><span
+                            class="menu-error-icon">!</span><i
                             class="file"></i><span
                             class="name">File Manager</span></a></li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i
-                            class="system-administrator-male"></i></a><a href=""><i
+                    <li class="main-nav__nav__item"><a href="#"><i
                             class="system-administrator-male"></i><span class="name">Client account</span></a>
                     </li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="settings"></i></a><a
-                            href="#"><i class="settings"></i><span
-                            class="name">Settings</span></a></li>
-                    <li class="main-nav__nav__item"><a href="#" class="on-minimized"><i class="lifebuoy"></i></a><a
-                            href="#"><i class="lifebuoy"></i><span class="name">Help</span></a>
+                    <li class="main-nav__nav__item"><a href="#"><i class="settings"></i><span class="name">Settings</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i class="lifebuoy"></i><span class="name">Help</span></a>
                     </li>
                 </ul>
             </div>
@@ -111,12 +118,11 @@
         
             <div class="top-bar__left">
                 <div class="show-frontend show-frontend--has-list">
-                    <span class="show-frontend__button"><i class="external-link icon-left"></i><span class="text">Show frontend</span><i
+                    <span class="show-frontend__button"><i class="eye-2 icon-left"></i><span class="text">View store</span><i
                             class="expand-arrow icon-right"></i></span>
                     <ul class="show-frontend__list">
-                        <li class="show-frontend__list__item"><a href="">www.superpouzdra.cz</a></li>
-                        <li class="show-frontend__list__item"><a href="" target="_blank">www.drackovy-hracky.cz<i
-                                class="external-link"></i></a></li>
+                        <li class="show-frontend__list__item"><a href=""><i class="external-link"></i>www.superpouzdra.cz</a></li>
+                        <li class="show-frontend__list__item"><a href="" target="_blank"><i class="external-link"></i>www.drackovy-hracky.cz</a></li>
                     </ul>
                 </div>
                 <!-- // Code for 1 link only -->
@@ -127,6 +133,8 @@
         
             <div class="top-bar__right">
                 <div class="top-bar__button-wrapper">
+                    <button class="top-bar__button hidden-mobile"><i class="cash-register"></i></button>
+                    <button class="top-bar__button hidden-mobile"><i class="barcode-reader"></i></button>
                     <button class="top-bar__button add-actions" title="Add">
                         <span class="main-icon"><i class="add"></i></span>
                     </button>
@@ -220,7 +228,7 @@
                                 <span class="mark-as-read"><a href="#"><i class="received"></i>Mark as read</a></span>
                                 <span class="settings-link"><a class="notification-settings-link" href="#"><i class="settings"></i>Settings</a></span>
                             </div>
-                            <div class="notifications-window__frontside__content scrollbared scrollbared--light">
+                            <div class="notifications-window__frontside__content scrollbared">
                                 <div class="item">
                                     <div class="item__check">
                                         <button class="check-button"><i class="done"></i></button>
@@ -376,9 +384,9 @@
                         </div>
                         <div class="user-account-window__content">
                             <ul class="list">
-                                <li class="item"><a href=""><i class="user"></i>My account</a></li>
-                                <li class="item"><a href=""><i class="logout"></i>Log Out</a></li>
-                                <li class="item"><a href=""><i class="lock"></i>Lock</a></li>
+                                <li class="item"><a href="#"><i class="user"></i>My account</a></li>
+                                <li class="item"><a href="#"><i class="logout"></i>Log Out</a></li>
+                                <li class="item"><a href="#"><i class="lock"></i>Lock</a></li>
                             </ul>
                         </div>
                     </div>
@@ -391,17 +399,19 @@
                 </div>
             </div>
         </header>
-        <main class="main-content">
-            <h1>Products</h1>
-        </main>
-        <footer class="footer">
-            <div class="footer__version"><a href="#">www.jz-one.cz</a> | v1.0</div>
-            <div class="footer__copyright">Copyright Jirsa & Záruba s.r.o. © All Rights Reserved.</div>
-        </footer>
+        <div id="mainWrapper" class="main-no-aside">
+            <div class="main-no-aside__content">
+                <main class="main main-content">
+                    <h1>Products</h1>
+                </main>
+            </div>
+            <footer class="footer">
+                <div class="footer__version"><a href="#">www.jz-one.cz</a> | v1.0</div>
+                <div class="footer__copyright">Copyright Jirsa & Záruba s.r.o. © All Rights Reserved.</div>
+            </footer>
+        </div>
     </div>
-
 </div>
-
 
 
 <script src="assets/js/app.js"></script>

@@ -6,99 +6,128 @@ layout: default
     {{> main-nav}}
     <div class="main-content-wrapper">
         {{> top-bar--product--sample}}
-        <main class="main-content form-elements">
-            <h3>Tabs</h3>
-            <div class="mb-4">
-                {{> form-elements__tabs}}
-            </div>
-            <h3>Buttons</h3>
-            <div class="form-elements__row">
-                <div class="form-elements__title">primary</div>
-                <a href="" class="btn btn--primary"><span class="btn-front"><span
-                        class="btn-front-text">LOGIN</span></span></a>
-                <div class="form-elements__v-separator"></div>
-                <a href="" class="btn btn--primary btn--inactive"><span class="btn-front"><span class="btn-front-text">LOGIN</span></span></a>
-            </div>
+        <div id="mainWrapper" class="main-no-aside">
+            <div class="main-no-aside__content">
+                <main class="main main-content form-elements">
+                    <h3>Tabs</h3>
+                    <div class="mb-4">
+                        {{> form-elements__tabs}}
+                    </div>
+                    <h3>Buttons</h3>
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">primary</div>
+                        <a href="" class="btn btn--primary"><span class="btn-front"><span
+                                class="btn-front-text">LOGIN</span></span></a>
+                        <div class="form-elements__v-separator"></div>
+                        <a href="" class="btn btn--primary btn--inactive"><span class="btn-front"><span
+                                class="btn-front-text">LOGIN</span></span></a>
+                    </div>
 
-            <div class="form-elements__row">
-                <div class="form-elements__title">secondary</div>
-                <a href="" class="btn btn--secondary">CLOSE</a>
-                <div class="form-elements__v-separator"></div>
-                <a href="" class="btn btn--secondary btn--inactive">CLOSE</a>
-            </div>
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">secondary</div>
+                        <a href="" class="btn btn--secondary">CLOSE</a>
+                        <div class="form-elements__v-separator"></div>
+                        <a href="" class="btn btn--secondary btn--inactive">CLOSE</a>
+                    </div>
 
-            <div class="form-elements__row">
-                <div class="form-elements__title">dark</div>
-                <a href="" class="btn btn--dark btn--w-icon"><i class="plus--"></i>AND</a>
-                <div class="form-elements__v-separator"></div>
-                <a href="" class="btn btn--dark">SEARCH</a>
-                <div class="form-elements__v-separator"></div>
-                <a href="" class="btn btn--dark btn--inactive">SEARCH</a>
-            </div>
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">dark</div>
+                        <a href="" class="btn btn--dark btn--w-icon"><i class="plus--"></i>AND</a>
+                        <div class="form-elements__v-separator"></div>
+                        <a href="" class="btn btn--dark">SEARCH</a>
+                        <div class="form-elements__v-separator"></div>
+                        <a href="" class="btn btn--dark btn--inactive">SEARCH</a>
+                    </div>
 
-            <div class="form-elements__row">
-                <div class="form-elements__title">light</div>
-                <a href="" class="btn btn--light"><span class="btn-front"><span
-                        class="btn-front-text">DETAILED LOGS</span></span></a>
-                <div class="form-elements__v-separator"></div>
-                <a href="" class="btn btn--light btn--inactive"><span class="btn-front"><span class="btn-front-text">DETAILED LOGS</span></span></a>
-            </div>
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">light</div>
+                        <a href="" class="btn btn--light"><span class="btn-front"><span
+                                class="btn-front-text">DETAILED LOGS</span></span></a>
+                        <div class="form-elements__v-separator"></div>
+                        <a href="" class="btn btn--light btn--inactive"><span class="btn-front"><span
+                                class="btn-front-text">DETAILED LOGS</span></span></a>
+                    </div>
 
-            <div class="form-elements__row">
-                <div class="form-elements__title">delete</div>
-                <a href="" class="btn btn--delete btn--w-icon"><i class="trash-can"></i>DELETE</a>
-                <div class="form-elements__v-separator"></div>
-                <a href="" class="btn btn--delete btn--w-icon btn--inactive"><i class="trash-can"></i>DELETE</a>
-            </div>
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">delete</div>
+                        <a href="" class="btn btn--delete btn--w-icon"><i class="trash-can"></i>DELETE</a>
+                        <div class="form-elements__v-separator"></div>
+                        <a href="" class="btn btn--delete btn--w-icon btn--inactive"><i class="trash-can"></i>DELETE</a>
+                    </div>
 
-            <h3>Message</h3>
-            <div class="form-elements__row">
-                <div class="form-elements__title">error</div>
-                <div>
-                    {{> warning--error--wrong-password}}
-                </div>
-            </div>
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">tertiary</div>
+                        <button class="btn btn--tertiary"><i class="no-edit"></i>Disable edit</button>
+                        <div class="form-elements__v-separator"></div>
+                        <button class="btn btn--tertiary btn--inactive"><i class="no-edit"></i>Disable edit</button>
+                    </div>
 
-            <div class="form-elements__row">
-                <div class="form-elements__title">success</div>
-                <div>
-                    {{> warning--success--new-password}}
-                </div>
-            </div>
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">grey</div>
+                        <button class="btn btn--grey">GREY</button>
+                        <div class="form-elements__v-separator"></div>
+                        <button class="btn btn--grey btn--inactive">GREY</button>
+                    </div>
 
-            <div class="form-elements__row">
-                <div class="form-elements__title">info</div>
-                <div>
-                    {{> warning--info}}
-                </div>
-            </div>
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">white</div>
+                        <button class="btn btn--white">WHITE</button>
+                        <div class="form-elements__v-separator"></div>
+                        <button class="btn btn--white btn--inactive">WHITE</button>
+                    </div>
 
-            <h3>Form inputs</h3>
-            <div class="form-elements__row">
-                <div class="form-elements__title">basic</div>
-                <div>
-                    <input type="text" class="form-control" value="jirsa@jzstudio.cz">
-                </div>
-            </div>
-            <div class="form-elements__row">
-                <div class="form-elements__title">error</div>
-                <div>
-                    <input type="text" class="form-control form-control--error" value="jirsa@jzstudio.cz">
-                    <span class="input-error-warning">Please enter valid e-mail!</span>
-                </div>
-            </div>
 
-            {{> form-elements__accordion}}
-            {{> form-elements__accordion-2}}
-            {{> form-elements__accordion-3}}
 
-            <div class="row">
-                <div class="col-md-9">{{> form-elements__boxed}}</div>
-                <div class="col-md-3">{{> form-elements__sidebox}}</div>
+                    <h3>Message</h3>
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">error</div>
+                        <div>
+                            {{> warning--error--wrong-password}}
+                        </div>
+                    </div>
+
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">success</div>
+                        <div>
+                            {{> warning--success--new-password}}
+                        </div>
+                    </div>
+
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">info</div>
+                        <div>
+                            {{> warning--info}}
+                        </div>
+                    </div>
+
+                    <h3>Form inputs</h3>
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">basic</div>
+                        <div>
+                            <input type="text" class="form-control" value="jirsa@jzstudio.cz">
+                        </div>
+                    </div>
+                    <div class="form-elements__row">
+                        <div class="form-elements__title">error</div>
+                        <div>
+                            <input type="text" class="form-control form-control--error" value="jirsa@jzstudio.cz">
+                            <span class="input-error-warning">Please enter valid e-mail!</span>
+                        </div>
+                    </div>
+
+                    {{> form-elements__accordion}}
+                    {{> form-elements__accordion-2}}
+                    {{> form-elements__accordion-3}}
+
+                    <div class="row">
+                        <div class="col-md-9">{{> form-elements__boxed}}</div>
+                        <div class="col-md-3">{{> form-elements__sidebox}}</div>
+                    </div>
+
+                </main>
             </div>
-
-        </main>
-        {{> footer}}
+            {{> footer}}
+        </div>
     </div>
 
 </div>

@@ -2,24 +2,59 @@
 * {
   scrollbar-width: thin;
   scrollbar-height: thin;
-  scrollbar-color: #d8e4ec #213655;
+  scrollbar-color: #d8e4ec #5d7483;
+  .main-nav & {
+    scrollbar-color: #d8e4ec #213655;
+  }
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 7px;
-  height: 3px;
+  height: 7px;
   border-radius: 7px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #213655;
+  background: #d8e4ec;
   border-radius: 7px;
+  .main-nav & {
+    background: #213655;
+  }
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #d8e4ec;
+  background-color: #5d7483;
   border-radius: 7px;
+  .main-nav & {
+    background: #d8e4ec;
+  }
+}
+
+.modal {
+  /* Works on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-height: thin;
+    scrollbar-color: #5d7483 #edf3f7;
+  }
+
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #edf3f7;
+    border-radius: 7px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #5d7483;
+    border-radius: 7px;
+  }
 }
 
 .scrollbared--light {

@@ -1,15 +1,11 @@
-<aside id="rightPanel" class="right-panel" xmlns="http://www.w3.org/1999/html">
+<aside id="rightPanel" class="right-panel">
     <div class="right-panel__inner">
         <div class="right-panel__top">
+            <button id="rightPanelToggleTop" class="right-panel-toggle-btn btn btn--secondary btn--small-text"><i class="forward-button"></i><span>Hide</span></button>
             <div class="dropdown-list-wrapper">
-                <button class="btn btn--dark btn--small-text dropdown-link"><i class="external-link"></i>Category
-                    preview<i
-                            class="expand-arrow expand-arrow--small"></i></button>
+                <button class="btn btn--dark btn--small-text dropdown-link"><i class="external-link"></i>Category preview<i class="expand-arrow expand-arrow--small"></i></button>
                 {{> dropdown-list-sample}}
             </div>
-
-            <button class="right-panel-toggle-btn btn btn--secondary btn--small-text"><i class="logout"></i>Hide
-            </button>
         </div>
         <div class="right-panel__body">
             {{> right-panel__publication}}

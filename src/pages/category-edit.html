@@ -6,14 +6,17 @@ layout: default
     {{> main-nav}}
     <div class="main-content-wrapper">
         {{> top-bar--product}}
-        <div class="main-w-aside">
-            <main class="main">
-                {{> right-panel-toggle}}
-                {{> category__tabs}}
-            </main>
-            {{> category__aside}}
+        <div id="mainWrapper" class="main-w-aside">
+            <div class="main-w-aside__content">
+                <main class="main">
+                    {{> right-panel-toggle}}
+                    {{> category__tabs}}
+                </main>
+                {{> category__aside}}
+            </div>
+            {{> footer}}
         </div>
-        {{> footer}}
+
     </div>
 
 </div>

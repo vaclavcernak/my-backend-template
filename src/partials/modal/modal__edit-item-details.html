@@ -1,0 +1,217 @@
+<div class="modal fade" id="modalEditItemDetails" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">Edit Item Details</h5>
+                    {{> top-bar__status--new}}
+                </div>
+                {{> modal__top-bar-buttons}}
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-body__heading">Product designation</h3>
+
+                <div class="modal-body__section">
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Item Type</label>
+                        <div class="col-input">
+                            <input type="text" class="form-control" value="jarda@yahoo.com">
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Phone</label>
+                        <div class="col-input">
+                            <input type="text" class="form-control" value="+420 7333 500 600">
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="modal-body__heading">Delivery Adress</h3>
+
+                <div class="modal-body__section">
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Company</label>
+                        <div class="col-input">
+                            <select class="form-select2">
+                                <option selected>Basic product</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Product Title</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value='BENQ "24" LED G2420HDBL / 1920x1080/ 5000000:1/ 5ms/'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">SKU</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="JZ500200">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Manufacturer Part Number</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="321548465">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">EAN</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="321564832">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Warranty</label>
+                        <div class="col-input">
+                            <select class="form-select2">
+                                <option selected>2 roky</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="modal-body__heading">Price</h3>
+
+                <div class="modal-body__section">
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Unit Price</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="289 900,00">
+                                <span class="input-group-text">Kč</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label for="vat" class="col-form-label switch-text">Price with VAT</label>
+                        <div class="col-input">
+                            <div class="form-check form-check-inline form-switch">
+                                <input class="form-check-input" type="checkbox" id="vat">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">VAT rate</label>
+                        <div class="col-input">
+                            <select class="form-select2">
+                                <option selected>regular</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Quantity</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="1225">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Pcs
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Total Price<span class="notice">incl. VAT</span></label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="265 874,25" disabled>
+                                <span class="input-group-text">Kč</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Total Price<span class="notice">incl. VAT</span></label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="265 874,25" disabled>
+                                <span class="input-group-text">Kč</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Purchase Price<span class="notice">excl. VAT</span></label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="289 900,00">
+                                <a href="#" class="input-group-btn"><i class="calculator"></i></a>
+                                <span class="input-group-text">Kč</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="modal-body__heading">Stock</h3>
+
+                <div class="modal-body__section">
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Reserved Quantity</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="1225">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Issued Quantity</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="1225">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Ordered Quantity</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="1225">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

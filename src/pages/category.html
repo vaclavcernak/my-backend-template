@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="main-wrapper">
+    {{> main-nav}}
+    <div class="main-content-wrapper">
+        {{> top-bar--category}}
+        <div id="mainWrapper" class="main-w-aside">
+            <div class="main-w-aside__content">
+                <main class="main main-content">
+                    {{> right-panel-toggle}}
+                    {{> category__content}}
+                </main>
+                {{> category__aside}}
+            </div>
+            {{> footer}}
+        </div>
+
+    </div>
+
+</div>
+

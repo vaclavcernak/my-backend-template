@@ -1,0 +1,1433 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+
+<div class="main-wrapper">
+    <aside id="mainNav" class="main-nav">
+        <header class="main-nav__header">
+            <a href="/"><img src="assets/images/jzone-blue-white.svg" alt="jz one logo" class="logo" style="height: 26px;"></a>
+            <!--<button class="main-nav__header__button"><i class="cash-register"></i></button>
+            <button class="main-nav__header__button"><i class="barcode-reader"></i></button>-->
+            <button id="hamMenuBtnMax" class="main-nav__header__button button--hamburger on-maximized"><i
+                    class="unpin hamburger-open"></i><i class="pin hamburger-close"></i><i class="multiply hamburger-close d-block d-md-none"></i></button>
+            <button id="hamMenuBtnMin" class="main-nav__header__button button--hamburger on-minimized">
+                <a href="#"><img src="assets/images/jz.svg" alt="malé logo"></a>
+                <!--<i class="hamburger-menu hamburger-open"></i><i class="multiply hamburger-close"></i>-->
+            </button>
+        </header>
+        <nav id="mainNav__nav" class="main-nav__nav scrollbared">
+            <div class="main-nav__nav__inner">
+                <ul>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><span class="notify">1</span><i class="dashboard-layout"></i><span class="name">Dashboard</span></a></li>
+                    <li class="main-nav__nav__item has-submenu"><span class="notify">95</span><a href="#"><i class="basket"></i><span
+                            class="name">Sales</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item has-submenu active">
+                                <a href="#"><span class="menu-error-icon">!</span><span
+                                    class="name">2. Aktivní</span><span class="notify">155 265</span></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                </ul></li>
+                            <li class="sub-menu__item has-submenu"><a href="#"><span class="name">Categories</span></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item active"><a href="#"><span class="menu-error-icon">!</span><span class="name">Třetí aktivní</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item has-submenu"><a href="#"><i class="extra-features"></i><span
+                            class="name">Catalogue</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item"><a href="#"><span class="menu-error-icon">!</span><span class="name">Products</span><span
+                                    class="notify">155 265</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Categories</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="price"></i><span class="name">Pricing</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="package"></i><span class="name">Stock</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="commercial"></i><span
+                            class="name">Marketing</span></a></li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="repository"></i><span
+                            class="name">Directory</span></a></li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="marketing"></i><span
+                            class="name">Reports</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="bot"></i><span class="name">Automation</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="plugin"></i><span class="name">Plug-ins</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"></a><a
+                            href="#"><i class="online-store"></i><span class="name">Sales channels</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><span
+                            class="menu-error-icon">!</span><i
+                            class="file"></i><span
+                            class="name">File Manager</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="system-administrator-male"></i><span class="name">Client account</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i class="settings"></i><span class="name">Settings</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i class="lifebuoy"></i><span class="name">Help</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <div class="main-content-wrapper">
+        <header id="topBar" class="top-bar top-bar--product">
+        
+            <div class="hamburger-menu-mobile">
+                <button id="mobileButtonHamburger" class="button--hamburger">
+                    <i class="hamburger-menu hamburger-open"></i>
+                </button>
+            </div>
+        
+            <div class="top-bar__left">
+                <img class="topbar-img" src="assets/images/samples/topbar-img.png" alt="">
+                <h1 id="topBarTitle" class="title">Držák na telefon ring s podstavcem ve tvaru prstýnku černý s ještě delším
+                    názvem</h1>
+                <span class="product-tag product-tag--draft">Draft</span>
+                <div class="flag-status">
+                    <span class="status-active dropdown-button"><span class="img-wrapper"><img src="assets/images/icon-green-flag.png"
+                                                                               alt=""></span><span class="status-text">Default</span><i
+                            class="expand-arrow"></i></span>
+                    <ul class="top-bar__button__window status-dropdown">
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-translation.png"
+                                                                                   alt=""></span>To translate</a></li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-briefcase.png" alt=""></span>Translated</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-spinner.png" alt=""></span>For
+                            review</a></li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-user.png" alt=""></span>Tomáš</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-user.png" alt=""></span>Pavel</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-green-flag.png"
+                                                                                   alt=""></span>Default</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="top-bar__right top-bar-buttons">
+                <button class="actions-button"><i class="menu-vertical"></i></button>
+                <ul class="mobile-actions">
+                    <li class="item"><a href="" class="item-link">Save</a></li>
+                    <li class="item"><a href="" class="item-link">Save & close</a></li>
+                    <li class="item"><a href="" class="item-link">Cancel</a></li>
+                </ul>
+                <div class="fade-modal-actions" style="display: none"></div>
+                <div class="actions">
+                    <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">SAVE</span></span>
+                    </button>
+                    <button class="btn btn--secondary"><i class="save"></i>SAVE & CLOSE</button>
+                    <button class="btn btn--secondary"><i class="multiply-2"></i>CANCEL</button>
+                </div>
+            </div>
+        </header>
+        <div id="mainWrapper" class="main-w-aside">
+            <div class="main-w-aside__content">
+                <main class="main">
+                    <button id="rightPanelToggle" class="right-panel-toggle right-panel-toggle-btn"><i class="back-arrow"></i>
+                    </button>
+                    <ul id="navTabs" class="nav nav-tabs nav-tabs-responsive">
+                        <li class="nav-item item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#inventory" aria-selected="true">Inventory</button>
+                        </li>
+                    
+                        <div class="nav-tabs__next">
+                            <button class="more-btn nav-tabs__next__btn"><i class="hamburger-menu"></i></button>
+                            <ul class="nav-tabs__next__nav"></ul>
+                        </div>
+                    </ul>
+                    
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="inventory">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#stockInventory">
+                                            <span class="accordion-button__text">STOCK STATUS</span>
+                                        </button>
+                                        <div class="accordion-header__right">
+                                            <button class="btn btn--secondary btn--small-text"><i class="available-updates"></i>Update</button>
+                                        </div>
+                                    </h2>
+                                    <div id="stockInventory" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                            
+                                            <div class="row mb-2">
+                                                <div class="col-xs-4 col-lg-5 col-sm-8 mb-2">
+                                                    <div class="highlight-input">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="Inventory tracking management" checked>
+                                                            <label class="switch-text fw-bold" for="Inventory tracking management">Inventory tracking management <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="grid-wrapper">
+                                                <div class="grid-top">
+                                                    <div class="grid-top__left d-none d-sm-flex"></div>
+                                                    <div class="grid-top__actions nav-tabs-responsive vertical-menu">
+                                                        <button class="btn btn--secondary item"><i class="settings"></i>Warehouse management</button>
+                                                        <button class="btn btn--secondary item"><i class="settings"></i>Inventory tracking settings</button>
+                                                        <div class="nav-tabs__next">
+                                                            <button class="more-btn nav-tabs__next__btn"><i class="menu-vertical"></i></button>
+                                                            <ul class="nav-tabs__next__nav"></ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="grid">
+                                                    <div class="table-responsive">
+                                                        <table class="grid__table">
+                                                            <thead class="grid__head">
+                                                            <tr class="thead-tr thead-tr--labels">
+                                                                <th colspan="w50"></th>
+                                                                <th class="name active mw100">
+                                                                    <a href="" class="sort sort--down selected">Warehouse title</a>
+                                                                </th>
+                                                                <th class="name">
+                                                                    <a href="">Location</a>
+                                                                </th>
+                                                                <th class="name">
+                                                                    <a href="">Warehouse type</a>
+                                                                </th>
+                                                                <th class="name fw-bold">
+                                                                    <a href="">In stock</a>
+                                                                </th>
+                                                                <th class="name">
+                                                                    <a href="">Ordered</a>
+                                                                </th>
+                                                                <th class="name th--actions cell--actions">
+                                                                    <span>Actions</span>
+                                                                </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody class="grid__body">
+                                                            <tr class="tr">
+                                                                <td>
+                                                                    <button class="toggle-subtable"><i class="add toggle-icon toggle-icon--show"></i><i class="minus toggle-icon toggle-icon--hide"></i></button>
+                                                                </td>
+                                                                <td class="fw-bold">
+                                                                    Centrální sklad
+                                                                </td>
+                                                                <td class="text-center">
+                                                                   <strong>A250-2-11</strong>
+                                                                    <img src="assets/images/bar-code.png" alt="" class="ms-2">
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    Physical
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    10
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    -
+                                                                </td>
+                                                                <td class="td--actions cell--actions">
+                                                                    <div class="action-btns">
+                                                                        <button class="action-btn action-btn--edit"><i class="time-machine"></i></button>
+                                                                        <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="tr">
+                                                                <td>
+                                                                    <button class="toggle-subtable"><i class="add toggle-icon toggle-icon--show"></i><i class="minus toggle-icon toggle-icon--hide"></i></button>
+                                                                </td>
+                                                                <td class="fw-bold">
+                                                                    Sklad na prodejně
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <span class="fs-12">multi located product</span>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    Virtual
+                                                                </td>
+                                                                <td class="text-center fw-bold">
+                                                                    50
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    1
+                                                                </td>
+                                                                <td class="td--actions cell--actions">
+                                                                    <div class="action-btns">
+                                                                        <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="toggle-subtable-row"> <!-- this class show/hide inner sub table-->
+                                                                <td colspan="7" class="p-0">
+                                                                    <table class="subtable-table">
+                                                                        <thead class="grid__head">
+                                                                            <tr class="thead-tr thead-tr--labels">
+                                                                                <th class="name mw100">
+                                                                                    <a href="" class="sort sort--down selected">Quantity</a>
+                                                                                </th>
+                                                                                <th class="name">
+                                                                                   <a href="">Location</a>
+                                                                                </th>
+                                                                                <th class="name">
+                                                                                   <a href="">Serial number</a>
+                                                                                </th>
+                                                                                <th class="name">
+                                                                                  <a href="">Product Batch</a>
+                                                                                </th>
+                                                                                <th class="name" colspan="2">
+                                                                                    <a href="">Expiration date</a>
+                                                                                </th>
+                                                                                <th class="name th--actions cell--actions">
+                                                                                    <span>Actions</span>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="grid__body">
+                                                                            <tr class="tr">
+                                                                                <td class="text-center">
+                                                                                    1
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    <strong>A250-2-11</strong>
+                                                                                    <img src="assets/images/bar-code.png" alt="" class="ms-2">
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    252 015 AS8222
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    252 015 AS8222
+                                                                                </td>
+                                                                                <td class="text-center td--date">
+                                                                                    22.5.2022
+                                                                                </td>
+                                                                                <td class="td--days">
+                                                                                    +22 days
+                                                                                </td>
+                                                                                <td class="td--actions cell--actions">
+                                                                                    <div class="action-btns">
+                                                                                        <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="tr">
+                                                                                <td class="text-center">
+                                                                                    1
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    <strong>A250-2-11</strong>
+                                                                                    <img src="assets/images/bar-code.png" alt="" class="ms-2">
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    252 015 AS8222
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    252 015 AS8222
+                                                                                </td>
+                                                                                <td class="text-center td--date">
+                                                                                    13.4.2022
+                                                                                </td>
+                                                                                <td class="td--days">
+                                                                                    -15 days
+                                                                                </td>
+                                                                                <td class="td--actions cell--actions">
+                                                                                    <div class="action-btns">
+                                                                                        <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="tr">
+                                                                                <td class="text-center">
+                                                                                    1
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    <strong>A250-2-11</strong>
+                                                                                    <img src="assets/images/bar-code.png" alt="" class="ms-2">
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    252 015 AS8222
+                                                                                </td>
+                                                                                <td class="text-center">
+                                                                                    252 015 AS8222
+                                                                                </td>
+                                                                                <td class="text-center td--date">
+                                                                                    22.5.2028
+                                                                                </td>
+                                                                                <td class="td--days">
+                                                                                    +1825 days
+                                                                                </td>
+                                                                                <td class="td--actions cell--actions">
+                                                                                    <div class="action-btns">
+                                                                                        <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <div class="grid__bottom row">
+                                                                        <div class="grid__bottom__left col-xxl-4">
+                                                                        </div>
+                                            
+                                                                        <div class="grid__bottom__center col-xxl-4">
+                                                                            <div class="pagination">
+                                                                                <a href="" class="pagination__btn pagination__btn--double-prev"><i class="double-left"></i></a>
+                                                                                <a href="" class="pagination__btn pagination__btn--prev"><i class="less-than"></i></a>
+                                                                                <label for="paginationInput" class="pagination__label">Page</label>
+                                                                                <input type="text" class="form-control pagination__input" value="2776" id="paginationInput">
+                                                                                <span class="pagination__from">/ 3488</span>
+                                                                                <a href="" class="pagination__btn pagination__btn--next"><i class="forward"></i></a>
+                                                                                <a href="" class="pagination__btn pagination__btn--double-next"><i class="double-right"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                            
+                                                                        <div class="grid__bottom__right col-xxl-4">
+                                                                            <div class="paging">
+                                                                                <div class="paging__items">Items 26 - 50 of <span class="total">65 875</span></div>
+                                                                                <span class="separator-line">|</span>
+                                                                                <div class="paging__onpage">
+                                                                                    <span class="text">On page</span>
+                                                                                    <select class="form-select2 form-select2--small autowidth paging-select">
+                                                                                        <option selected="">50</option>
+                                                                                        <option value="1">100</option>
+                                                                                        <option value="2">150</option>
+                                                                                        <option value="3">200</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                            
+                                                                    </div>
+                                            
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="tr">
+                                                                <td></td>
+                                                                <td class="fw-bold">
+                                                                    Dodavatel XY
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <span class="fs-12 c-inactive">Location is not available</span>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    Suplier
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    20
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    2
+                                                                </td>
+                                                                <td class="td--actions cell--actions">
+                                                                    <div class="action-btns">
+                                                                        <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="my-3 d-flex justify-content-end">
+                                                    <a href="" class="btn btn--light"><span class="btn-front"><span class="btn-front-text"><i class="reset"></i>Interbranch transfer</span></span></a>
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-lg-8 mb-2 order-lg-1 order-2">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 mb-2">
+                                                            <div class="mb-2 input-row">
+                                                                <label class="col-form-label">Availability when in stock</label>
+                                                                <div class="col-input">
+                                                                    <select class="form-select2">
+                                                                        <option selected>Skladem</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 mb-2">
+                            
+                                                        </div>
+                                                        <div class="col-sm-6 mb-2">
+                                                            <div class="mb-2 input-row">
+                                                                <label class="col-form-label">Availability when out of stock</label>
+                                                                <div class="col-input">
+                                                                    <select class="form-select2">
+                                                                        <option selected>Není skladem</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 mb-2">
+                                                            <div class="mb-2 input-row mt-2">
+                                                                <label class="col-form-label d-none d-sm-inline-block">&nbsp;</label>
+                                                                <div class="col-input">
+                                                                    <div class="form-check form-check-inline form-switch">
+                                                                        <input class="form-check-input" type="checkbox" checked="" id="neg">
+                                                                        <label class="switch-text fs-14 fw-bold" for="neg">Negative stocks allowed</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-lg-4 order-lg-2 order-1 mb-3"> <!--stock in total table-->
+                                                    <div class="total-table-wrapper mt-3">
+                                                        <table class="total-table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-end">Total in stock:</td>
+                                                                    <td class="fw-bold">80&nbsp;ks</td>
+                                                                </tr>
+                                                                <tr class="last-common">
+                                                                    <td class="text-end">Reserved:</td>
+                                                                    <td class="fw-bold">20&nbsp;ks</td>
+                                                                </tr>
+                                                                <tr class="total">
+                                                                    <td class="text-end">Total available:</td>
+                                                                    <td class="value fw-bold">60&nbsp;ks</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                            
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#unitsAndPackaging">
+                                            <span class="accordion-button__text">UNITS AND PACKAGING</span>
+                                        </button>
+                                    </h2>
+                                    <div id="unitsAndPackaging" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                            
+                                            <div class="row mb-2">
+                            
+                                                <div class="col-lg-4 col-sm-6 mb-2">
+                                                    <div class="input-row">
+                                                        <label class="col-form-label">Sales unit</label>
+                                                        <div class="col-input">
+                                                            <select class="form-select2">
+                                                                <option selected>Piece [ks]</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-lg-4 col-sm-6 mb-2">
+                                                    <div class="input-row">
+                                                        <label class="col-form-label">Number per unit</label>
+                                                        <div class="col-input">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" value="1,00">
+                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">Ks
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-lg-4 col-sm-6 mb-2">
+                                                    <div class="input-row">
+                                                        <label class="col-form-label">Purchase multiple</label>
+                                                        <div class="col-input">
+                                                            <input type="text" class="form-control" value="1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                            </div>
+                            
+                                            <div class="row mb-2">
+                            
+                                                <div class="col-lg-4 col-sm-6 mb-2">
+                                                    <div class="input-row">
+                                                        <label class="col-form-label">Minimum purchase</label>
+                                                        <div class="col-input">
+                                                            <input type="text" class="form-control" value="1,00">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-lg-4 col-sm-6 mb-2">
+                                                    <div class="input-row">
+                                                        <label class="col-form-label">Maximum purchase</label>
+                                                        <div class="col-input">
+                                                            <input type="text" class="form-control" value="100,00">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                            </div>
+                            
+                                            <div class="row mb-4">
+                            
+                                                <div class="col-xxl-4 col-lg-6 mb-2">
+                                                    <div class="input-row">
+                                                        <label class="col-form-label">Size</label>
+                                                        <div class="col-input col-input--multidimensional">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control form-control--multidimensional" value="9,00 x 9,00 x 9,00">
+                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">mm
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-xxl-4 col-lg-6 mb-2">
+                                                    <div class="input-row">
+                                                        <label class="col-form-label">Size</label>
+                                                        <div class="col-input col-input--multidimensional2">
+                                                            <div class="inputs">
+                                                                <input type="text" class="form-control" value="9,00">
+                                                                x
+                                                                <input type="text" class="form-control" value="9,00">
+                                                                x
+                                                                <input type="text" class="form-control" value="9,00">
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">mm
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-xxl-4 col-sm-6 mb-2">
+                                                    <div class="input-row">
+                                                        <label class="col-form-label">Volume</label>
+                                                        <div class="col-input">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" value="9,00">
+                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">Meters<sup>3</sup>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-xxl-4 col-sm-6 mb-2">
+                                                    <div class="input-row">
+                                                        <label class="col-form-label">Weight</label>
+                                                        <div class="col-input">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" value="9,00">
+                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">Kilograms
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                            </div>
+                            
+                                            <span class="col-form-label d-block mb-2">Packaging</span>
+                                            <div class="grid">
+                                                <div class="table-responsive">
+                                                    <table class="grid__table">
+                                                        <thead class="grid__head">
+                                                        <tr class="thead-tr thead-tr--labels">
+                                                            <th class="th--checkbox cell--checkbox">
+                                                                <div class="input-wrapper">
+                                                                    <div class="form-check-input-all">
+                                                                        <!--<input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">-->
+                                                                        <div class="checkbox-options">
+                                                                            <span class="checkbox-options__btn"></span>
+                                                                            <ul class="checkbox-options__options">
+                                                                                <li class="item"><a href="#">Možnost</a></li>
+                                                                                <li class="item"><a href="#">Další položka</a></li>
+                                                                                <li class="item"><a href="#">Ještě</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>                </th>
+                                                            <th class="name">
+                                                                <a href="">Default</a>
+                                                            </th>
+                                                            <th class="name active mw100">
+                                                              <a href="" class="sort sort--down selected">Quantity</a>
+                                                            </th>
+                                                            <th class="name">
+                                                                <a href="">EAN</a>
+                                                            </th>
+                                                            <th class="name">
+                                                                <a href="">Weight</a>
+                                                            </th>
+                                                            <th class="name">
+                                                                <a href="">Dimensions [m]</a>
+                                                            </th>
+                                                            <th class="name">
+                                                               <a href="">Volume [m3]</a>
+                                                            </th>
+                                                            <th class="name">
+                                                                <a href="">Distributability</a>
+                                                            </th>
+                                                            <th class="name th--actions cell--actions">
+                                                                <span>Actions</span>
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody class="grid__body">
+                                                        <tr class="tr">
+                                                            <td class="td--checkbox cell--checkbox">
+                                                                <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <input class="form-check-input" type="radio" name="default">
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>6 kg</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>123548975</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>12,5 g</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>0.150 x 0.210 x 0.015</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>0.00025</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                6
+                                                            </td>
+                                                            <td class="td--actions cell--actions">
+                                                                <div class="action-btns">
+                                                                    <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                    <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tr">
+                                                            <td class="td--checkbox cell--checkbox">
+                                                                <input class="form-check-input product-checkbox" type="checkbox" id="option2" value="option2">
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <input class="form-check-input" type="radio" name="default">
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>50 pcs</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>123548975</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>12,5 g</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>0.150 x 0.210 x 0.015</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>0.00025</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                12
+                                                            </td>
+                                                            <td class="td--actions cell--actions">
+                                                                <div class="action-btns">
+                                                                    <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                    <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tr">
+                                                            <td class="td--checkbox cell--checkbox">
+                                                                <input class="form-check-input product-checkbox" type="checkbox" id="option3" value="option3">
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <input class="form-check-input" type="radio" name="default">
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>1 pc</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>123548975</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>1,0 g</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>0.150 x 0.210 x 0.015</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <strong>0.00025</strong>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="td--actions cell--actions">
+                                                                <div class="action-btns">
+                                                                    <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                    <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="grid__bottom row">
+                                                <div class="grid__bottom__left col-xl-4 col-lg-6 col-md-6">
+                                                    <div class="selected-items"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <label class="form-label">Selected items</label>
+                                                                <div>
+                                                                    <select class="form-select2 form-select2--small">
+                                                                        <option selected="">--</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <label class="form-label">&nbsp;</label>
+                                                                <div>
+                                                                    <button class="btn btn--primary" disabled><span class="btn-front"><span class="btn-front-text">PROCEED</span></span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="grid__bottom__right col-xl-8 col-lg-6 col-md-6 mb-3 text-end">
+                                                    <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">NEW PACKAGING</span></span>
+                                                    </button>
+                                                </div>
+                                            
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#documents">
+                                            <span class="accordion-button__text">DOCUMENTS</span>
+                                        </button>
+                                    </h2>
+                                    <div id="documents" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="grid-wrapper ">
+                                                <div class="grid">
+                                                    <div class="table-responsive">
+                                                        <table class="grid__table">
+                                                            <thead class="grid__head">
+                                                            <tr class="thead-tr thead-tr--labels">
+                                                                <th class="th--checkbox cell--checkbox">
+                                                                    <div class="input-wrapper">
+                                                                        <div class="form-check-input-all">
+                                                                            <!--<input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">-->
+                                                                            <div class="checkbox-options">
+                                                                                <span class="checkbox-options__btn"></span>
+                                                                                <ul class="checkbox-options__options">
+                                                                                    <li class="item"><a href="#">Možnost</a></li>
+                                                                                    <li class="item"><a href="#">Další položka</a></li>
+                                                                                    <li class="item"><a href="#">Ještě</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>                    </th>
+                                                                <th class="name active">
+                                                                    <a href="" class="sort sort--down selected">Date</a>
+                                                                </th>
+                                                                <th class="name text-start">
+                                                                    <a href="">Stock movement</a>
+                                                                </th>
+                                                                <th class="name">
+                                                                    <a href="">Barcode</a>
+                                                                </th>
+                                                                <th class="name">
+                                                                    <a href="">Warehouse</a>
+                                                                </th>
+                                                                <th class="name">
+                                                                    <a href="">Note</a>
+                                                                </th>
+                                                                <th class="name">
+                                                                    <a href="">Quantity</a>
+                                                                </th>
+                                                                <th class="name">
+                                                                    <a href="">Left on stock</a>
+                                                                </th>
+                                                                <th class="name th--actions cell--actions">
+                                                                    <span>Actions</span>
+                                                                </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody class="grid__body">
+                                                            <tr class="tr">
+                                                                <td class="td--checkbox cell--checkbox">
+                                                                    <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    22.2.2023
+                                                                </td>
+                                                                <td class="fw-bold">
+                                                                    <i class="right c-green-light"></i> Received
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    123548975
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    Centrální sklad
+                                                                </td>
+                                                                <td class="text-center">
+                                                                   -
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <span class="c-green-light">+6</span>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    12
+                                                                </td>
+                                                                <td class="td--actions cell--actions">
+                                                                    <div class="action-btns">
+                                                                        <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                        <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="tr">
+                                                                <td class="td--checkbox cell--checkbox">
+                                                                    <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    22.2.2023
+                                                                </td>
+                                                                <td class="fw-bold">
+                                                                    <i class="right c-red u-opposite"></i> Issued
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    123548975
+                                                                </td>
+                                                                <td class="text-center">
+                                                                   Prodejna
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    Vyřazení poškozených
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <span class="c-red">-12</span>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    0
+                                                                </td>
+                                                                <td class="td--actions cell--actions">
+                                                                    <div class="action-btns">
+                                                                        <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                        <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="tr">
+                                                                <td class="td--checkbox cell--checkbox">
+                                                                    <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    22.2.2023
+                                                                </td>
+                                                                <td class="fw-bold">
+                                                                    <i class="right c-red u-opposite"></i> Issued
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    123548975
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    Prodejna
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <span class="c-inactive">Order #55648321</span>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <span class="c-red">-1</span>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    -1
+                                                                </td>
+                                                                <td class="td--actions cell--actions">
+                                                                    <div class="action-btns">
+                                                                        <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                        <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="grid__bottom row">
+                                                            <div class="grid__bottom__left col-xl-4 col-lg-6 col-md-6">
+                                                                <div class="selected-items active"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label class="form-label">Selected items</label>
+                                                                            <div>
+                                                                                <select class="form-select2 form-select2--small">
+                                                                                    <option selected="">--</option>
+                                                                                    <option value="1">One</option>
+                                                                                    <option value="2">Two</option>
+                                                                                    <option value="3">Three</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="selected_items2" class="form-label">&nbsp;</label>
+                                                                            <div>
+                                                                                <select class="form-select2 form-select2--small" id="selected_items2">
+                                                                                    <option selected="">--</option>
+                                                                                    <option value="1">One</option>
+                                                                                    <option value="2">Two</option>
+                                                                                    <option value="3">Three</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label class="form-label">&nbsp;</label>
+                                                                            <div>
+                                                                                <button class="btn btn--primary" disabled><span class="btn-front"><span class="btn-front-text">PROCEED</span></span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                            <div class="grid__bottom__center col-xl-4 col-lg-12 col-md-12">
+                                                                <div class="pagination">
+                                                                    <a href="" class="pagination__btn pagination__btn--double-prev"><i class="double-left"></i></a>
+                                                                    <a href="" class="pagination__btn pagination__btn--prev"><i class="less-than"></i></a>
+                                                                    <label for="paginationInput" class="pagination__label">Page</label>
+                                                                    <input type="text" class="form-control pagination__input" value="2776" id="paginationInput">
+                                                                    <span class="pagination__from">/ 3488</span>
+                                                                    <a href="" class="pagination__btn pagination__btn--next"><i class="forward"></i></a>
+                                                                    <a href="" class="pagination__btn pagination__btn--double-next"><i class="double-right"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                            <div class="grid__bottom__right col-xl-4 col-lg-6 col-md-6">
+                                                                <div class="paging">
+                                                                    <div class="paging__items">Items 26 - 50 of <span class="total">65 875</span></div>
+                                                                    <span class="separator-line">|</span>
+                                                                    <div class="paging__onpage">
+                                                                        <span class="text">On page</span>
+                                                                        <select class="form-select2 form-select2--small autowidth paging-select">
+                                                                            <option selected="">50</option>
+                                                                            <option value="1">100</option>
+                                                                            <option value="2">150</option>
+                                                                            <option value="3">200</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                            
+                                            </div>            </div>
+                                    </div>
+                                </div>
+                            </div>    </div>
+                    
+                    </div>
+                </main>
+                <aside id="rightPanel" class="right-panel">
+                    <div class="right-panel__inner">
+                        <div class="right-panel__top">
+                            <button id="rightPanelToggleTop" class="right-panel-toggle-btn btn btn--secondary btn--small-text"><i class="forward-button"></i><span>Hide</span></button>
+                            <div class="show-frontend show-frontend--has-list">
+                                <span class="show-frontend__button"><i class="eye-2 icon-left"></i><span class="text">Product Preview</span><i class="expand-arrow icon-right"></i></span>
+                                <ul class="show-frontend__list">
+                                    <li class="show-frontend__list__item"><a href=""><i
+                                            class="external-link"></i>www.superpouzdra.cz</a></li>
+                                    <li class="show-frontend__list__item"><a href="" target="_blank"><i class="external-link"></i>www.drackovy-hracky.cz</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right-panel__body">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#publicationBody">
+                                            <span class="accordion-button__text">Publication</span>
+                                        </button>
+                                    </h2>
+                                    <div id="publicationBody" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="rp-publication-section">
+                                                <div class="published">
+                                                    <i class="hide"></i>
+                                                    <span class="text">Product is not published on any sales channel.</span>
+                                                </div>
+                                                <div class="status">
+                                                    <select class="form-select2">
+                                                        <option selected>DRAFT</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <button class="schedule-btn"><i class="schedule"></i></button>
+                                                </div>
+                                                <div class="my-2 fs-12">
+                                                    Scheduled for March 10, 2022, 3:00
+                                                </div>
+                                                <div class="switches-group">
+                                                    <span class="fw-bold d-inline-block mb-1">Sales channels visibility</span>
+                                                    <div class="ms-2">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="point" checked="">
+                                                            <label class="switch-text" for="point">Point of sale</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="alza" checked="">
+                                                            <label class="switch-text" for="alza">Alza.cz</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="domena" checked="">
+                                                            <label class="switch-text" for="domena">Domena.cz</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="domenaCom" checked="">
+                                                            <label class="switch-text" for="domenaCom">Domena.com <i class="help" data-bs-toggle="tooltip"
+                                                                                                    title="Něco je asi špatně"></i></label>
+                                                        </div>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#propertiesBody">
+                                            <span class="accordion-button__text">Product properties</span>
+                                        </button>
+                                    </h2>
+                                    <div id="propertiesBody" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="rp-properties-section">
+                                                <div class="mb-3">
+                                                    <label for="product_id" class="form-label">Product ID</label>
+                                                    <input type="text" class="form-control" id="product_id" value="2019515346" disabled>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="Manufacturer" class="form-label">Manufacturer</label>
+                                                    <select class="form-select2" id="Manufacturer">
+                                                        <option selected>SAMSUNG</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="Type" class="form-label">Product type</label>
+                                                    <select class="form-select2" id="Type">
+                                                        <option>Basic product</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                            
+                                                <div class="form-check form-switch ms-2 mb-3">
+                                                    <input class="form-check-input" type="checkbox" id="age" checked="">
+                                                    <label class="switch-text" for="age">Age-restricted category</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#textSetBody">
+                                            <span class="accordion-button__text">Text sets</span>
+                                        </button>
+                                    </h2>
+                                    <div id="textSetBody" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="rp-text-sets">
+                                                <div class="switches-group">
+                                                    <span class="fw-bold d-inline-block mb-1">Available product text sets</span>
+                                                    <div class="ms-2">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="czweb" checked="">
+                                                            <label class="switch-text" for="czweb"><img src="assets/images/flag-cs.png" alt=""> CZ-Web</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="czalz" checked="">
+                                                            <label class="switch-text" for="czalz"><img src="assets/images/flag-cs.png" alt=""> CZ-Alza.cz</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="encom" checked="">
+                                                            <label class="switch-text" for="encom"><img src="assets/images/flag-en.png" alt=""> EN-COM</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="enb2b" checked="">
+                                                            <label class="switch-text" for="enb2b"><img src="assets/images/flag-en.png" alt=""> EN-B2B</label>
+                                                        </div>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tagsBody">
+                                            <span class="accordion-button__text">Tags</span>
+                                        </button>
+                                    </h2>
+                                    <div id="tagsBody" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="rp-tags-section">
+                                                <div class="search-input mb-2 pb-1">
+                                                    <select class="form-select2-tags" name="tags[]">
+                                                        <option selected="selected">Search or create tag</option>
+                                                        <option>Sleva</option>
+                                                        <option>Další možnost</option>
+                                                        <option>Ještě jedna</option>
+                                                    </select>
+                                                </div>
+                                                <div class="rp-tags">
+                                                    <div class="tag-wrapper">
+                                                        <div class="tag">
+                                                            <span class="text">Doporučujeme</span>
+                                                            <button class="delete"><i class="multiply-2"></i></button>
+                                                        </div>
+                                                        <button class="tag-icon tag-icon--schedule"><i class="schedule"></i></button>
+                                                    </div>
+                                                    <div class="tag-wrapper">
+                                                        <div class="tag">
+                                                            <span class="text">Akce</span>
+                                                            <button class="delete"><i class="multiply-2"></i></button>
+                                                        </div>
+                                                        <button class="tag-icon tag-icon--edit-calendar"><i class="edit-calendar"></i></button>
+                                                    </div>
+                                                    <div class="scheduled-text"><span>Scheduled form March 10, 2022, 3:00</span></div>
+                                                    <div class="tag-wrapper">
+                                                        <div class="tag">
+                                                            <span class="text">Dárek zdarma</span>
+                                                            <button class="delete"><i class="multiply-2"></i></button>
+                                                        </div>
+                                                        <button class="tag-icon tag-icon--schedule"><i class="schedule"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tasksBody">
+                                            <span class="accordion-button__text">Tasks</span>
+                                        </button>
+                                    </h2>
+                                    <div id="tasksBody" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="rp-tasks-section">
+                                                <div class="rp-tasks">
+                                                    <div class="rp-tasks__item">
+                                                        <div class="rp-tasks__item__left">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="task1" checked="">
+                                                                <label class="switch-text" for="task1">25.4.2019 | <strong>Jenda</strong></label>
+                                                            </div>
+                                                            <div class="description">Přepsat popis a nastavit cenu dle nákupní ceny z ceníku.</div>
+                                                        </div>
+                                                        <button class="close"><i class="multiply-2"></i></button>
+                                                    </div>
+                            
+                                                    <div class="rp-tasks__item rp-tasks__item--unchecked">
+                                                        <div class="rp-tasks__item__left">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="task2">
+                                                                <label class="switch-text" for="task2">25.4.2019 | <strong>Jenda</strong></label>
+                                                            </div>
+                                                            <div class="description">Přepsat popis a nastavit cenu dle nákupní ceny z ceníku.</div>
+                                                        </div>
+                                                        <button class="close"><i class="multiply-2"></i></button>
+                                                    </div>
+                            
+                                                    <div class="add-input-wrapper">
+                                                        <input type="text" class="form-control" id="add_task" placeholder="Add new task">
+                                                        <a href="#" class="btn btn--add">+</a>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#logsBody">
+                                            <span class="accordion-button__text">Logs</span>
+                                        </button>
+                                    </h2>
+                                    <div id="logsBody" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="rp-logs-section">
+                                                <div class="rp-logs">
+                                                    <div class="rp-logs__top">
+                                                        <div class="author">Author: <strong>Jenda Levejhák</strong></div>
+                                                        <div class="created">Created: <strong>25.4.2019</strong> | 20:30:19</div>
+                                                    </div>
+                            
+                                                    <div class="rp-logs__item">
+                                                        <div class="heading">25.4.2019 20:30:19 | <strong>Jenda</strong></div>
+                                                        <div class="description">Product modification</div>
+                                                    </div>
+                                                    <div class="rp-logs__item">
+                                                        <div class="heading">25.4.2019 20:30:19 | <strong>System</strong></div>
+                                                        <div class="description">Update inventory</div>
+                                                    </div>
+                                                    <div class="rp-logs__item">
+                                                        <div class="heading">25.4.2019 20:30:19 | <strong>Tonda</strong></div>
+                                                        <div class="description">Product creation</div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="d-flex justify-content-end">
+                                                    <a href="" class="btn btn--secondary">DETAILED LOGS</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rp-pagination-section mt-3">
+                                <div class="rp-pagination">
+                                    <div class="rp-pagination__item">
+                                        <a href="" class="rp-pagination__link rp-pagination__link--prev"><i class="less-than"></i>Previous</a>
+                                    </div>
+                                    <div class="rp-pagination__item">
+                                        <a href="" class="rp-pagination__link rp-pagination__link--next">Next<i class="forward"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="right-panel__bottom">
+                            <button class="btn btn--delete btn--w-icon"><i class="trash-can"></i>DELETE PRODUCT</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <footer class="footer">
+                <div class="footer__version"><a href="#">www.jz-one.cz</a> | v1.0</div>
+                <div class="footer__copyright">Copyright Jirsa & Záruba s.r.o. © All Rights Reserved.</div>
+            </footer>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

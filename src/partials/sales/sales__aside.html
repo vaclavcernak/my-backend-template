@@ -1,0 +1,19 @@
+<aside id="rightPanel" class="right-panel">
+    <div class="right-panel__inner">
+        <div class="right-panel__top">
+            <button id="rightPanelToggleTop" class="right-panel-toggle-btn btn btn--secondary btn--small-text"><i class="forward-button"></i><span>Hide</span></button>
+            <button class="btn btn--secondary"><i class="read-message"></i>Preview for print</button>
+        </div>
+        <div class="right-panel__body">
+            {{> right-panel__customer-details}}
+            {{> right-panel__delivery-details}}
+            {{> right-panel__customer-orders}}
+            {{> right-panel__order-details}}
+            {{> right-panel__order-history}}
+            {{> right-panel__privacy-policy}}
+        </div>
+        <div class="right-panel__bottom">
+            <button class="btn btn--delete btn--w-icon"><i class="trash-can"></i>DELETE ORDER</button>
+        </div>
+    </div>
+</aside>

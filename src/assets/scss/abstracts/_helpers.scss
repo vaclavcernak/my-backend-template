@@ -82,10 +82,33 @@
   font-weight: 500;
 }
 
+.c-red {
+  color: #e70f0f;
+}
+
+.c-blue {
+  color: #258aef;
+}
+
 .c-green {
     color: #33701d;
 }
 
+.c-green-light {
+  color: #009f04;
+}
+
 .c-inactive {
   color: #93a4bc;
+}
+
+.u-opposite {
+  transform: rotate(180deg);
+  &:before {
+    transform: rotate(180deg);
+  }
+}
+
+.input-focused {
+  border-color: #6eaeef;
 }

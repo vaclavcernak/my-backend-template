@@ -1,0 +1,1130 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+
+<div class="main-wrapper">
+    <aside id="mainNav" class="main-nav">
+        <header class="main-nav__header">
+            <a href="/"><img src="assets/images/jzone-blue-white.svg" alt="jz one logo" class="logo" style="height: 26px;"></a>
+            <!--<button class="main-nav__header__button"><i class="cash-register"></i></button>
+            <button class="main-nav__header__button"><i class="barcode-reader"></i></button>-->
+            <button id="hamMenuBtnMax" class="main-nav__header__button button--hamburger on-maximized"><i
+                    class="unpin hamburger-open"></i><i class="pin hamburger-close"></i><i class="multiply hamburger-close d-block d-md-none"></i></button>
+            <button id="hamMenuBtnMin" class="main-nav__header__button button--hamburger on-minimized">
+                <a href="#"><img src="assets/images/jz.svg" alt="malé logo"></a>
+                <!--<i class="hamburger-menu hamburger-open"></i><i class="multiply hamburger-close"></i>-->
+            </button>
+        </header>
+        <nav id="mainNav__nav" class="main-nav__nav scrollbared">
+            <div class="main-nav__nav__inner">
+                <ul>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><span class="notify">1</span><i class="dashboard-layout"></i><span class="name">Dashboard</span></a></li>
+                    <li class="main-nav__nav__item has-submenu"><span class="notify">95</span><a href="#"><i class="basket"></i><span
+                            class="name">Sales</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item has-submenu active">
+                                <a href="#"><span class="menu-error-icon">!</span><span
+                                    class="name">2. Aktivní</span><span class="notify">155 265</span></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                </ul></li>
+                            <li class="sub-menu__item has-submenu"><a href="#"><span class="name">Categories</span></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item active"><a href="#"><span class="menu-error-icon">!</span><span class="name">Třetí aktivní</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item has-submenu"><a href="#"><i class="extra-features"></i><span
+                            class="name">Catalogue</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item"><a href="#"><span class="menu-error-icon">!</span><span class="name">Products</span><span
+                                    class="notify">155 265</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Categories</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="price"></i><span class="name">Pricing</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="package"></i><span class="name">Stock</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="commercial"></i><span
+                            class="name">Marketing</span></a></li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="repository"></i><span
+                            class="name">Directory</span></a></li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="marketing"></i><span
+                            class="name">Reports</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="bot"></i><span class="name">Automation</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="plugin"></i><span class="name">Plug-ins</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"></a><a
+                            href="#"><i class="online-store"></i><span class="name">Sales channels</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><span
+                            class="menu-error-icon">!</span><i
+                            class="file"></i><span
+                            class="name">File Manager</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="system-administrator-male"></i><span class="name">Client account</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i class="settings"></i><span class="name">Settings</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i class="lifebuoy"></i><span class="name">Help</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <div class="main-content-wrapper">
+        <header id="topBar" class="top-bar">
+        
+            <div class="hamburger-menu-mobile">
+                <button id="mobileButtonHamburger" class="button--hamburger">
+                    <i class="hamburger-menu hamburger-open"></i>
+                </button>
+            </div>
+        
+            <div class="top-bar__left">
+                <div class="show-frontend show-frontend--has-list">
+                    <span class="show-frontend__button"><i class="eye-2 icon-left"></i><span class="text">View store</span><i
+                            class="expand-arrow icon-right"></i></span>
+                    <ul class="show-frontend__list">
+                        <li class="show-frontend__list__item"><a href=""><i class="external-link"></i>www.superpouzdra.cz</a></li>
+                        <li class="show-frontend__list__item"><a href="" target="_blank"><i class="external-link"></i>www.drackovy-hracky.cz</a></li>
+                    </ul>
+                </div>
+                <!-- // Code for 1 link only -->
+                <!--<div class="show-frontend">
+                    <a class="show-frontend__button" href="" target="_blank"><i class="external-link icon-left"></i><span class="text">Show frontend</span></a>
+                </div>-->
+            </div>
+        
+            <div class="top-bar__right">
+                <div class="top-bar__button-wrapper">
+                    <button class="top-bar__button hidden-mobile"><i class="cash-register"></i></button>
+                    <button class="top-bar__button hidden-mobile"><i class="barcode-reader"></i></button>
+                    <button class="top-bar__button add-actions" title="Add">
+                        <span class="main-icon"><i class="add"></i></span>
+                    </button>
+                    <div class="top-bar__button__window add-actions-window">
+                        <div class="add-actions-window__row row sortable">
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="add-basket"></i></span>
+                                    <span class="add-actions-window__item__name">Income Order</span>
+                                </a>
+                            </div>
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="add-tag"></i></span>
+                                    <span class="add-actions-window__item__name">Product</span>
+                                </a>
+                            </div>
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="box-move-right"></i></span>
+                                    <span class="add-actions-window__item__name">Goods Receipt</span>
+                                </a>
+                            </div>
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="add-user-male"></i></span>
+                                    <span class="add-actions-window__item__name">Contact</span>
+                                </a>
+                            </div>
+                
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="task"></i></span>
+                                    <span class="add-actions-window__item__name">Task</span>
+                                </a>
+                            </div>
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="headline"></i></span>
+                                    <span class="add-actions-window__item__name">Article</span>
+                                </a>
+                            </div>
+                            <div class="add-actions-window__item col-sm-3 col-4">
+                                <a href="#">
+                                    <span class="add-actions-window__item__icon"><i class="file-invoice-dollar"></i></span>
+                                    <span class="add-actions-window__item__name">Invoice</span>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="show-more"><i class="expand-arrow"></i>More</a>
+                    </div>
+                </div>
+                <div class="top-bar__button-wrapper">
+                    <div class="top-bar__search search-input-wrapper">
+                        <button id="topBarSearchInputBtnMobile" class="search-input-btn-mobile"><i class="left-arrow"></i></button>
+                        <input id="topBarSearchInput" class="search-input" type="text" placeholder="Search">
+                        <button id="topBarSearchInputBtn" class="search-input-btn"><i class="search"></i></button>
+                    </div>
+                    <div id="topBarSearchWindow" class="top-bar__button__window search-window">
+                        <div class="search-window__content">
+                            <div class="search-window__content__section">
+                                <h3 class="title"><i class="workspace"></i>Administration</h3>
+                                <ul class="list">
+                                    <li class="item"><a href="#">Nastavení dopravy a platby</a></li>
+                                    <li class="item"><a href="#" target="_blank">Prodejní kanály<i class="external-link"></i></a></li>
+                                    <li class="item"><a href="#">Adresář uživatelů</a></li>
+                                </ul>
+                            </div>
+                            <div class="search-window__content__section">
+                                <h3 class="title"><i class="lifebuoy"></i>Help</h3>
+                                <ul class="list">
+                                    <li class="item"><a href="#">Jak vytvořit novou platbu</a></li>
+                                    <li class="item"><a href="#">Přidání nového prodejního kanálu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="top-bar__button-wrapper">
+                    <button class="top-bar__button notifications" title="Notifications">
+                        <span class="main-icon">
+                            <i class="notification"></i>
+                            <span class="main-icon__notification">2</span>
+                        </span>
+                        <i class="expand-arrow"></i>
+                    </button>
+                    <div class="top-bar__button__window notifications-window">
+                        <div class="notifications-window__frontside">
+                            <div class="notifications-window__frontside__heading">
+                                <span class="mark-as-read"><a href="#"><i class="received"></i>Mark as read</a></span>
+                                <span class="settings-link"><a class="notification-settings-link" href="#"><i class="settings"></i>Settings</a></span>
+                            </div>
+                            <div class="notifications-window__frontside__content scrollbared">
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button"><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-success"><i class="add-basket"></i>New order received</div>
+                                            <div class="date">10 min. ago</div>
+                                        </div>
+                                        <div class="item__text"><a href="#">011100004 for <span class="fw-bold">1250 CZK</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button"><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-danger"><i class="mail-error"></i>Incorrect email</div>
+                                            <div class="date">10 min. ago</div>
+                                        </div>
+                                        <div class="item__text"><a href="#">Email bounced from <span
+                                                class="fw-bold">blabla@yahoo.com</span></a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button"><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-danger"><i class="error"></i>Payment error</div>
+                                            <div class="date">29.3.2022 | 16:29</div>
+                                        </div>
+                                        <div class="item__text">
+                                            <a href="#">Nepodařilo se označit objednávku č. 2011902 ST 4.6 v MALL Pay jako
+                                                odeslanou.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button check-button--disabled" disabled><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-disabled"><i class="mail"></i>Email received</div>
+                                            <div class="date">29.3.2022 | 16:29</div>
+                                        </div>
+                                        <div class="item__text">
+                                            <a href="#">New message from <span class="fw-bold">blabla@yahoo.com</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button"><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-success"><i class="add-basket"></i>New order received</div>
+                                            <div class="date">10 min. ago</div>
+                                        </div>
+                                        <div class="item__text"><a href="#">011100004 for <span class="fw-bold">1250 CZK</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__check">
+                                        <button class="check-button"><i class="done"></i></button>
+                                    </div>
+                                    <div class="item__content">
+                                        <div class="item__heading">
+                                            <div class="name c-danger"><i class="mail-error"></i>Incorrect email</div>
+                                            <div class="date">10 min. ago</div>
+                                        </div>
+                                        <div class="item__text"><a href="#">Email bounced from <span
+                                                class="fw-bold">blabla@yahoo.com</span></a></div>
+                                    </div>
+                                </div>
+                
+                                <a href="#" class="show-more"><i class="expand-arrow"></i>More</a>
+                            </div>
+                        </div>
+                
+                        <div class="notifications-window__backside">
+                            <div class="notifications-window__backside__heading">
+                                <a class="notification-settings-link" href="#"><i class="less-than"></i>Settings</a>
+                            </div>
+                            <div class="notifications-window__backside__content">
+                                <a class="btn btn--action" href="#"><i class="alarm"></i>Enable desktop notificitions</a>
+                                <ul class="notification-list">
+                                    <li class="notification-list__item">
+                                        <span class="name">New order received</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail active"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring active"></a>
+                                        </span>
+                                    </li>
+                                    <li class="notification-list__item">
+                                        <span class="name">Customer registration</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail active"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring"></a>
+                                        </span>
+                                    </li>
+                                    <li class="notification-list__item">
+                                        <span class="name">Payment received</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail active"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring active"></a>
+                                        </span>
+                                    </li>
+                                    <li class="notification-list__item">
+                                        <span class="name">Product review</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail active"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring active"></a>
+                                        </span>
+                                    </li>
+                                    <li class="notification-list__item">
+                                        <span class="name">Automated imports</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring active"></a>
+                                        </span>
+                                    </li>
+                                    <li class="notification-list__item">
+                                        <span class="name">Stock warnings</span>
+                                        <span class="icons">
+                                            <a href="#" class="notify-icon notify-icon--mail"></a>
+                                            <a href="#" class="notify-icon notify-icon--ring active"></a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                
+                <div class="top-bar__button-wrapper top-bar__button-wrapper--user-account">
+                    <button class="top-bar__button user-account" title="User account">
+                        <span class="initials">J. J.</span>
+                        <span class="name">Jakub J.</span>
+                        <i class="expand-arrow"></i>
+                    </button>
+                    <div class="top-bar__button__window user-account-window">
+                        <div class="user-account-window__heading">
+                            <span class="name">Jakub Jirsa</span>
+                            <span class="email">jakub@jirsa-zaruba.cz</span>
+                        </div>
+                        <div class="user-account-window__content">
+                            <ul class="list">
+                                <li class="item"><a href="#"><i class="user"></i>My account</a></li>
+                                <li class="item"><a href="#"><i class="logout"></i>Log Out</a></li>
+                                <li class="item"><a href="#"><i class="lock"></i>Lock</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-bar__button-wrapper top-bar__button-wrapper--full-screen">
+                    <button class="top-bar__button top-bar__button--full-screen toggle-fullscreen" title="Toggle Fullscreen">
+                        <span class="main-icon"><i class="expand fullscreen-expand"></i><i
+                                class="collapse fullscreen-collapse"></i></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div id="mainWrapper" class="main-no-aside">
+            <div class="main-no-aside__content">
+                <main class="main main-content">
+                    <h1>Products</h1>
+
+                    <div class="grid-wrapper">
+                    
+                        <div class="grid-top">
+                            <div class="grid-top__left">
+                                <div class="search-input-alone">
+                                    <button id="" class="search-input-alone__btn"><i class="search"></i></button>
+                                    <input class="search-input-alone__input" type="search" placeholder="Search product">
+                                </div>
+                                <button class="btn btn--dark"><i class="funnel"></i>ADVANCED FILTER<i class="expand-arrow expand-arrow--small"></i></button>
+                            </div>
+                            <div class="grid-top__actions">
+                                <button class="btn btn--primary"><span class="btn-front"><span
+                                        class="btn-front-text">NEW PRODUCT</span></span></button>
+                            </div>
+                        </div>    <div class="grid-filter mb-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="ch-image" checked>
+                                <label class="form-check-label" for="ch-image">
+                                    image
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="ch-id" checked>
+                                <label class="form-check-label" for="ch-id">
+                                    id
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="ch-sku" checked>
+                                <label class="form-check-label" for="ch-sku">
+                                    sku
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="ch-title" checked>
+                                <label class="form-check-label" for="ch-title">
+                                    title
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="ch-brand" checked>
+                                <label class="form-check-label" for="ch-brand">
+                                    brand
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="ch-category" checked>
+                                <label class="form-check-label" for="ch-category">
+                                    category
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="ch-inventory" checked>
+                                <label class="form-check-label" for="ch-inventory">
+                                    inventory
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="ch-status" checked>
+                                <label class="form-check-label" for="ch-status">
+                                    status
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="ch-updated" checked>
+                                <label class="form-check-label" for="ch-updated">
+                                    updated
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="ch-text-set" checked>
+                                <label class="form-check-label" for="ch-text-set">
+                                    text set
+                                </label>
+                            </div>
+                            (půjde pryč)
+                        </div>
+                    
+                        <div class="grid">
+                            <div class="grid__top-tabs">
+                                <ul class="top-tabs__list nav-tabs-responsive vertical-menu">
+                                    <li class="top-tabs__item item">
+                                        <a href="#" class="top-tabs__link nav-link active">All</a>
+                                    </li>
+                                    <li class="top-tabs__item item">
+                                        <a href="#" class="top-tabs__link nav-link">Not in stock<span class="notify">22</span></a>
+                                    </li>
+                                    <li class="top-tabs__item item">
+                                        <a href="#" class="top-tabs__link nav-link">Not displayed<span class="notify">155 265</span></a>
+                                    </li>
+                                    <li class="top-tabs__item item">
+                                        <a href="#" class="top-tabs__link nav-link">To translate<span class="notify">155 265</span></a>
+                                    </li>
+                                    <li class="top-tabs__item item">
+                                        <a href="#" class="top-tabs__link nav-link">Margin <50%</a>
+                                    </li>
+                                    <li class="top-tabs__item item">
+                                        <a href="#" class="top-tabs__link nav-link">Not published</a>
+                                    </li>
+                                    <li class="top-tabs__item item">
+                                        <a href="#" class="top-tabs__link nav-link">Archivated</a>
+                                    </li>
+                                    <li class="top-tabs__item item">
+                                        <a href="#" class="top-tabs__link nav-link">Low stock</a>
+                                    </li>
+                                    <div class="nav-tabs__next">
+                                        <button class="more-btn nav-tabs__next__btn"><i class="menu-vertical"></i></button>
+                                        <ul class="nav-tabs__next__nav"></ul>
+                                    </div>
+                                </ul>
+                            
+                                <div class="top-tabs__actions actions">
+                                    <button class="btn btn--primary btn--small-text"><span class="btn-front"><span class="btn-front-text"><i  class="save"></i>Save</span></span></button>
+                                    <button class="btn btn--secondary btn--small-text"><i class="edit"></i>Edit mode</button>
+                                    <button class="btn btn--secondary btn--small-text" data-bs-toggle="modal" data-bs-target="#modalEditColumns"><i class="table-properties"></i>Columns</button>
+                                </div>
+                            
+                            </div>        <div class="grid__select-all-items">
+                                <div class="text">You have selected all items <strong>(50 in total)</strong> on this page.</div>
+                                <button class="btn btn--primary btn--small-text"><span class="btn-front"><span class="btn-front-text">SELECT ALL (51 548) ITEMS</span></span></button>
+                                <a href="" class="u-link fw-bold fs-12">DESELECT ALL ITEMS</a>
+                            </div>        <div class="table-responsive">
+                                <table class="grid__table">
+                                    <thead class="grid__head">
+                                    <tr class="thead-tr thead-tr--labels">
+                                        <th></th>
+                                        <th class="name"><a href="">Image</a></th>
+                                        <th class="name active"><a href="" class="sort sort--down selected">ID</a></th>
+                                        <th class="name"><a href="" class="sort sort--up">SKU</a></th>
+                                        <th class="name text-start mw350 "><a href="">Title</a></th>
+                                        <th class="name"><a href="">Brand</a></th>
+                                        <th class="name text-start mw200"><a href="">Category</a></th>
+                                        <th class="name"><a href="">Inventory</a></th>
+                                        <th class="name"><a href="">Status</a></th>
+                                        <th class="name"><a href="">Updated</a></th>
+                                        <th class="name"><a href="">Text&nbsp;set</a></th>
+                                        <th class="th--actions cell--actions"></th>
+                                    </tr>
+                                    <tr class="thead-tr thead-tr--inputs">
+                                        <th class="th--checkbox cell--checkbox">
+                                            <div class="input-wrapper">
+                                                <div class="form-check-input-all">
+                                                    <!--<input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">-->
+                                                    <div class="checkbox-options">
+                                                        <span class="checkbox-options__btn"></span>
+                                                        <ul class="checkbox-options__options">
+                                                            <li class="item"><a href="#">Možnost</a></li>
+                                                            <li class="item"><a href="#">Další položka</a></li>
+                                                            <li class="item"><a href="#">Ještě</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>        </th>
+                                        <th class="th--image cell--image">
+                                            <div class="input-wrapper">
+                                                <select class="form-select2 form-select2--small" id="image">
+                                                    <option selected="">--</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </th>
+                                        <th class="th--id cell--id active">
+                                
+                                            <div class="input-wrapper">
+                                                <input type="text" class="form-control" id="id">
+                                            </div>
+                                        </th>
+                                        <th class="th--sku cell--sku">
+                                
+                                            <div class="input-wrapper">
+                                                <input type="text" class="form-control" id="sku">
+                                            </div>
+                                        </th>
+                                        <th class="th--title cell--title">
+                                
+                                            <div class="input-wrapper">
+                                                <input type="text" class="form-control" id="title">
+                                            </div>
+                                        </th>
+                                        <th class="th--brand cell--brand">
+                                
+                                            <div class="input-wrapper">
+                                                <select class="form-select2 form-select2--small" id="brand">
+                                                    <option selected="">--</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </th>
+                                        <th class="th--category cell--category">
+                                
+                                            <div class="input-wrapper">
+                                                <div class="multiple-select multiple-select--small">
+                                                    <select class="multiple-select-input" name="actions[]" multiple="multiple">
+                                                        <option selected="" value="akce">Akce</option>
+                                                        <option value="sleva">Sleva</option>
+                                                        <option value="dalsi">Další možnost</option>
+                                                        <option value="jeste">Ještě jedna</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="th--inventory cell--inventory text-center">
+                                
+                                            <div class="input-wrapper">
+                                                <input type="text" class="form-control" id="inventory">
+                                            </div>
+                                        </th>
+                                        <th class="th--status cell--status">
+                                
+                                            <div class="input-wrapper">
+                                                <select class="form-select2 form-select2--small" id="status">
+                                                    <option selected="">--</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </th>
+                                        <th class="th--updated cell--updated">
+                                
+                                            <div class="input-wrapper">
+                                                <div class="input-icon input-icon--date">
+                                                    <input type="text" class="form-control datetimepicker-input" id="updated">
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="th--text-set cell--text-set">
+                                
+                                            <div class="input-wrapper">
+                                                <select class="form-select2 form-select2--small" id="text_set">
+                                                    <option selected="">--</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </th>
+                                        <th class="th--actions cell--actions">
+                                
+                                            <div class="filters">
+                                                <button class="filters__btn filters__btn--filter"><i class="funnel"></i><span class="text">Filter</span>
+                                                </button>
+                                                <button class="filters__btn filters__btn--delete"><i class="multiply"></i></button>
+                                                <!-- pokud se buttonům přidá class .active, změní styl -->
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="grid__body">
+                                    <tr class="tr">
+                                        <td class="td--checkbox cell--checkbox">
+                                            <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                                        </td>
+                                        <td class="td--image cell--image">
+                                            <img src="assets/images/samples/grid-image.png" alt="">
+                                        </td>
+                                        <td class="td--id cell--id">
+                                            2550
+                                        </td>
+                                        <td class="td--sku cell--sku">
+                                            A1-26114
+                                        </td>
+                                        <td class="td--title cell--title">
+                                            <a href="">Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero Apple
+                                                iPad 9.7 2018 / 9.7 2017 šedé</a>
+                                        </td>
+                                        <td class="td--brand cell--brand">
+                                            <a href="">DUX DUCIS</a>
+                                        </td>
+                                        <td class="td--category cell--category">
+                                            Pouzdra, Pouzdra pro iPad 9.7, Flexibilní pouzdra
+                                        </td>
+                                        <td class="td--inventory cell--inventory text-center">
+                                             <span data-bs-toggle="tooltip" title="in stock: 1, reserved: 1, ordered: 0" class="tooltip-item">1 - 1 - 0</span>
+                                        </td>
+                                        <td class="td--status cell--status">
+                                            <img src="assets/images/icon-user.png" alt="">
+                                        </td>
+                                        <td class="td--updated cell--updated">
+                                            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22" class="tooltip-item">22-02-2022</span>
+                                        </td>
+                                        <td class="td--text-set cell--text-set">
+                                            <img src="assets/images/flag-en.png" alt="">
+                                            <img src="assets/images/flag-cs.png" alt="">
+                                        </td>
+                                        <td class="td--actions cell--actions">
+                                            <div class="action-btns">
+                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="tr deactivated">
+                                        <td class="td--checkbox cell--checkbox">
+                                            <input class="form-check-input product-checkbox" type="checkbox" id="option2" value="option2">
+                                        </td>
+                                        <td class="td--image cell--image">
+                                            <img src="assets/images/samples/grid-image.png" alt="">
+                                        </td>
+                                        <td class="td--id cell--id">
+                                            48620
+                                        </td>
+                                        <td class="td--sku cell--sku">
+                                            A1-26114
+                                        </td>
+                                        <td class="td--title cell--title">
+                                            Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero Apple
+                                            iPad 9.7 2018 / 9.7 2017 šedé
+                                        </td>
+                                        <td class="td--brand cell--brand">
+                                            DUX DUCIS
+                                        </td>
+                                        <td class="td--category cell--category">
+                                        </td>
+                                        <td class="td--inventory cell--inventory text-center">
+                                            <span data-bs-toggle="tooltip" title="in stock: 1, reserved: 1, ordered: 0" class="tooltip-item">1 - 1 - 0</span>
+                                        </td>
+                                        <td class="td--status cell--status">
+                                            <img src="assets/images/icon-briefcase.png" alt="">
+                                        </td>
+                                        <td class="td--updated cell--updated">
+                                            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+                                        </td>
+                                        <td class="td--text-set cell--text-set">
+                                            <img src="assets/images/flag-cs.png" alt="">
+                                        </td>
+                                        <td class="td--actions cell--actions">
+                                            <div class="action-btns">
+                                                <button class="action-btn action-btn--edit" disabled><i class="edit"></i></button>
+                                                <button class="action-btn action-btn--delete" disabled><i class="multiply"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="tr">
+                                        <td class="td--checkbox cell--checkbox">
+                                            <input class="form-check-input product-checkbox" type="checkbox" id="option3" value="option3">
+                                        </td>
+                                        <td class="td--image cell--image">
+                                            <img src="assets/images/samples/grid-image-2.png" alt="">
+                                        </td>
+                                        <td class="td--id cell--id">
+                                            665200
+                                        </td>
+                                        <td class="td--sku cell--sku">
+                                            A1-26114
+                                        </td>
+                                        <td class="td--title cell--title">
+                                            <a href="">Držák na telefon ring s podstavcem ve tvaru prstýnku černý</a>
+                                        </td>
+                                        <td class="td--brand cell--brand">
+                                            <a href="">APOLIS</a>
+                                        </td>
+                                        <td class="td--category cell--category">
+                                        </td>
+                                        <td class="td--inventory cell--inventory text-center">
+                                            <span data-bs-toggle="tooltip" title="in stock: 1, reserved: 1, ordered: 0" class="tooltip-item">1 - 1 - 0</span>
+                                        </td>
+                                        <td class="td--status cell--status">
+                                            <span data-bs-toggle="tooltip" title="Published" class="tooltip-item"><img src="assets/images/icon-green-flag.png" alt=""></span>
+                                        </td>
+                                        <td class="td--updated cell--updated">
+                                            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+                                        </td>
+                                        <td class="td--text-set cell--text-set">
+                                            <img src="assets/images/flag-en.png" alt="">
+                                        </td>
+                                        <td class="td--actions cell--actions">
+                                            <div class="action-btns">
+                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="tr">
+                                        <td class="td--checkbox cell--checkbox">
+                                            <input class="form-check-input product-checkbox" type="checkbox" id="option3" value="option3">
+                                        </td>
+                                        <td class="td--image cell--image">
+                                            <img src="assets/images/samples/grid-image-2.png" alt="">
+                                        </td>
+                                        <td class="td--id cell--id">
+                                            665200
+                                        </td>
+                                        <td class="td--sku cell--sku">
+                                            A1-26114
+                                        </td>
+                                        <td class="td--title cell--title">
+                                            <a href="">Držák na telefon ring s podstavcem ve tvaru prstýnku černý</a>
+                                        </td>
+                                        <td class="td--brand cell--brand">
+                                            <a href="">APOLIS</a>
+                                        </td>
+                                        <td class="td--category cell--category">
+                                            Pouzdra
+                                        </td>
+                                        <td class="td--inventory cell--inventory text-center">
+                                            <a href="">Variants</a>
+                                        </td>
+                                        <td class="td--status cell--status">
+                                            <span data-bs-toggle="tooltip" title="Published" class="tooltip-item"><img src="assets/images/icon-green-flag.png" alt=""></span>
+                                        </td>
+                                        <td class="td--updated cell--updated">
+                                            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+                                        </td>
+                                        <td class="td--text-set cell--text-set">
+                                            <img src="assets/images/flag-en.png" alt="">
+                                        </td>
+                                        <td class="td--actions cell--actions">
+                                            <div class="action-btns">
+                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="tr selected">
+                                        <td class="td--checkbox cell--checkbox">
+                                            <input class="form-check-input product-checkbox" type="checkbox" id="option4" value="option4" checked>
+                                        </td>
+                                        <td class="td--image cell--image">
+                                            <img src="assets/images/samples/grid-image-2.png" alt="">
+                                        </td>
+                                        <td class="td--id cell--id">
+                                            665200
+                                        </td>
+                                        <td class="td--sku cell--sku">
+                                            A1-26114
+                                        </td>
+                                        <td class="td--title cell--title">
+                                            <a href="">Držák na telefon ring s podstavcem ve tvaru prstýnku černý</a>
+                                        </td>
+                                        <td class="td--brand cell--brand">
+                                            <a href="">APOLIS</a>
+                                        </td>
+                                        <td class="td--category cell--category">
+                                        </td>
+                                        <td class="td--inventory cell--inventory text-center">
+                                            <span data-bs-toggle="tooltip" title="in stock: 20, reserved: 0, ordered: 1" class="tooltip-item">20 - 0 - 1</span>
+                                        </td>
+                                        <td class="td--status cell--status">
+                                            <span data-bs-toggle="tooltip" title="Published" class="tooltip-item"><img src="assets/images/icon-green-flag.png" alt=""></span>
+                                        </td>
+                                        <td class="td--updated cell--updated">
+                                            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+                                        </td>
+                                        <td class="td--text-set cell--text-set">
+                                            <img src="assets/images/flag-en.png" alt="">
+                                        </td>
+                                        <td class="td--actions cell--actions">
+                                            <div class="action-btns">
+                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr class="tr">
+                                        <td class="td--checkbox cell--checkbox">
+                                            <input class="form-check-input product-checkbox" type="checkbox" id="option5" value="option5">
+                                        </td>
+                                        <td class="td--image cell--image">
+                                            <img src="assets/images/samples/grid-image-2.png" alt="">
+                                        </td>
+                                        <td class="td--id cell--id">
+                                            665200
+                                        </td>
+                                        <td class="td--sku cell--sku">
+                                            A1-26114
+                                        </td>
+                                        <td class="td--title cell--title">
+                                            <a href="">Držák na telefon ring s podstavcem ve tvaru prstýnku černý</a>
+                                        </td>
+                                        <td class="td--brand cell--brand">
+                                            <a href="">APOLIS</a>
+                                        </td>
+                                        <td class="td--category cell--category">
+                                        </td>
+                                        <td class="td--inventory cell--inventory text-center">
+                                            <span data-bs-toggle="tooltip" title="in stock: 55200, reserved: 200, ordered: 0" class="tooltip-item">55200 - 200 - 0</span>
+                                        </td>
+                                        <td class="td--status cell--status">
+                                            <img src="assets/images/icon-green-flag.png" alt="">
+                                        </td>
+                                        <td class="td--updated cell--updated">
+                                            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+                                        </td>
+                                        <td class="td--text-set cell--text-set">
+                                            <img src="assets/images/flag-en.png" alt="">
+                                        </td>
+                                        <td class="td--actions cell--actions">
+                                            <div class="action-btns">
+                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="grid__bottom row">
+                                <div class="grid__bottom__left col-xl-4 col-lg-6 col-md-6">
+                                    <div class="selected-items active"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <label class="form-label">Selected items</label>
+                                                <div>
+                                                    <select class="form-select2 form-select2--small">
+                                                        <option selected="">--</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <label for="selected_items2" class="form-label">&nbsp;</label>
+                                                <div>
+                                                    <select class="form-select2 form-select2--small" id="selected_items2">
+                                                        <option selected="">--</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <label class="form-label">&nbsp;</label>
+                                                <div>
+                                                    <button class="btn btn--primary" disabled><span class="btn-front"><span class="btn-front-text">PROCEED</span></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="grid__bottom__center col-xl-4 col-lg-12 col-md-12">
+                                    <div class="pagination">
+                                        <a href="" class="pagination__btn pagination__btn--double-prev"><i class="double-left"></i></a>
+                                        <a href="" class="pagination__btn pagination__btn--prev"><i class="less-than"></i></a>
+                                        <label for="paginationInput" class="pagination__label">Page</label>
+                                        <input type="text" class="form-control pagination__input" value="2776" id="paginationInput">
+                                        <span class="pagination__from">/ 3488</span>
+                                        <a href="" class="pagination__btn pagination__btn--next"><i class="forward"></i></a>
+                                        <a href="" class="pagination__btn pagination__btn--double-next"><i class="double-right"></i></a>
+                                    </div>
+                                </div>
+                            
+                                <div class="grid__bottom__right col-xl-4 col-lg-6 col-md-6">
+                                    <div class="paging">
+                                        <div class="paging__items">Items 26 - 50 of <span class="total">65 875</span></div>
+                                        <span class="separator-line">|</span>
+                                        <div class="paging__onpage">
+                                            <span class="text">On page</span>
+                                            <select class="form-select2 form-select2--small autowidth paging-select">
+                                                <option selected="">50</option>
+                                                <option value="1">100</option>
+                                                <option value="2">150</option>
+                                                <option value="3">200</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal modal--edit-columns fade" id="modalEditColumns" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-header__left">
+                                        <div class="top-bar__button-wrapper top-bar__button-wrapper--full-screen">
+                                            <button class="top-bar__button top-bar__button--full-screen toggle-fullscreen toggle-fullscreen--modal" title="Toggle Fullscreen">
+                                                <span class="main-icon"><i class="expand fullscreen-expand"></i><i class="collapse fullscreen-collapse"></i></span>
+                                            </button>
+                                        </div>                    <h5 class="modal-title">Edit Columns</h5>
+                                    </div>
+                                    <div class="top-bar__right top-bar-buttons">
+                                        <div class="actions">
+                                            <button class="btn btn--primary always-visible" data-bs-dismiss="modal"><span class="btn-front"><span class="btn-front-text">SAVE</span></span>
+                                            </button>
+                                            <button class="btn btn--secondary btn--close-modal always-visible" data-bs-dismiss="modal"><i class="multiply"></i>CANCEL</button>
+                                        </div>
+                                    </div>            </div>
+                                <div class="modal-body">
+                                    <div class="edit-columns">
+                                        <table class="edit-columns__table">
+                                            <thead>
+                                            <tr>
+                                                <th class="th--drag"></th>
+                                                <th class="th--checkbox">
+                                                    <div class="input-wrapper">
+                                                        <div class="form-check-input-all">
+                                                            <!--<input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">-->
+                                                            <div class="checkbox-options">
+                                                                <span class="checkbox-options__btn"></span>
+                                                                <ul class="checkbox-options__options">
+                                                                    <li class="item"><a href="#">Možnost</a></li>
+                                                                    <li class="item"><a href="#">Další položka</a></li>
+                                                                    <li class="item"><a href="#">Ještě</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>                            </th>
+                                                <th>Column</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody class="sortable-table">
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option1">
+                                                </td>
+                                                <td><label for="col-option1">Image</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option2">
+                                                </td>
+                                                <td><label for="col-option2">ID</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option3">
+                                                </td>
+                                                <td><label for="col-option3">ISBN</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option4">
+                                                </td>
+                                                <td><label for="col-option4">EAN</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option5">
+                                                </td>
+                                                <td><label for="col-option5">Title</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option6">
+                                                </td>
+                                                <td><label for="col-option6">Brand</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option7">
+                                                </td>
+                                                <td><label for="col-option7">Category</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option8">
+                                                </td>
+                                                <td><label for="col-option8">Inventory</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option9">
+                                                </td>
+                                                <td><label for="col-option9">Status</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option10">
+                                                </td>
+                                                <td><label for="col-option10">Last updated</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option11">
+                                                </td>
+                                                <td><label for="col-option11">Created</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="td--drag"><span class="row-drag-btn"><i class="menu-vertical"></i><i class="menu-vertical"></i></span></td>
+                                                <td class="td--checkbox">
+                                                    <input class="form-check-input" type="checkbox" id="col-option12">
+                                                </td>
+                                                <td><label for="col-option12">One more</label></td>
+                                            </tr>
+                    
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                </main>
+            </div>
+            <footer class="footer">
+                <div class="footer__version"><a href="#">www.jz-one.cz</a> | v1.0</div>
+                <div class="footer__copyright">Copyright Jirsa & Záruba s.r.o. © All Rights Reserved.</div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

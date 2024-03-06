@@ -1,4 +1,6 @@
 .rp-logs {
+  font-size: 12px;
+
   &__top {
     margin-bottom: 15px;
   }
@@ -8,7 +10,24 @@
 
     &:not(:last-child) {
       padding-bottom: 9px;
-      border-bottom: 1px dashed #b4c3cd;
+      border-bottom: 1px solid #C2D6E3;
+    }
+  }
+
+  &__highlight {
+    border-radius: 4px;
+    background-color: #F7FAFC;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    i {
+      font-size: 16px;
+      &:before {
+        font-weight: bold;
+      }
     }
   }
 }

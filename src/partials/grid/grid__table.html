@@ -1,12 +1,24 @@
 <table class="grid__table">
     <thead class="grid__head">
-    <tr class="tr">
+    <tr class="thead-tr thead-tr--labels">
+        <th></th>
+        <th class="name"><a href="">Image</a></th>
+        <th class="name active"><a href="" class="sort sort--down selected">ID</a></th>
+        <th class="name"><a href="" class="sort sort--up">SKU</a></th>
+        <th class="name text-start mw350 "><a href="">Title</a></th>
+        <th class="name"><a href="">Brand</a></th>
+        <th class="name text-start mw200"><a href="">Category</a></th>
+        <th class="name"><a href="">Inventory</a></th>
+        <th class="name"><a href="">Status</a></th>
+        <th class="name"><a href="">Updated</a></th>
+        <th class="name"><a href="">Text&nbsp;set</a></th>
+        <th class="th--actions cell--actions"></th>
+    </tr>
+    <tr class="thead-tr thead-tr--inputs">
         <th class="th--checkbox cell--checkbox">
-            <label class="name"></label>
             {{> grid__check-all-input}}
         </th>
         <th class="th--image cell--image">
-            <label class="name" for="image"><a href="">Image</a></label>
             <div class="input-wrapper">
                 <select class="form-select2 form-select2--small" id="image">
                     <option selected="">--</option>
@@ -16,26 +28,26 @@
                 </select>
             </div>
         </th>
-        <th class="th--id cell--id">
-            <label class="name sort sort--down" for="id"><a href="" class="selected">ID</a></label>
+        <th class="th--id cell--id active">
+
             <div class="input-wrapper">
                 <input type="text" class="form-control" id="id">
             </div>
         </th>
         <th class="th--sku cell--sku">
-            <label class="name sort sort--up" for="sku"><a href="">SKU</a></label>
+
             <div class="input-wrapper">
                 <input type="text" class="form-control" id="sku">
             </div>
         </th>
         <th class="th--title cell--title">
-            <label class="name" for="title"><a href="">Title</a></label>
+
             <div class="input-wrapper">
                 <input type="text" class="form-control" id="title">
             </div>
         </th>
         <th class="th--brand cell--brand">
-            <label class="name" for="brand"><a href="">Brand</a></label>
+
             <div class="input-wrapper">
                 <select class="form-select2 form-select2--small" id="brand">
                     <option selected="">--</option>
@@ -45,8 +57,27 @@
                 </select>
             </div>
         </th>
+        <th class="th--category cell--category">
+
+            <div class="input-wrapper">
+                <div class="multiple-select multiple-select--small">
+                    <select class="multiple-select-input" name="actions[]" multiple="multiple">
+                        <option selected="" value="akce">Akce</option>
+                        <option value="sleva">Sleva</option>
+                        <option value="dalsi">Další možnost</option>
+                        <option value="jeste">Ještě jedna</option>
+                    </select>
+                </div>
+            </div>
+        </th>
+        <th class="th--inventory cell--inventory text-center">
+
+            <div class="input-wrapper">
+                <input type="text" class="form-control" id="inventory">
+            </div>
+        </th>
         <th class="th--status cell--status">
-            <label class="name" for="status"><a href="">Status</a></label>
+
             <div class="input-wrapper">
                 <select class="form-select2 form-select2--small" id="status">
                     <option selected="">--</option>
@@ -57,15 +88,15 @@
             </div>
         </th>
         <th class="th--updated cell--updated">
-            <label class="name" for="updated"><a href="">Updated</a></label>
+
             <div class="input-wrapper">
                 <div class="input-icon input-icon--date">
-                    <input type="text" class="form-control datepicker-input" id="updated">
+                    <input type="text" class="form-control datetimepicker-input" id="updated">
                 </div>
             </div>
         </th>
         <th class="th--text-set cell--text-set">
-            <label class="name" for="text_set"><a href="">Text&nbsp;set</a></label>
+
             <div class="input-wrapper">
                 <select class="form-select2 form-select2--small" id="text_set">
                     <option selected="">--</option>
@@ -76,7 +107,7 @@
             </div>
         </th>
         <th class="th--actions cell--actions">
-            <label class="name"></label>
+
             <div class="filters">
                 <button class="filters__btn filters__btn--filter"><i class="funnel"></i><span class="text">Filter</span>
                 </button>
@@ -107,11 +138,17 @@
         <td class="td--brand cell--brand">
             <a href="">DUX DUCIS</a>
         </td>
+        <td class="td--category cell--category">
+            Pouzdra, Pouzdra pro iPad 9.7, Flexibilní pouzdra
+        </td>
+        <td class="td--inventory cell--inventory text-center">
+             <span data-bs-toggle="tooltip" title="in stock: 1, reserved: 1, ordered: 0" class="tooltip-item">1 - 1 - 0</span>
+        </td>
         <td class="td--status cell--status">
             <img src="assets/images/icon-user.png" alt="">
         </td>
         <td class="td--updated cell--updated">
-            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
+            <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22" class="tooltip-item">22-02-2022</span>
         </td>
         <td class="td--text-set cell--text-set">
             <img src="assets/images/flag-en.png" alt="">
@@ -144,6 +181,11 @@
         </td>
         <td class="td--brand cell--brand">
             DUX DUCIS
+        </td>
+        <td class="td--category cell--category">
+        </td>
+        <td class="td--inventory cell--inventory text-center">
+            <span data-bs-toggle="tooltip" title="in stock: 1, reserved: 1, ordered: 0" class="tooltip-item">1 - 1 - 0</span>
         </td>
         <td class="td--status cell--status">
             <img src="assets/images/icon-briefcase.png" alt="">
@@ -181,8 +223,13 @@
         <td class="td--brand cell--brand">
             <a href="">APOLIS</a>
         </td>
+        <td class="td--category cell--category">
+        </td>
+        <td class="td--inventory cell--inventory text-center">
+            <span data-bs-toggle="tooltip" title="in stock: 1, reserved: 1, ordered: 0" class="tooltip-item">1 - 1 - 0</span>
+        </td>
         <td class="td--status cell--status">
-            <img src="assets/images/icon-green-flag.png" alt="">
+            <span data-bs-toggle="tooltip" title="Published" class="tooltip-item"><img src="assets/images/icon-green-flag.png" alt=""></span>
         </td>
         <td class="td--updated cell--updated">
             <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
@@ -217,8 +264,14 @@
         <td class="td--brand cell--brand">
             <a href="">APOLIS</a>
         </td>
+        <td class="td--category cell--category">
+            Pouzdra
+        </td>
+        <td class="td--inventory cell--inventory text-center">
+            <a href="">Variants</a>
+        </td>
         <td class="td--status cell--status">
-            <img src="assets/images/icon-green-flag.png" alt="">
+            <span data-bs-toggle="tooltip" title="Published" class="tooltip-item"><img src="assets/images/icon-green-flag.png" alt=""></span>
         </td>
         <td class="td--updated cell--updated">
             <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
@@ -253,8 +306,13 @@
         <td class="td--brand cell--brand">
             <a href="">APOLIS</a>
         </td>
+        <td class="td--category cell--category">
+        </td>
+        <td class="td--inventory cell--inventory text-center">
+            <span data-bs-toggle="tooltip" title="in stock: 20, reserved: 0, ordered: 1" class="tooltip-item">20 - 0 - 1</span>
+        </td>
         <td class="td--status cell--status">
-            <img src="assets/images/icon-green-flag.png" alt="">
+            <span data-bs-toggle="tooltip" title="Published" class="tooltip-item"><img src="assets/images/icon-green-flag.png" alt=""></span>
         </td>
         <td class="td--updated cell--updated">
             <span data-bs-toggle="tooltip" title="22-02-2022 16:32:22">22-02-2022</span>
@@ -288,6 +346,11 @@
         </td>
         <td class="td--brand cell--brand">
             <a href="">APOLIS</a>
+        </td>
+        <td class="td--category cell--category">
+        </td>
+        <td class="td--inventory cell--inventory text-center">
+            <span data-bs-toggle="tooltip" title="in stock: 55200, reserved: 200, ordered: 0" class="tooltip-item">55200 - 200 - 0</span>
         </td>
         <td class="td--status cell--status">
             <img src="assets/images/icon-green-flag.png" alt="">

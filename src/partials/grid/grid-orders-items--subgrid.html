@@ -1,0 +1,551 @@
+<div class="grid-wrapper">
+    <div class="grid">
+        <div class="table-responsive">
+            <table class="grid__table">
+                <thead class="grid__head">
+                <tr class="thead-tr thead-tr--labels">
+                    <th class="th--checkbox cell--checkbox">
+                        {{> grid__check-all-input}}
+                    </th>
+                    <th></th>
+                    <th class="name">
+                        <a href="">Image</a>
+                    </th>
+                    <th class="name">
+                        <a href="">SKU</a>
+                    </th>
+                    <th class="name active text-start">
+                        <a href="" class="sort sort--down selected">Product name</a>
+                    </th>
+                    <th class="name">
+                        <a href="">Status</a>
+                    </th>
+                    <th class="name">
+                        <a href="">Inventory</a>
+                    </th>
+                    <th class="name">
+                        <a href="">QTY</a>
+                    </th>
+                    <th class="name">
+                        <a href="">Unit</a>
+                    </th>
+                    <th class="name text-end">
+                        <a href="">Price per unit</a>
+                    </th>
+                    <th class="name">
+                        <a href="">VAT</a>
+                    </th>
+                    <th class="name">
+                        <a href="">Total price</a>
+                    </th>
+                    <th class="name th--actions cell--actions">
+                        <span>Actions</span>
+                    </th>
+                </tr>
+                </thead>
+                <tbody class="grid__body">
+                <tr class="tr">
+                    <td class="td--checkbox cell--checkbox">
+                        <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                    </td>
+                    <td>
+                        <button class="toggle-subtable"><i class="add toggle-icon toggle-icon--show"></i><i class="minus toggle-icon toggle-icon--hide"></i></button>
+                    </td>
+                    <td class="td--image cell--image">
+                        <img src="assets/images/samples/grid-image.png" alt="">
+                    </td>
+                    <td class="text-center ws-nowrap">
+                        A1-26114
+                    </td>
+                    <td class="text-start">
+                        <span class="w-notify"><a href="">Souprava produktů</a><span class="notify">3</span></span>
+                    </td>
+                    <td class="text-center">
+                        see subitems
+                    </td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">
+                        1
+                    </td>
+                    <td class="text-center">
+                        Pcs
+                    </td>
+                    <td class="text-end">
+                        458
+                    </td>
+                    <td class="text-center">
+                        <input class="form-check-input product-checkbox" type="checkbox" id="optionVat1">
+                    </td>
+                    <td class="text-center">
+                        <div class="two-row">
+                            <span class="first-row">980,00&nbsp;Kč</span>
+                        </div>
+                    </td>
+                    <td class="td--actions cell--actions">
+                        <div class="action-btns">
+                            <button class="action-btn"><i class="add toggle-icon toggle-icon--show"></i><i class="minus toggle-icon toggle-icon--hide"></i></button>
+                            <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="toggle-subtable-row"> <!-- this class show/hide inner sub table-->
+                    <td colspan="13" class="p-0">
+                        <table class="subtable-table">
+                            <thead class="grid__head">
+                            <tr class="thead-tr thead-tr--labels">
+                                <th></th>
+                                <th></th>
+                                <th class="name">
+                                    <a href="" class="sort sort--down selected">Image</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">SKU</a>
+                                </th>
+                                <th class="name text-start">
+                                    <a href="">Description</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">Status</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">Inventory</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">QTY</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">Unit</a>
+                                </th>
+                                <th class="name text-end">
+                                    <a href="">Price per unit</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">VAT</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">Total price</a>
+                                </th>
+                                <th class="name th--actions cell--actions">
+                                    <span>Actions</span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody class="grid__body">
+                            <tr class="tr">
+                                <td></td>
+                                <td></td>
+                                <td class="td--image cell--image">
+                                    <img src="assets/images/samples/grid-image.png" alt="">
+                                </td>
+                                <td class="text-center ws-nowrap">
+                                    A1-26114
+                                </td>
+                                <td class="text-start">
+                                    <a href="">Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero</a>
+                                </td>
+                                <td class="text-center ws-nowrap">
+                                    <i class="empty-hourglass c-orange me-1"></i>Pending
+                                </td>
+                                <td class="text-center">Skladem</td>
+                                <td class="text-center">
+                                    1
+                                </td>
+                                <td class="text-center">
+                                    Pcs
+                                </td>
+                                <td class="text-end">
+                                    458
+                                </td>
+                                <td class="text-center">
+                                    <input class="form-check-input product-checkbox" type="checkbox" id="optionVat1">
+                                </td>
+                                <td class="text-center">
+                                    <div class="two-row">
+                                        <span class="first-row">980,00&nbsp;Kč</span>
+                                    </div>
+                                </td>
+                                <td class="td--actions cell--actions">
+                                    <div class="action-btns">
+                                        <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td></td>
+                                <td></td>
+                                <td class="td--image cell--image">
+                                    <img src="assets/images/samples/grid-image.png" alt="">
+                                </td>
+                                <td class="text-center ws-nowrap">
+                                    A1-26114
+                                </td>
+                                <td class="text-start">
+                                    <a href="">Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero</a>
+                                </td>
+                                <td class="text-center bg-grey">Cancelled</td>
+                                <td class="text-center">
+                                    <span data-bs-toggle="tooltip" title="in stock: 1, reserved: 1, ordered: 0" class="tooltip-item">1 - 1 - 0</span>
+                                </td>
+                                <td class="text-center">
+                                    1
+                                </td>
+                                <td class="text-center">
+                                    Pcs
+                                </td>
+                                <td class="text-end">
+                                    458
+                                </td>
+                                <td class="text-center">
+                                    <input class="form-check-input product-checkbox" type="checkbox" id="optionVat1">
+                                </td>
+                                <td class="text-center">
+                                    <div class="two-row">
+                                        <span class="first-row">980,00&nbsp;Kč</span>
+                                    </div>
+                                </td>
+                                <td class="td--actions cell--actions">
+                                    <div class="action-btns">
+                                        <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td></td>
+                                <td></td>
+                                <td class="td--image cell--image">
+                                    <img src="assets/images/samples/grid-image.png" alt="">
+                                </td>
+                                <td class="text-center ws-nowrap">
+                                    A1-26114
+                                </td>
+                                <td class="text-start">
+                                    <a href="">Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero</a>
+                                </td>
+                                <td class="text-center bg-orange">Reserved</td>
+                                <td class="text-center">
+                                    <span data-bs-toggle="tooltip" title="in stock: 1, reserved: 1, ordered: 0" class="tooltip-item">1 - 1 - 0</span>
+                                </td>
+                                <td class="text-center">
+                                    1
+                                </td>
+                                <td class="text-center">
+                                    Pcs
+                                </td>
+                                <td class="text-end">
+                                    458
+                                </td>
+                                <td class="text-center">
+                                    <input class="form-check-input product-checkbox" type="checkbox" id="optionVat1">
+                                </td>
+                                <td class="text-center">
+                                    <div class="two-row">
+                                        <span class="first-row">980,00&nbsp;Kč</span>
+                                    </div>
+                                </td>
+                                <td class="td--actions cell--actions">
+                                    <div class="action-btns">
+                                        <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr class="tr">
+                    <td class="td--checkbox cell--checkbox">
+                        <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                    </td>
+                    <td>
+                        <button class="toggle-subtable"><i class="add toggle-icon toggle-icon--show"></i><i class="minus toggle-icon toggle-icon--hide"></i></button>
+                    </td>
+                    <td class="td--image cell--image">
+                        <img src="assets/images/samples/grid-image.png" alt="">
+                    </td>
+                    <td class="text-center ws-nowrap">
+                        A01-008
+                    </td>
+                    <td class="text-start">
+                        <a href="">Konfigurovatelná položka</a>
+                    </td>
+                    <td class="text-center bg-green ws-nowrap">
+                        <i class="done"></i> SHIPPED
+                    </td>
+                    <td class="text-center">
+                        <span data-bs-toggle="tooltip" title="in stock: 1, reserved: 1, ordered: 0" class="tooltip-item">1 - 1 - 0</span>
+                    </td>
+                    <td class="text-center">
+                        1
+                    </td>
+                    <td class="text-center">
+                        Pcs
+                    </td>
+                    <td class="text-end">
+                        458
+                    </td>
+                    <td class="text-center">
+                        <input class="form-check-input product-checkbox" type="checkbox" id="optionVat1">
+                    </td>
+                    <td class="text-center">
+                        <div class="two-row">
+                            <span class="first-row">980,00&nbsp;Kč</span>
+                        </div>
+                    </td>
+                    <td class="td--actions cell--actions">
+                        <div class="action-btns">
+                            <button class="action-btn"><i class="add toggle-icon toggle-icon--show"></i><i class="minus toggle-icon toggle-icon--hide"></i></button>
+                            <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="toggle-subtable-row"> <!-- this class show/hide inner sub table-->
+                    <td colspan="13" class="p-0">
+                        <table class="subtable-table">
+                            <thead class="grid__head">
+                            <tr class="thead-tr thead-tr--labels">
+                                <th></th>
+                                <th></th>
+                                <th class="name">
+                                    <a href="" class="sort sort--down selected">Image</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">SKU</a>
+                                </th>
+                                <th class="name text-start">
+                                    <a href="">Description</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">Status</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">Inventory</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">QTY</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">Unit</a>
+                                </th>
+                                <th class="name text-end">
+                                    <a href="">Price per unit</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">VAT</a>
+                                </th>
+                                <th class="name">
+                                    <a href="">Total price</a>
+                                </th>
+                                <th class="name th--actions cell--actions">
+                                    <span>Actions</span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody class="grid__body">
+                            <tr class="tr">
+                                <td></td>
+                                <td></td>
+                                <td class="td--image cell--image">
+                                    <img src="assets/images/samples/grid-image.png" alt="">
+                                </td>
+                                <td class="text-center ws-nowrap">
+                                    A1-26114
+                                </td>
+                                <td class="text-start">
+                                    <a href="">Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero</a>
+                                </td>
+                                <td class="text-center ws-nowrap">
+                                    <i class="empty-hourglass c-orange me-1"></i>Pending
+                                </td>
+                                <td class="text-center">Skladem</td>
+                                <td class="text-center">
+                                    1
+                                </td>
+                                <td class="text-center">
+                                    Pcs
+                                </td>
+                                <td class="text-end">
+                                    458
+                                </td>
+                                <td class="text-center">
+                                    <input class="form-check-input product-checkbox" type="checkbox" id="optionVat15">
+                                </td>
+                                <td class="text-center">
+                                    <div class="two-row">
+                                        <span class="first-row">980,00&nbsp;Kč</span>
+                                    </div>
+                                </td>
+                                <td class="td--actions cell--actions">
+                                    <div class="action-btns">
+                                        <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td></td>
+                                <td></td>
+                                <td class="td--image cell--image">
+                                    <img src="assets/images/samples/grid-image.png" alt="">
+                                </td>
+                                <td class="text-center ws-nowrap">
+                                    A1-26114
+                                </td>
+                                <td class="text-start">
+                                    <a href="">Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero</a>
+                                </td>
+                                <td class="text-center bg-grey">Cancelled</td>
+                                <td class="text-center">
+                                    <span data-bs-toggle="tooltip" title="in stock: 1, reserved: 1, ordered: 0" class="tooltip-item">1 - 1 - 0</span>
+                                </td>
+                                <td class="text-center">
+                                    1
+                                </td>
+                                <td class="text-center">
+                                    Pcs
+                                </td>
+                                <td class="text-end">
+                                    458
+                                </td>
+                                <td class="text-center">
+                                    <input class="form-check-input product-checkbox" type="checkbox" id="optionVat2">
+                                </td>
+                                <td class="text-center">
+                                    <div class="two-row">
+                                        <span class="first-row">980,00&nbsp;Kč</span>
+                                    </div>
+                                </td>
+                                <td class="td--actions cell--actions">
+                                    <div class="action-btns">
+                                        <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td></td>
+                                <td></td>
+                                <td class="td--image cell--image">
+                                    <img src="assets/images/samples/grid-image.png" alt="">
+                                </td>
+                                <td class="text-center ws-nowrap">
+                                    A1-26114
+                                </td>
+                                <td class="text-start">
+                                    <a href="">Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero</a>
+                                </td>
+                                <td class="text-center bg-orange">Reserved</td>
+                                <td class="text-center">
+                                    <span data-bs-toggle="tooltip" title="in stock: 1, reserved: 1, ordered: 0" class="tooltip-item">1 - 1 - 0</span>
+                                </td>
+                                <td class="text-center">
+                                    1
+                                </td>
+                                <td class="text-center">
+                                    Pcs
+                                </td>
+                                <td class="text-end">
+                                    458
+                                </td>
+                                <td class="text-center">
+                                    <input class="form-check-input product-checkbox" type="checkbox" id="optionVat3">
+                                </td>
+                                <td class="text-center">
+                                    <div class="two-row">
+                                        <span class="first-row">980,00&nbsp;Kč</span>
+                                    </div>
+                                </td>
+                                <td class="td--actions cell--actions">
+                                    <div class="action-btns">
+                                        <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="grid__bottom row">
+        <div class="grid__bottom__left col-xl-4 col-lg-6 col-md-6">
+            <div class="selected-items"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Selected items</label>
+                        <div>
+                            <select class="form-select2 form-select2--small">
+                                <option selected="">--</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label class="form-label">&nbsp;</label>
+                        <div>
+                            <button class="btn btn--primary" disabled><span class="btn-front"><span class="btn-front-text">PROCEED</span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid__bottom__right col-xl-8 col-lg-6 col-md-6 mb-3 text-end">
+            <button class="btn btn--secondary btn--expanding"><i class="plus---2"></i>ADD ITEM<i class="expand-arrow"></i>
+                <ul class="expanding-list">
+                    <li><a href="#"><i class="extra-features"></i>položka 1</a></li>
+                    <li><a href="#"><i class="extra-features"></i>položka 2</a></li>
+                </ul>
+            </button>
+            <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD PRODUCTS</span></span></button>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-2">
+    <div class="col-xxl-7 col-lg-5 col-md-4"></div>
+    <div class="col-xxl-5 col-lg-7 col-md-8 mb-3">
+        <div class="total-table-wrapper mt-3">
+            <table class="total-table total-table--bigger">
+                <tbody>
+                <tr>
+                    <td class="text-end">Total price:</td>
+                    <td class="fw-bold value text-end">1&nbsp;991&nbsp;000,50&nbsp;Kč</td>
+                    <td class="fs-11">bez DPH</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="text-end">8 686,50&nbsp;Kč</td>
+                    <td class="fs-11">excl. VAT</td>
+                </tr>
+                <tr>
+                    <td class="text-end">Rouding:</td>
+                    <td class="fw-bold text-end">-0,2 Kč</td>
+                    <td class="d-flex align-items-center"><button class="action-btn action-btn--edit"><i class="edit"></i></button></td>
+                </tr>
+                <tr class="last-common">
+                    <td class="text-end">Loyality program:</td>
+                    <td class="fw-bold text-end">+ 200 pts</td>
+                    <td class="d-flex align-items-center">
+                        <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                        <div class="tag"><i class="empty-hourglass"></i>waiting</div>
+                    </td>
+                </tr>
+                <tr class="total">
+                    <td class="text-end">Total to pay:</td>
+                    <td class="value fw-bold value text-end">1&nbsp;991&nbsp;000,50&nbsp;Kč</td>
+                    <td class="fs-11">incl. VAT</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,200 @@
+<div class="modal fade" id="modalEditCustomerDetails" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">Edit Customer Details</h5>
+                </div>
+                {{> modal__top-bar-buttons}}
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-body__heading">Contacts</h3>
+
+                <div class="modal-body__section">
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">E-mail</label>
+                        <div class="col-input">
+                            <input type="text" class="form-control" value="jarda@yahoo.com">
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Phone</label>
+                        <div class="col-input">
+                            <input type="text" class="form-control" value="+420 733 500 600">
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="modal-body__heading">Delivery Adress</h3>
+
+                <div class="modal-body__section">
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Company</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="Moje firma s.r.o.">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Name</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="Jarda">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Surname</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="Vohnout">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Street</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="Moje Ulice">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">House number</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="225">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">City</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="Město">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">ZIP code</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="200 01">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-3">
+                        <label class="col-form-label">Country</label>
+                        <div class="col-input">
+                            <select class="form-select2 form-select2--countries">
+                                <option value="cs" selected>Czech republic</option>
+                                <option value="en">United Kingdom</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label"></label>
+                        <div class="col-input">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="enterprise" checked="">
+                                <label class="switch-text fw-bold" for="enterprise">Enterprise customer</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Company</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="Moje firma s.r.o.">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">ID number</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="55588865">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">VAT number</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="CZ5588865">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">VAT registred</label>
+                        <div class="col-input">
+                            <div class="input-group input-group--w-button">
+                                <select class="form-select2">
+                                    <option value="barva">not verified</option>
+                                    <option value="dal">Dál</option>
+                                    <option value="dalsi">Další možnost</option>
+                                    <option value="jeste">Ještě jedna</option>
+                                </select>
+                                <a href="#" class="input-group-text input-group-text--btn"><i class="check-document"></i><span class="text">Verify via VIES</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="modal-body__heading">Other Customer Details</h3>
+
+                <div class="modal-body__section">
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Retail Price Group</label>
+                        <div class="col-input">
+                            <select class="form-select2">
+                                <option selected>Registred customers</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Registered</label>
+                        <div class="col-input">
+                            <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-14 d-block ms-sm-3 ms-2">domenaeshopu.com</span>
+                            <a href="" class="btn btn--light"><span class="btn-front"><span class="btn-front-text"><i class="user"></i>Customer account</span></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row mb-2">
+                        <label class="col-form-label">Price list</label>
+                        <div class="col-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="Retail price list">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

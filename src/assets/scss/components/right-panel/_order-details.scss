@@ -1,0 +1,43 @@
+.rp-order-details {
+  margin: 0 -5px;
+
+  .order-details {
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+
+    &--highlighted {
+      font-weight: bold;
+      background-color: #F7FAFC;
+      tr {
+        &:first-child {
+          td {
+            padding-top: 10px;
+          }
+        }
+        &:last-child {
+          td {
+            padding-bottom: 10px;
+          }
+        }
+      }
+
+    }
+
+    td {
+      padding: 2px 5px;
+
+      &:first-child {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: right;
+      }
+    }
+
+    .flag {
+      width: 18px;
+      height: 13px;
+      object-fit: cover;
+    }
+  }
+}

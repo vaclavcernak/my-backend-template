@@ -11,7 +11,7 @@
     @warn "Expected argument $px to be of type `px`, instead received: `#{unit($px)}`";
   }
 
-  @return ($px / $rem) * 1rem;
+  @return ( calc($px / $rem)) * 1rem;
 }
 
 @function color($color-name) {

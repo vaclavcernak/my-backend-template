@@ -1,13 +1,16 @@
 <div class="modal fade" id="modalEditStockItem" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog  modal-xl modal-dialog-centered">
+    <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Edit a stock item</h5>
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">Edit a stock item</h5>
+                </div>
                 {{> modal__top-bar-buttons}}
             </div>
             <div class="modal-body">
                 <div class="modal-body__section">
-                    <div class="row input-row mb-2">
+                    <div class="input-row mb-2">
                         <label class="col-form-label">Warehouse</label>
                         <div class="col-input">
                             <select class="form-select2">
@@ -21,7 +24,7 @@
 
                     <div class="row two-col-row">
                         <div class="col-md-6">
-                            <div class="row input-row mb-2">
+                            <div class="input-row mb-2">
                                 <label class="col-form-label">Quantity</label>
                                 <div class="col-input">
                                     <div class="input-group">
@@ -32,7 +35,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="row input-row mb-2">
+                            <div class="input-row mb-2">
                                 <label class="col-form-label">EAN</label>
                                 <div class="col-input">
                                     <input type="text" class="form-control" value="128526545">
@@ -45,21 +48,21 @@
                 <h3 class="modal-body__heading">Location</h3>
 
                 <div class="modal-body__section">
-                    <div class="row input-row mb-2">
+                    <div class="input-row mb-2">
                         <label class="col-form-label">Room</label>
                         <div class="col-input">
                             <input type="text" class="form-control" value="9,00">
                         </div>
                     </div>
 
-                    <div class="row input-row mb-2">
+                    <div class="input-row mb-2">
                         <label class="col-form-label">Aisle</label>
                         <div class="col-input">
                             <input type="text" class="form-control" value="9,00">
                         </div>
                     </div>
 
-                    <div class="row input-row mb-2">
+                    <div class="input-row mb-2">
                         <label class="col-form-label">Shelf</label>
                         <div class="col-input">
                             <input type="text" class="form-control" value="9,00">
@@ -72,7 +75,7 @@
                 <div class="modal-body__section">
                     <div class="row two-col-row">
                         <div class="col-md-6">
-                            <div class="row input-row mb-2">
+                            <div class="input-row mb-2">
                                 <label class="col-form-label">Serial number</label>
                                 <div class="col-input">
                                     <div class="input-group">
@@ -82,7 +85,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="row input-row mb-2">
+                            <div class="input-row mb-2">
                                 <label class="col-form-label">Product batch</label>
                                 <div class="col-input">
                                     <input type="text" class="form-control" value="9,00">
@@ -91,7 +94,7 @@
                         </div>
                     </div>
 
-                    <div class="row input-row mb-2">
+                    <div class="input-row mb-2">
                         <label class="col-form-label">Expiration date</label>
                         <div class="col-input">
                             <input type="text" class="form-control" value="9,00">

@@ -1,0 +1,19 @@
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#payments">
+                <span class="accordion-button__text">PAYMENTS</span>
+            </button>
+            <div class="accordion-header__right">
+                <div class="accordion-icons">
+                    <button class="accordion-icon accordion-icon--unpinned"><i class="unpin"></i></button>
+                </div>
+            </div>
+        </h2>
+        <div id="payments" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                {{> grid-sales-payments}}
+            </div>
+        </div>
+    </div>
+</div>

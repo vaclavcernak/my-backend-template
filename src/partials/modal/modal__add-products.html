@@ -1,0 +1,97 @@
+<div class="modal fade" id="modalAddProducts" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">Add products</h5>
+                </div>
+                <div class="top-bar__right top-bar-buttons">
+                    <div class="actions">
+                        <button class="btn btn--primary always-visible"><span class="btn-front"><span class="btn-front-text">ADD PRODUCTS</span></span></button>
+                        <button class="btn btn--secondary btn--close-modal always-visible" data-bs-dismiss="modal"><i class="multiply-2"></i>CANCEL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="inputs-table">
+                        <thead>
+                            <tr>
+                                <th>SKU</th>
+                                <th>EAN</th>
+                                <th>Product Title</th>
+                                <th>QTY</th>
+                                <th class="text-center">Price / Unit</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" class="form-control" value="FS523210-2"></td>
+                                <td><input type="text" class="form-control" value=""></td>
+                                <td><input type="text" class="form-control" value=""></td>
+                                <td style="width: 110px;">
+                                    <div class="input-number-wrapper">
+                                        <input type="number" class="number-w-arrows form-control">
+                                    </div>
+                                </td>
+                                <td style="width: 170px;">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-text">Kč</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value=""></td>
+                                <td><input type="text" class="form-control" value=""></td>
+                                <td><input type="text" class="form-control" value=""></td>
+                                <td style="width: 110px;">
+                                    <div class="input-number-wrapper">
+                                        <input type="number" class="number-w-arrows form-control">
+                                    </div>
+                                </td>
+                                <td style="width: 170px;">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-text">Kč</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" value=""></td>
+                                <td><input type="text" class="form-control" value=""></td>
+                                <td><input type="text" class="form-control" value=""></td>
+                                <td style="width: 110px;">
+                                    <div class="input-number-wrapper">
+                                        <input type="number" class="number-w-arrows form-control">
+                                    </div>
+                                </td>
+                                <td style="width: 170px;">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-text">Kč</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="my-2">
+                    <button class="btn btn--light btn--w-icon"><span class="btn-front"><span class="btn-front-text"><i class="plus---2"></i>Add more</span></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

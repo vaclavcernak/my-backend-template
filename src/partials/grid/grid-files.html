@@ -6,23 +6,23 @@
                 <th class="th--checkbox cell--checkbox">
                     {{> grid__check-all-input}}
                 </th>
-                <th class="text-center">
-                    <label class="name sort sort--down"><a href="" class="selected">ID</a></label>
+                <th class="name active">
+                    <a href="" class="selected sort sort--down">ID</a>
                 </th>
-                <th>
-                    <label class="name"><a href="">File name</a></label>
+                <th class="name text-start">
+                    <a href="">File name</a>
                 </th>
-                <th>
-                    <label class="name"><a href="">File description</a></label>
+                <th class="name text-start">
+                   <a href="">File description</a>
                 </th>
-                <th class="text-center">
-                    <label class="name"><a href="">Updated</a></label>
+                <th class="name">
+                  <a href="">Updated</a>
                 </th>
-                <th>
-                    <label class="name"><a href="">Text&nbsp;set</a></label>
+                <th class="name text-start">
+                    <a><a href="">Text&nbsp;set</a>
                 </th>
-                <th class="th--actions cell--actions">
-                    <label class="name">Actions</label>
+                <th class="name th--actions cell--actions">
+                    <span>Actions</span>
                 </th>
             </tr>
             </thead>
@@ -64,9 +64,9 @@
         <div class="selected-items"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
             <div class="row">
                 <div class="col">
-                    <label for="selected_items2" class="form-label">Selected items</label>
+                    <label class="form-label">Selected items</label>
                     <div>
-                        <select class="form-select2 form-select2--small" id="selected_items2">
+                        <select class="form-select2 form-select2--small">
                             <option selected="">--</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>

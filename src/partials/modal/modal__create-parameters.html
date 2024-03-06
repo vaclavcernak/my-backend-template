@@ -1,0 +1,76 @@
+<div class="modal modal--create-parameters fade" id="modalCreateParameters" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">Create Group of Parameters</h5>
+                </div>
+                {{> modal__top-bar-buttons--create}}
+            </div>
+            <div class="modal-body">
+                <div class="input-row mb-2">
+                    <label class="col-form-label">Group Name</label>
+                    <div class="col-input">
+                        <select class="form-select2">
+                            <option selected>Obecná skupina parametrů</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-row mb-1">
+                    <label class="col-form-label">Parameters</label>
+                    <div class="col-input">
+                        <div class="multiple-select">
+                            <select class="multiple-select-input" name="params[]" multiple="multiple">
+                                <option selected value="akce">Barva</option>
+                                <option selected value="sleva">Materiál</option>
+                                <option selected value="dalsi">Velikost</option>
+                                <option value="jeste">Ještě další</option>
+                                <option value="jeste">Ještě jedna</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion mt-4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                <span class="accordion-button__text">Test accordion</span>
+                            </button>
+                            <div class="accordion-header__right">
+                                <div class="item item--translate">
+                                    <a href="" class="item__button"><i class="language"></i>Translate</a>
+                                </div>
+                                <div class="item item--variant">EN-ALZA</div>
+                                <div class="item item--flag">
+                                    <img src="assets/images/flag-en.png" alt="">
+                                </div>
+                                <div class="accordion-more dropdown-list-wrapper">
+                                    <button class="accordion-more__btn dropdown-link"><i class="menu-vertical"></i></button>
+                                    <ul class="accordion-more__list dropdown-list">
+                                        <li class="dropdown-list__item"><img class="flag" src="assets/images/flag-en.png" alt=""><span
+                                                class="flag-text">EN-ALZA</span></li>
+                                        <li class="dropdown-list__item"><a href="" class="dropdown-list__link"><i class="language"></i>Translate</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+
+                                TEST
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

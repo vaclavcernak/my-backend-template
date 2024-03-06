@@ -147,10 +147,20 @@ $tooltip-arrow-color: $tooltip-bg;
 
 .tooltip-link {
   font-size: 14px;
-  border-bottom: 1px dotted;
+  //border-bottom: 1px dotted;
+  position: relative;
 
   &:hover {
     text-decoration: none;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    border-bottom: 1px dotted;
+    width: 100%;
   }
 }
 
@@ -160,11 +170,91 @@ $tooltip-arrow-color: $tooltip-bg;
   width: 13px;
   height: 13px;
   border-radius: 13px;
-  background-color: #2c4364;
+  background-color: var(--c-headings);
   color: #ffffff;
   font-size: 9px;
   align-items: center;
   justify-content: center;
   position: relative;
   right: -5px;
+}
+
+.html-tooltip {
+  &.bs-tooltip-auto[data-popper-placement^=top] {
+    .tooltip-arrow {
+      &:before {
+        border-top-color: #fff !important;
+      }
+    }
+  }
+
+  &.bs-tooltip-auto[data-popper-placement^=right] {
+    .tooltip-arrow {
+      &:before {
+        border-right-color: #fff !important;
+      }
+    }
+  }
+
+  &.bs-tooltip-auto[data-popper-placement^=bottom] {
+    .tooltip-arrow {
+      &:before {
+        border-bottom-color: #EBF3F8 !important;
+      }
+    }
+  }
+
+  &.bs-tooltip-auto[data-popper-placement^=left] {
+    .tooltip-arrow {
+      &:before {
+        border-left-color: #fff !important;
+      }
+    }
+  }
+
+  .tooltip-inner {
+    padding: 0;
+    background: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    border-radius: 11px;
+  }
+}
+
+.tooltip-modal {
+  font-size: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-family: 'Nunito', sans-serif;
+
+  &__title {
+    font-size: 14px;
+    padding: 10px 15px;
+    background: #EBF3F8;
+    color: #2A3647;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+  }
+
+  &__body {
+    padding: 10px 15px;
+  }
+
+  &__table {
+    td {
+      padding: 5px 5px;
+      font-weight: bold;
+      color: #2A3647;
+    }
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 12px;
+    padding: 6px 10px;
+    max-width: 110px;
+  }
+
+  .input-group-text {
+    font-size: 12px;
+  }
 }

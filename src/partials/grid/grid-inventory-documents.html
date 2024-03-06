@@ -1,0 +1,140 @@
+<div class="grid-wrapper ">
+    <div class="grid">
+        <div class="table-responsive">
+            <table class="grid__table">
+                <thead class="grid__head">
+                <tr class="thead-tr thead-tr--labels">
+                    <th class="th--checkbox cell--checkbox">
+                        {{> grid__check-all-input}}
+                    </th>
+                    <th class="name active">
+                        <a href="" class="sort sort--down selected">Date</a>
+                    </th>
+                    <th class="name text-start">
+                        <a href="">Stock movement</a>
+                    </th>
+                    <th class="name">
+                        <a href="">Barcode</a>
+                    </th>
+                    <th class="name">
+                        <a href="">Warehouse</a>
+                    </th>
+                    <th class="name">
+                        <a href="">Note</a>
+                    </th>
+                    <th class="name">
+                        <a href="">Quantity</a>
+                    </th>
+                    <th class="name">
+                        <a href="">Left on stock</a>
+                    </th>
+                    <th class="name th--actions cell--actions">
+                        <span>Actions</span>
+                    </th>
+                </tr>
+                </thead>
+                <tbody class="grid__body">
+                <tr class="tr">
+                    <td class="td--checkbox cell--checkbox">
+                        <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                    </td>
+                    <td class="text-center">
+                        22.2.2023
+                    </td>
+                    <td class="fw-bold">
+                        <i class="right c-green-light"></i> Received
+                    </td>
+                    <td class="text-center">
+                        123548975
+                    </td>
+                    <td class="text-center">
+                        Centrální sklad
+                    </td>
+                    <td class="text-center">
+                       -
+                    </td>
+                    <td class="text-center">
+                        <span class="c-green-light">+6</span>
+                    </td>
+                    <td class="text-center">
+                        12
+                    </td>
+                    <td class="td--actions cell--actions">
+                        <div class="action-btns">
+                            <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                            <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="td--checkbox cell--checkbox">
+                        <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                    </td>
+                    <td class="text-center">
+                        22.2.2023
+                    </td>
+                    <td class="fw-bold">
+                        <i class="right c-red u-opposite"></i> Issued
+                    </td>
+                    <td class="text-center">
+                        123548975
+                    </td>
+                    <td class="text-center">
+                       Prodejna
+                    </td>
+                    <td class="text-center">
+                        Vyřazení poškozených
+                    </td>
+                    <td class="text-center">
+                        <span class="c-red">-12</span>
+                    </td>
+                    <td class="text-center">
+                        0
+                    </td>
+                    <td class="td--actions cell--actions">
+                        <div class="action-btns">
+                            <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                            <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="td--checkbox cell--checkbox">
+                        <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                    </td>
+                    <td class="text-center">
+                        22.2.2023
+                    </td>
+                    <td class="fw-bold">
+                        <i class="right c-red u-opposite"></i> Issued
+                    </td>
+                    <td class="text-center">
+                        123548975
+                    </td>
+                    <td class="text-center">
+                        Prodejna
+                    </td>
+                    <td class="text-center">
+                        <span class="c-inactive">Order #55648321</span>
+                    </td>
+                    <td class="text-center">
+                        <span class="c-red">-1</span>
+                    </td>
+                    <td class="text-center">
+                        -1
+                    </td>
+                    <td class="td--actions cell--actions">
+                        <div class="action-btns">
+                            <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                            <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            {{> grid__bottom}}
+        </div>
+    </div>
+
+
+</div>

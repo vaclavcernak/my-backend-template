@@ -1,0 +1,224 @@
+<div class="grid-wrapper">
+    <div class="grid-top">
+        <div class="grid-top__left">
+            <button class="btn btn--secondary btn--small-text"><i class="settings"></i>New price list</button>
+            <button class="btn btn--secondary btn--small-text"><i class="settings"></i>New discount campaign</button>
+        </div>
+        <div class="grid-top__actions">
+            <button class="btn btn--secondary btn--small-text"><i class="edit"></i>Edit mode</button>
+            <button class="btn btn--secondary btn--small-text"><i class="table-properties"></i>Columns</button>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="table-responsive">
+            <table class="grid__table">
+                <thead class="grid__head">
+                <tr class="thead-tr thead-tr--labels">
+                    <th></th>
+                    <th class="name active">
+                        <a href="" class="sort sort--down selected">Price List</a> <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i> <a href="#"><i class="settings"></i></a>
+                    </th>
+                    <th class="name">
+                        <a href="">Manual pricing</a> <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i>
+                    </th>
+                    <th class="name">
+                        <a href="">Selling Price</a> <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i>
+                    </th>
+                    <th class="name">
+                       <a href="">Deviation from BRSP</a>
+                    </th>
+                    <th class="name">
+                        <a href="">Discount</a>
+                    </th>
+                    <th class="name">
+                        <a href="">Price After Discount</a>
+                    </th>
+                    <th class="th--actions cell--actions"></th>
+                </tr>
+                <tr class="thead-tr thead-tr--inputs">
+                    <th class="th--checkbox cell--checkbox">
+                        {{> grid__check-all-input}}
+                    </th>
+                    <th class="active">
+                        <div class="input-wrapper">
+                            <input type="text" class="form-control" id="Price List">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="input-wrapper">
+                            <input type="text" class="form-control" id="Manual pricing">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="input-wrapper">
+                            <input type="text" class="form-control" id="Selling Price">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="input-wrapper">
+                            <input type="text" class="form-control" id="Deviation from BRSP">
+                        </div>
+                    </th>
+                    <th class="text-center">
+                        <div class="input-wrapper">
+                            <input type="text" class="form-control" id="Discount">
+                        </div>
+                    </th>
+                    <th>
+                        <div class="input-wrapper">
+                            <input type="text" class="form-control" id="Price After Discount">
+                        </div>
+                    </th>
+                    <th class="th--actions cell--actions">
+                        <span class="name">Actions</span>
+                    </th>
+                </tr>
+                </thead>
+                <tbody class="grid__body">
+                <tr class="tr">
+                    <td class="td--checkbox cell--checkbox">
+                        <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                    </td>
+                    <td>
+                        <div class="two-row">
+                            <span class="first-row">Retail - superpouzdra.cz</span>
+                            <span class="second-row c-notice">-10% to all exclude category ...</span>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td class="text-end">
+                        <div class="two-row">
+                            <span class="first-row">225 690,00&nbsp;Kč</span>
+                            <span class="second-row">125 690,00&nbsp;Kč</span>
+                        </div>
+                    </td>
+                    <td class="text-end">
+                        <div class="two-row">
+                            <span class="first-row">-15,25&nbsp;%</span>
+                            <span class="second-row">-25 690,00&nbsp;Kč</span>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <span class="pricetag pricetag--discount">-12,25%</span>
+                    </td>
+                    <td class="text-end">
+                        <span class="fw-bold">225 690,00&nbsp;Kč</span>
+                    </td>
+                    <td class="td--actions cell--actions">
+                        <div class="action-btns">
+                            <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="td--checkbox cell--checkbox">
+                        <input class="form-check-input product-checkbox" type="checkbox" id="option2" value="option2">
+                    </td>
+                    <td>
+                        <div class="two-row">
+                            <span class="first-row">Retail Alza.cz</span>
+                            <span class="second-row c-notice">Fixed prices</span>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td class="text-end">
+                        <div class="two-row">
+                            <span class="first-row c-notice">225 690,00&nbsp;Kč</span>
+                            <span class="second-row c-notice">125 690,00&nbsp;Kč</span>
+                        </div>
+                    </td>
+                    <td class="text-end">
+                        <div class="two-row">
+                            <span class="first-row">-15,25&nbsp;%</span>
+                            <span class="second-row">-25 690,00&nbsp;Kč</span>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                    </td>
+                    <td class="text-end">
+                        <div class="two-row">
+                            <span class="first-row c-notice"><em>225 690,00&nbsp;Kč</em></span>
+                            <span class="second-row c-notice"><em>125 690,00&nbsp;Kč</em></span>
+                        </div>
+                    </td>
+                    <td class="td--actions cell--actions">
+                        <div class="action-btns">
+                            <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="td--checkbox cell--checkbox">
+                        <input class="form-check-input product-checkbox" type="checkbox" id="option3" value="option3">
+                    </td>
+                    <td>
+                        <div class="two-row">
+                            <span class="first-row">B2B wholesale</span>
+                            <span class="second-row c-notice">Rules are activated</span>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td class="text-end">
+                        <div class="two-row">
+                            <span class="first-row">45 690,00 €</span>
+                            <span class="second-row">35 690,00 Kč</span>
+                        </div>
+                    </td>
+                    <td class="text-end">
+                        <div class="two-row">
+                            <span class="first-row">+25,55 %</span>
+                            <span class="second-row">+14 690,00 Kč</span>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                    </td>
+                    <td class="text-end">
+                        <strong>45 690,00 €</strong>
+                    </td>
+                    <td class="td--actions cell--actions">
+                        <div class="action-btns">
+                            <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                            <button class="action-btn"><i class="pass-fail"></i></button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="grid__bottom row">
+        <div class="grid__bottom__left col-xl-4 col-lg-6 col-md-6">
+            <div class="selected-items"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Selected items</label>
+                        <div>
+                            <select class="form-select2 form-select2--small">
+                                <option selected="">--</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label class="form-label">&nbsp;</label>
+                        <div>
+                            <button class="btn btn--primary" disabled><span class="btn-front"><span class="btn-front-text">PROCEED</span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid__bottom__center col-xl-4 col-lg-12 col-md-12">
+            {{> pagination}}
+        </div>
+
+        <div class="grid__bottom__right col-xl-4 col-lg-6 col-md-6">
+            {{> paging}}
+        </div>
+    </div>
+</div>

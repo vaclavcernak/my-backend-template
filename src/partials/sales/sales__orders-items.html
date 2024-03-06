@@ -1,0 +1,20 @@
+<div class="accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#ordersItems">
+                <span class="accordion-button__text">ORDER'S ITEMS</span>
+            </button>
+            <div class="accordion-header__right">
+                <div class="accordion-icons">
+                    <button class="accordion-icon accordion-icon--pinned"><i class="pin"></i></button>
+                    <!--<button class="accordion-icon accordion-icon--unpinned"><i class="unpin"></i></button>-->
+                </div>
+            </div>
+        </h2>
+        <div id="ordersItems" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                {{> grid-orders-items}}
+            </div>
+        </div>
+    </div>
+</div>

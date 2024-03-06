@@ -1,0 +1,48 @@
+<div class="modal modal--new-payment fade" id="modalEditShipping" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">Edit Shipping</h5>
+                </div>
+                {{> modal__top-bar-buttons}}
+            </div>
+            <div class="modal-body">
+                <div class="input-row mb-2">
+                    <label class="col-form-label">Delivery</label>
+                    <div class="col-input">
+                        <select class="form-select2">
+                            <option selected>DPD pickup</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-row mb-2">
+                    <label class="col-form-label">Price<span class="notice">excl. VAT</span></label>
+                    <div class="col-input">
+                        <div class="input-group">
+                            <input type="text" class="form-control" value="">
+                            <a href="#" class="input-group-btn"><i class="calculator"></i></a>
+                            <span class="input-group-text">Kč</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-row mb-2">
+                    <label class="col-form-label">Total Price<span class="notice">incl. VAT</span></label>
+                    <div class="col-input">
+                        <div class="input-group">
+                            <input type="text" class="form-control" value="265 874,25" disabled>
+                            <span class="input-group-text">Kč</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

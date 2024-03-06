@@ -1,0 +1,166 @@
+<div class="modal fade" id="modalSendEmailToCustomer" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">Send e-mail to customer</h5>
+                </div>
+                {{> modal__top-bar-buttons--mail}}
+            </div>
+            <div class="modal-body">
+
+                    <div class="row two-col-row">
+                        <div class="col-md-6">
+                            <div class="input-row mb-2">
+                                <label class="col-form-label">E-mail Template</label>
+                                <div class="col-input">
+                                    <select class="form-select2">
+                                        <option selected>New order</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <div class="input-info"><i class="info"></i> Selecting an e-mail template will replace all filled content!</div>
+                                </div>
+                            </div>
+
+                            <div class="input-row mb-2">
+                                <label class="col-form-label c-primary">E-mail</label>
+                                <div class="col-input">
+                                    <input type="text" class="form-control" value="">
+                                </div>
+                            </div>
+
+                            <div class="input-row mb-2">
+                                <label class="col-form-label c-primary">Subject</label>
+                                <div class="col-input">
+                                    <input type="text" class="form-control" value="">
+                                </div>
+                            </div>
+
+                            <div class="input-row mb-2">
+                                <label class="col-form-label"></label>
+                                <div class="col-input">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input toggle-row-check-input" type="checkbox" id="dalsi">
+                                        <label class="switch-text fw-bold" for="dalsi">Nějaký další switch</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="toggle-input-row hidden">
+                                <div class="input-row mb-2">
+                                    <label class="col-form-label">schovaný label</label>
+                                    <div class="col-input">
+                                        <select class="form-select2">
+                                            <option selected>Blabla</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="input-row mb-2">
+                                <label class="col-form-label"></label>
+                                <div class="col-input">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input toggle-row-check-input" type="checkbox" id="orderstatus" checked>
+                                        <label class="switch-text fw-bold" for="orderstatus">Change order status after send a message</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="toggle-input-row">
+                                <div class="input-row mb-2">
+                                    <label class="col-form-label"></label>
+                                    <div class="col-input">
+                                        <select class="form-select2">
+                                            <option selected>In progress</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <div class="input-info"><i class="info"></i> No additional e-mail notification will be sent.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-row mb-2">
+                                <label class="col-form-label"></label>
+                                <div class="col-input">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input toggle-row-check-input" type="checkbox" id="emailattach">
+                                        <label class="switch-text fw-bold" for="emailattach">E-mail Attachements</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="toggle-input-row hidden">
+                                <div class="input-row mb-2">
+                                    <label class="col-form-label"></label>
+                                    <div class="col-input">
+                                        <select class="form-select2">
+                                            <option selected>User Attachement</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-row mb-2">
+                                    <label class="col-form-label"></label>
+                                    <div class="col-input">
+                                        <input class="form-control" type="file">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                <div class="mb-3">wysiwyg wysiwyg wysiwyg wysiwyg</div>
+
+                <div class="insert-shortcuts mb-3">
+                    <h4 class="title">INSERT SHORTCUTS</h4>
+                    <div class="item-row">
+                        <strong>Order:</strong>
+                        <ul class="item-row__list">
+                            <li class="item-row__link"><a href="" data-bs-toggle="tooltip" title="Insert complete list of products from order.">%PAYBUTTON</a></li>
+                            <li class="item-row__link"><a href="" data-bs-toggle="tooltip" title="Insert complete list of products from order.">%PRODUCTLIST</a></li>
+                            <li class="item-row__link"><a href="" data-bs-toggle="tooltip" title="Insert complete list of products from order.">%PRODUCTLIST</a></li>
+                        </ul>
+                    </div>
+                    <div class="item-row">
+                        <strong>Shipment:</strong>
+                        <ul class="item-row__list">
+                            <li class="item-row__link"><a href="" class="" data-bs-toggle="tooltip" title="Insert complete list of products from order..">%TRACKING</a></li>
+                            <li class="item-row__link"><a href="" data-bs-toggle="tooltip" title="Insert complete list of products from order.">%PACKAGE</a></li>
+                            <li class="item-row__link"><a href="" data-bs-toggle="tooltip" title="Insert complete list of products from order.">%DELIVERY TIME</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                <span class="accordion-button__text">HISTORY OF COMMUNICATION</span>
+                                <span class="accordion-button__notification-number bg-primary">3</span>
+                            </button>
+
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                tady nic není
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -6,12 +6,16 @@ layout: default
     {{> main-nav}}
     <div class="main-content-wrapper">
         {{> top-bar}}
-        <main class="main-content">
-            <h1>Basic grid</h1>
+        <div id="mainWrapper" class="main-no-aside">
+            <div class="main-no-aside__content">
+                <main class="main main-content">
+                    <h1>Basic grid</h1>
 
-            {{> grid}}
-        </main>
-        {{> footer}}
+                    {{> grid}}
+                </main>
+            </div>
+            {{> footer}}
+        </div>
     </div>
 
 </div>

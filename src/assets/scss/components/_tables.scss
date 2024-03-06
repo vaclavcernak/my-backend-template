@@ -119,10 +119,29 @@
       }
     }
   }
+}
 
-  td {
+table.inputs-table {
+  width: 100%;
+  margin: 0 -5px 15px;
 
+  th {
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
   }
 
+  td {
+    padding: 5px;
+    font-size: 14px;
 
+    .form-control {
+      min-width: 80px;
+    }
+
+    .form-check-input {
+      margin-top: 0;
+    }
+  }
 }

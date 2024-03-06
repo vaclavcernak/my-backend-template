@@ -1,0 +1,726 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+
+<div class="main-wrapper">
+    <aside id="mainNav" class="main-nav">
+        <header class="main-nav__header">
+            <a href="/"><img src="assets/images/jzone-blue-white.svg" alt="jz one logo" class="logo" style="height: 26px;"></a>
+            <!--<button class="main-nav__header__button"><i class="cash-register"></i></button>
+            <button class="main-nav__header__button"><i class="barcode-reader"></i></button>-->
+            <button id="hamMenuBtnMax" class="main-nav__header__button button--hamburger on-maximized"><i
+                    class="unpin hamburger-open"></i><i class="pin hamburger-close"></i><i class="multiply hamburger-close d-block d-md-none"></i></button>
+            <button id="hamMenuBtnMin" class="main-nav__header__button button--hamburger on-minimized">
+                <a href="#"><img src="assets/images/jz.svg" alt="malé logo"></a>
+                <!--<i class="hamburger-menu hamburger-open"></i><i class="multiply hamburger-close"></i>-->
+            </button>
+        </header>
+        <nav id="mainNav__nav" class="main-nav__nav scrollbared">
+            <div class="main-nav__nav__inner">
+                <ul>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><span class="notify">1</span><i class="dashboard-layout"></i><span class="name">Dashboard</span></a></li>
+                    <li class="main-nav__nav__item has-submenu"><span class="notify">95</span><a href="#"><i class="basket"></i><span
+                            class="name">Sales</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item has-submenu active">
+                                <a href="#"><span class="menu-error-icon">!</span><span
+                                    class="name">2. Aktivní</span><span class="notify">155 265</span></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                </ul></li>
+                            <li class="sub-menu__item has-submenu"><a href="#"><span class="name">Categories</span></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item active"><a href="#"><span class="menu-error-icon">!</span><span class="name">Třetí aktivní</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item has-submenu"><a href="#"><i class="extra-features"></i><span
+                            class="name">Catalogue</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item"><a href="#"><span class="menu-error-icon">!</span><span class="name">Products</span><span
+                                    class="notify">155 265</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Categories</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="price"></i><span class="name">Pricing</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="package"></i><span class="name">Stock</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="commercial"></i><span
+                            class="name">Marketing</span></a></li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="repository"></i><span
+                            class="name">Directory</span></a></li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="marketing"></i><span
+                            class="name">Reports</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="bot"></i><span class="name">Automation</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="plugin"></i><span class="name">Plug-ins</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"></a><a
+                            href="#"><i class="online-store"></i><span class="name">Sales channels</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><span
+                            class="menu-error-icon">!</span><i
+                            class="file"></i><span
+                            class="name">File Manager</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="system-administrator-male"></i><span class="name">Client account</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i class="settings"></i><span class="name">Settings</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i class="lifebuoy"></i><span class="name">Help</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <div class="main-content-wrapper">
+        <header id="topBar" class="top-bar top-bar--product">
+        
+            <div class="hamburger-menu-mobile">
+                <button id="mobileButtonHamburger" class="button--hamburger">
+                    <i class="hamburger-menu hamburger-open"></i>
+                </button>
+            </div>
+        
+            <div class="top-bar__left">
+                <img class="topbar-img" src="assets/images/samples/topbar-img.png" alt="">
+                <h1 id="topBarTitle" class="title">Držák na telefon ring s podstavcem ve tvaru prstýnku černý s ještě delším
+                    názvem</h1>
+                <span class="product-tag product-tag--draft">Draft</span>
+                <div class="flag-status">
+                    <span class="status-active dropdown-button"><span class="img-wrapper"><img src="assets/images/icon-green-flag.png"
+                                                                               alt=""></span><span class="status-text">Default</span><i
+                            class="expand-arrow"></i></span>
+                    <ul class="top-bar__button__window status-dropdown">
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-translation.png"
+                                                                                   alt=""></span>To translate</a></li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-briefcase.png" alt=""></span>Translated</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-spinner.png" alt=""></span>For
+                            review</a></li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-user.png" alt=""></span>Tomáš</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-user.png" alt=""></span>Pavel</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-green-flag.png"
+                                                                                   alt=""></span>Default</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="top-bar__right top-bar-buttons">
+                <button class="actions-button"><i class="menu-vertical"></i></button>
+                <ul class="mobile-actions">
+                    <li class="item"><a href="" class="item-link">Save</a></li>
+                    <li class="item"><a href="" class="item-link">Save & close</a></li>
+                    <li class="item"><a href="" class="item-link">Cancel</a></li>
+                </ul>
+                <div class="fade-modal-actions" style="display: none"></div>
+                <div class="actions">
+                    <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">SAVE</span></span>
+                    </button>
+                    <button class="btn btn--secondary"><i class="save"></i>SAVE & CLOSE</button>
+                    <button class="btn btn--secondary"><i class="multiply-2"></i>CANCEL</button>
+                </div>
+            </div>
+        </header>
+        <div id="mainWrapper" class="main-w-aside">
+            <div class="main-w-aside__content">
+                <main class="main">
+                    <button id="rightPanelToggle" class="right-panel-toggle right-panel-toggle-btn"><i class="back-arrow"></i>
+                    </button>
+                    <ul id="navTabs" class="nav nav-tabs nav-tabs-responsive">
+                        <li class="nav-item item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pricing" aria-selected="true">Pricing
+                            </button>
+                        </li>
+                    
+                        <div class="nav-tabs__next">
+                            <button class="more-btn nav-tabs__next__btn"><i class="hamburger-menu"></i></button>
+                            <ul class="nav-tabs__next__nav"></ul>
+                        </div>
+                    </ul>
+                    
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="pricing">
+                            <div class="mt-4">
+                                <div class="col-input mb-2">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="variants" checked>
+                                        <label class="switch-text fw-bold" for="variants">Prices defined by product variants <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6 mb-2">
+                                        <div class="input-row">
+                                            <label class="col-form-label c-primary">Product price group</label>
+                                            <div class="col-input">
+                                                <select class="form-select2">
+                                                    <option selected>Název skupiny produktů</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-lg-4 col-sm-6 mb-2">
+                                        <div class="input-row">
+                                            <label class="col-form-label c-primary">Pricing method <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i></label>
+                                            <div class="col-input">
+                                                <select class="form-select2">
+                                                    <option selected>Fixed price - no automatic updates</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-lg-4 col-sm-6 mb-2">
+                                        <div class="input-row">
+                                            <label class="col-form-label c-primary">VAT rate <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i> <a href="#"><i class="settings"></i></a></label>
+                                            <div class="col-input">
+                                                <select class="form-select2">
+                                                    <option selected>Reduced rate (medical equipment)</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#discounts">
+                                            <span class="accordion-button__text">Other discounts</span>
+                                        </button>
+                                    </h2>
+                                    <div id="discounts" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                            
+                                            <div class="table-responsive mb-3">
+                                                <table class="price-table">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="text-end fw-bold minw-150">
+                                                            Loyality program
+                                                        </td>
+                                                        <td class="text-center minw-100">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" checked="">
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center minw-200">
+                                                            <div class="input-w-inline-label">
+                                                                <span class="input-w-inline-label__label">Points</span>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" value="256">
+                                                                    <span class="input-group-text">Pts</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                            
+                                                    <tr>
+                                                        <td class="text-end fw-bold minw-150">
+                                                            Quantity discount
+                                                        </td>
+                                                        <td class="text-center minw-100">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                            
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                            
+                                             <div class="grid">
+                                                <div class="table-responsive">
+                                                    <table class="grid__table">
+                                                        <thead class="grid__head">
+                                                        <tr class="thead-tr thead-tr--labels">
+                                                            <th class="th--checkbox cell--checkbox">
+                                                                <div class="input-wrapper">
+                                                                    <div class="form-check-input-all">
+                                                                        <!--<input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">-->
+                                                                        <div class="checkbox-options">
+                                                                            <span class="checkbox-options__btn"></span>
+                                                                            <ul class="checkbox-options__options">
+                                                                                <li class="item"><a href="#">Možnost</a></li>
+                                                                                <li class="item"><a href="#">Další položka</a></li>
+                                                                                <li class="item"><a href="#">Ještě</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>                </th>
+                                                            <th class="name active mw100">
+                                                                <a href="" class="sort sort--down selected">Quantity <span class="notice">(incl.)</span></a>
+                                                            </th>
+                                                            <th class="name">
+                                                                <a href="">Discount [%]</a>
+                                                            </th>
+                                                            <th class="name th--actions cell--actions">
+                                                                <span>Actions</span>
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody class="grid__body">
+                                                        <tr class="tr">
+                                                            <td class="td--checkbox cell--checkbox">
+                                                                <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                                                            </td>
+                                                            <td class="text-center">
+                                                                10
+                                                            </td>
+                                                            <td class="text-center">
+                                                                20
+                                                            </td>
+                                                            <td class="td--actions cell--actions">
+                                                                <div class="action-btns">
+                                                                    <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                    <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tr">
+                                                            <td class="td--checkbox cell--checkbox">
+                                                                <input class="form-check-input product-checkbox" type="checkbox" id="option2" value="option2">
+                                                            </td>
+                                                            <td class="text-center">
+                                                                50
+                                                            </td>
+                                                            <td class="text-center">
+                                                                50
+                                                            </td>
+                                                            <td class="td--actions cell--actions">
+                                                                <div class="action-btns">
+                                                                    <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                    <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="grid__bottom row">
+                                                <div class="grid__bottom__left col-xl-4 col-lg-6 col-md-6">
+                                                    <div class="selected-items"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <label class="form-label">Selected items</label>
+                                                                <div>
+                                                                    <select class="form-select2 form-select2--small">
+                                                                        <option selected="">--</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <label class="form-label">&nbsp;</label>
+                                                                <div>
+                                                                    <button class="btn btn--primary" disabled><span class="btn-front"><span class="btn-front-text">PROCEED</span></span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="grid__bottom__right col-xl-8 col-lg-6 col-md-6 mb-3 text-end">
+                                                    <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD DISCOUNT LEVEL</span></span>
+                                                    </button>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#mandatory">
+                                            <span class="accordion-button__text">Mandatory fees</span>
+                                        </button>
+                                    </h2>
+                                    <div id="mandatory" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-6 mb-2">
+                                                    <div class="input-row">
+                                                        <label class="col-form-label">Recycling Fees <span class="notice">(incl. VAT)</span> <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i> <a href="#"><i class="settings"></i></a></label>
+                                                        <div class="col-input">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" value="110,00">
+                                                                <span class="input-group-text">Kč</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                </main>
+                <aside id="rightPanel" class="right-panel">
+                    <div class="right-panel__inner">
+                        <div class="right-panel__top">
+                            <button id="rightPanelToggleTop" class="right-panel-toggle-btn btn btn--secondary btn--small-text"><i class="forward-button"></i><span>Hide</span></button>
+                            <div class="show-frontend show-frontend--has-list">
+                                <span class="show-frontend__button"><i class="eye-2 icon-left"></i><span class="text">Product Preview</span><i class="expand-arrow icon-right"></i></span>
+                                <ul class="show-frontend__list">
+                                    <li class="show-frontend__list__item"><a href=""><i
+                                            class="external-link"></i>www.superpouzdra.cz</a></li>
+                                    <li class="show-frontend__list__item"><a href="" target="_blank"><i class="external-link"></i>www.drackovy-hracky.cz</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right-panel__body">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#publicationBody">
+                                            <span class="accordion-button__text">Publication</span>
+                                        </button>
+                                    </h2>
+                                    <div id="publicationBody" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="rp-publication-section">
+                                                <div class="published">
+                                                    <i class="hide"></i>
+                                                    <span class="text">Product is not published on any sales channel.</span>
+                                                </div>
+                                                <div class="status">
+                                                    <select class="form-select2">
+                                                        <option selected>DRAFT</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <button class="schedule-btn"><i class="schedule"></i></button>
+                                                </div>
+                                                <div class="my-2 fs-12">
+                                                    Scheduled for March 10, 2022, 3:00
+                                                </div>
+                                                <div class="switches-group">
+                                                    <span class="fw-bold d-inline-block mb-1">Sales channels visibility</span>
+                                                    <div class="ms-2">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="point" checked="">
+                                                            <label class="switch-text" for="point">Point of sale</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="alza" checked="">
+                                                            <label class="switch-text" for="alza">Alza.cz</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="domena" checked="">
+                                                            <label class="switch-text" for="domena">Domena.cz</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="domenaCom" checked="">
+                                                            <label class="switch-text" for="domenaCom">Domena.com <i class="help" data-bs-toggle="tooltip"
+                                                                                                    title="Něco je asi špatně"></i></label>
+                                                        </div>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#propertiesBody">
+                                            <span class="accordion-button__text">Product properties</span>
+                                        </button>
+                                    </h2>
+                                    <div id="propertiesBody" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="rp-properties-section">
+                                                <div class="mb-3">
+                                                    <label for="product_id" class="form-label">Product ID</label>
+                                                    <input type="text" class="form-control" id="product_id" value="2019515346" disabled>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="Manufacturer" class="form-label">Manufacturer</label>
+                                                    <select class="form-select2" id="Manufacturer">
+                                                        <option selected>SAMSUNG</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="Type" class="form-label">Product type</label>
+                                                    <select class="form-select2" id="Type">
+                                                        <option>Basic product</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                            
+                                                <div class="form-check form-switch ms-2 mb-3">
+                                                    <input class="form-check-input" type="checkbox" id="age" checked="">
+                                                    <label class="switch-text" for="age">Age-restricted category</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#textSetBody">
+                                            <span class="accordion-button__text">Text sets</span>
+                                        </button>
+                                    </h2>
+                                    <div id="textSetBody" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="rp-text-sets">
+                                                <div class="switches-group">
+                                                    <span class="fw-bold d-inline-block mb-1">Available product text sets</span>
+                                                    <div class="ms-2">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="czweb" checked="">
+                                                            <label class="switch-text" for="czweb"><img src="assets/images/flag-cs.png" alt=""> CZ-Web</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="czalz" checked="">
+                                                            <label class="switch-text" for="czalz"><img src="assets/images/flag-cs.png" alt=""> CZ-Alza.cz</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="encom" checked="">
+                                                            <label class="switch-text" for="encom"><img src="assets/images/flag-en.png" alt=""> EN-COM</label>
+                                                        </div>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="enb2b" checked="">
+                                                            <label class="switch-text" for="enb2b"><img src="assets/images/flag-en.png" alt=""> EN-B2B</label>
+                                                        </div>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tagsBody">
+                                            <span class="accordion-button__text">Tags</span>
+                                        </button>
+                                    </h2>
+                                    <div id="tagsBody" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="rp-tags-section">
+                                                <div class="search-input mb-2 pb-1">
+                                                    <select class="form-select2-tags" name="tags[]">
+                                                        <option selected="selected">Search or create tag</option>
+                                                        <option>Sleva</option>
+                                                        <option>Další možnost</option>
+                                                        <option>Ještě jedna</option>
+                                                    </select>
+                                                </div>
+                                                <div class="rp-tags">
+                                                    <div class="tag-wrapper">
+                                                        <div class="tag">
+                                                            <span class="text">Doporučujeme</span>
+                                                            <button class="delete"><i class="multiply-2"></i></button>
+                                                        </div>
+                                                        <button class="tag-icon tag-icon--schedule"><i class="schedule"></i></button>
+                                                    </div>
+                                                    <div class="tag-wrapper">
+                                                        <div class="tag">
+                                                            <span class="text">Akce</span>
+                                                            <button class="delete"><i class="multiply-2"></i></button>
+                                                        </div>
+                                                        <button class="tag-icon tag-icon--edit-calendar"><i class="edit-calendar"></i></button>
+                                                    </div>
+                                                    <div class="scheduled-text"><span>Scheduled form March 10, 2022, 3:00</span></div>
+                                                    <div class="tag-wrapper">
+                                                        <div class="tag">
+                                                            <span class="text">Dárek zdarma</span>
+                                                            <button class="delete"><i class="multiply-2"></i></button>
+                                                        </div>
+                                                        <button class="tag-icon tag-icon--schedule"><i class="schedule"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tasksBody">
+                                            <span class="accordion-button__text">Tasks</span>
+                                        </button>
+                                    </h2>
+                                    <div id="tasksBody" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="rp-tasks-section">
+                                                <div class="rp-tasks">
+                                                    <div class="rp-tasks__item">
+                                                        <div class="rp-tasks__item__left">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="task1" checked="">
+                                                                <label class="switch-text" for="task1">25.4.2019 | <strong>Jenda</strong></label>
+                                                            </div>
+                                                            <div class="description">Přepsat popis a nastavit cenu dle nákupní ceny z ceníku.</div>
+                                                        </div>
+                                                        <button class="close"><i class="multiply-2"></i></button>
+                                                    </div>
+                            
+                                                    <div class="rp-tasks__item rp-tasks__item--unchecked">
+                                                        <div class="rp-tasks__item__left">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="task2">
+                                                                <label class="switch-text" for="task2">25.4.2019 | <strong>Jenda</strong></label>
+                                                            </div>
+                                                            <div class="description">Přepsat popis a nastavit cenu dle nákupní ceny z ceníku.</div>
+                                                        </div>
+                                                        <button class="close"><i class="multiply-2"></i></button>
+                                                    </div>
+                            
+                                                    <div class="add-input-wrapper">
+                                                        <input type="text" class="form-control" id="add_task" placeholder="Add new task">
+                                                        <a href="#" class="btn btn--add">+</a>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#logsBody">
+                                            <span class="accordion-button__text">Logs</span>
+                                        </button>
+                                    </h2>
+                                    <div id="logsBody" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="rp-logs-section">
+                                                <div class="rp-logs">
+                                                    <div class="rp-logs__top">
+                                                        <div class="author">Author: <strong>Jenda Levejhák</strong></div>
+                                                        <div class="created">Created: <strong>25.4.2019</strong> | 20:30:19</div>
+                                                    </div>
+                            
+                                                    <div class="rp-logs__item">
+                                                        <div class="heading">25.4.2019 20:30:19 | <strong>Jenda</strong></div>
+                                                        <div class="description">Product modification</div>
+                                                    </div>
+                                                    <div class="rp-logs__item">
+                                                        <div class="heading">25.4.2019 20:30:19 | <strong>System</strong></div>
+                                                        <div class="description">Update inventory</div>
+                                                    </div>
+                                                    <div class="rp-logs__item">
+                                                        <div class="heading">25.4.2019 20:30:19 | <strong>Tonda</strong></div>
+                                                        <div class="description">Product creation</div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="d-flex justify-content-end">
+                                                    <a href="" class="btn btn--secondary">DETAILED LOGS</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rp-pagination-section mt-3">
+                                <div class="rp-pagination">
+                                    <div class="rp-pagination__item">
+                                        <a href="" class="rp-pagination__link rp-pagination__link--prev"><i class="less-than"></i>Previous</a>
+                                    </div>
+                                    <div class="rp-pagination__item">
+                                        <a href="" class="rp-pagination__link rp-pagination__link--next">Next<i class="forward"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="right-panel__bottom">
+                            <button class="btn btn--delete btn--w-icon"><i class="trash-can"></i>DELETE PRODUCT</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <footer class="footer">
+                <div class="footer__version"><a href="#">www.jz-one.cz</a> | v1.0</div>
+                <div class="footer__copyright">Copyright Jirsa & Záruba s.r.o. © All Rights Reserved.</div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

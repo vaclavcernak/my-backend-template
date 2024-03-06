@@ -8,8 +8,8 @@
 
 <div class="ms-1 ms-md-3 my-3 fw-bold">
     <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" checked>
-        <span class="switch-text fs-14">Inventory tracking management</span>
+        <input class="form-check-input" type="checkbox" checked id="inv">
+        <label class="switch-text fs-14" for="inv">Inventory tracking management</label>
     </div>
 </div>
 <div class="accordion">
@@ -68,7 +68,7 @@
                         </div>
 
 
-                        <div class="mb-2 row input-row">
+                        <div class="mb-2 input-row">
                             <label class="col-form-label">Availability when out of stock</label>
                             <div class="col-input">
                                 <select class="form-select2">
@@ -79,16 +79,16 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="mb-3 row input-row">
+                        <div class="mb-2 input-row">
                             <label class="col-form-label"></label>
                             <div class="col-input">
                                 <div class="form-check form-check-inline form-switch">
-                                    <input class="form-check-input" type="checkbox" checked="">
-                                    <span class="switch-text fs-14 fw-bold">Negative stocks allowed</span>
+                                    <input class="form-check-input" type="checkbox" checked="" id="neg">
+                                    <label class="switch-text fs-14 fw-bold" for="neg">Negative stocks allowed</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="mb-2 row input-row">
+                        <div class="mb-2 input-row">
                             <label class="col-form-label">Warranty</label>
                             <div class="col-input">
                                 <select class="form-select2">
@@ -102,7 +102,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="mb-2 row input-row">
+                        <div class="mb-2 input-row">
                             <label class="col-form-label">Inventory history</label>
                             <div class="col-input">
                                 <select class="form-select2">
@@ -124,7 +124,7 @@
                         </div>
 
 
-                        <div class="mb-2 row input-row">
+                        <div class="mb-2 input-row">
                             <label class="col-form-label">Minimum level</label>
                             <div class="col-input">
                                 <div class="input-group">
@@ -134,7 +134,7 @@
                             </div>
                         </div>
 
-                        <div class="mb-2 row input-row">
+                        <div class="mb-2 input-row">
                             <label class="col-form-label">Optimum level</label>
                             <div class="col-input">
                                 <div class="input-group">
@@ -162,7 +162,7 @@
             <div class="accordion-body">
                 <div class="row two-col-row">
                     <div class="col-md-6 mb-2">
-                        <div class="row input-row">
+                        <div class="input-row">
                             <label class="col-form-label">Material flow method</label>
                             <div class="col-input">
                                 <select class="form-select2">
@@ -174,22 +174,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="row input-row input-row--no-center">
+                    <div class="col-md-6 mb-2">
+                        <div class="input-row">
                             <label class="col-form-label">Stock tracking</label>
                             <div class="col-input">
                                 <div class="ms-2 fs-14">
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="serialNumbers" checked="">
-                                        <span class="switch-text">Serial numbers</span>
+                                        <label class="switch-text" for="serialNumbers">Serial numbers</label>
                                     </div>
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="productBatch" checked="">
-                                        <span class="switch-text">Product batch</span>
+                                        <label class="switch-text" for="productBatch">Product batch</label>
                                     </div>
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="expirationDate" checked="">
-                                        <span class="switch-text">Expiration date</span>
+                                        <label class="switch-text" for="expirationDate">Expiration date</label>
                                     </div>
                                 </div>
                             </div>
@@ -221,7 +221,7 @@
             <div class="accordion-body">
                 <div class="row two-col-row">
                     <div class="col-md-6 mb-2">
-                        <div class="row input-row">
+                        <div class="input-row">
                             <label class="col-form-label">Sales unit</label>
                             <div class="col-input">
                                 <select class="form-select2">
@@ -234,8 +234,8 @@
 
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="row input-row input-row--no-center">
+                    <div class="col-md-6 mb-2">
+                        <div class="input-row">
                             <label class="col-form-label">
                                 <span class="tooltip-w-hint" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip"><span class="tooltip-link">Number per unit</span><span class="hint-icon">?</span></span>
                             </label>
@@ -258,15 +258,15 @@
 
                 <div class="row two-col-row">
                     <div class="col-md-6 mb-2">
-                        <div class="row input-row">
+                        <div class="input-row">
                             <label class="col-form-label">Minimum purchase</label>
                             <div class="col-input">
                                 <input type="text" class="form-control" value="1,00">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="row input-row">
+                    <div class="col-md-6 mb-2">
+                        <div class="input-row">
                             <label class="col-form-label">Maximum purchase</label>
                             <div class="col-input">
                                 <input type="text" class="form-control" value="100,00">
@@ -294,14 +294,14 @@
 
                 <div class="row two-col-row">
                     <div class="col-md-6 mb-2">
-                        <div class="row input-row">
+                        <div class="input-row">
                             <label class="col-form-label">SKU (Stock Keeping Unit)</label>
                             <div class="col-input">
                                 <input type="text" class="form-control" value="AS 553 55">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6 mb-2">
                         <div class="row input-row">
                             <label class="col-form-label">EAN</label>
                             <div class="col-input">
@@ -320,7 +320,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6 mb-2">
                         <div class="row input-row">
                             <label class="col-form-label">ISBN</label>
                             <div class="col-input">
@@ -330,10 +330,12 @@
                     </div>
                 </div>
 
-                <div class="row input-row">
-                    <label class="col-form-label">Manufacturer P/N</label>
-                    <div class="col-input">
-                        <input type="text" class="form-control" value="AS 553 55">
+                <div class="row two-col-row">
+                    <div class="col-md-6 mb-2">
+                        <label class="col-form-label">Manufacturer P/N</label>
+                        <div class="col-input">
+                            <input type="text" class="form-control" value="AS 553 55">
+                        </div>
                     </div>
                 </div>
 

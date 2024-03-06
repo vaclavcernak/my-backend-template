@@ -1,15 +1,16 @@
-<aside id="rightPanel" class="right-panel" xmlns="http://www.w3.org/1999/html">
+<aside id="rightPanel" class="right-panel">
     <div class="right-panel__inner">
         <div class="right-panel__top">
-            <div class="dropdown-list-wrapper">
-                <button class="btn btn--dark btn--small-text dropdown-link"><i class="external-link"></i>Product
-                    preview<i
-                            class="expand-arrow expand-arrow--small"></i></button>
-                {{> dropdown-list-sample}}
+            <button id="rightPanelToggleTop" class="right-panel-toggle-btn btn btn--secondary btn--small-text"><i class="forward-button"></i><span>Hide</span></button>
+            <div class="show-frontend show-frontend--has-list">
+                <span class="show-frontend__button"><i class="eye-2 icon-left"></i><span class="text">Product Preview</span><i class="expand-arrow icon-right"></i></span>
+                <ul class="show-frontend__list">
+                    <li class="show-frontend__list__item"><a href=""><i
+                            class="external-link"></i>www.superpouzdra.cz</a></li>
+                    <li class="show-frontend__list__item"><a href="" target="_blank"><i class="external-link"></i>www.drackovy-hracky.cz</a>
+                    </li>
+                </ul>
             </div>
-
-            <button class="right-panel-toggle-btn btn btn--secondary btn--small-text"><i class="logout"></i>Hide
-            </button>
         </div>
         <div class="right-panel__body">
             {{> right-panel__publication}}

@@ -14,22 +14,49 @@
   justify-content: space-between;
   overflow: hidden;
 
+  &:after {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    z-index: -1;
+    transition: .3s;
+    opacity: 0;
+  }
+
   @include media-breakpoint-between(md, xl) {
     position: absolute;
     right: 0;
     width: calc(100% - var(--main-nav-minim-width));
   }
   @include media-breakpoint-down(md) {
-    height: auto;
+    //height: auto;
+    min-height: 100vh;
+  }
+
+  .main-nav.minimized + & {
+    @include media-breakpoint-up(lg) {
+      left: var(--main-nav-minim-width);
+      position: absolute;
+      right: 0;
+      width: calc(100% - var(--main-nav-minim-width));
+    }
   }
 }
 
 .main-content {
   padding: 15px 20px;
   margin-top: var(--top-bar-height);
+  height: 100%;
+  width: 100%;
   @include media-breakpoint-up(md) {
-    height: 100vh;
-    overflow: auto;
+    //height: 100vh;
+    //overflow: auto;
   }
   @include media-breakpoint-down(sm) {
     padding-right: 10px;
@@ -42,15 +69,34 @@
   }
 }
 
-.main-w-aside {
+.main-w-aside,
+.main-no-aside {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  margin-top: var(--top-bar-height);
+  height: 100vh;
   overflow-y: auto;
+  justify-content: space-between;
+
+  &__content {
+    display: flex;
+  }
+
+  &.no-rightPanel {
+    .main {
+      max-width: 100%;
+    }
+  }
+}
+
+.main-w-aside {
+  margin-top: var(--top-bar-height);
+
 
   .main {
     margin-top: 15px;
     width: 100%;
+    overflow-x: hidden;
     @include media-breakpoint-up(xl) {
       max-width: calc(100% - var(--right-panel-width));
     }

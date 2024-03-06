@@ -1,0 +1,101 @@
+<div class="modal modal--new-payment fade" id="modalOrderHistory" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">Order History</h5>
+                </div>
+                <div class="top-bar__right top-bar-buttons">
+                    <div class="actions">
+                        <button class="btn btn--secondary btn--close-modal always-visible" data-bs-dismiss="modal"><i class="multiply-2"></i>CANCEL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="grid-wrapper">
+                    <div class="grid grid--no-border">
+                        <div class="table-responsive">
+                            <table class="grid__table">
+                                <thead class="grid__head">
+                                <tr class="thead-tr thead-tr--labels">
+                                    <th class="name active">
+                                        <a href="" class="sort sort--down selected">Date</a>
+                                    </th>
+                                    <th class="name">
+                                        <a href="">Order status</a>
+                                    </th>
+                                    <th class="name">
+                                        <a href="">Created by</a>
+                                    </th>
+                                    <th class="name">
+                                        <a href="">Message status</a>
+                                    </th>
+                                    <th class="name text-start">
+                                        <a href="">Note</a>
+                                    </th>
+                                    <th class="name th--actions cell--actions">
+                                        <span>Actions</span>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody class="grid__body">
+                                <tr class="tr">
+                                    <td class="text-center">
+                                        <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="22-02-2022 16:32:22">22-02-2022</span>
+                                    </td>
+                                    <td class="text-center">
+                                        New
+                                    </td>
+                                    <td class="text-center">
+                                        System
+                                    </td>
+                                    <td class="text-center">
+                                        Delivered
+                                    </td>
+                                    <td></td>
+                                    <td class="td--actions cell--actions">
+                                        <div class="action-btns">
+                                            <button class="action-btn action-btn--print"><i class="file"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="tr">
+                                    <td class="text-center">
+                                        <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="22-02-2022 16:32:22">22-02-2022</span>
+                                    </td>
+                                    <td class="text-center">
+                                        In progress
+                                    </td>
+                                    <td class="text-center">
+                                        Tomáš
+                                    </td>
+                                    <td class="text-center"></td>
+                                    <td>Poznámka přes historii</td>
+                                    <td class="td--actions cell--actions"></td>
+                                </tr>
+
+                                <tr class="tr">
+                                    <td class="text-center">
+                                        <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="22-02-2022 16:32:22">22-02-2022</span>
+                                    </td>
+                                    <td class="text-center">
+                                        In progress
+                                    </td>
+                                    <td class="text-center">
+                                        Tomáš
+                                    </td>
+                                    <td class="text-center"></td>
+                                    <td>Poznámka při změně stavu</td>
+                                    <td class="td--actions cell--actions"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

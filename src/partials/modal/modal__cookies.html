@@ -1,0 +1,147 @@
+<div class="modal fade" id="modalCookies" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">Cookies</h5>
+                </div>
+                {{> modal__top-bar-buttons}}
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="highlight-input mb-4">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="cookiesConsent" checked>
+                                <label class="switch-text fw-bold" for="cookiesConsent">Enable cookies consent bar <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i></label>
+                            </div>
+                        </div>
+
+                        <div class="input-row mb-2">
+                            <label class="col-form-label">Consent duration [days]</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="365">
+                            </div>
+                        </div>
+
+                        <div class="input-row mb-2">
+                            <label class="col-form-label">Display method</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="Pop-up window">
+                            </div>
+                        </div>
+
+                        <div class="input-row mb-2">
+                            <label class="col-form-label">Information text in bar</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">wysiwyg wysiwyg wysiwyg wysiwyg</div>
+
+                <h3 class="modal-body__heading">Cookies categories</h3>
+
+                <div class="grid-wrapper">
+                    <div class="grid grid--no-border">
+                        <div class="table-responsive">
+                            <table class="grid__table">
+                                <thead class="grid__head">
+                                <tr class="thead-tr thead-tr--labels">
+                                    <th class="name text-start fw-medium">
+                                        Category
+                                    </th>
+                                    <th class="name text-start fw-medium">
+                                        User name
+                                    </th>
+                                    <th class="name fw-medium">
+                                        Display
+                                    </th>
+                                    <th class="name th--actions cell--actions fw-medium">
+                                        <span>Actions</span>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody class="grid__body">
+                                <tr class="tr">
+                                    <td>
+                                        Technical (essential)
+                                    </td>
+                                    <td>
+                                        Technical (essential)
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="form-check form-check-inline form-switch mt-2">
+                                            <input class="form-check-input" type="checkbox" checked>
+                                        </div>
+                                    </td>
+                                    <td class="td--actions cell--actions">
+                                        <div class="action-btns">
+                                            <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="tr">
+                                    <td>
+                                        Analytics
+                                    </td>
+                                    <td>
+                                        Analytics
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="form-check form-check-inline form-switch mt-2">
+                                            <input class="form-check-input" type="checkbox" checked>
+                                        </div>
+                                    </td>
+                                    <td class="td--actions cell--actions">
+                                        <div class="action-btns">
+                                            <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tr">
+                                    <td>
+                                        Personalised
+                                    </td>
+                                    <td>
+                                        Personalised
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="form-check form-check-inline form-switch mt-2">
+                                            <input class="form-check-input" type="checkbox" checked>
+                                        </div>
+                                    </td>
+                                    <td class="td--actions cell--actions">
+                                        <div class="action-btns">
+                                            <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="tr">
+                                    <td>
+                                        Marketing
+                                    </td>
+                                    <td>
+                                        Marketing
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="form-check form-check-inline form-switch mt-2">
+                                            <input class="form-check-input" type="checkbox" checked>
+                                        </div>
+                                    </td>
+                                    <td class="td--actions cell--actions">
+                                        <div class="action-btns">
+                                            <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+.variant-items {
+  .item-row {
+    display: flex;
+    border: 1px solid #C2D8E7;
+    border-radius: 5px;
+    background: #E5EEF4;
+    padding: 7px 10px;
+    justify-content: space-between;
+    font-size: 14px;
+    gap: 15px;
+    margin-bottom: 8px;
+    align-items: end;
+
+    @include media-breakpoint-down(sm) {
+      padding-right: 7px;
+      padding-left: 7px;
+      gap: 7px;
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(45% - 15px);
+    gap: 20px;
+
+    @include media-breakpoint-down(xl) {
+      width: calc(50% - 15px);
+    }
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &__input {
+      width: 100%;
+    }
+
+    &__name {
+      width: 100%;
+      text-align: right;
+      font-weight: bold;
+
+      @include media-breakpoint-down(lg) {
+        text-align: left;
+      }
+    }
+
+    .col-input {
+      @include media-breakpoint-down(xl) {
+        width: 160px !important;
+      }
+      @include media-breakpoint-down(lg) {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .button-wrapper {
+    width: 10%;
+    display: flex;
+    justify-content: end;
+    margin-left: 10px;
+    @include media-breakpoint-down(xl) {
+      width: 30px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
+  }
+
+  .item-remove {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    transition: .2s;
+    font-size: 14px;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 0;
+      gap: 0;
+      height: 40px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 7px;
+    }
+
+    &:hover {
+      background-color: #d6e2ea;
+    }
+
+    i {
+      font-size: 20px;
+      color: #cb1919;
+      line-height: 0;
+    }
+  }
+
+  .item-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+  }
+}

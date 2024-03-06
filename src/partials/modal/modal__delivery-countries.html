@@ -1,0 +1,49 @@
+<div class="modal fade" id="modalDeliveryCountries" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">Delivery countries</h5>
+                </div>
+                {{> modal__top-bar-buttons}}
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="inputs-table">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Default</th>
+                                <th>Active</th>
+                                <th>Country</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center"><input class="form-check-input" type="radio" name="default" checked></td>
+                                <td><div class="form-check form-check-inline form-switch mt-2">
+                                    <input class="form-check-input" type="checkbox" id="cs" checked>
+                                </div></td>
+                                <td class="fw-bold ps-3"><span>Czech republic</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><input class="form-check-input" type="radio" name="default"></td>
+                                <td><div class="form-check form-check-inline form-switch mt-2">
+                                    <input class="form-check-input" type="checkbox" id="en" checked>
+                                </div></td>
+                                <td class="fw-bold ps-3"><span>Germany</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><input class="form-check-input" type="radio" name="default"></td>
+                                <td><div class="form-check form-check-inline form-switch mt-2">
+                                    <input class="form-check-input" type="checkbox" id="pl" checked>
+                                </div></td>
+                                <td class="fw-bold ps-3"><span>Poland</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

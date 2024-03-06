@@ -1,0 +1,1471 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+
+<div class="main-wrapper">
+    <aside id="mainNav" class="main-nav">
+        <header class="main-nav__header">
+            <a href="/"><img src="assets/images/jzone-blue-white.svg" alt="jz one logo" class="logo" style="height: 26px;"></a>
+            <!--<button class="main-nav__header__button"><i class="cash-register"></i></button>
+            <button class="main-nav__header__button"><i class="barcode-reader"></i></button>-->
+            <button id="hamMenuBtnMax" class="main-nav__header__button button--hamburger on-maximized"><i
+                    class="unpin hamburger-open"></i><i class="pin hamburger-close"></i><i class="multiply hamburger-close d-block d-md-none"></i></button>
+            <button id="hamMenuBtnMin" class="main-nav__header__button button--hamburger on-minimized">
+                <a href="#"><img src="assets/images/jz.svg" alt="malé logo"></a>
+                <!--<i class="hamburger-menu hamburger-open"></i><i class="multiply hamburger-close"></i>-->
+            </button>
+        </header>
+        <nav id="mainNav__nav" class="main-nav__nav scrollbared">
+            <div class="main-nav__nav__inner">
+                <ul>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><span class="notify">1</span><i class="dashboard-layout"></i><span class="name">Dashboard</span></a></li>
+                    <li class="main-nav__nav__item has-submenu"><span class="notify">95</span><a href="#"><i class="basket"></i><span
+                            class="name">Sales</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item has-submenu active">
+                                <a href="#"><span class="menu-error-icon">!</span><span
+                                    class="name">2. Aktivní</span><span class="notify">155 265</span></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                    <li class="sub-menu__item"><a href="#"><span class="name">Třetí úroveň</span></a></li>
+                                </ul></li>
+                            <li class="sub-menu__item has-submenu"><a href="#"><span class="name">Categories</span></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__item active"><a href="#"><span class="menu-error-icon">!</span><span class="name">Třetí aktivní</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item has-submenu"><a href="#"><i class="extra-features"></i><span
+                            class="name">Catalogue</span></a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item"><a href="#"><span class="menu-error-icon">!</span><span class="name">Products</span><span
+                                    class="notify">155 265</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Categories</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Parameters</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Options</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Review</span></a></li>
+                            <li class="sub-menu__item"><a href="#"><span class="name">Tags</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="price"></i><span class="name">Pricing</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="package"></i><span class="name">Stock</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="commercial"></i><span
+                            class="name">Marketing</span></a></li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="repository"></i><span
+                            class="name">Directory</span></a></li>
+                    <li class="main-nav__nav__item"><a
+                            href="#"><i class="marketing"></i><span
+                            class="name">Reports</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="bot"></i><span class="name">Automation</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="plugin"></i><span class="name">Plug-ins</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"></a><a
+                            href="#"><i class="online-store"></i><span class="name">Sales channels</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><span
+                            class="menu-error-icon">!</span><i
+                            class="file"></i><span
+                            class="name">File Manager</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i
+                            class="system-administrator-male"></i><span class="name">Client account</span></a>
+                    </li>
+                    <li class="main-nav__nav__item"><a href="#"><i class="settings"></i><span class="name">Settings</span></a></li>
+                    <li class="main-nav__nav__item"><a href="#"><i class="lifebuoy"></i><span class="name">Help</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <div class="main-content-wrapper">
+        <header id="topBar" class="top-bar top-bar--sales">
+        
+            <div class="hamburger-menu-mobile">
+                <button id="mobileButtonHamburger" class="button--hamburger">
+                    <i class="hamburger-menu hamburger-open"></i>
+                </button>
+            </div>
+        
+            <div class="top-bar__left">
+                <a class="step-btn" href="#"><i class="less-than"></i></a>
+                <div class="order">
+                    <i class="basket"></i>
+                    <div class="order-id">2022582223</div>
+                </div>
+        
+                <img src="assets/images/flag-en.png" alt="">
+                <div class="flag-status">
+                    <span class="status-active dropdown-button"><span class="img-wrapper"><img src="assets/images/icon-green-flag.png"
+                                                                               alt=""></span><span class="status-text">New</span><i
+                            class="expand-arrow"></i></span>
+                    <ul class="top-bar__button__window status-dropdown">
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-translation.png"
+                                                                                   alt=""></span>To translate</a></li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-briefcase.png" alt=""></span>Translated</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-spinner.png" alt=""></span>For
+                            review</a></li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-user.png" alt=""></span>Tomáš</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-user.png" alt=""></span>Pavel</a>
+                        </li>
+                        <li class="item"><a href=""><span class="img-wrapper"><img src="assets/images/icon-green-flag.png"
+                                                                                   alt=""></span>Default</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="top-bar__right top-bar-buttons">
+                <div class="step-btns">
+                    <a class="step-btn" href="#"><i class="less-than"></i></a>
+                    <a class="step-btn" href="#"><i class="forward"></i></a>
+                </div>
+        
+                <button class="actions-button"><i class="menu-vertical"></i></button>
+                <ul class="mobile-actions">
+                    <li class="item"><a href="#" class="item-link"><i class="mail"></i>E-mail</a></li>
+                    <li class="item"><a href="#" class="item-link has-submenu"><i class="wrench"></i>Actions</a>
+                        <ul class="expanding-list">
+                            <li><a href="#"><i class="tax"></i>Change VAT</a></li>
+                            <li><a href="#"><i class="dollar-euro-exchange"></i>Change currency</a></li>
+                            <li><a href="#"><i class="average-price"></i>Change pricelist</a></li>
+                            <li><a href="#"><i class="documents"></i>Duplicate</a></li>
+                        </ul></li>
+                    <li class="item"><a href="#" class="item-link has-submenu"><i class="send-file"></i>Export</a>
+                        <ul class="expanding-list">
+                            <li><a href="#"><i class="extra-features"></i>Pohoda</a></li>
+                            <li><a href="#"><i class="extra-features"></i>CSV</a></li>
+                            <li><a href="#"><i class="extra-features"></i>PDF</a></li>
+                        </ul></li>
+                    <li class="item"><a href="#" class="item-link"><i class="multiply-2"></i>Close</a></li>
+                </ul>
+                <div class="fade-modal-actions" style="display: none"></div>
+                <div class="actions">
+                    <button class="btn btn--secondary"><i class="mail"></i>E-MAIL</button>
+                    <button class="btn btn--secondary btn--expanding"><i class="wrench"></i>ACTIONS<i class="expand-arrow"></i>
+                        <ul class="expanding-list">
+                            <li><a href="#"><i class="tax"></i>Change VAT</a></li>
+                            <li><a href="#"><i class="dollar-euro-exchange"></i>Change currency</a></li>
+                            <li><a href="#"><i class="average-price"></i>Change pricelist</a></li>
+                            <li><a href="#"><i class="documents"></i>Duplicate</a></li>
+                        </ul>
+                    </button>
+                    <button class="btn btn--secondary btn--expanding"><i class="send-file"></i>EXPORT<i class="expand-arrow"></i>
+                        <ul class="expanding-list">
+                            <li><a href="#"><i class="extra-features"></i>Pohoda</a></li>
+                            <li><a href="#"><i class="extra-features"></i>CSV</a></li>
+                            <li><a href="#"><i class="extra-features"></i>PDF</a></li>
+                        </ul>
+                    </button>
+                    <button class="btn btn--secondary"><i class="multiply-2"></i>CLOSE</button>
+                </div>
+            </div>
+        </header>
+        <div id="mainWrapper" class="main-w-aside">
+            <div class="main-w-aside__content">
+                <main class="main main-content">
+                    <button id="rightPanelToggle" class="right-panel-toggle right-panel-toggle-btn"><i class="back-arrow"></i>
+                    </button>
+                    <div class="sales-top-info-wrapper">
+                        <div class="sales-top-info">
+                            <div class="item">
+                                <div class="item__heading">Customer:</div>
+                                <div class="item__name">Jarda Vohnout</div>
+                                <div class="item__subname text-start">Název firmy s.r.o.</div>
+                            </div>
+                    
+                            <div class="item">
+                                <div class="item__heading">Total to pay:</div>
+                                <div class="item__name">111 000 Kč</div>
+                                <div class="item__subname">incl. VAT</div>
+                            </div>
+                    
+                            <div class="item">
+                                <div class="item__heading">Payment status:</div>
+                                <div class="item__tag">
+                                    <span class="tag-rounded tag-rounded--orange"><i class="multiply"></i>NOT PAID</span>
+                                </div>
+                            </div>
+                    
+                            <div class="item">
+                                <div class="item__heading">Expedition status:</div>
+                                <div class="item__tag">
+                                    <span class="tag-rounded tag-rounded--green"><i class="done"></i>SHIPPED</span>
+                                </div>
+                            </div>
+                    
+                            <div class="item">
+                                <div class="item__heading">Source:</div>
+                                <div class="item__tag">
+                                    <span class="source"><i class="phone"></i>By phone</span>
+                                </div>
+                            </div>
+                    
+                            <div class="item">
+                                <div class="item__heading">Order flags:</div>
+                                <div class="item__tag">
+                                    <span class="order-flag"><i class="headline"></i>CUSTOMER NOTE</span>
+                                </div>
+                            </div>
+                    
+                            <div class="item">
+                                <div class="item__heading">Customer rating:</div>
+                                <div class="item__tag">
+                                    <span class="order-flag order-flag--red"><i class="user-secured"></i>RISKY CUSTOMER</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#ordersItems">
+                                    <span class="accordion-button__text">ORDER'S ITEMS</span>
+                                </button>
+                                <div class="accordion-header__right">
+                                    <div class="accordion-icons">
+                                        <button class="accordion-icon accordion-icon--pinned"><i class="pin"></i></button>
+                                        <!--<button class="accordion-icon accordion-icon--unpinned"><i class="unpin"></i></button>-->
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="ordersItems" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="grid-wrapper">
+                                        <div class="grid">
+                                            <div class="table-responsive">
+                                                <table class="grid__table">
+                                                    <thead class="grid__head">
+                                                    <tr class="thead-tr thead-tr--labels">
+                                                        <th class="th--checkbox cell--checkbox">
+                                                            <div class="input-wrapper">
+                                                                <div class="form-check-input-all">
+                                                                    <!--<input class="form-check-input" type="checkbox" id="optionAll" value="optionAll">-->
+                                                                    <div class="checkbox-options">
+                                                                        <span class="checkbox-options__btn"></span>
+                                                                        <ul class="checkbox-options__options">
+                                                                            <li class="item"><a href="#">Možnost</a></li>
+                                                                            <li class="item"><a href="#">Další položka</a></li>
+                                                                            <li class="item"><a href="#">Ještě</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                    </th>
+                                                        <th class="name">
+                                                            <a href="">Image</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">SKU</a>
+                                                        </th>
+                                                        <th class="name active text-start">
+                                                            <a href="" class="sort sort--down selected">Product name</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Status</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">QTY</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Reserved</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Issued</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Ordered</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Price per unit</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Total price</a>
+                                                        </th>
+                                                        <th class="name th--actions cell--actions">
+                                                            <span>Actions</span>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="grid__body">
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option1" value="option1">
+                                                        </td>
+                                                        <td class="td--image cell--image">
+                                                            <img src="assets/images/samples/grid-image.png" alt="">
+                                                        </td>
+                                                        <td class="text-center ws-nowrap">
+                                                            A1-26114
+                                                        </td>
+                                                        <td class="text-start">
+                                                            <a href="">Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero Apple iPad 9.7 2018 / 9.7 2017 šedé</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            připraveno
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="input-w-unit">
+                                                                <div class="input-number-wrapper">
+                                                                    <input type="number" class="number-w-arrows form-control" value="165.5">
+                                                                </div>
+                                                                <span class="unit">m</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="c-green-light">165,5</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="c-green-light">165,5</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            0
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <div class="two-row">
+                                                                <span class="first-row fs-12 c-notice-darker">242&nbsp;556,20&nbsp;Kč</span>
+                                                                <span class="second-row c-notice">exl. VAT</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <div class="two-row">
+                                                                <span class="first-row">980,00&nbsp;Kč</span>
+                                                                <span class="second-row c-notice">incl. VAT</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--add"><i class="plus---2"></i></button>
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option2" value="option2">
+                                                        </td>
+                                                        <td class="td--image cell--image">
+                                                            <img src="assets/images/samples/grid-image.png" alt="">
+                                                        </td>
+                                                        <td class="text-center ws-nowrap">
+                                                            A1-26114
+                                                        </td>
+                                                        <td class="text-start">
+                                                            <a href="">Domo skládané pouzdro na tablet s funkcí Smart Sleep podstavec + kapsička pro dotykové pero</a>
+                                                            <div class="c-notice-darker">Velikost: <strong>M</strong>, Barva: <strong>Modrá</strong></div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            blokováno
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="input-w-unit">
+                                                                <div class="input-number-wrapper">
+                                                                    <input type="number" class="number-w-arrows form-control" value="1">
+                                                                </div>
+                                                                <span class="unit">Pcs</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="c-red">0</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="c-red">0</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            0
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <div class="two-row">
+                                                                <span class="first-row fs-12 c-notice-darker">1&nbsp;242&nbsp;556,20&nbsp;Kč</span>
+                                                                <span class="second-row c-notice">včetně DPH</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <div class="two-row">
+                                                                <span class="first-row">980,00&nbsp;Kč</span>
+                                                                <span class="second-row c-notice">incl. VAT</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--add"><i class="plus---2"></i></button>
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option3" value="option3">
+                                                        </td>
+                                                        <td class="td--image cell--image">
+                                                            <img src="assets/images/samples/grid-image.png" alt="">
+                                                        </td>
+                                                        <td class="text-center ws-nowrap"></td>
+                                                        <td class="text-start">
+                                                            <div><strong>Loyality program</strong> 2625 Pts</div>
+                                                        </td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-end"></td>
+                                                        <td class="text-end">
+                                                            <div class="two-row">
+                                                                <span class="first-row">- 225&nbsp;Kč</span>
+                                                                <span class="second-row c-notice">incl. VAT</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option6" value="option6">
+                                                        </td>
+                                                        <td class="td--image cell--image">
+                                                            <img src="assets/images/samples/grid-image.png" alt="">
+                                                        </td>
+                                                        <td class="text-center ws-nowrap"></td>
+                                                        <td class="text-start">
+                                                            <div><strong>Discount coupon:</strong> ASD-322-50</div>
+                                                        </td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-end"></td>
+                                                        <td class="text-end">
+                                                            <div class="two-row">
+                                                                <span class="first-row">- 225 Kč</span>
+                                                                <span class="second-row c-notice">incl. VAT</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option4" value="option4">
+                                                        </td>
+                                                        <td class="td--image cell--image">
+                                                            <img src="assets/images/samples/grid-image.png" alt="">
+                                                        </td>
+                                                        <td class="text-center ws-nowrap"></td>
+                                                        <td class="text-start">
+                                                            <div><strong>Shipping:</strong> DPD parcel shop</div>
+                                                            <div>Název pobočky <a href="#" class="ms-2 u-link">Změnit pobočku</a></div>
+                                                        </td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center">
+                                                            <div class="input-w-unit">
+                                                                <div class="input-number-wrapper">
+                                                                    <input type="number" class="number-w-arrows form-control" value="1">
+                                                                </div>
+                                                                <span class="unit">Pcs</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-end"></td>
+                                                        <td class="text-end">
+                                                            <div class="two-row">
+                                                                <span class="first-row">99,00&nbsp;Kč</span>
+                                                                <span class="second-row c-notice">incl. VAT</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option5" value="option5">
+                                                        </td>
+                                                        <td class="td--image cell--image">
+                                                            <img src="assets/images/samples/grid-image.png" alt="">
+                                                        </td>
+                                                        <td class="text-center ws-nowrap"></td>
+                                                        <td class="text-start">
+                                                            <div><strong>Payment:</strong> ThePay</div>
+                                                        </td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center">
+                                                            <div class="input-w-unit">
+                                                                <div class="input-number-wrapper">
+                                                                    <input type="number" class="number-w-arrows form-control" value="1">
+                                                                </div>
+                                                                <span class="unit">Pcs</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-end"></td>
+                                                        <td class="text-end">
+                                                            <div class="two-row">
+                                                                <span class="first-row">0,00&nbsp;Kč</span>
+                                                                <span class="second-row c-notice">incl. VAT</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr class="tr">
+                                                        <td class="td--checkbox cell--checkbox">
+                                                            <input class="form-check-input product-checkbox" type="checkbox" id="option5" value="option5">
+                                                        </td>
+                                                        <td class="td--image cell--image">
+                                                            <img src="assets/images/samples/grid-image.png" alt="">
+                                                        </td>
+                                                        <td class="text-center ws-nowrap">
+                                                            A1-26114
+                                                        </td>
+                                                        <td class="text-start">
+                                                            <div><strong>Service:</strong> Assembly after delivery</div>
+                                                        </td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center">
+                                                            <div class="input-w-unit">
+                                                                <div class="input-number-wrapper">
+                                                                    <input type="number" class="number-w-arrows form-control" value="2">
+                                                                </div>
+                                                                <span class="unit">Pcs</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="c-orange">1</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="c-orange">1</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1
+                                                        </td>
+                                                        <td class="text-end"></td>
+                                                        <td class="text-end">
+                                                            <div class="two-row">
+                                                                <span class="first-row">0,00&nbsp;Kč</span>
+                                                                <span class="second-row c-notice">incl. VAT</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="grid__bottom row">
+                                            <div class="grid__bottom__left col-xl-4 col-lg-6 col-md-6">
+                                                <div class="selected-items"> <!-- třída .active rozhoduje, jestli bude sekce podbarvená -->
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <label class="form-label">Selected items</label>
+                                                            <div>
+                                                                <select class="form-select2 form-select2--small">
+                                                                    <option selected="">--</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <label class="form-label">&nbsp;</label>
+                                                            <div>
+                                                                <button class="btn btn--primary" disabled><span class="btn-front"><span class="btn-front-text">PROCEED</span></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="grid__bottom__right col-xl-8 col-lg-6 col-md-6 mb-3 text-end">
+                                                <button class="btn btn--secondary btn--expanding"><i class="plus---2"></i>ADD ITEM<i class="expand-arrow"></i>
+                                                    <ul class="expanding-list">
+                                                        <li><a href="#"><i class="extra-features"></i>položka 1</a></li>
+                                                        <li><a href="#"><i class="extra-features"></i>položka 2</a></li>
+                                                    </ul>
+                                                </button>
+                                                <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD PRODUCTS</span></span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-2">
+                                        <div class="col-xxl-7 col-lg-5 col-md-4"></div>
+                                        <div class="col-xxl-5 col-lg-7 col-md-8 mb-3">
+                                            <div class="total-table-wrapper mt-3">
+                                                <table class="total-table total-table--bigger">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="text-end">Total price:</td>
+                                                        <td class="fw-bold value text-end">1&nbsp;991&nbsp;000,50&nbsp;Kč</td>
+                                                        <td class="fs-11">bez DPH</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td class="text-end">8 686,50&nbsp;Kč</td>
+                                                        <td class="fs-11">excl. VAT</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-end">Rouding:</td>
+                                                        <td class="fw-bold text-end">-0,2 Kč</td>
+                                                        <td class="d-flex align-items-center"><button class="action-btn action-btn--edit"><i class="edit"></i></button></td>
+                                                    </tr>
+                                                    <tr class="last-common">
+                                                        <td class="text-end">Loyality program:</td>
+                                                        <td class="fw-bold text-end">+ 200 pts</td>
+                                                        <td class="d-flex align-items-center">
+                                                            <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                            <div class="tag"><i class="empty-hourglass"></i>waiting</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="total">
+                                                        <td class="text-end">Total to pay:</td>
+                                                        <td class="value fw-bold value text-end">1&nbsp;991&nbsp;000,50&nbsp;Kč</td>
+                                                        <td class="fs-11">incl. VAT</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#expedition">
+                                    <span class="accordion-button__text">EXPEDITION</span>
+                                </button>
+                                <div class="accordion-header__right">
+                                    <div class="accordion-icons">
+                                        <button class="accordion-icon accordion-icon--unpinned"><i class="unpin"></i></button>
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="expedition" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="grid-wrapper">
+                                        <div class="grid">
+                                            <div class="table-responsive">
+                                                <table class="grid__table">
+                                                    <thead class="grid__head">
+                                                    <tr class="thead-tr thead-tr--labels">
+                                                        <th class="name active">
+                                                            <a href="" class="sort sort--down selected">Date</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Carrier</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Warehouse</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Tracking number</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Status</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">N° Packages</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Label</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Items</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Weight</a>
+                                                        </th>
+                                                        <th class="name th--actions cell--actions">
+                                                            <span>Actions</span>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="grid__body">
+                                                    <tr class="tr">
+                                                        <td class="text-center">
+                                                            <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="22-02-2022 16:32:22">22-02-2022</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            DPD
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Centrální sklad
+                                                        </td>
+                                                        <td class="text-center">
+                                                            -
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Created
+                                                        </td>
+                                                        <td class="text-center">
+                                                            2
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="" class="tag-rounded tag-rounded--blue">NEW LABEL</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="blabla">2 <span class="c-notice-darker">/ 4</span></span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1,1 Kg
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr class="tr">
+                                                        <td class="text-center">
+                                                            <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="22-02-2022 16:32:22">22-02-2022</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            PPL
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Centrální sklad
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="">209005522</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="tag-rounded tag-rounded--green">Ready</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            2
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="" class="tag-rounded tag-rounded--transparent"><i class="read-message fs-16"></i>PRINT</a>
+                                                            <a href="" class="tag-rounded tag-rounded--circle tag-rounded--transparent"><i class="multiply c-red fs-16"></i></a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="blabla">4 <span class="c-notice-darker">/ 4</span></span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1,1 Kg
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr class="tr">
+                                                        <td class="text-center">
+                                                            <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="22-02-2022 16:32:22">22-02-2022</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Zásilkovna
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Centrální sklad
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="">209005522</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="tag-rounded tag-rounded--blue">Shipped</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="" class="tag-rounded tag-rounded--transparent"><i class="done"></i> SHIPPED</a>
+                                                            <div class="small c-notice"><i class="schedule"></i> 20.2.2023</div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="blabla">2 <span class="c-notice-darker">/ 4</span></span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1,1 Kg
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr class="tr">
+                                                        <td class="text-center">
+                                                            <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="22-02-2022 16:32:22">22-02-2022</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Fulfilment
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Fulfilment
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="">209005522</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="tag-rounded tag-rounded--green">Sent</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <a href="" class="tag-rounded tag-rounded--orange">SEND</a>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="blabla">2 <span class="c-notice-darker">/ 4</span></span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            1,1 Kg
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="my-3 d-flex justify-content-end">
+                                            <button class="btn btn--secondary me-2"><i class="read-message"></i>PRINT ALL LABELS</button>
+                                            <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">CREATE SHIPMENT</span></span></button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#documents">
+                                    <span class="accordion-button__text">DOCUMENTS</span>
+                                </button>
+                                <div class="accordion-header__right">
+                                    <div class="accordion-icons">
+                                        <button class="accordion-icon accordion-icon--unpinned"><i class="unpin"></i></button>
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="documents" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="grid-wrapper">
+                                        <div class="grid">
+                                            <div class="table-responsive">
+                                                <table class="grid__table">
+                                                    <thead class="grid__head">
+                                                    <tr class="thead-tr thead-tr--labels">
+                                                        <th class="name active">
+                                                            <a href="" class="sort sort--down selected">Date</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Document type</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Number</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Variable Symbol</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Note</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Amount</a>
+                                                        </th>
+                                                        <th class="name th--actions cell--actions">
+                                                            <span>Actions</span>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="grid__body">
+                                                    <tr class="tr">
+                                                        <td class="text-center">
+                                                            <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="22-02-2022 16:32:22">22-02-2022</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Invoice
+                                                        </td>
+                                                        <td class="text-center">
+                                                            FF2003255
+                                                        </td>
+                                                        <td class="text-center">
+                                                            209005522
+                                                        </td>
+                                                        <td class="text-center">
+                                    
+                                                        </td>
+                                                        <td class="text-center">
+                                                            10&nbsp;000&nbsp;CZK
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--print"><i class="file"></i></button>
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="my-3 d-flex justify-content-end">
+                                            <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">NEW DOCUMENT</span></span></button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#payments">
+                                    <span class="accordion-button__text">PAYMENTS</span>
+                                </button>
+                                <div class="accordion-header__right">
+                                    <div class="accordion-icons">
+                                        <button class="accordion-icon accordion-icon--unpinned"><i class="unpin"></i></button>
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="payments" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="grid-wrapper">
+                                        <div class="grid">
+                                            <div class="table-responsive">
+                                                <table class="grid__table">
+                                                    <thead class="grid__head">
+                                                    <tr class="thead-tr thead-tr--labels">
+                                                        <th class="name active">
+                                                            <a href="" class="sort sort--down selected">Date</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Payment type</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">State</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Variable Symbol</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Note</a>
+                                                        </th>
+                                                        <th class="name">
+                                                            <a href="">Amount</a>
+                                                        </th>
+                                                        <th class="name th--actions cell--actions">
+                                                            <span>Actions</span>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="grid__body">
+                                                    <tr class="tr">
+                                                        <td class="text-center">
+                                                            <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="22-02-2022 16:32:22">22-02-2022</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            Bank transfer
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div><i class="empty-hourglass c-orange me-1"></i>Waiting</div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            209005522
+                                                        </td>
+                                                        <td class="text-center">
+                                    
+                                                        </td>
+                                                        <td class="text-center">
+                                                            10&nbsp;000&nbsp;CZK
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                    
+                                                    <tr class="tr">
+                                                        <td class="text-center">
+                                                            <span data-bs-toggle="tooltip" title="" class="tooltip-item" data-bs-original-title="22-02-2022 16:32:22">22-02-2022</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            ThePay
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span class="tag-rounded tag-rounded--red">Failed</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            209005522
+                                                        </td>
+                                                        <td class="text-center">
+                                    
+                                                        </td>
+                                                        <td class="text-center">
+                                                            10&nbsp;000&nbsp;CZK
+                                                        </td>
+                                                        <td class="td--actions cell--actions">
+                                                            <div class="action-btns">
+                                                                <button class="action-btn action-btn--edit"><i class="edit"></i></button>
+                                                                <button class="action-btn action-btn--delete"><i class="multiply"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="my-3 d-flex justify-content-end">
+                                            <div class="summary-table">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="c-notice-darker text-end">Sum of payments:</td>
+                                                            <td class="fw-bold text-end">10&nbsp;000&nbsp;CZK</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="c-notice-darker text-end">Total to pay:</td>
+                                                            <td class="fw-bold text-end">12 000 CZK</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="c-notice-darker text-end">Remaining:</td>
+                                                            <td class="fw-bold c-red text-end">2 000 CZK</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="my-3 d-flex justify-content-end">
+                                            <button class="btn btn--secondary me-2"><i class="check-document"></i>Set as paid</button>
+                                            <button class="btn btn--primary"><span class="btn-front"><span class="btn-front-text">ADD PAYMENT</span></span></button>
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#notes">
+                                    <span class="accordion-button__text">NOTES</span>
+                                </button>
+                                <div class="accordion-header__right">
+                                    <div class="accordion-icons">
+                                        <button class="accordion-icon accordion-icon--unpinned"><i class="unpin"></i></button>
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="notes" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="row two-col-row">
+                                        <div class="col-md-6 mb-2">
+                                            <label for="customerNote" class="col-form-label">Customer Note</label>
+                                            <textarea class="form-control" id="customerNote" rows="3">New order</textarea>
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <label for="adminNote" class="col-form-label">Admin Note</label>
+                                            <textarea class="form-control" id="adminNote" rows="3">New order</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                </main>
+                <aside id="rightPanel" class="right-panel">
+                    <div class="right-panel__inner">
+                        <div class="right-panel__top">
+                            <button id="rightPanelToggleTop" class="right-panel-toggle-btn btn btn--secondary btn--small-text"><i class="forward-button"></i><span>Hide</span></button>
+                            <button class="btn btn--secondary"><i class="read-message"></i>Preview for print</button>
+                        </div>
+                        <div class="right-panel__body">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#customerDetailsBody">
+                                            <span class="accordion-button__text">Customer details</span>
+                                        </button>
+                                        <div class="accordion-header__right">
+                                            <div class="accordion-icons">
+                                                <button class="accordion-icon accordion-icon--edit"><i class="edit"></i></button>
+                                                <button class="accordion-icon accordion-icon--pinned"><i class="pin"></i></button>
+                                            </div>
+                                        </div>
+                                    </h2>
+                                    <div id="customerDetailsBody" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="rp-customer-details">
+                                                <table>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="icon-w-flag">
+                                                                <i class="user"></i>
+                                                                <img class="flag" src="assets/images/flag-en.png" alt="">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="customer-name">
+                                                                <div class="name"><a href="#">Jarda Vohnout<i class="external-link ms-1"></i></a></div>
+                                                                <div class="company-name c-notice-darker">Název firmy s.r.o.</div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="mail"></i></td>
+                                                        <td><a class="u-link c-inherit" href="mailto:jardavohnout@yahoo.com">jardavohnout@yahoo.com</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="phone"></i></td>
+                                                        <td><span class="customers-phone"><a href="tel:+420608123456">+420 <span class="fw-bold">608 123 456</span></a></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="marketing"></i></td>
+                                                        <td class="fw-medium">Registered</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="marketing"></i></td>
+                                                        <td class="fw-medium">24 680 Kč</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="marketing"></i></td>
+                                                        <td class="fw-medium"><strong>Název firmy</strong><br>V Ulici 15/2,<br>1100 00 Praha<br>IČ: 7445598<br>DIČ: CZ7445598</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#deliveryDetailsBody">
+                                            <span class="accordion-button__text">Delivery details</span>
+                                        </button>
+                                        <div class="accordion-header__right">
+                                            <div class="accordion-icons">
+                                                <button class="accordion-icon accordion-icon--edit"><i class="edit"></i></button>
+                                                <button class="accordion-icon accordion-icon--pinned"><i class="pin"></i></button>
+                                            </div>
+                                        </div>
+                                    </h2>
+                                    <div id="deliveryDetailsBody" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="rp-customer-details">
+                                                <table class="mb-2">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><i class="marketing"></i></td>
+                                                        <td class="fw-medium"><strong>Název firmy</strong><br>V Ulici 15/2,<br>1100 00 Praha<br>IČ: 7445598<br>DIČ: CZ7445598</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                            
+                                                <img src="https://dummyimage.com/256x160/333/fff" alt="google mapa">
+                            
+                                                <table class="mt-2">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td><a href="#" class="fs-12">Open in Google maps</a><i class="external-link fs-14 ms-2"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="mail"></i></td>
+                                                        <td><a class="u-link c-inherit" href="mailto:jardavohnout@yahoo.com">jardavohnout@yahoo.com</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="phone"></i></td>
+                                                        <td><span><a href="tel:+420608123456">+420 <span class="fw-bold">608 123 456</span></a></span></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#customerOrdersBody">
+                                            <span class="accordion-button__text">Customer orders</span>
+                                        </button>
+                                        <div class="accordion-header__right">
+                                            <div class="accordion-icons">
+                                                <button class="accordion-icon accordion-icon--pinned"><i class="pin"></i></button>
+                                            </div>
+                                        </div>
+                                    </h2>
+                                    <div id="customerOrdersBody" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="rp-customer-orders">
+                                                <table class="customer-orders">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><img class="flag-icon" src="assets/images/icon-green-flag.png" alt=""></td>
+                                                        <td><img class="status-icon" src="assets/images/icon-green-dot.png" alt=""></td>
+                                                        <td class="c-notice-darker">25.4.2019 20:36</td>
+                                                        <td class="fw-bold"><a href="">2022582223</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="empty-hourglass fs-14 c-orange"></i></td>
+                                                        <td><img class="status-icon" src="assets/images/icon-orange-dot.png" alt=""></td>
+                                                        <td class="c-notice-darker">25.4.2019 20:36</td>
+                                                        <td class="fw-bold"><a href="">2022582223</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="flag-icon" src="assets/images/icon-green-flag.png" alt=""></td>
+                                                        <td><img class="status-icon" src="assets/images/icon-red-dot.png" alt=""></td>
+                                                        <td class="c-notice-darker">25.4.2019 20:36</td>
+                                                        <td class="fw-bold"><a href="">2022582223</a></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                            
+                                                <div class="d-flex justify-content-center mt-3">
+                                                    <button class="btn btn--white">SHOW MORE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#orderDetailsBody">
+                                            <span class="accordion-button__text">Order details</span>
+                                        </button>
+                                        <div class="accordion-header__right">
+                                            <div class="accordion-icons">
+                                                <button class="accordion-icon accordion-icon--edit"><i class="edit"></i></button>
+                                                <button class="accordion-icon accordion-icon--unpinned"><i class="unpin"></i></button>
+                                            </div>
+                                        </div>
+                                    </h2>
+                                    <div id="orderDetailsBody" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="rp-order-details">
+                                                <table class="order-details order-details--highlighted mb-3">
+                                                    <tr>
+                                                        <td>Profit</td>
+                                                        <td>152 286,60 Kč</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Costs</td>
+                                                        <td>11 286,60 Kč</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>To invoice</td>
+                                                        <td>2 255 586,60 Kč</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Invoiced</td>
+                                                        <td>0 Kč</td>
+                                                    </tr>
+                                                </table>
+                            
+                                                <table class="order-details">
+                                                    <tr>
+                                                        <td>Price list</td>
+                                                        <td>Maloobchodní CZK</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Exchange rate</td>
+                                                        <td>24 CZK / 1 €</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>VAT</td>
+                                                        <td>Standard charge</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Source</td>
+                                                        <td><div class="d-flex align-items-center"><img class="flag me-2" src="assets/images/flag-en.png" alt="">DE-SHOP</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Referrer</td>
+                                                        <td>https://search.seznam.cz/</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#orderHistoryBody">
+                                            <span class="accordion-button__text">Order history</span>
+                                        </button>
+                                    </h2>
+                                    <div id="orderHistoryBody" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="rp-logs">
+                                                <div class="rp-logs__highlight">
+                                                    <i class="schedule"></i>
+                                                    <span class="fw-medium">Received:</span> <strong>25.4.2019</strong> | 20:30:19
+                                                </div>
+                                                <div class="rp-logs__item">
+                                                    <div class="heading">25.4.2019 20:30:19 | <strong>Jenda</strong></div>
+                                                    <div class="description"><strong>Added note:</strong> Waiting for expedition</div>
+                                                </div>
+                                                <div class="rp-logs__item">
+                                                    <div class="heading">25.4.2019 20:30:19 | <strong>System</strong></div>
+                                                    <div class="description">Update inventory</div>
+                                                </div>
+                                                <div class="rp-logs__item">
+                                                    <div class="heading">25.4.2019 20:30:19 | <strong>Tonda</strong></div>
+                                                    <div class="description">Status changed from <strong>New</strong> to <strong>Waiting</strong></div>
+                                                </div>
+                                                <div class="rp-logs__item">
+                                                    <div class="heading">25.4.2019 20:30:19 | <strong>Tonda</strong></div>
+                                                    <div class="description">E-mail sent to jarda@yahoo.com</div>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <button class="btn btn--white">DETAILED HISTORY</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#privacyBody">
+                                            <span class="accordion-button__text">Privacy policy</span>
+                                        </button>
+                                    </h2>
+                                    <div id="privacyBody" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="rp-privacy-policy">
+                                                <table>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><i class="user-secured"></i></td>
+                                                        <td><strong>Consent granted</strong><br><span class="c-notice-darker fs-12">25.4.2019 20:36</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="privacy-policy"></i></td>
+                                                        <td><strong>Consent text version</strong><br><a href="#" class="fs-12 u-link c-text">Order</a>, <a href="#" class="fs-12 u-link c-text">Date of birth</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="lifebuoy"></i></td>
+                                                        <td><strong>IP adress</strong><br><span class="c-notice-darker fs-12">89.24.104.114</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="pass-fail"></i></td>
+                                                        <td><strong>Satisfaction survay</strong><br><span class="c-notice-darker fs-12">Consent granted</span></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-panel__bottom">
+                            <button class="btn btn--delete btn--w-icon"><i class="trash-can"></i>DELETE ORDER</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <footer class="footer">
+                <div class="footer__version"><a href="#">www.jz-one.cz</a> | v1.0</div>
+                <div class="footer__copyright">Copyright Jirsa & Záruba s.r.o. © All Rights Reserved.</div>
+            </footer>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

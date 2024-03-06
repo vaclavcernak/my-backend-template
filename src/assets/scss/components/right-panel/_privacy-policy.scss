@@ -1,0 +1,22 @@
+.rp-privacy-policy{
+  margin: 0 -7px;
+
+  table {
+    td {
+      padding: 7px 7px;
+      line-height: 1.1;
+
+      &:first-child {
+        text-align: center;
+        vertical-align: top;
+
+        i {
+          font-size: 22px;
+          &:before {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

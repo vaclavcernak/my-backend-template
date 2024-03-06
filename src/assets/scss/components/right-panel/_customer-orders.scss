@@ -1,0 +1,18 @@
+.rp-customer-orders{
+  margin: 0 -5px;
+
+  .customer-orders {
+    font-size: 12px;
+    width: 100%;
+
+    tr:not(:last-child) {
+      td {
+        border-bottom: 1px solid #d8e4ec;
+      }
+    }
+
+    td {
+      padding: 10px 5px;
+    }
+  }
+}

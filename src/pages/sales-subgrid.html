@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="main-wrapper">
+    {{> main-nav}}
+    <div class="main-content-wrapper">
+        {{> top-bar--sales}}
+        <div id="mainWrapper" class="main-w-aside">
+            <div class="main-w-aside__content">
+                <main class="main main-content">
+                    {{> right-panel-toggle}}
+                    {{> sales__top-info}}
+                    {{> sales__orders-items--subgrid}}
+                    {{> sales__expedition}}
+                    {{> sales__documents}}
+                    {{> sales__payments}}
+                    {{> sales__notes}}
+                </main>
+                {{> sales__aside}}
+            </div>
+            {{> footer}}
+        </div>
+    </div>
+
+</div>
+

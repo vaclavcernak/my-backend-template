@@ -1,0 +1,129 @@
+.parameters-wrapper {
+
+}
+.parameters {
+  &__item {
+    display: flex;
+    margin-bottom: 30px;
+    border: 1px dashed #d9e1ea;
+    border-radius: 10px;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+
+    .form-control:not(.look-like-active):disabled,
+    .input-group-text  {
+      background-color: #e5eef4;
+      color: #2a3647;
+    }
+
+    .form-control {
+      color: #2a3647;
+    }
+
+    .input-group-text {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .action-btn {
+      &:hover {
+        background-color: #e5eef4;
+      }
+    }
+  }
+
+  &__left {
+    background-color: #edf3f7;
+    padding: 15px 20px;
+    flex: 1;
+    flex-shrink: 0;
+    border-right: 1px solid #d9e1ea;
+  }
+
+  &__right {
+    padding: 15px 20px;
+    flex: 2;
+    @include media-breakpoint-down(md) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  .parameter-row {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #d9e1ea;
+      padding-bottom: 14px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-right: 5px;
+      padding-left: 5px;
+      gap: 10px;
+      align-items: end;
+
+      .action-btn {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      width: 100%;
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+
+
+
+    .parameter,
+    .parameter-value {
+      flex: 1;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+
+    .input-group {
+      &--w-button {
+        .select2-container .select2-selection {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+        .select2 {
+          width: calc(100% - 48px) !important;
+        }
+      }
+    }
+  }
+
+  .parameters-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+  }
+}

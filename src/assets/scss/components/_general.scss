@@ -1,0 +1,74 @@
+.flag-status {
+  font-size: 12px;
+  font-weight: $fw-medium;
+  padding: 15px 7px;
+  position: relative;
+
+  .status-active {
+    display: inline-block;
+    padding-left: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    @include media-breakpoint-down(lg) {
+      padding-left: 0;
+    }
+
+    i {
+      font-size: 10px;
+      margin-left: 7px;
+
+      &:before {
+        font-weight: bold;
+      }
+    }
+
+    .status-text {
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+
+  .img-wrapper {
+    display: inline-block;
+    width: 25px;
+    position: relative;
+    top: -1px;
+    @include media-breakpoint-down(lg) {
+      width: 20px;
+    }
+  }
+
+  .status-dropdown {
+    display: none;
+    position: absolute;
+    right: -25px;
+    top: 45px;
+    background-color: #ffffff;
+    width: 150px;
+    padding: 5px 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    z-index: 3;
+
+    &:before {
+      display: none;
+      content: '\25E2';
+      transform: rotate(225deg);
+      color: #ffffff;
+      position: absolute;
+      top: -15px;
+      left: 50px;
+      font-size: 20px;
+    }
+
+    .img-wrapper {
+      @include media-breakpoint-down(lg) {
+        width: 25px;
+      }
+    }
+
+    .item {
+      margin: 10px 0;
+    }
+  }
+}

@@ -1,0 +1,377 @@
+<div class="modal fade" id="modalEditProductVariant" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xxl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">Edit product variant</h5>
+                </div>
+                {{> modal__top-bar-buttons--w-save-close}}
+            </div>
+            <div class="modal-body not-modal-like">
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="highlight-input mb-4">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="cookiesConsent" checked>
+                                <label class="switch-text fw-bold" for="cookiesConsent">Active <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Designation">
+                                <span class="accordion-button__text">Designation</span>
+                            </button>
+                        </h2>
+                        <div id="Designation" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                 <div class="variant-items">
+                                     <div class="item-row">
+                                         <div class="item">
+                                             <div class="item__name"><span class="name">Variant kind</span></div>
+                                             <div class="item__input">
+                                                 <div class="col-input">
+                                                     <select class="form-select2">
+                                                         <option selected>Size</option>
+                                                         <option value="1">One</option>
+                                                         <option value="2">Two</option>
+                                                         <option value="3">Three</option>
+                                                     </select>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div class="item">
+                                             <div class="item__name"><span class="name">Value</span></div>
+                                             <div class="item__input">
+                                                 <div class="col-input">
+                                                    <input type="text" class="form-control" value="45">
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div class="button-wrapper">
+                                             <button class="item-remove" style="display:none;"><i class="multiply"></i>Remove</button>
+                                         </div>
+                                     </div>
+
+                                     <div class="item-row">
+                                         <div class="item">
+                                             <div class="item__name"><span class="name">Variant kind</span></div>
+                                             <div class="item__input">
+                                                 <div class="col-input">
+                                                     <input type="text" class="form-control" value="">
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div class="item">
+                                             <div class="item__name"><span class="name">Value</span></div>
+                                             <div class="item__input">
+                                                 <div class="col-input">
+                                                     <input type="text" class="form-control" value="45">
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div class="button-wrapper">
+                                             <button class="item-remove"><i class="multiply"></i>Remove</button>
+                                         </div>
+                                     </div>
+                                     <div class="item-buttons">
+                                         <button class="btn btn--white"><i class="plus---2"></i>Add more</button>
+                                     </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <div class="col-xl-4 col-lg-6 mb-2">
+                        <div class="input-row input-row--column">
+                            <label class="col-form-label c-primary">SKU (Stock Keeping Unit)</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="AS 553 55">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 mb-2">
+                        <div class="input-row input-row--column">
+                            <label class="col-form-label">Manufacturer part number</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="AS 553 55">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 mb-2">
+                        <div class="input-row input-row--column">
+                            <label class="col-form-label">EAN</label>
+                            <div class="col-input">
+                                <input type="text" class="form-control" value="AS 553 55">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#pricelist">
+                                <span class="accordion-button__text">PRICE LIST</span>
+                            </button>
+                        </h2>
+                        <div id="pricelist" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <div class="row mb-3">
+                                    <div class="col-xl-4 mb-2">
+                                        <div class="input-row">
+                                            <label class="col-form-label">Purchase Value <span class="notice">(excl. VAT)</span> <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i> <a href="#"><i class="settings"></i></a></label>
+                                            <div class="col-input">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control imask-number" value="265 874,25">
+                                                    <span class="input-group-text">Kč</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 mb-2">
+                                        <div class="input-row">
+                                            <label class="col-form-label">Minimal Selling Price <span class="notice">(incl. VAT)</span> <i class="help" data-bs-toggle="tooltip" title="" data-bs-original-title="tooltip text" aria-label="tooltip text"></i></label>
+                                            <div class="col-input col-input--w-more">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control form-control--w-icon imask-number" value="265 874,25">
+                                                    <a href="#" class="input-group-btn"><i class="calculator"></i></a>
+                                                    <span class="input-group-text">Kč</span>
+                                                </div>
+                                                <div class="next-to-input">
+                                                    <div class="text"><span class="value">265 874,25 Kč</span> <span class="notice">excl. VAT</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                {{> grid-pricelists-v3--wo-bottom}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#stockInventory">
+                                <span class="accordion-button__text">STOCK STATUS</span>
+                            </button>
+                            <div class="accordion-header__right">
+                                <button class="btn btn--secondary btn--small-text"><i class="available-updates"></i>Update</button>
+                            </div>
+                        </h2>
+                        <div id="stockInventory" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+
+                                {{> grid-stock-status}}
+
+                                <div class="row mb-2">
+                                    <div class="col-lg-8 mb-2 order-lg-1 order-2">
+                                        <div class="row">
+                                            <div class="mb-2">
+                                                <div class="mb-2 input-row">
+                                                    <label class="col-form-label">Availability when in stock</label>
+                                                    <div class="col-input">
+                                                        <select class="form-select2">
+                                                            <option selected>Skladem</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-2">
+
+                                            </div>
+                                            <div class="mb-2">
+                                                <div class="mb-2 input-row">
+                                                    <label class="col-form-label">Availability when out of stock</label>
+                                                    <div class="col-input">
+                                                        <select class="form-select2">
+                                                            <option selected>Není skladem</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-2">
+                                                <div class="mb-2 input-row mt-2">
+                                                    <label class="col-form-label d-none d-sm-inline-block">&nbsp;</label>
+                                                    <div class="col-input">
+                                                        <div class="form-check form-check-inline form-switch">
+                                                            <input class="form-check-input" type="checkbox" checked="" id="neg">
+                                                            <label class="switch-text fs-14 fw-bold" for="neg">Negative stocks allowed</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 order-lg-2 order-1 mb-3"> <!--stock in total table-->
+                                        <div class="total-table-wrapper mt-3">
+                                            <table class="total-table">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-end">Total in stock:</td>
+                                                    <td class="fw-bold">80&nbsp;ks</td>
+                                                </tr>
+                                                <tr class="last-common">
+                                                    <td class="text-end">Reserved:</td>
+                                                    <td class="fw-bold">20&nbsp;ks</td>
+                                                </tr>
+                                                <tr class="total">
+                                                    <td class="text-end">Total available:</td>
+                                                    <td class="value fw-bold">60&nbsp;ks</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#unitsAndPackaging">
+                                <span class="accordion-button__text">UNITS AND PACKAGING</span>
+                            </button>
+                        </h2>
+                        <div id="unitsAndPackaging" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+
+                                <div class="row mb-2">
+
+                                    <div class="col-xl-4 col-lg-6 mb-2">
+                                        <div class="input-row">
+                                            <label class="col-form-label">Sales unit</label>
+                                            <div class="col-input">
+                                                <select class="form-select2">
+                                                    <option selected>Piece [ks]</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-6 mb-2">
+                                        <div class="input-row">
+                                            <label class="col-form-label">Number per unit</label>
+                                            <div class="col-input">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" value="1,00">
+                                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">Ks
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Grams</a></li>
+                                                        <li><a class="dropdown-item" href="#">Blabla</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-6 mb-2">
+                                        <div class="input-row">
+                                            <label class="col-form-label">Purchase multiple</label>
+                                            <div class="col-input">
+                                                <input type="text" class="form-control" value="1">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row mb-2">
+
+                                    <div class="col-xl-4 col-lg-6 mb-2">
+                                        <div class="input-row">
+                                            <label class="col-form-label">Minimum purchase</label>
+                                            <div class="col-input">
+                                                <input type="text" class="form-control" value="1,00">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-6 mb-2">
+                                        <div class="input-row">
+                                            <label class="col-form-label">Maximum purchase</label>
+                                            <div class="col-input">
+                                                <input type="text" class="form-control" value="100,00">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <span class="col-form-label d-block mb-2">Packaging</span>
+                                {{> grid-units-packaging}}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#parameters">
+                                <span class="accordion-button__text">PARAMETERS</span>
+                            </button>
+                        </h2>
+                        <div id="parameters" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                {{> product__tabs__parameters}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#heureka">
+                                <span class="accordion-button__text">HEUREKA</span>
+                            </button>
+                        </h2>
+                        <div id="heureka" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

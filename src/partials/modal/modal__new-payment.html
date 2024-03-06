@@ -1,0 +1,56 @@
+<div class="modal modal--new-payment fade" id="modalNewPayment" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__left">
+                    {{> modal__top-bar-fullscreen}}
+                    <h5 class="modal-title">New payment</h5>
+                </div>
+                <div class="top-bar__right top-bar-buttons">
+                    <div class="actions">
+                        <button class="btn btn--primary always-visible"><span class="btn-front"><span class="btn-front-text">CREATE PAYMENT</span></span></button>
+                        <button class="btn btn--secondary btn--close-modal always-visible" data-bs-dismiss="modal"><i class="multiply-2"></i>CANCEL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="input-row mb-2">
+                    <label class="col-form-label">Payment type</label>
+                    <div class="col-input">
+                        <select class="form-select2">
+                            <option selected>Bank transfer</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-row mb-2">
+                    <label class="col-form-label">Variable Symbol</label>
+                    <div class="col-input">
+                        <input type="text" class="form-control" value="AS350038">
+                    </div>
+                </div>
+
+                <div class="input-row mb-2">
+                    <label class="col-form-label">Amount</label>
+                    <div class="col-input">
+                        <div class="input-group">
+                            <input type="text" class="form-control" value="1500">
+                            <span class="input-group-text">Kč</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-row mb-2">
+                    <label class="col-form-label">Note</label>
+                    <div class="col-input">
+                        <input type="text" class="form-control" value="chybný VS proto se nespárovala">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

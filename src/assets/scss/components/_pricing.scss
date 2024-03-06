@@ -1,0 +1,39 @@
+.base-prices {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  @include media-breakpoint-down(sm) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .discount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 33px; //TODO
+
+    .action-btns {
+      margin-left: 5px;
+    }
+  }
+
+  .campaign {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: $fw-bold;
+
+    .name {
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 22px;
+        margin-right: 5px;
+      }
+    }
+
+  }
+}

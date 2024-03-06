@@ -1,0 +1,16 @@
+<div class="grid-wrapper">
+
+    {{> grid__top--products}}
+    {{> grid__cols-filter}}
+
+    <div class="grid">
+        {{> grid__top-tabs--products}}
+        {{> grid__select-all-items}}
+        <div class="table-responsive">
+            {{> grid__table}}
+        </div>
+        {{> grid__bottom}}
+    </div>
+</div>
+
+{{> modal__edit-columns}}

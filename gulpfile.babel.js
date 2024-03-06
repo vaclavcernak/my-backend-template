@@ -13,6 +13,8 @@ import webpackStream from 'webpack-stream';
 import webpack2 from 'webpack';
 import named from 'vinyl-named';
 
+const sass = require('gulp-sass')(require('sass'));
+
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
@@ -29,7 +31,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
-    gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+    gulp.series(clean, gulp.parallel(pages, sassFunction, javascript, images, copy), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -77,13 +79,13 @@ function styleGuide(done) {
 
 // Compile Sass into CSS
 // In production, the CSS is compressed
-function sass() {
+function sassFunction() {
     return gulp.src('src/assets/scss/styles.scss')
         .pipe($.sourcemaps.init())
-        .pipe($.sass({
+        .pipe(sass({
             includePaths: PATHS.sass
         })
-            .on('error', $.sass.logError))
+            .on('error', sass.logError))
         .pipe($.autoprefixer({
             browsers: COMPATIBILITY
         }))
@@ -105,7 +107,18 @@ let webpackConfig = {
                         loader: 'babel-loader'
                     }
                 ]
-            }
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    'style-loader',
+                    // Translates CSS into CommonJS
+                    'css-loader',
+                    // Compiles Sass to CSS
+                    'sass-loader',
+                ],
+            },
         ],
     },
     plugins: [
@@ -136,9 +149,9 @@ function javascript() {
 // In production, the images are compressed
 function images() {
     return gulp.src('src/assets/images/**/*')
-        .pipe($.if(PRODUCTION, $.imagemin({
-            progressive: true
-        })))
+        /*    .pipe($.if(PRODUCTION, $.imagemin({
+       progressive: true
+     })))*/
         .pipe(gulp.dest(PATHS.dist + '/assets/images'));
 }
 
@@ -161,7 +174,7 @@ function watch() {
     gulp.watch(PATHS.assets, copy);
     gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));
     gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
-    gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
+    gulp.watch('src/assets/scss/**/*.scss').on('all', sassFunction);
     gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
     gulp.watch('src/assets/images/**/*').on('all', gulp.series(images, browser.reload));
     gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
